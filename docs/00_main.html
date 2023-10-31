@@ -1,194 +1,1524 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html><html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>μSeismicDataExchangeFormatforin-MinesSystem(MDEFM)-RFC</title>
+<!--Generated on Tue Oct 31 15:21:19 2023 by LaTeXML (version 0.8.6) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on October 31, 2023.-->
 
-<!--Converted with LaTeX2HTML 2021.2 (Released July 1, 2021) -->
-<HTML lang="en">
-<HEAD>
-<TITLE>Seismic Data Exchange Format for in-Mines System (MDEFM) - RFC</TITLE>
-<META NAME="description" CONTENT="Seismic Data Exchange Format for in-Mines System (MDEFM) - RFC">
-<META NAME="keywords" CONTENT="00_main">
-<META NAME="resource-type" CONTENT="document">
-<META NAME="distribution" CONTENT="global">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document ltx_authors_1line">
+<div class="ltx_pagination ltx_role_newpage"></div>
+<section id="Sx1" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">ExecutiveSummary</h2>
 
-<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
-<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
-<META NAME="Generator" CONTENT="LaTeX2HTML v2021.2">
+<div id="Sx1.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit,
+vestibulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum
+gravida mauris. Nam arcu libero, nonummy eget, consectetuer id,
+vulputate a, magna. Donec vehicula augue eu neque. Pellentesque habitant
+morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+Mauris ut leo. Cras viverra metus rhoncus sem. Nulla et lectus
+vestibulum urna fringilla ultrices. Phasellus eu tellus sit amet tortor
+gravida placerat. Integer sapien est, iaculis in, pretium quis, viverra
+ac, nunc. Praesent eget sem vel leo ultrices bibendum. Aenean faucibus.
+Morbi dolor nulla, malesuada eu, pulvinar at, mollis ac, nulla.
+Curabitur auctor semper nulla. Donec varius orci eget risus. Duis nibh
+mi, congue eu, accumsan eleifend, sagittis quis, diam. Duis eget orci
+sit amet orci dignissim rutrum.</p>
+</div>
+<div id="Sx1.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi.
+Morbi auctor lorem non justo. Nam lacus libero, pretium at, lobortis
+vitae, ultricies et, tellus. Donec aliquet, tortor sed accumsan
+bibendum, erat ligula aliquet magna, vitae ornare odio metus a mi. Morbi
+ac orci et nisl hendrerit mollis. Suspendisse ut massa. Cras nec ante.
+Pellentesque a nulla. Cum sociis natoque penatibus et magnis dis
+parturient montes, nascetur ridiculus mus. Aliquam tincidunt urna. Nulla
+ullamcorper vestibulum turpis. Pellentesque cursus luctus mauris.</p>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+<div class="ltx_TOC ltx_list_toc ltx_toc_toc">
+<h6>Contents</h6>
+<ul class="ltx_toclist">
+<li class="ltx_tocentry ltx_tocentry_section"><a href="#Sx1" title="ExecutiveSummary ‣ μ SeismicDataExchangeFormatforin-MinesSystem(MDEFM)-RFC" class="ltx_ref"><span class="ltx_text ltx_ref_title">ExecutiveSummary</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section">
+<a href="#S1" title="1 Introduction ‣ μ SeismicDataExchangeFormatforin-MinesSystem(MDEFM)-RFC" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1 </span>Introduction</span></a>
+<ul class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S1.SS1" title="1.1 Purpose ‣ 1 Introduction ‣ μ SeismicDataExchangeFormatforin-MinesSystem(MDEFM)-RFC" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.1 </span>Purpose</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S1.SS2" title="1.2 Scope ‣ 1 Introduction ‣ μ SeismicDataExchangeFormatforin-MinesSystem(MDEFM)-RFC" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.2 </span>Scope</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S1.SS3" title="1.3 Objective ‣ 1 Introduction ‣ μ SeismicDataExchangeFormatforin-MinesSystem(MDEFM)-RFC" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.3 </span>Objective</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection">
+<a href="#S1.SS4" title="1.4 Rationale ‣ 1 Introduction ‣ μ SeismicDataExchangeFormatforin-MinesSystem(MDEFM)-RFC" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.4 </span>Rationale</span></a>
+<ul class="ltx_toclist ltx_toclist_subsection">
+<li class="ltx_tocentry ltx_tocentry_subsubsection"><a href="#S1.SS4.SSS1" title="1.4.1 NeedforaNewStandard ‣ 1.4 Rationale ‣ 1 Introduction ‣ μ SeismicDataExchangeFormatforin-MinesSystem(MDEFM)-RFC" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.4.1 </span>NeedforaNewStandard</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="#S2" title="2 TerminologyandDefinitions ‣ μ SeismicDataExchangeFormatforin-MinesSystem(MDEFM)-RFC" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2 </span>TerminologyandDefinitions</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section">
+<a href="#S3" title="3 GeneralFormatConsiderations ‣ μ SeismicDataExchangeFormatforin-MinesSystem(MDEFM)-RFC" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3 </span>GeneralFormatConsiderations</span></a>
+<ul class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S3.SS1" title="3.1 GeneralFormatConsiderations ‣ 3 GeneralFormatConsiderations ‣ μ SeismicDataExchangeFormatforin-MinesSystem(MDEFM)-RFC" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.1 </span>GeneralFormatConsiderations</span></a></li>
+</ul>
+</li>
+<li class="ltx_tocentry ltx_tocentry_section">
+<a href="#S4" title="4 EssentialDataExchangeContent ‣ μ SeismicDataExchangeFormatforin-MinesSystem(MDEFM)-RFC" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4 </span>EssentialDataExchangeContent</span></a>
+<ul class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S4.SS1" title="4.1 overview ‣ 4 EssentialDataExchangeContent ‣ μ SeismicDataExchangeFormatforin-MinesSystem(MDEFM)-RFC" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4.1 </span>overview</span></a></li>
+</ul>
+</li>
+<li class="ltx_tocentry ltx_tocentry_section">
+<a href="#S5" title="5 SeismicSystemInformationCategories ‣ μ SeismicDataExchangeFormatforin-MinesSystem(MDEFM)-RFC" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">5 </span>SeismicSystemInformationCategories</span></a>
+<ul class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S5.SS1" title="5.1 Waveforms ‣ 5 SeismicSystemInformationCategories ‣ μ SeismicDataExchangeFormatforin-MinesSystem(MDEFM)-RFC" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">5.1 </span>Waveforms</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S5.SS2" title="5.2 Catalog ‣ 5 SeismicSystemInformationCategories ‣ μ SeismicDataExchangeFormatforin-MinesSystem(MDEFM)-RFC" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">5.2 </span>Catalog</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S5.SS3" title="5.3 Inventory ‣ 5 SeismicSystemInformationCategories ‣ μ SeismicDataExchangeFormatforin-MinesSystem(MDEFM)-RFC" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">5.3 </span>Inventory</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S5.SS4" title="5.4 VelocityGrids ‣ 5 SeismicSystemInformationCategories ‣ μ SeismicDataExchangeFormatforin-MinesSystem(MDEFM)-RFC" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">5.4 </span>VelocityGrids</span></a></li>
+</ul>
+</li>
+<li class="ltx_tocentry ltx_tocentry_section">
+<a href="#S6" title="6 DataFormatforSeismicData ‣ μ SeismicDataExchangeFormatforin-MinesSystem(MDEFM)-RFC" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">6 </span>DataFormatforSeismicData</span></a>
+<ul class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S6.SS1" title="6.1 Overview ‣ 6 DataFormatforSeismicData ‣ μ SeismicDataExchangeFormatforin-MinesSystem(MDEFM)-RFC" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">6.1 </span>Overview</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection">
+<a href="#S6.SS2" title="6.2 QuakeML ‣ 6 DataFormatforSeismicData ‣ μ SeismicDataExchangeFormatforin-MinesSystem(MDEFM)-RFC" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">6.2 </span>QuakeML</span></a>
+<ul class="ltx_toclist ltx_toclist_subsection">
+<li class="ltx_tocentry ltx_tocentry_subsubsection"><a href="#S6.SS2.SSS1" title="6.2.1 Modifications ‣ 6.2 QuakeML ‣ 6 DataFormatforSeismicData ‣ μ SeismicDataExchangeFormatforin-MinesSystem(MDEFM)-RFC" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">6.2.1 </span>Modifications</span></a></li>
+</ul>
+</li>
+<li class="ltx_tocentry ltx_tocentry_subsection">
+<a href="#S6.SS3" title="6.3 WaveformsandStationXML ‣ 6 DataFormatforSeismicData ‣ μ SeismicDataExchangeFormatforin-MinesSystem(MDEFM)-RFC" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">6.3 </span>WaveformsandStationXML</span></a>
+<ul class="ltx_toclist ltx_toclist_subsection">
+<li class="ltx_tocentry ltx_tocentry_subsubsection"><a href="#S6.SS3.SSS1" title="6.3.1 Modifications ‣ 6.3 WaveformsandStationXML ‣ 6 DataFormatforSeismicData ‣ μ SeismicDataExchangeFormatforin-MinesSystem(MDEFM)-RFC" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">6.3.1 </span>Modifications</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsubsection"><a href="#S6.SS3.SSS2" title="6.3.2 StreamNamingConvention ‣ 6.3 WaveformsandStationXML ‣ 6 DataFormatforSeismicData ‣ μ SeismicDataExchangeFormatforin-MinesSystem(MDEFM)-RFC" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">6.3.2 </span>StreamNamingConvention</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsubsection"><a href="#S6.SS3.SSS3" title="6.3.3 WaveformRepresentationandResponseCorrection ‣ 6.3 WaveformsandStationXML ‣ 6 DataFormatforSeismicData ‣ μ SeismicDataExchangeFormatforin-MinesSystem(MDEFM)-RFC" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">6.3.3 </span>WaveformRepresentationandResponseCorrection</span></a></li>
+</ul>
+</li>
+<li class="ltx_tocentry ltx_tocentry_subsection">
+<a href="#S6.SS4" title="6.4 AuxiliaryData ‣ 6 DataFormatforSeismicData ‣ μ SeismicDataExchangeFormatforin-MinesSystem(MDEFM)-RFC" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">6.4 </span>AuxiliaryData</span></a>
+<ul class="ltx_toclist ltx_toclist_subsection">
+<li class="ltx_tocentry ltx_tocentry_subsubsection"><a href="#S6.SS4.SSS1" title="6.4.1 Overview ‣ 6.4 AuxiliaryData ‣ 6 DataFormatforSeismicData ‣ μ SeismicDataExchangeFormatforin-MinesSystem(MDEFM)-RFC" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">6.4.1 </span>Overview</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsubsection"><a href="#S6.SS4.SSS2" title="6.4.2 Rays ‣ 6.4 AuxiliaryData ‣ 6 DataFormatforSeismicData ‣ μ SeismicDataExchangeFormatforin-MinesSystem(MDEFM)-RFC" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">6.4.2 </span>Rays</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="ltx_tocentry ltx_tocentry_section">
+<a href="#S7" title="7 DataFormatforGrids ‣ μ SeismicDataExchangeFormatforin-MinesSystem(MDEFM)-RFC" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">7 </span>DataFormatforGrids</span></a>
+<ul class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry ltx_tocentry_subsection">
+<a href="#S7.SS1" title="7.1 overview ‣ 7 DataFormatforGrids ‣ μ SeismicDataExchangeFormatforin-MinesSystem(MDEFM)-RFC" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">7.1 </span>overview</span></a>
+<ul class="ltx_toclist ltx_toclist_subsection">
+<li class="ltx_tocentry ltx_tocentry_subsubsection"><a href="#S7.SS1.SSS1" title="7.1.1 GeneralFormat ‣ 7.1 overview ‣ 7 DataFormatforGrids ‣ μ SeismicDataExchangeFormatforin-MinesSystem(MDEFM)-RFC" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">7.1.1 </span>GeneralFormat</span></a></li>
+</ul>
+</li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S7.SS2" title="7.2 GlobalGrids ‣ 7 DataFormatforGrids ‣ μ SeismicDataExchangeFormatforin-MinesSystem(MDEFM)-RFC" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">7.2 </span>GlobalGrids</span></a></li>
+</ul>
+</li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="#S8" title="8 References ‣ μ SeismicDataExchangeFormatforin-MinesSystem(MDEFM)-RFC" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">8 </span>References</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_appendix"><a href="#A1" title="Appendix A SourceParameterDefinitions ‣ μ SeismicDataExchangeFormatforin-MinesSystem(MDEFM)-RFC" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">A </span>SourceParameterDefinitions</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_appendix">
+<a href="#A2" title="Appendix B InstrumentResponse ‣ μ SeismicDataExchangeFormatforin-MinesSystem(MDEFM)-RFC" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">B </span>InstrumentResponse</span></a>
+<ul class="ltx_toclist ltx_toclist_appendix">
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="#A2.SS1" title="B.1 CableEffectonFrequencyResponse ‣ Appendix B InstrumentResponse ‣ μ SeismicDataExchangeFormatforin-MinesSystem(MDEFM)-RFC" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">B.1 </span>CableEffectonFrequencyResponse</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="#A2.SS2" title="B.2 IRISNRL ‣ Appendix B InstrumentResponse ‣ μ SeismicDataExchangeFormatforin-MinesSystem(MDEFM)-RFC" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">B.2 </span>IRISNRL</span></a></li>
+</ul>
+</li>
+<li class="ltx_tocentry ltx_tocentry_appendix">
+<a href="#A3" title="Appendix C CoordinateSystemImplementation ‣ μ SeismicDataExchangeFormatforin-MinesSystem(MDEFM)-RFC" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C </span>CoordinateSystemImplementation</span></a>
+<ul class="ltx_toclist ltx_toclist_appendix">
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="#A3.SS1" title="C.1 CoordinatesClass ‣ Appendix C CoordinateSystemImplementation ‣ μ SeismicDataExchangeFormatforin-MinesSystem(MDEFM)-RFC" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.1 </span><span class="ltx_text ltx_font_typewriter">Coordinates</span>Class</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="#A3.SS2" title="C.2 CoordinateTransformationClass ‣ Appendix C CoordinateSystemImplementation ‣ μ SeismicDataExchangeFormatforin-MinesSystem(MDEFM)-RFC" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.2 </span><span class="ltx_text ltx_font_typewriter">CoordinateTransformation</span>Class</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="#A3.SS3" title="C.3 CoordinateSystemEnumeration ‣ Appendix C CoordinateSystemImplementation ‣ μ SeismicDataExchangeFormatforin-MinesSystem(MDEFM)-RFC" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.3 </span><span class="ltx_text ltx_font_typewriter">CoordinateSystem</span>Enumeration</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+</section>
+<section id="S1" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">1 </span>Introduction</h2>
 
-<LINK REL="STYLESHEET" HREF="00_main.css">
+<section id="S1.SS1" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">1.1 </span>Purpose</h3>
 
-<LINK REL="next" HREF="node1.html">
-</HEAD>
+<div id="S1.SS1.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">ThisRFCaimstoinvitecommentsonasuggestedformattoallowforstandardizedandconsistentaccessto<math id="S1.SS1.p1.m1" class="ltx_Math" alttext="\upmu" display="inline"><mi mathvariant="normal">μ</mi></math>seismic datacollectedbymine<math id="S1.SS1.p1.m2" class="ltx_Math" alttext="\upmu" display="inline"><mi mathvariant="normal">μ</mi></math>seismic monitoringsystems.Theproposedconventionsandformatobjectiveistoenableaseamless,losslessandconvenientexchangebetweendifferentplatforms.Itconsidersfutureneedsfordevelopinghigh-performance,flexible,andaccurateartificialintelligencethatisenvisionedtousethefullrangeofavailableseismicdata.Notethattheobjectiveoftheproposedstandard<span class="ltx_text ltx_font_bold">doesnot</span>concernorprescribehowseismicdataare<span class="ltx_text ltx_font_bold">internallymanaged</span>withinproprietaryplatforms,althoughtheproposedimplementationisdesignedforhighperformanceandcomputationalefficiencyandwouldbesuitedforthatpurpose.Theproposedstandardappliestotriggeredeventsandcontinuousrecordingalikeandissuitedforefficientlystoringthehigh-density<span title="" class="ltx_glossaryref">distributed acoustic sensing (DAS)</span> data.Accesstothe<math id="S1.SS1.p1.m3" class="ltx_Math" alttext="\upmu" display="inline"><mi mathvariant="normal">μ</mi></math>seismic datacollectedbyin-minemonitoringsystemsiscurrentlyinconsistent.Variationsarisefromsitetositeandvendortovendorandareoftentailoredtothird-partyrequests.Suchinconsistenciesleadtoinefficiencies,makingdatausageunnecessarilychallengingandlimitingthepotentialof<math id="S1.SS1.p1.m4" class="ltx_Math" alttext="\upmu" display="inline"><mi mathvariant="normal">μ</mi></math>seismic data.Toensuremineshaveaccesstotechnologiesandapproachesleadingtooptimaloutcomespermittingthesafeandproductiveoperationofmines,allowingunrestrictedaccessto<math id="S1.SS1.p1.m5" class="ltx_Math" alttext="\upmu" display="inline"><mi mathvariant="normal">μ</mi></math>seismic datainastandardizedformatisamust.Thisdocumentproposesconventionsandaformatforthelosslessandseamlessexchangeof<math id="S1.SS1.p1.m6" class="ltx_Math" alttext="\upmu" display="inline"><mi mathvariant="normal">μ</mi></math>seismic data.Weseekalignmentfromdifferentstakeholders,including<math id="S1.SS1.p1.m7" class="ltx_Math" alttext="\upmu" display="inline"><mi mathvariant="normal">μ</mi></math>seismic systemandserviceproviders,end-clients,industrypractitioners,academicresearchers,andresearchinstitutions.</p>
+</div>
+</section>
+<section id="S1.SS2" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">1.2 </span>Scope</h3>
 
-<BODY >
+<div id="S1.SS2.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">ThestandardoutlinedinthisRFCseeksto:</p>
+<ul id="S1.I1" class="ltx_itemize">
+<li id="S1.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S1.I1.i1.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Definecomprehensivedataformatsandstructurefor<math id="S1.I1.i1.p1.m1" class="ltx_Math" alttext="\upmu" display="inline"><mi mathvariant="normal">μ</mi></math>seismic dataexchange,encapsulatingallnecessarydataelementsandfosteringthenormalizationofdataprocessingandanalysis.Theproposedframeworkisdesignedtoenhanceinteroperabilitybetweenvarioussitesandvendors,minimizingdiscrepanciesstemmingfromthelackofcommonreference.</p>
+</div>
+</li>
+<li id="S1.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S1.I1.i2.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Definemechanismstoextractpartialtopicalinformationconveniently(e.g.,astandardCSVrepresentationofcatalogdata).</p>
+</div>
+</li>
+<li id="S1.I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S1.I1.i3.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">proposeadaptationstothebaseformattocapturetheessenceofminingdata.</p>
+<ul id="S1.I1.i3.I1" class="ltx_itemize">
+<li id="S1.I1.i3.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">–</span></span> 
+<div id="S1.I1.i3.I1.i1.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">definingalistofacceptableeventtypesinmining.</p>
+</div>
+</li>
+<li id="S1.I1.i3.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">–</span></span> 
+<div id="S1.I1.i3.I1.i2.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">establishinganunequivocalandstandardizednamingconventionforthelogicalorganizationoftheseismicsystemcomponents.</p>
+</div>
+</li>
+<li id="S1.I1.i3.I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">–</span></span> 
+<div id="S1.I1.i3.I1.i3.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">prescribingadirectorystructureandfilenamingconvention.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</section>
+<section id="S1.SS3" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">1.3 </span>Objective</h3>
 
-<DIV CLASS="navigation"><!--Navigation Panel-->
-<A
- HREF="node1.html">
-<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
-<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up_g.png"> 
-<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev_g.png"> 
-<A ID="tex2html8"
-  HREF="node2.html">
-<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
-<BR>
-<B> Next:</B> <A
- HREF="node1.html">Executive Summary</A>
- &nbsp; <B>  <A ID="tex2html9"
-  HREF="node2.html">Contents</A></B> 
-<BR>
-<BR></DIV>
-<!--End of Navigation Panel-->
+<div id="S1.SS3.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">ThisRFCaimsto:</p>
+<ul id="S1.I2" class="ltx_itemize">
+<li id="S1.I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S1.I2.i1.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Fosterastandardizedrepresentationof<math id="S1.I2.i1.p1.m1" class="ltx_Math" alttext="\upmu" display="inline"><mi mathvariant="normal">μ</mi></math>seismic data,creatingauniversallyacceptedconventionandeliminatingfragmentedorinconsistentdatarepresentations.</p>
+</div>
+</li>
+<li id="S1.I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S1.I2.i2.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Facilitateanefficientmechanismforthestorage,dissemination,andaccessibilityof<math id="S1.I2.i2.p1.m1" class="ltx_Math" alttext="\upmu" display="inline"><mi mathvariant="normal">μ</mi></math>seismic data.Ensuringversatilityandcateringtodiverseapplicationsrangingfromreal-timeprocessingtolong-termdataanalysis.</p>
+</div>
+</li>
+<li id="S1.I2.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S1.I2.i3.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Promotecross-platformcompatibility,ensuringthedatacanbeseamlesslyprocessed,interpreted,andutilizedirrespectiveoftheplatform,tool,orsystem.</p>
+</div>
+</li>
+<li id="S1.I2.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S1.I2.i4.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Enhancedataintegrity,ensuringitremainsconsistent,accurate,andunalteredduringexchanges,makingitreliableforvariousanalyticalandoperationalpurposes.</p>
+</div>
+</li>
+</ul>
+</div>
+</section>
+<section id="S1.SS4" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">1.4 </span>Rationale</h3>
 
-<H1 class="CENTER"><SPAN CLASS="MATH"><IMG
- STYLE=""
- SRC="img1.svg"
- ALT="$\upmu$"></SPAN>Seismic Data Exchange Format for in-Mines System (MDEFM) - RFC</H1>
-<DIV CLASS="author_info">
+<section id="S1.SS4.SSS1" class="ltx_subsubsection">
+<h4 class="ltx_title ltx_title_subsubsection">
+<span class="ltx_tag ltx_tag_subsubsection">1.4.1 </span>NeedforaNewStandard</h4>
 
-<STRONG>Jean-Philippe Mercier</STRONG>
-<P>
-October 31, 2023</P>
-</DIV>
+<div id="S1.SS4.SSS1.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Theincreaseinmicroseismicdata,particularlyfromexpansivemonitoringsystemsandnewtechnologieslike<span title="" class="ltx_glossaryref">DAS</span>,underscoresthepressingneedforanefficientandunifieddataformat.Currently,thesysteminformation,catalogandwaveformdataareprovidedinaseriesoffilethatdoesnotallowsimplecross-referencing.Forinstance,onefilemayrefertoasensorwithalongname,whereasanotherusesanumericalID.ThelinkbetweenthenameandthenumericalIDisleftambiguous.Someotheressentialinformationsuchasthesensortypestoidentifywhetherthesensorisa<math id="S1.SS4.SSS1.p1.m1" class="ltx_Math" alttext="4.5\text{\,}\mathrm{Hz}" display="inline"><mrow><mn>4.5</mn><mtext> </mtext><mi class="ltx_unit">Hz</mi></mrow></math>or<math id="S1.SS4.SSS1.p1.m2" class="ltx_Math" alttext="15\text{\,}\mathrm{Hz}" display="inline"><mrow><mn>15</mn><mtext> </mtext><mi class="ltx_unit">Hz</mi></mrow></math>geophone,ahigh-frequencyaccelerometeroralow-frequency<span title="" class="ltx_glossaryref">force balance accelerometer (FBA)</span>.Thevariednatureofmicroseismicdataformatshindersstreamlinedintegrationandanalysis,posingchallengesinmanagingandderivingvalueindatasetscollectedbyin-minemonitoringsystems.Thelossyandincoherentnatureofcurrentdataexchangeformatshindersinnovationandmakestheutilizationof<math id="S1.SS4.SSS1.p1.m3" class="ltx_Math" alttext="\upmu" display="inline"><mi mathvariant="normal">μ</mi></math>seismic dataunnecessarilytricky.Giventhecriticalimportanceofmicroseismicdatainensuringsafetyandimprovingundergroundminingoperations,establishingastandardizedformatandmechanismofexchangebecomesimperative.Theproposedstandardobjectiveisfacilitatingmorestraightforwarddataaccess,efficientstorage,smootherdataexchangesacrossdifferentplatforms,andaccommodatingvariousdatatypes.</p>
+</div>
+</section>
+</section>
+</section>
+<section id="S2" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">2 </span>TerminologyandDefinitions</h2>
 
-<P>
+<div id="S2.p1" class="ltx_para ltx_noindent">
+<dl id="S2.I1" class="ltx_description">
+<dt id="S2.I1.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">Waveforms</span></span></dt>
+<dd class="ltx_item">
+<div id="S2.I1.ix1.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">–Atimeseriesrepresentationofseismicwaveamplitudesdetectedbysensorsinmicroseismicmonitoring.Originatingfromsubsurfaceeventslikerockfractures.</p>
+</div>
+</dd>
+<dt id="S2.I1.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">Catalog/SeismicBulletin</span></span></dt>
+<dd class="ltx_item">
+<div id="S2.I1.ix2.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">–Acuratedcollectionofdetectedandprocessedmicroseismicevents,systematicallylistingkeyparameterssuchaseventorigintime,location,magnitude,cornerfrequency,andenergy.Derivedfromwaveformanalysis,thecatalogservesasacomprehensiverecordofseismicity.</p>
+</div>
+</dd>
+<dt id="S2.I1.ix3" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">Inventory</span></span></dt>
+<dd class="ltx_item">
+<div id="S2.I1.ix3.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">–Astructuredrepositorydetailingthemetadataofseismicnetworks,stations,andtheirassociatedinstrumentation.Itencompassesstationlocation,operationaltimeperiods,instrumentresponse,andchannelconfigurations.</p>
+</div>
+</dd>
+<dt id="S2.I1.ix4" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">SEED</span></span></dt>
+<dd class="ltx_item">
+<div id="S2.I1.ix4.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">–Astandardizedformatforrepresentingandexchangingdigitalseismologicaldataencompassingwaveformrecordsandrelatedmetadata.EstablishedbytheFederationofDigitalSeismographicNetworks(FDSN),SEED(StandardfortheExchangeofEarthquakeData)iswidelyadoptedforitsabilitytoconsolidateseismicdataanditsassociatedstationandinstrumentinformationintoaunifiedstructure,ensuringconsistencyandinteroperabilityinseismologicalresearchandmonitoring.</p>
+</div>
+</dd>
+<dt id="S2.I1.ix5" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">MiniSEED</span></span></dt>
+<dd class="ltx_item">
+<div id="S2.I1.ix5.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">–AsubsetoftheSEEDformatspecificallydesignedfortheexchangeandstorageofseismicwaveformdata.WhilethebroaderSEEDstandardencompassesdataandcomprehensivemetadata,MiniSEEDfocusessolelyontimeseriesdata,makingitmorecompactandsuitableforefficientdatatransmissionandstorage.Despiteitssimplicity,MiniSEEDretainstheessentialheadersfordataidentificationandintegrity,ensuringitsapplicabilityindiverseseismologicalapplications.</p>
+</div>
+</dd>
+<dt id="S2.I1.ix6" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">QuakeML<cite class="ltx_cite ltx_citemacro_citep">(<span class="ltx_ref ltx_missing_citation ltx_ref_self">quakeml</span>)</cite></span></span></dt>
+<dd class="ltx_item">
+<div id="S2.I1.ix6.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">–AstandardizedXML-baseddataformatdevelopedforrepresentingandexchangingseismologicaldatarelatedtoearthquakes.Bycoveringeventparameterslikeorigins,magnitudes,andphasepicks,QuakeMLaimstofacilitateinteroperabilityandconsistencyinsharingandprocessingseismiceventinformationacrossvariousseismologicaltoolsandplatforms.Itsstructuredschemaensuresthatearthquake-relateddataaredescribedcomprehensivelyyetflexibly,cateringtodiverseseismologicalresearchandmonitoringneeds.</p>
+</div>
+</dd>
+<dt id="S2.I1.ix7" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">StationXML<cite class="ltx_cite ltx_citemacro_citep">(<span class="ltx_ref ltx_missing_citation ltx_ref_self">stationxml</span>)</cite></span></span></dt>
+<dd class="ltx_item">
+<div id="S2.I1.ix7.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">–AmodernXML-basedformatdesignedfortherepresentationandexchangeofmetadataassociatedwithseismicstations,networks,andassociatedinstruments.EvolvedasasuccessortotheSEEDformat’smetadatacomponent,StationXMLprovidesadetaileddescriptionofstationconfigurations,instrumentresponseinformation,andoperationaltimeperiods,amongotherattributes.Itsstructuredframeworkensuresacomprehensiveandconsistentportrayaloftheseismicdataacquisitionchain,promotingaccuratedatainterpretationandseamlessexchangeacrossseismologicalapplications.</p>
+</div>
+</dd>
+<dt id="S2.I1.ix8" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">HDF5(HierarchicalDataFormatversion5)</span></span></dt>
+<dd class="ltx_item">
+<div id="S2.I1.ix8.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">–Anadvanceddatamodel,library,andfileformatdesignedforstoringandorganizinglargevolumesofcomplexdata,includingarraysofnumbers,multidimensionaldatasets,andmetadata.<span title="" class="ltx_glossaryref">hierarchical data format version 5 (HDF5)</span> isoptimizedforhighperformanceandflexibility,allowingforefficientstorageandretrievalacrossdiverseplatformsandlanguages.Itshierarchicalstructuresupportsgroupingrelatedobjectsandtaggingwithrichmetadata,makingitawidelyadoptedchoiceforscientificcomputingapplicationswherecomplexdatasetsandtheirassociatedmetadataneedtobeintegrated.</p>
+</div>
+</dd>
+<dt id="S2.I1.ix9" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">ASDF(AdaptableSeismicDataFormat)</span></span></dt>
+<dd class="ltx_item">
+<div id="S2.I1.ix9.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">–Amoderndataformatexplicitlydesignedforseismologicaldataandrelatedmetadata.Buildingonthe<span title="" class="ltx_glossaryref">HDF5</span> infrastructure,<span title="" class="ltx_glossaryref">adaptable seismic data format (ASDF)</span> istailoredforefficiency,scalability,andadaptabilityinbothstorageandprocessingofseismicdata.Itfacilitatestheintegrationofrawwaveforms,processeddataproducts,eventparameters,andstationmetadatawithinasinglefilestructure.Theformat’sadaptabilityandhierarchicalstructureensureconsistentandoptimizedhandlingofdiverseseismicdatasets,makingitavaluablechoiceforadvancedseismologicalresearchandapplications.</p>
+</div>
+</dd>
+<dt id="S2.I1.ix10" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">Sensor</span></span></dt>
+<dd class="ltx_item">
+<div id="S2.I1.ix10.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">–Adevicespecificallydesignedtodetectormeasureaphysicalpropertyandconvertthisinputintoanelectricalsignal.Asensor(e.g.,geophoneelement)isresponsiblefordirectlydetectingseismicwavesandtransducingthemintovoltagevariationsbasedonitssensitivity.Example:a<math id="S2.I1.ix10.p1.m1" class="ltx_Math" alttext="4.5\text{\,}\mathrm{Hz}" display="inline"><mrow><mn>4.5</mn><mtext> </mtext><mi class="ltx_unit">Hz</mi></mrow></math>geophone</p>
+</div>
+</dd>
+<dt id="S2.I1.ix11" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">Instrument</span></span></dt>
+<dd class="ltx_item">
+<div id="S2.I1.ix11.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">–Acomprehensivesetupencompassingoneormultiplesensorsandassociatedcomponents,includingcasings,andinternalelectronicsifapplicable.Inmicroseismicmonitoring,aninstrumentreferstotheentirearrangementemployedforseismicdetection.Itsresponsecombinesthecharacteristicsoftheindividualsensors.Example:atri-axialdualelementgeophone.</p>
+</div>
+</dd>
+</dl>
+</div>
+</section>
+<section id="S3" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">3 </span>GeneralFormatConsiderations</h2>
 
-<BR><HR>
-<!--Table of Child-Links-->
-<A ID="CHILD_LINKS"></A>
+<section id="S3.SS1" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">3.1 </span>GeneralFormatConsiderations</h3>
 
-<UL CLASS="ChildLinks">
-<LI><A ID="tex2html10"
-  HREF="node1.html">Executive Summary</A>
-<LI><A ID="tex2html11"
-  HREF="node2.html">Contents</A>
-<LI><A ID="tex2html12"
-  HREF="node3.html">Introduction</A>
-<UL>
-<LI><A ID="tex2html13"
-  HREF="node4.html">Purpose</A>
-<LI><A ID="tex2html14"
-  HREF="node5.html">Scope</A>
-<LI><A ID="tex2html15"
-  HREF="node6.html">Objective</A>
-<LI><A ID="tex2html16"
-  HREF="node7.html">Rationale</A>
-<UL>
-<LI><A ID="tex2html17"
-  HREF="node8.html">Need for a New Standard</A>
-</UL>
-</UL>
-<BR>
-<LI><A ID="tex2html18"
-  HREF="node9.html">Terminology and Definitions</A>
-<LI><A ID="tex2html19"
-  HREF="node10.html">General Format Considerations</A>
-<UL>
-<LI><A ID="tex2html20"
-  HREF="node11.html">General Format Considerations</A>
-</UL>
-<BR>
-<LI><A ID="tex2html21"
-  HREF="node12.html">Essential Data Exchange Content</A>
-<UL>
-<LI><A ID="tex2html22"
-  HREF="node13.html">overview</A>
-</UL>
-<BR>
-<LI><A ID="tex2html23"
-  HREF="node14.html">Seismic System Information Categories</A>
-<UL>
-<LI><A ID="tex2html24"
-  HREF="node15.html">Waveforms</A>
-<LI><A ID="tex2html25"
-  HREF="node16.html">Catalog</A>
-<LI><A ID="tex2html26"
-  HREF="node17.html">Inventory</A>
-<LI><A ID="tex2html27"
-  HREF="node18.html">Velocity Grids</A>
-</UL>
-<BR>
-<LI><A ID="tex2html28"
-  HREF="node19.html">Data Format for Seismic Data</A>
-<UL>
-<LI><A ID="tex2html29"
-  HREF="node20.html">Overview</A>
-<LI><A ID="tex2html30"
-  HREF="node21.html">QuakeML</A>
-<UL>
-<LI><A ID="tex2html31"
-  HREF="node22.html">Modifications</A>
-<UL>
-<LI><A ID="tex2html32"
-  HREF="node23.html">Parameter Validation</A>
-</UL>
-</UL>
-<LI><A ID="tex2html33"
-  HREF="node24.html">Waveforms and StationXML</A>
-<UL>
-<LI><A ID="tex2html34"
-  HREF="node25.html">Modifications</A>
-<UL>
-<LI><A ID="tex2html35"
-  HREF="node26.html">Parameter Validation</A>
-</UL>
-<LI><A ID="tex2html36"
-  HREF="node27.html">Stream Naming Convention</A>
-<LI><A ID="tex2html37"
-  HREF="node28.html">Waveform Representation and Response Correction</A>
-</UL>
-<LI><A ID="tex2html38"
-  HREF="node29.html">Auxiliary Data</A>
-<UL>
-<LI><A ID="tex2html39"
-  HREF="node30.html">Overview</A>
-<LI><A ID="tex2html40"
-  HREF="node31.html">Rays</A>
-</UL>
-</UL>
-<BR>
-<LI><A ID="tex2html41"
-  HREF="node32.html">Data Format for Grids</A>
-<UL>
-<LI><A ID="tex2html42"
-  HREF="node33.html">overview</A>
-<UL>
-<LI><A ID="tex2html43"
-  HREF="node34.html">General Format</A>
-</UL>
-<LI><A ID="tex2html44"
-  HREF="node35.html">Global Grids</A>
-</UL>
-<BR>
-<LI><A ID="tex2html45"
-  HREF="node36.html">References</A>
-<LI><A ID="tex2html46"
-  HREF="node37.html">References</A>
-<LI><A ID="tex2html47"
-  HREF="node38.html">Source Parameter Definitions</A>
-<LI><A ID="tex2html48"
-  HREF="node39.html">Instrument Response</A>
-<UL>
-<LI><A ID="tex2html49"
-  HREF="node40.html">Cable Effect on Frequency Response</A>
-<LI><A ID="tex2html50"
-  HREF="node41.html">IRIS NRL</A>
-</UL>
-<BR>
-<LI><A ID="tex2html51"
-  HREF="node42.html">Coordinate System Implementation</A>
-<UL>
-<LI><A ID="tex2html52"
-  HREF="node43.html"><SPAN  CLASS="texttt">Coordinates</SPAN> Class</A>
-<LI><A ID="tex2html53"
-  HREF="node44.html"><SPAN  CLASS="texttt">CoordinateTransformation</SPAN> Class</A>
-<LI><A ID="tex2html54"
-  HREF="node45.html"><SPAN  CLASS="texttt">CoordinateSystem</SPAN> Enumeration</A>
-</UL>
-<BR>
-<LI><A ID="tex2html55"
-  HREF="node46.html">About this document ...</A>
-</UL>
-<!--End of Table of Child-Links-->
-<BR><HR>
+<div id="S3.SS1.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Thissectiondelvesintotheoverarchingdesignprinciplesandfoundationalelementsunderpinningtheproposedformat,ensuringadherencetotheobjectivesofseamless,lossless,andconvenientdatainterchangeacrossplatforms.</p>
+<ol id="S3.I1" class="ltx_enumerate">
+<li id="S3.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span> 
+<div id="S3.I1.i1.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">DataIntegrityandConsistency</span>:Detailsonmechanisms,potentiallyincludingchecksums,versioning,orothermeasures,toensuredataremainsunalteredandconsistentduringtransfers.</p>
+</div>
+</li>
+<li id="S3.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span> 
+<div id="S3.I1.i2.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">PlatformIndependence</span>:Insightsintohowtheformatmaintainsneutralitytospecificproprietaryplatforms,endorsingcross-platformcompatibility.</p>
+</div>
+</li>
+<li id="S3.I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span> 
+<div id="S3.I1.i3.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">ScalabilityandFlexibility</span>:Addressingtheformat’sabilitytomanagebothsmallandexpansivedatasets,e.g.,high-density<span title="" class="ltx_glossaryref">DAS</span> data.</p>
+</div>
+</li>
+<li id="S3.I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">4.</span> 
+<div id="S3.I1.i4.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Usability</span>:Featuresenhancingtheuser-friendlinessoftheformat,whichmayencompassaspectslikereadability,annotations,ormetadata.</p>
+</div>
+</li>
+<li id="S3.I1.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">5.</span> 
+<div id="S3.I1.i5.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Efficiency</span>:Discussionaroundcomputationalconsiderations,ensuringbothdatastorageandexchangeremainefficient.</p>
+</div>
+</li>
+<li id="S3.I1.i6" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">6.</span> 
+<div id="S3.I1.i6.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Extensibility</span>:Considerationsontheformat’sdesign,allowingittoevolveandaccommodatefuturetechnologicalshiftsordataneeds.</p>
+</div>
+</li>
+<li id="S3.I1.i7" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">7.</span> 
+<div id="S3.I1.i7.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">StandardizedReferences</span>:Incorporatingstandardizednamingconventions,directorystructures,andfilenamingconventions.</p>
+</div>
+</li>
+<li id="S3.I1.i8" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">8.</span> 
+<div id="S3.I1.i8.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">InteroperabilitywithExistingFormats</span>:Examinationoftheformat’srelationshiporinteractionwithprevailingdataformatsinthedomain.</p>
+</div>
+</li>
+</ol>
+</div>
+</section>
+</section>
+<section id="S4" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">4 </span>EssentialDataExchangeContent</h2>
 
-</BODY>
-</HTML>
+<section id="S4.SS1" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">4.1 </span>overview</h3>
+
+<div id="S4.SS1.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Theintendedapplicationdirectlygovernsthespecificityofdatarequirements.Whencatalogdatameetsqualitystandardsanditsclassification,location,andsourceparametersarereliable,itmaysufficeforcertainapplications.However,formoredemandingorcomplextasks,rawwaveformsandaccompanyingmetadatabecomeessential.Solerelianceoncatalogdatainsuchinstancesoftenleadstoill-posedproblemscharacterizedbyinsufficientmodelspaceorthogonalityandambiguoussolutions.Tofullyleveragewaveformdata,accesstoinventoryorsystemmetadataisimperativeforinstrumentlocalizationandsensorcharacterization.Forcompleteness,onecouldalsobenefitfromaccesstoseismicvelocities,especiallywhen3Dmodelsareused.</p>
+</div>
+</section>
+</section>
+<section id="S5" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">5 </span>SeismicSystemInformationCategories</h2>
+
+<div id="S5.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Seismicsysteminformationcanbepartitionedintofourmaincategories:</p>
+<dl id="S5.I1" class="ltx_description">
+<dt id="S5.I1.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">Catalog</span></span></dt>
+<dd class="ltx_item">
+<div id="S5.I1.ix1.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Catalogdataincludesprocessedattributesrelatedtoseismicevents:time,location,magnitude,amplitude(<span title="" class="ltx_glossaryref">peak particle velocity (PPV)</span>,<span title="" class="ltx_glossaryref">peak particle acceleration (PPA)</span>),classification,<span class="ltx_text ltx_font_italic">P</span>-and<span class="ltx_text ltx_font_italic">S</span>-wavepicks,andmomenttensor/focalmechanismdata.</p>
+</div>
+</dd>
+<dt id="S5.I1.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">Inventory</span></span></dt>
+<dd class="ltx_item">
+<div id="S5.I1.ix2.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Detailstheseismicnetwork,stations,andsensorconfigurations.Thisincludessensorlocation,type,response,andorientations.Inventorydatashouldfacilitatenecessarydatamanipulationforanalysis.</p>
+</div>
+</dd>
+<dt id="S5.I1.ix3" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">Waveform</span></span></dt>
+<dd class="ltx_item">
+<div id="S5.I1.ix3.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Raworevent-triggeredtime-seriesdatarecordedbytheinstruments,foundationalforallseismicanalyses.</p>
+</div>
+</dd>
+<dt id="S5.I1.ix4" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">Velocities/TravelTimeGrids</span></span></dt>
+<dd class="ltx_item">
+<div id="S5.I1.ix4.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Requiredforlocation,magnitudecalculation,andmomenttensorinversion.Allowsforraytracingandwavefieldrotationtoisolate<span class="ltx_text ltx_font_italic">P</span>-and<span class="ltx_text ltx_font_italic">S</span>-waves.</p>
+</div>
+</dd>
+</dl>
+<p class="ltx_p">Informationinthesecategoriesmustbeinternallycoherent,enablingstraightforwardcross-referencingandunderstandingofdataprovenanceandrelationships.</p>
+</div>
+<section id="S5.SS1" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">5.1 </span>Waveforms</h3>
+
+<div id="S5.SS1.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Waveformsshouldinclude:</p>
+<ul id="S5.I2" class="ltx_itemize">
+<li id="S5.I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S5.I2.i1.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">InstrumentandchannelID</p>
+</div>
+</li>
+<li id="S5.I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S5.I2.i2.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Samplingrateorinterval</p>
+</div>
+</li>
+<li id="S5.I2.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S5.I2.i3.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Starttime</p>
+</div>
+</li>
+<li id="S5.I2.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S5.I2.i4.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Amplitude,inADCcountsorphysicalunits</p>
+</div>
+</li>
+</ul>
+</div>
+</section>
+<section id="S5.SS2" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">5.2 </span>Catalog</h3>
+
+<div id="S5.SS2.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Catalogdataisbifurcatedinto:</p>
+<dl id="S5.I3" class="ltx_description">
+<dt id="S5.I3.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">Event-related</span></span></dt>
+<dd class="ltx_item">
+<div id="S5.I3.ix1.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Minimumrequirements:</p>
+<ul id="S5.I3.ix1.I1" class="ltx_itemize">
+<li id="S5.I3.ix1.I0.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">•</span></span> 
+<div id="S5.I3.ix1.I0.i1.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Time(localandUTC)</p>
+</div>
+</li>
+<li id="S5.I3.ix1.I0.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">•</span></span> 
+<div id="S5.I3.ix1.I0.i2.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Location</p>
+</div>
+</li>
+<li id="S5.I3.ix1.I0.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">•</span></span> 
+<div id="S5.I3.ix1.I0.i3.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Classification</p>
+</div>
+</li>
+<li id="S5.I3.ix1.I0.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">•</span></span> 
+<div id="S5.I3.ix1.I0.i4.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Magnitude,alongwithseismicmoment<math id="S5.I3.ix1.I0.i4.p1.m1" class="ltx_Math" alttext="M_0" display="inline"><mrow><mi>M</mi><mo>⁢</mo><mi mathvariant="normal">_</mi><mo>⁢</mo><mn>0</mn></mrow></math>andcornerfrequency<math id="S5.I3.ix1.I0.i4.p1.m2" class="ltx_Math" alttext="f_c" display="inline"><mrow><mi>f</mi><mo>⁢</mo><mi mathvariant="normal">_</mi><mo>⁢</mo><mi>c</mi></mrow></math>formomentmagnitude</p>
+</div>
+</li>
+<li id="S5.I3.ix1.I0.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">•</span></span> 
+<div id="S5.I3.ix1.I0.i5.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Radiatedenergyfor<span class="ltx_text ltx_font_italic">P</span>-and<span class="ltx_text ltx_font_italic">S</span>-waves</p>
+</div>
+</li>
+<li id="S5.I3.ix1.I0.i6" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">•</span></span> 
+<div id="S5.I3.ix1.I0.i6.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Momenttensorsolutionifavailable</p>
+</div>
+</li>
+</ul>
+</div>
+</dd>
+<dt id="S5.I3.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">Waveform-related</span></span></dt>
+<dd class="ltx_item">
+<div id="S5.I3.ix2.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Derivedfromwaveformdata:</p>
+<ul id="S5.I3.ix2.I1" class="ltx_itemize">
+<li id="S5.I3.ix2.I0.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">•</span></span> 
+<div id="S5.I3.ix2.I0.i1.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Picks:<span class="ltx_text ltx_font_italic">P</span>-and<span class="ltx_text ltx_font_italic">S</span>-waveonsettimes</p>
+</div>
+</li>
+<li id="S5.I3.ix2.I0.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">•</span></span> 
+<div id="S5.I3.ix2.I0.i2.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Amplitude:Information,evaluationmode,andstatus</p>
+</div>
+</li>
+</ul>
+</div>
+</dd>
+</dl>
+</div>
+</section>
+<section id="S5.SS3" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">5.3 </span>Inventory</h3>
+
+<div id="S5.SS3.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Minimuminventoryrequirements:</p>
+<ul id="S5.I4" class="ltx_itemize">
+<li id="S5.I4.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S5.I4.i1.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">InstrumentID</p>
+</div>
+</li>
+<li id="S5.I4.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S5.I4.i2.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Location</p>
+</div>
+</li>
+<li id="S5.I4.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S5.I4.i3.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Channelorientations</p>
+</div>
+</li>
+<li id="S5.I4.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S5.I4.i4.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Instrumentresponse,perchannel</p>
+</div>
+</li>
+</ul>
+</div>
+</section>
+<section id="S5.SS4" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">5.4 </span>VelocityGrids</h3>
+
+<div id="S5.SS4.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Afunctionalvelocitygridshouldcomprise:</p>
+<ul id="S5.I5" class="ltx_itemize">
+<li id="S5.I5.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S5.I5.i1.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Origin</p>
+</div>
+</li>
+<li id="S5.I5.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S5.I5.i2.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Spacingbetweengridnodes</p>
+</div>
+</li>
+<li id="S5.I5.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S5.I5.i3.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Dimensions:Numberofgridpointsineachaxis</p>
+</div>
+</li>
+<li id="S5.I5.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S5.I5.i4.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Data:Gridvalues</p>
+</div>
+</li>
+<li id="S5.I5.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S5.I5.i5.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Units(<math id="S5.I5.i5.p1.m1" class="ltx_Math" alttext="\mathrm{m}" display="inline"><mi class="ltx_unit" mathvariant="normal">m</mi></math>or<math id="S5.I5.i5.p1.m2" class="ltx_Math" alttext="\mathrm{ft}" display="inline"><mi class="ltx_unit">ft</mi></math>)</p>
+</div>
+</li>
+</ul>
+</div>
+</section>
+</section>
+<section id="S6" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">6 </span>DataFormatforSeismicData</h2>
+
+<section id="S6.SS1" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">6.1 </span>Overview</h3>
+
+<div id="S6.SS1.p1" class="ltx_para">
+<p class="ltx_p">Therecommendedseismicdatastandardforadoptionisthe<span title="" class="ltx_glossaryref">adaptable seismic data format</span> (<span title="" class="ltx_glossaryref">ASDF</span>)<cite class="ltx_cite ltx_citemacro_citep">(<span class="ltx_ref ltx_missing_citation ltx_ref_self">krischer2016asdf</span>)</cite>.Designedwithmodernchallengesinmind,the<span title="" class="ltx_glossaryref">ASDF</span> formatefficientlyaddressesthecomplexitiesinherenttolargeanddetailedseismicdatasets.ByemployingtheHDF5containerformat,<span title="" class="ltx_glossaryref">ASDF</span> isself-descriptive,ensuringdatacanbeaccessedandmanipulatedwitheaseacrossvariousseismologicalapplications.Itsoverarchingobjectiveistosimplifytheorganizationandexchangeofseismicdata,emphasizinginteroperability,scalability,andthereductionofinconsistenciesbyamalgamatingmultipleseismicdatacomponentswithinasingularstructure.The<span title="" class="ltx_glossaryref">ASDF</span> formatissuitablefortrigger,continuousand<span title="" class="ltx_glossaryref">DAS</span> datatonameonlythose.Figure <a href="#S6.F1" title="Figure 1 ‣ 6.1 Overview ‣ 6 DataFormatforSeismicData ‣ μ SeismicDataExchangeFormatforin-MinesSystem(MDEFM)-RFC" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1</span></a>depictsthestructureofthe<span title="" class="ltx_glossaryref">ASDF</span> format.Nestedwithinthe<span title="" class="ltx_glossaryref">hierarchical data format version 5</span> (<span title="" class="ltx_glossaryref">HDF5</span>)container,<span title="" class="ltx_glossaryref">ASDF</span> systematicallyorganizesseismologicalcomponents,including:</p>
+<dl id="S6.I1" class="ltx_description">
+<dt id="S6.I1.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">uakeML</span></span></dt>
+<dd class="ltx_item">
+<div id="S6.I1.ix1.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">AnXML-basedlanguage,QuakeMLfocusesoneventmetadata,catalogingseismiceventdescriptionssuchaseventorigins,magnitudes,andmomenttensorsolutions.</p>
+</div>
+</dd>
+<dt id="S6.I1.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">WaveformData</span></span></dt>
+<dd class="ltx_item">
+<div id="S6.I1.ix2.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Theheartofthe<span title="" class="ltx_glossaryref">ASDF</span>,thissectioncontainstimeseriesrepresentationsofseismicwaveforms.Inthe<span title="" class="ltx_glossaryref">ASDF</span> format,waveformdataareexclusivelyrepresentedusingsingleanddouble-precisionfloatingpointvalues,orsignedintegers.TheserepresentationsareencapsulatedasnativedataarrayswithintheHDF5framework.</p>
+</div>
+</dd>
+<dt id="S6.I1.ix3" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">StationXML</span></span></dt>
+<dd class="ltx_item">
+<div id="S6.I1.ix3.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">:Servingasarepositoryforstationmetadata,thissectioncontainsdetailedinstrumentinformation,includingtheirresponses,stationcoordinates,andotherspecificattributes.Thismetadataprovidesvitalcontexttothewaveforms.Inthe<span title="" class="ltx_glossaryref">ASDF</span> format,thisinventoryinformationisappendeddirectlytothewaveformsatthestationlevel.</p>
+</div>
+</dd>
+<dt id="S6.I1.ix4" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">AuxiliaryData</span></span></dt>
+<dd class="ltx_item">
+<div id="S6.I1.ix4.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">:Cateringtothediverseneedsofseismologicalanalyses,thissectionallowsthestorageofadditionaldatatypes,suchascross-correlationsorsyntheticseismograms.</p>
+</div>
+</dd>
+<dt id="S6.I1.ix5" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">ProvenanceData</span></span></dt>
+<dd class="ltx_item">
+<div id="S6.I1.ix5.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">:Inthepursuitofrigoroustransparencyandreproducibility,thissegmentmeticulouslydocumentsthehistoricalprogressionofdataalterations,enumeratingeachdistinctprocessingoperationalongwithitsrespectiveparameters.TheprovenancedocumentationadherestotheW3CPROVmodel<cite class="ltx_cite ltx_citemacro_citep">(<span class="ltx_ref ltx_missing_citation ltx_ref_self">w3cprov2013</span>)</cite>,awidelyacceptedstandardforchroniclingprovenancespecifics.</p>
+</div>
+</dd>
+</dl>
+</div>
+<figure id="S6.F1" class="ltx_figure"><img src="x1.jpeg" id="S6.F1.g1" class="ltx_graphics ltx_centering" width="541" height="408" alt=" datastructureoverviewfrom">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 1: </span><span title="" class="ltx_glossaryref">ASDF</span> datastructureoverviewfrom<cite class="ltx_cite ltx_citemacro_citet"><span class="ltx_ref ltx_missing_citation ltx_ref_self">krischer2016asdf</span></cite></figcaption>
+</figure>
+<div id="S6.SS1.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">Throughitscomprehensiveintegrationofthesecomponents,<span title="" class="ltx_glossaryref">ASDF</span> pavesthewayforastandardized,efficient,andin-depthapproachtoseismologicalresearchanddatamanagement.Whilethe<span title="" class="ltx_glossaryref">ASDF</span> formatprovidesarobustframeworkforgeneralseismicdatahandling,specificadaptationsareimperativetoaddresstheuniquerequirementsof<math id="S6.SS1.p2.m1" class="ltx_Math" alttext="\upmu" display="inline"><mi mathvariant="normal">μ</mi></math>seismic monitoringwithinminingenvironments.Notably,theinherentgeographicalcoordinatesystemutilizedin<span title="" class="ltx_glossaryref">ASDF</span>,basedonlatitudeandlongitude,necessitatestransformationtoaCartesiancoordinatesystem(x,y,z)torepresentin-minelocationsaccurately.Theseconversionsareessentialforprecisedatarepresentationandeffectiveintegrationwithotherminingsystems.Theproposedchangesarenotfundamentallyalteringthe<span title="" class="ltx_glossaryref">ASDF</span> standard.Instead,theyleveragetheinherentflexibilityandexpandabilityoftheQuakeMLandStationXMLformats,ensuringthattheadaptedschemaremainsconsistentwiththebroaderseismologicalcommunity’spractices.<span class="ltx_ERROR undefined">{mdframed}</span>[backgroundcolor=gray!20]<span class="ltx_text ltx_font_bold">NoteonCoordinateSystems:</span>UtilizingaCartesiancoordinatesystem(x,y,z)introducesinherentambiguities.Notably,theorientationofthexandyaxescouldaligneitherwiththeNorthandEastdirectionsorbereversed.Additionally,thedirectionofthez-axiscouldbeeitherupwardsordownwards.Tomitigatetheseambiguities,werecommendimposingconstraintsonthealignmentofthex,y,andzaxestoensurethecoordinatesystemisright-handedandalignedwithgeographicalaxes.Specifically,weadvocatetheuseof<span title="" class="ltx_glossaryref">east north up (ENU)</span> and<span title="" class="ltx_glossaryref">north east down (NED)</span> coordinatesystems.<math id="S6.SS1.p2.m2" class="ltx_Math" alttext="\upmu" display="inline"><mi mathvariant="normal">μ</mi></math>Quake version2.0introducesthe<span class="ltx_text ltx_font_typewriter">Coordinates</span>ClassandimplementsthemanagementoftheCartesiancoordinatesystemintherelevantObspyobjects,allowingtheintegrationoftheinformationintheQuakeMLandStationXMLformat(seeAppendix <a href="#A3" title="Appendix C CoordinateSystemImplementation ‣ μ SeismicDataExchangeFormatforin-MinesSystem(MDEFM)-RFC" class="ltx_ref"><span class="ltx_text ltx_ref_tag">C</span></a>).Thehandlingisdonebyconvertingthe<span class="ltx_text ltx_font_typewriter">Coordinate</span>objecttoJSONandwritingtheJSONstringasanobjectextraparameters.TheextraparametersarethenpersistedtotheQuakeMLorStationXMLbycreatinganewnamespaceinsidetheQuakeMLorStationXMLfile.</p>
+<pre class="ltx_verbatim ltx_font_typewriter"> 
+&lt;?xml version=’1.0’ encoding=’utf-8’?&gt;
+    &lt;q:quakeml xmlns:mq="https://microquake.ai/xml/event/1"
+    xmlns="http://quakeml.org/xmlns/bed/1.2"
+    xmlns:q="http://quakeml.org/xmlns/quakeml/1.2"&gt;
+</pre>
+<p class="ltx_p">Notethatthemodificationsdiscussedinthefollowingsections,particularlyconcerningQuakeMLandStationXMLformats,havebeenoperationalizedinthe<math id="S6.SS1.p2.m3" class="ltx_Math" alttext="\upmu" display="inline"><mi mathvariant="normal">μ</mi></math>Quake library.ThislibraryextendstheObspypackageandistailoredtothespecificneedsof<math id="S6.SS1.p2.m4" class="ltx_Math" alttext="\upmu" display="inline"><mi mathvariant="normal">μ</mi></math>seismic monitoringwithintheminingcontexts.Codeexamplesdetailingthesecustomizationsin<math id="S6.SS1.p2.m5" class="ltx_Math" alttext="\upmu" display="inline"><mi mathvariant="normal">μ</mi></math>Quake willbeprovidedlaterinthedocument,demonstratinghowtheseadaptationscanbeseamlesslyintegratedintoexistingdatamanipulationworkflows.ThemostsignificantdeviationfromtheObspyobjectdefinitionconcernsthe</p>
+</div>
+</section>
+<section id="S6.SS2" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">6.2 </span>QuakeML</h3>
+
+<section id="S6.SS2.SSS1" class="ltx_subsubsection">
+<h4 class="ltx_title ltx_title_subsubsection">
+<span class="ltx_tag ltx_tag_subsubsection">6.2.1 </span>Modifications</h4>
+
+<figure id="S6.T1" class="ltx_table">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_table">Table 1: </span>SummaryofModifications</figcaption>
+<table class="ltx_tabular ltx_centering ltx_guessed_headers ltx_align_middle">
+<thead class="ltx_thead">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_column ltx_border_t"><span class="ltx_text ltx_font_bold">Object</span></th>
+<th class="ltx_td ltx_align_left ltx_th ltx_th_column ltx_border_t"><span class="ltx_text ltx_font_bold">NewParameter</span></th>
+<th class="ltx_td ltx_align_left ltx_th ltx_th_column ltx_border_t"><span class="ltx_text ltx_font_bold">Description</span></th>
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column ltx_border_t"><span class="ltx_text ltx_font_bold">Type</span></th>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_column ltx_border_t">Origin</th>
+<th class="ltx_td ltx_align_left ltx_th ltx_th_column ltx_border_t">Coordinates</th>
+<th class="ltx_td ltx_align_left ltx_th ltx_th_column ltx_border_t">Coordinatesinformation</th>
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column ltx_border_t">Coordinates<span id="footnote1" class="ltx_note ltx_role_footnote"><sup class="ltx_note_mark">1</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">1</sup>
+                      <span class="ltx_tag ltx_tag_note">1</span>
+                      
+                      
+                      
+                    CoordinateclassdescribedintheAppendix <a href="#A3" title="Appendix C CoordinateSystemImplementation ‣ μ SeismicDataExchangeFormatforin-MinesSystem(MDEFM)-RFC" class="ltx_ref"><span class="ltx_text ltx_ref_tag">C</span></a></span></span></span>
+</th>
+</tr>
+</thead>
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_t" rowspan="3">Magnitude</td>
+<td class="ltx_td ltx_align_left ltx_border_t"><math id="S6.T1.m1" class="ltx_Math" alttext="f_0" display="inline"><mrow><mi>f</mi><mo>⁢</mo><mi mathvariant="normal">_</mi><mo>⁢</mo><mn>0</mn></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_border_t">Cornerfrequency</td>
+<td class="ltx_td ltx_align_right ltx_border_t">float</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left"><math id="S6.T1.m2" class="ltx_Math" alttext="E_p" display="inline"><mrow><mi>E</mi><mo>⁢</mo><mi mathvariant="normal">_</mi><mo>⁢</mo><mi>p</mi></mrow></math></td>
+<td class="ltx_td ltx_align_left">
+<math id="S6.T1.m3" class="ltx_Math" alttext="P" display="inline"><mi>P</mi></math>-waveenergy</td>
+<td class="ltx_td ltx_align_right">float</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_b"><math id="S6.T1.m4" class="ltx_Math" alttext="E_s" display="inline"><mrow><mi>E</mi><mo>⁢</mo><mi mathvariant="normal">_</mi><mo>⁢</mo><mi>s</mi></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_border_b">
+<math id="S6.T1.m5" class="ltx_Math" alttext="S" display="inline"><mi>S</mi></math>-waveenergy</td>
+<td class="ltx_td ltx_align_right ltx_border_b">float</td>
+</tr>
+</tbody>
+</table>
+</figure>
+<div id="S6.SS2.SSS1.p1" class="ltx_para">
+<p class="ltx_p">WeproposestraightforwardmodificationstotheQuakeMLformattobettersuit<math id="S6.SS2.SSS1.p1.m1" class="ltx_Math" alttext="\upmu" display="inline"><mi mathvariant="normal">μ</mi></math>seismic applications.ThefirstconcernstheexpressionofcoordinatesusingtheCartesiansystempreviouslydescribedinsteadofthelongitude,latitude,anddepth/elevation.Thesecondpertainstoexpandingthemagnitudedefinitiontoincludethecornerfrequencyandthe<span class="ltx_text ltx_font_italic">P</span>-and<span class="ltx_text ltx_font_italic">S</span>-wavevelocities.Thethirdinvolvestheoverridingofeventtypes.Insteadofthestandardsphericalcoordinatesystemthatreliesonlatitudeandlongitudeforlocationspecification,weadvocateforaCartesiancoordinatesystem.Specifically,werecommendemptyingthetraditionalfieldsforlatitude,longitude,elevation,anddepth.Asasubstitute,weproposeaddingadescriptionoftheCoordinatesasanewfield.Thecoordinatedescriptionobjectisimplementedin<math id="S6.SS2.SSS1.p1.m2" class="ltx_Math" alttext="\upmu" display="inline"><mi mathvariant="normal">μ</mi></math>Quake fromversion2.0.Inthecurrentimplementation,theinformationisstoredasaJSONstringintheextraparametersoftheOriginobject.TheextraparametersarethenstoredinaspecificnamespaceinsidetheQuakeMLfile.Thecoordinateobjectincludesthex,y,andzcoordinate,adescriptionofthecoordinatesystem(either<span title="" class="ltx_glossaryref">ENU</span> or<span title="" class="ltx_glossaryref">NED</span>),andelementstoallowforconvertingthecoordinatesbetweenmultiplerepresentationsincludinglatitude,longitudeiftherequiredinformationisprovided.WeproposeanenhancementtothemagnitudedefinitioninQuakeMLtorepresentseismicsourcepropertiesbetter.Theexistingschemafallsshortincapturingkeyparameterssuchasthecornerfrequency(<math id="S6.SS2.SSS1.p1.m3" class="ltx_Math" alttext="f_0" display="inline"><mrow><mi>f</mi><mo>⁢</mo><mi mathvariant="normal">_</mi><mo>⁢</mo><mn>0</mn></mrow></math>),andthe<span class="ltx_text ltx_font_italic">P</span>-and<span class="ltx_text ltx_font_italic">S</span>-waveenergies(<math id="S6.SS2.SSS1.p1.m4" class="ltx_Math" alttext="E_p" display="inline"><mrow><mi>E</mi><mo>⁢</mo><mi mathvariant="normal">_</mi><mo>⁢</mo><mi>p</mi></mrow></math>and<math id="S6.SS2.SSS1.p1.m5" class="ltx_Math" alttext="E_s" display="inline"><mrow><mi>E</mi><mo>⁢</mo><mi mathvariant="normal">_</mi><mo>⁢</mo><mi>s</mi></mrow></math>,respectively).Similartoourapproachforcoordinatesystemmodification,wesuggestincluding<math id="S6.SS2.SSS1.p1.m6" class="ltx_Math" alttext="f_0" display="inline"><mrow><mi>f</mi><mo>⁢</mo><mi mathvariant="normal">_</mi><mo>⁢</mo><mn>0</mn></mrow></math>,<math id="S6.SS2.SSS1.p1.m7" class="ltx_Math" alttext="E_p" display="inline"><mrow><mi>E</mi><mo>⁢</mo><mi mathvariant="normal">_</mi><mo>⁢</mo><mi>p</mi></mrow></math>,and<math id="S6.SS2.SSS1.p1.m8" class="ltx_Math" alttext="E_s" display="inline"><mrow><mi>E</mi><mo>⁢</mo><mi mathvariant="normal">_</mi><mo>⁢</mo><mi>s</mi></mrow></math>asextraparametersoftheMagnitudeobject.Thisenablestheon-the-flycalculationofothersourceparametersusingtheseismicmoment(<math id="S6.SS2.SSS1.p1.m9" class="ltx_Math" alttext="M_0" display="inline"><mrow><mi>M</mi><mo>⁢</mo><mi mathvariant="normal">_</mi><mo>⁢</mo><mn>0</mn></mrow></math>),cornerfrequency,andwaveenergies.RelationshipsamongthesesourceparametersareelaboratedinAppendix <a href="#A1" title="Appendix A SourceParameterDefinitions ‣ μ SeismicDataExchangeFormatforin-MinesSystem(MDEFM)-RFC" class="ltx_ref"><span class="ltx_text ltx_ref_tag">A</span></a>.Transitioningtoeventclassifications,theQuakeMLschemahasapredefinedsetofseismiceventtypesthatdonotfullyaccommodatethespecializedneedsof<math id="S6.SS2.SSS1.p1.m10" class="ltx_Math" alttext="\upmu" display="inline"><mi mathvariant="normal">μ</mi></math>seismic monitoring.Weproposemappingexistingeventtypestonew,mining-specificdescriptorsanddirectlyincludingagenericlook-uptableinthecodeforon-the-flytranslation.Whileeffortsweremadetocreatelogicalmappings,limitationsintheexistingeventtypesposedchallengesinfindingintuitivecounterparts.Table <a href="#S6.T2" title="Table 2 ‣ 6.2.1 Modifications ‣ 6.2 QuakeML ‣ 6 DataFormatforSeismicData ‣ μ SeismicDataExchangeFormatforin-MinesSystem(MDEFM)-RFC" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2</span></a>presentsthismappingbetweenstandardand<math id="S6.SS2.SSS1.p1.m11" class="ltx_Math" alttext="\upmu" display="inline"><mi mathvariant="normal">μ</mi></math>seismic eventtypes.</p>
+</div>
+<figure id="S6.T2" class="ltx_table">
+<figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_table">Table 2: </span>Mappingbetweenstandardand<math id="S6.T2.m1" class="ltx_Math" alttext="\upmu" display="inline"><mi mathvariant="normal">μ</mi></math>seismic eventtypes.</figcaption>
+<table class="ltx_tabular">
+<thead class="ltx_thead">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_column ltx_border_t">EventType(mining)</th>
+<th class="ltx_td ltx_align_left ltx_th ltx_th_column ltx_border_t">EventType(QuakeML)</th>
+</tr>
+</thead>
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_t">earthquake/largeevent</td>
+<td class="ltx_td ltx_align_left ltx_border_t">earthquake</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left">seismicevent</td>
+<td class="ltx_td ltx_align_left">inducedortriggeredevent</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left">offsiteevent</td>
+<td class="ltx_td ltx_align_left">atmosphericevent</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left">rockburst</td>
+<td class="ltx_td ltx_align_left">rockburst</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left">fallofground/rockfall</td>
+<td class="ltx_td ltx_align_left">cavitycollapse</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left">blast</td>
+<td class="ltx_td ltx_align_left">explosion</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left">blastsequence</td>
+<td class="ltx_td ltx_align_left">accidentalexplosion</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left">developmentblast</td>
+<td class="ltx_td ltx_align_left">industrialexplosion</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left">productionblast</td>
+<td class="ltx_td ltx_align_left">miningexplosion</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left">farawayblast/openpitblast</td>
+<td class="ltx_td ltx_align_left">quarryblast</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left">offsiteblast</td>
+<td class="ltx_td ltx_align_left">nuclearexplosion</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left">pastefiring</td>
+<td class="ltx_td ltx_align_left">chemicalexplosion</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left">calibrationblast</td>
+<td class="ltx_td ltx_align_left">controlledexplosion</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left">otherblast/slashing</td>
+<td class="ltx_td ltx_align_left">experimentalexplosion</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left">mid-shiftblast/slashblast</td>
+<td class="ltx_td ltx_align_left">industrialexplosion</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left">raisebore</td>
+<td class="ltx_td ltx_align_left">hydroacousticevent</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left">crushernoise</td>
+<td class="ltx_td ltx_align_left">roadcut</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left">orepassnoise</td>
+<td class="ltx_td ltx_align_left">collapse</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left">drillingnoise</td>
+<td class="ltx_td ltx_align_left">acousticnoise</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left">electricalnoise</td>
+<td class="ltx_td ltx_align_left">thunder</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left">scalingnoise</td>
+<td class="ltx_td ltx_align_left">anthropogenicevent</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left">mechanicalnoise</td>
+<td class="ltx_td ltx_align_left">crash</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left">testpulse</td>
+<td class="ltx_td ltx_align_left">sonicboom</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left">unidentifiednoise/othernoise</td>
+<td class="ltx_td ltx_align_left">otherevent</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left">duplicate</td>
+<td class="ltx_td ltx_align_left">boatcrash</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left">unknown</td>
+<td class="ltx_td ltx_align_left">planecrash</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_b">taptest/test</td>
+<td class="ltx_td ltx_align_left ltx_border_b">avalanche</td>
+</tr>
+</tbody>
+</table>
+</figure>
+<section id="S6.SS2.SSS1.Px1" class="ltx_paragraph">
+<h5 class="ltx_title ltx_title_paragraph">ParameterValidation</h5>
+
+<div id="S6.SS2.SSS1.Px1.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Thevalidationforthenewlyintroducedparametersisperformedwithinthe<math id="S6.SS2.SSS1.Px1.p1.m1" class="ltx_Math" alttext="\upmu" display="inline"><mi mathvariant="normal">μ</mi></math>Quake library.Forstandardparameters,validationishandledbytheObspypackage.Thisensuresacohesiveframeworkforbothstandardandspecializedseismicdatatypes.</p>
+</div>
+</section>
+</section>
+</section>
+<section id="S6.SS3" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">6.3 </span>WaveformsandStationXML</h3>
+
+<section id="S6.SS3.SSS1" class="ltx_subsubsection">
+<h4 class="ltx_title ltx_title_subsubsection">
+<span class="ltx_tag ltx_tag_subsubsection">6.3.1 </span>Modifications</h4>
+
+<figure id="S6.T3" class="ltx_table">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_table">Table 3: </span>SummaryModifications</figcaption>
+<table class="ltx_tabular ltx_centering ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_t"><span class="ltx_text ltx_font_bold">Object</span></td>
+<td class="ltx_td ltx_align_left ltx_border_t"><span class="ltx_text ltx_font_bold">NewParameter</span></td>
+<td class="ltx_td ltx_align_left ltx_border_t"><span class="ltx_text ltx_font_bold">Description</span></td>
+<td class="ltx_td ltx_align_right ltx_border_t"><span class="ltx_text ltx_font_bold">Type</span></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_t">Network</td>
+<td class="ltx_td ltx_align_left ltx_border_t">TimeZone</td>
+<td class="ltx_td ltx_align_left ltx_border_t">IANATimeZoneortimeoffset</td>
+<td class="ltx_td ltx_align_right ltx_border_t">string</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_t" rowspan="3">Station</td>
+<td class="ltx_td ltx_align_left ltx_border_t">x</td>
+<td class="ltx_td ltx_align_left ltx_border_t">x-coordinate</td>
+<td class="ltx_td ltx_align_right ltx_border_t">float</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left">y</td>
+<td class="ltx_td ltx_align_left">y-coordinate</td>
+<td class="ltx_td ltx_align_right">float</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left">z</td>
+<td class="ltx_td ltx_align_left">z-coordinate</td>
+<td class="ltx_td ltx_align_right">float</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_t" rowspan="5">Channel</td>
+<td class="ltx_td ltx_align_left ltx_border_t">x</td>
+<td class="ltx_td ltx_align_left ltx_border_t">x-coordinate</td>
+<td class="ltx_td ltx_align_right ltx_border_t">float</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left">y</td>
+<td class="ltx_td ltx_align_left">y-coordinate</td>
+<td class="ltx_td ltx_align_right">float</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left">z</td>
+<td class="ltx_td ltx_align_left">z-coordinate</td>
+<td class="ltx_td ltx_align_right">float</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left">oriented</td>
+<td class="ltx_td ltx_align_left">Trueiforientationisknown</td>
+<td class="ltx_td ltx_align_right">boolean</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_b">active</td>
+<td class="ltx_td ltx_align_left ltx_border_b">Trueifthechannelisactive</td>
+<td class="ltx_td ltx_align_right ltx_border_b">boolean</td>
+</tr>
+</tbody>
+</table>
+</figure>
+<div id="S6.SS3.SSS1.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">InamanneranalogoustoourQuakeMLmodifications,weadapttheStationXMLformattomeetthespecificneedsofthe<math id="S6.SS3.SSS1.p1.m1" class="ltx_Math" alttext="\upmu" display="inline"><mi mathvariant="normal">μ</mi></math>seismic context.Thechangesaffectthe<span class="ltx_text ltx_font_typewriter">Network</span>,<span class="ltx_text ltx_font_typewriter">Station</span>,and<span class="ltx_text ltx_font_typewriter">Channel</span>definitions.Supportforalocalcoordinatesystemisaddedtothe<span class="ltx_text ltx_font_typewriter">Station</span>and<span class="ltx_text ltx_font_typewriter">Channel</span>definitions,andtwonewparametersareintroducedinthe<span class="ltx_text ltx_font_typewriter">Channel</span>definitiontoindicateorientationandcurrentactivitystatus.Themutable’active’flagallowsforthetemporaryexclusionofacomponentduetotimingissuesorothertransientproblems.Thesechanges,includesupportofthe<span class="ltx_text ltx_font_typewriter">Coordinates</span>objectinthe<span class="ltx_text ltx_font_typewriter">Station</span>and<span class="ltx_text ltx_font_typewriter">Channel</span>objects,andthestorageofthe<span class="ltx_text ltx_font_typewriter">Coordinates</span>asJSONstringasextraparameters.TimezoneinformationisaddedtotheNetworkdefinitiontofacilitateconversionbetweenlocalandUTCtime.TheprovidedtimezonemusteitherrepresentanoffsetfromCoordinatedUniversalTime(UTC)orcorrespondtoavalidentryinthe<a href="https://www.iana.org/time-zones" title="" class="ltx_ref ltx_href">IANAtimezonedatabase</a>.The<math id="S6.SS3.SSS1.p1.m2" class="ltx_Math" alttext="\upmu" display="inline"><mi mathvariant="normal">μ</mi></math>Quake libraryensuresseamlessintegrationofthesemodificationsandreplicatesObspy’sdefaultbehaviorregardinglocationdata.Italsoallowstheextractionofpredefinedvaluesfromtheextraparameterssectionastypicalobjectproperties.Thewaveformformatdoesnotrequireanyalteration.</p>
+</div>
+<section id="S6.SS3.SSS1.Px1" class="ltx_paragraph">
+<h5 class="ltx_title ltx_title_paragraph">ParameterValidation</h5>
+
+<div id="S6.SS3.SSS1.Px1.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">AsfortheQuakeML,thevalidationforthenewlyintroducedparametersisperformedwithinthe<math id="S6.SS3.SSS1.Px1.p1.m1" class="ltx_Math" alttext="\upmu" display="inline"><mi mathvariant="normal">μ</mi></math>Quake library.Forstandardparameters,validationishandledbytheObspypackage.Thisensuresacohesiveframeworkforbothstandardandspecializedseismicdatatypes.</p>
+</div>
+</section>
+</section>
+<section id="S6.SS3.SSS2" class="ltx_subsubsection">
+<h4 class="ltx_title ltx_title_subsubsection">
+<span class="ltx_tag ltx_tag_subsubsection">6.3.2 </span>StreamNamingConvention</h4>
+
+<div id="S6.SS3.SSS2.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">The<span title="" class="ltx_glossaryref">ASDF</span> fileformatcombineswaveformsandinventorydata.Toensureflawlessintegration,wemustadoptarobustandstandardized”stream”namingconventiontoensureunambiguousassociationbetweenwaveformsandinventory.<span title="" class="ltx_glossaryref">ASDF</span> adoptsarelaxedversionofthe<span title="" class="ltx_glossaryref">standard for the exchange of earthquake data (SEED)</span> IdentifierConvention,previouslypartofQuakeMLandStationXMLstandardsandnowextendedtothewaveformdata.TheStationXMLdoesnotrestrictthestringlength;QuakeMLdoes.Wethereforesuggestadoptingtheconventionpresentedinsection3.3.5oftheQuakeMLVersion1.2(revision20130214b)(see<a href="https://quake.ethz.ch/quakeml/docs/latest?action=AttachFile&amp;do=get&amp;target=QuakeML-BED.pdf" title="" class="ltx_ref ltx_href">QuakeMLReferenceManual</a>).Thisconventionprovidesastandardizedapproachtouniquelyidentifyseismicdatastreamsbyanchoringthemtotheirsourcenetwork,station,location,andchannel,ensuringclarityandconsistencyindataidentificationandhandlingacrossvariousseismicdatasystems.TheQuakeMLnamingconventioncomprisesfourdistinctpartsthatare:</p>
+<dl id="S6.I2" class="ltx_description">
+<dt id="S6.I2.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">Network</span></span></dt>
+<dd class="ltx_item">
+<div id="S6.I2.ix1.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Representsacollectionofstationsgroupedbyaspecificmonitoringobjectiveordesignedtotargetadistinctareawithinamine.Thisgroupingmaynotnecessarilyreflectphysicalproximitybutisoftenorganizedbasedonmonitoringneedsoroperationalconsiderations.</p>
+</div>
+</dd>
+<dt id="S6.I2.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">Station</span></span></dt>
+<dd class="ltx_item">
+<div id="S6.I2.ix2.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Withinagivennetwork,thetermstationdenotesacoordinatedsetofinstruments,oftenclusteredtogetherbasedontheirmonitoringfunctionorspatialconsiderations.Forexample,astationcancompriseasetofinstrumentsinstalledinasingleboreholeordeployedfromthesamelocationinboreholesofdifferentorientations.</p>
+</div>
+</dd>
+<dt id="S6.I2.ix3" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">Location</span></span></dt>
+<dd class="ltx_item">
+<div id="S6.I2.ix3.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Specifiesanindividualinstrumentwithinastation,allowingdifferentiationwhenmultipleinstrumentsexistatthesamestation.Forexample,eachinstrumentwouldrefertoalocationinaboreholewheremultipleinstrumentsareinstalled.</p>
+</div>
+</dd>
+<dt id="S6.I2.ix4" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">Channel</span></span></dt>
+<dd class="ltx_item">
+<div id="S6.I2.ix4.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Detailsthespecificrecordingcomponentorthetypeofmeasurementundertakenbytheinstrumentatthegivenlocation.</p>
+</div>
+</dd>
+</dl>
+<p class="ltx_p">Auniquestreamnameisobtainedbyconcatenatingthosepartstogetherasfollows:</p>
+<p class="ltx_p ltx_align_center"><span class="ltx_text ltx_font_typewriter">NETWORK.STATION.LOCATION.CHANNEL</span></p>
+</div>
+</section>
+<section id="S6.SS3.SSS3" class="ltx_subsubsection">
+<h4 class="ltx_title ltx_title_subsubsection">
+<span class="ltx_tag ltx_tag_subsubsection">6.3.3 </span>WaveformRepresentationandResponseCorrection</h4>
+
+<div id="S6.SS3.SSS3.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">TheWaveformdatain<math id="S6.SS3.SSS3.p1.m1" class="ltx_Math" alttext="\upmu" display="inline"><mi mathvariant="normal">μ</mi></math>seismic canbestoredaseitherintegersrepresentingADCcountsorasphysicalunitssuchas<math id="S6.SS3.SSS3.p1.m2" class="ltx_Math" alttext="\mathrm{m}" display="inline"><mi class="ltx_unit" mathvariant="normal">m</mi></math>,<math id="S6.SS3.SSS3.p1.m3" class="ltx_Math" alttext="\mathrm{m}\text{\,}{\mathrm{s}}^{-1}" display="inline"><mrow><mi class="ltx_unit" mathvariant="normal">m</mi><mtext> </mtext><msup><mi class="ltx_unit" mathvariant="normal">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow></math>,and<math id="S6.SS3.SSS3.p1.m4" class="ltx_Math" alttext="\mathrm{m}\text{\,}{\mathrm{s}}^{-2}" display="inline"><mrow><mi class="ltx_unit" mathvariant="normal">m</mi><mtext> </mtext><msup><mi class="ltx_unit" mathvariant="normal">s</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup></mrow></math>using32-bitsingle-precisionfloats.Anessentialaspectofdataintegrityandinterpretationisthecorrectionoftheinstrument’sresponseembeddedintheStationXML.The<math id="S6.SS3.SSS3.p1.m5" class="ltx_Math" alttext="\upmu" display="inline"><mi mathvariant="normal">μ</mi></math>Quake library,throughObspy,providesfunctionalitiesforbothresponsecorrectionandunittransformation,allowingthewaveformstobeaccuratelyexpressedintermsofacceleration,velocity,ordisplacement.Detailedguidelinesforconstructingtheinstrument’sresponseandexamplesforcorrectionarediscussedinAppendix <a href="#A2" title="Appendix B InstrumentResponse ‣ μ SeismicDataExchangeFormatforin-MinesSystem(MDEFM)-RFC" class="ltx_ref"><span class="ltx_text ltx_ref_tag">B</span></a>.</p>
+</div>
+</section>
+</section>
+<section id="S6.SS4" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">6.4 </span>AuxiliaryData</h3>
+
+<section id="S6.SS4.SSS1" class="ltx_subsubsection">
+<h4 class="ltx_title ltx_title_subsubsection">
+<span class="ltx_tag ltx_tag_subsubsection">6.4.1 </span>Overview</h4>
+
+<div id="S6.SS4.SSS1.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Thedesignofthe<span title="" class="ltx_glossaryref">ASDF</span> formatincorporatesprovisionsforextensibility,enablingtheinclusionofauxiliarydatabeyondthepredefinedschemaforcatalogs,inventoryinformation,andwaveformdata.Giventhedynamicandvariednatureofseismologicalresearch,andthespecificityofthedifferentfieldswhereseismologyapplies,including<math id="S6.SS4.SSS1.p1.m1" class="ltx_Math" alttext="\upmu" display="inline"><mi mathvariant="normal">μ</mi></math>seismic monitoringinmines,itisneitherpossiblenorpracticallyfeasibletocreatearigidschemathataccommodatesallpotentialusecases.While<span title="" class="ltx_glossaryref">ASDF</span> prescribesastructuredformatforfundamentalseismicdatatypeslikecatalogs,inventory,andwaveforms,itconcurrentlyprovidesflexiblecontainers,whichstructureisyettobedefined.Thesecontainerscapturethebroadandevolvingrangeofapplicationsinseismology,bothcurrentandfuture,therebyensuringtheformat’sutilityandrelevanceovertime.Auxiliarydatain<span title="" class="ltx_glossaryref">ASDF</span> isintentionallylooselydefined,allowingforabroadrangeofdatatypesbeyondseismicwaveforms.Eachpieceofauxiliarydataisallocatedwithinanarbitrarilynestedpathintheauxiliarydatagroup.Thedatacantakeonanydimensionalform,accompaniedbyaflexiblekey-valuerepresentationformetadata.Thisflexibilityisnotaccidentalbutratherdesignedtocatertotherapidlyevolvingneedsandactiveresearchinvariousareasofseismology.Asofversion2.0,<math id="S6.SS4.SSS1.p1.m2" class="ltx_Math" alttext="\upmu" display="inline"><mi mathvariant="normal">μ</mi></math>Quake offerssupportforthe<span title="" class="ltx_glossaryref">ASDF</span> format,althoughithasyettoexploittheformat’sfullcapabilities.Todate,<math id="S6.SS4.SSS1.p1.m3" class="ltx_Math" alttext="\upmu" display="inline"><mi mathvariant="normal">μ</mi></math>Quake hasimplementedmethodstostoretwotypesofauxiliarydatathatenhancethesystemperformance:raysandalternativeeventlocationsobtainedthroughresamplingmethodsusedforstatisticaluncertaintyestimation,includingMonteCarloandjackknifetechniques.Theseinclusionsobviatetheneedforrepeated,computationallyintensiveoperationsbysavingresultsforfutureuse.Lookingahead,weanticipatethatcommunity-drivenconventionsforstoringothertypesofdatawillemerge,furtherleveragingtheextensibilityofthe<span title="" class="ltx_glossaryref">ASDF</span> formatforstandardizedandcomprehensivedatastorage.</p>
+</div>
+</section>
+<section id="S6.SS4.SSS2" class="ltx_subsubsection">
+<h4 class="ltx_title ltx_title_subsubsection">
+<span class="ltx_tag ltx_tag_subsubsection">6.4.2 </span>Rays</h4>
+
+<div id="S6.SS4.SSS2.p1" class="ltx_para">
+<p class="ltx_p">Raysandtheirderivativeinformationserveaskeyinputsinmicroseismicmonitoringanalyses,suchasmagnitudecalculationand<span title="" class="ltx_glossaryref">seismic moment tensor inversion (SMTI)</span> evaluation.Calculatingtheseraysontheflyposescomputationalchallenges.Withoutprecomputedrays,analysesoftenresorttothestraight-rayassumptionorrequireresource-intensiverecalculations.Microseismicmonitoringsystemsrarelykeeporsaverayinformationduetothelackofcontainersorstructuresforpreservingit.Thishinderstheabilitytoeasilyreproduceresults,especiallywhenvelocitymodelsandtravel-timegridsarenotreadilyaccessible.Storingraysinthe<span title="" class="ltx_glossaryref">ASDF</span> filewithin<math id="S6.SS4.SSS2.p1.m1" class="ltx_Math" alttext="\upmu" display="inline"><mi mathvariant="normal">μ</mi></math>Quake streamlinescomputationalprocessesbyobviatingrepetitive,costlyraytracingandbyprovidingmorecompleteinformationdownstream.</p>
+</div>
+<figure id="S6.T4" class="ltx_table">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_table">Table 4: </span>RayObjectDataStructure</figcaption>
+<table class="ltx_tabular ltx_centering ltx_guessed_headers ltx_align_middle">
+<thead class="ltx_thead">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_column ltx_border_l ltx_border_r ltx_border_t"><span class="ltx_text ltx_font_bold">Object</span></th>
+<th class="ltx_td ltx_align_left ltx_th ltx_th_column ltx_border_r ltx_border_t"><span class="ltx_text ltx_font_bold">Parameter</span></th>
+<th class="ltx_td ltx_align_justify ltx_th ltx_th_column ltx_border_r ltx_border_t" style="width:170.7pt;"><span class="ltx_text ltx_font_bold ltx_align_top">Description</span></th>
+<th class="ltx_td ltx_align_left ltx_th ltx_th_column ltx_border_r ltx_border_t"><span class="ltx_text ltx_font_bold">Type</span></th>
+</tr>
+</thead>
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l ltx_border_r ltx_border_t" rowspan="4">WaveformStreamID</td>
+<td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">site<span class="ltx_ERROR undefined">\_code</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_border_r ltx_border_t" style="width:170.7pt;">
+<p class="ltx_p ltx_align_top">Sitecodeofthereceiverstation</p>
+</td>
+<td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">str</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_r">event<span class="ltx_ERROR undefined">\_id</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_border_r" style="width:170.7pt;">
+<p class="ltx_p ltx_align_top">ResourceIdentifierfortheseismicevent</p>
+</td>
+<td class="ltx_td ltx_align_left ltx_border_r">ResourceIdentifier</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_r">origin<span class="ltx_ERROR undefined">\_id</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_border_r" style="width:170.7pt;">
+<p class="ltx_p ltx_align_top">ResourceIdentifierfortheorigin</p>
+</td>
+<td class="ltx_td ltx_align_left ltx_border_r">ResourceIdentifier</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_r">arrival<span class="ltx_ERROR undefined">\_id</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_border_r" style="width:170.7pt;">
+<p class="ltx_p ltx_align_top">ResourceIdentifierforthearrival</p>
+</td>
+<td class="ltx_td ltx_align_left ltx_border_r">ResourceIdentifier</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l ltx_border_r ltx_border_t">Raytrace</td>
+<td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">nodes</td>
+<td class="ltx_td ltx_align_justify ltx_border_r ltx_border_t" style="width:170.7pt;">
+<p class="ltx_p ltx_align_top">Listof3Dcoordinatesdefiningtheraypath</p>
+</td>
+<td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">np.array</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l ltx_border_r ltx_border_t">Rayparameters</td>
+<td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">phase</td>
+<td class="ltx_td ltx_align_justify ltx_border_r ltx_border_t" style="width:170.7pt;">
+<p class="ltx_p ltx_align_top">Seismicphase(PorS)</p>
+</td>
+<td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">str</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_border_l ltx_border_r"></td>
+<td class="ltx_td ltx_align_left ltx_border_r">azimuth</td>
+<td class="ltx_td ltx_align_justify ltx_border_r" style="width:170.7pt;">
+<p class="ltx_p ltx_align_top">Azimuthangleindegrees</p>
+</td>
+<td class="ltx_td ltx_align_left ltx_border_r">float</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_border_l ltx_border_r"></td>
+<td class="ltx_td ltx_align_left ltx_border_r">takeoff<span class="ltx_ERROR undefined">\_angle</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_border_r" style="width:170.7pt;">
+<p class="ltx_p ltx_align_top">Takeoffangleindegrees</p>
+</td>
+<td class="ltx_td ltx_align_left ltx_border_r">float</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_border_l ltx_border_r"></td>
+<td class="ltx_td ltx_align_left ltx_border_r">travel<span class="ltx_ERROR undefined">\_time</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_border_r" style="width:170.7pt;">
+<p class="ltx_p ltx_align_top">Traveltimeinseconds</p>
+</td>
+<td class="ltx_td ltx_align_left ltx_border_r">float</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_l ltx_border_r ltx_border_t">Metadata</td>
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_r ltx_border_t">earth<span class="ltx_ERROR undefined">\_model</span><span class="ltx_ERROR undefined">\_id</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_border_b ltx_border_r ltx_border_t" style="width:170.7pt;">
+<p class="ltx_p ltx_align_top">ResourceIdentifierfortheEarthvelocitymodel</p>
+</td>
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_r ltx_border_t">ResourceIdentifier</td>
+</tr>
+</tbody>
+</table>
+</figure>
+</section>
+</section>
+</section>
+<section id="S7" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">7 </span>DataFormatforGrids</h2>
+
+<section id="S7.SS1" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">7.1 </span>overview</h3>
+
+<div id="S7.SS1.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">TheHDF5formatisaflexible,high-performancedatastorageformatdesignedforcomplex,largedatasets.Inthecontextofstoringgridinformation,HDF5offersahierarchicalfilestructuresimilartoafilesystem,facilitatingtheorganizationofdataintogroupsanddatasets.Thisstructureallowsforefficientandintuitivestorageofmultidimensionalgriddata,alongwithassociatedmetadata,inasingle,portablefile.Wesuggestdefiningtwotypesofgrids:</p>
+<dl id="S7.I1" class="ltx_description">
+<dt id="S7.I1.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">Global</span></span></dt>
+<dd class="ltx_item">
+<div id="S7.I1.ix1.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Gridsthatapplytotheentirenetworklikethe<span class="ltx_text ltx_font_italic">P</span>-and<span class="ltx_text ltx_font_italic">S</span>-wavevelocitiesgrids</p>
+</div>
+</dd>
+<dt id="S7.I1.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">InstrumentSpecific</span></span></dt>
+<dd class="ltx_item">
+<div id="S7.I1.ix2.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Gridsthatapplytoaspecificinstrument,likethetraveltimeandanglegrids</p>
+</div>
+</dd>
+</dl>
+<p class="ltx_p">Forthepurposeofmicroseismicmonitoring,wesuggestorganizingtheinformationbystoringallsimilarelementsinasinglefile.Forexample,wewouldstoreallthevelocitymodelsinonefile,allthetraveltimegridsinanotherandtheanglegridsinyetanother.Inthiscontext,wesuggestlimitingthescopeofthegridstoragetotwotypesofstructuredgrids:regularorrectilineargrids.</p>
+<dl id="S7.I2" class="ltx_description">
+<dt id="S7.I2.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">RegularGrid</span></span></dt>
+<dd class="ltx_item">
+<div id="S7.I2.ix1.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Agridinwhichthespacingbetweenthepointsisconstantineachdimension.In3D,thiswouldresembleacubiclattice.</p>
+</div>
+</dd>
+<dt id="S7.I2.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">RectilinearGrid</span></span></dt>
+<dd class="ltx_item">
+<div id="S7.I2.ix2.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Agridinwhichthespacingbetweenthepointscanvaryalongeachaxisbutremainsorthogonal.In3D,thiswouldlooklikeadeformedcubiclatticewherethedeformationsareaxis-aligned.</p>
+</div>
+</dd>
+</dl>
+<p class="ltx_p">Notethattheregulargridisaspecialcaseofarectilineargridwherethespacingisthesamealongeachaxis.</p>
+</div>
+<section id="S7.SS1.SSS1" class="ltx_subsubsection">
+<h4 class="ltx_title ltx_title_subsubsection">
+<span class="ltx_tag ltx_tag_subsubsection">7.1.1 </span>GeneralFormat</h4>
+
+<div id="S7.SS1.SSS1.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Thegriddatastructure,whetherglobalorinstrument-specific,containscommonelementsthatdefineitsgeometryandfacilitateitsinterpretation.Astraightforwardyeteffectivedescriptioncanbeachievedusingtheorigin,spacing,anddimensionsofthegrid.</p>
+<dl id="S7.I3" class="ltx_description">
+<dt id="S7.I3.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">Origin</span></span></dt>
+<dd class="ltx_item">
+<div id="S7.I3.ix1.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Theoriginreferstothecoordinatepointinthegridwherethespatialindicesare(0,0,0).Itactsasthereferencepointforothergridpointsandisspecifiedinthecoordinatesystemused(e.g.,<span title="" class="ltx_glossaryref">ENU</span> or<span title="" class="ltx_glossaryref">NED</span>).</p>
+</div>
+</dd>
+<dt id="S7.I3.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">Spacing</span></span></dt>
+<dd class="ltx_item">
+<div id="S7.I3.ix2.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Thespacingdescribesthedistancebetweenadjacentgridpointsalongeachaxis(x,y,z).Itdictatestheresolutionofthegrid.Inregulargrids,thespacingisconstant,whileinrectilineargrids,itcanvaryalongeachaxis.Thespacingisgenerallyprovidedinunitsconsistentwiththechosencoordinatesystem.</p>
+</div>
+</dd>
+<dt id="S7.I3.ix3" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">Dimensions</span></span></dt>
+<dd class="ltx_item">
+<div id="S7.I3.ix3.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Thedimensionsspecifythetotalnumberofgridpointsalongeachaxis(x,y,z),therebydeterminingtheoverallsizeandshapeofthegrid.</p>
+</div>
+</dd>
+</dl>
+</div>
+</section>
+</section>
+<section id="S7.SS2" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">7.2 </span>GlobalGrids</h3>
+
+<div id="S7.SS2.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">TotakeadvantageofthehierarchicalnatureoftheHDF5fileformat,wesuggeststoringtheglobalgrids,whichincludesthevelocitygrids,
+<span class="ltx_tabular ltx_align_middle">
+<span class="ltx_tbody">
+<span class="ltx_tr">
+<span class="ltx_td ltx_align_left ltx_border_l ltx_border_r ltx_border_t"><span class="ltx_text ltx_font_bold">Field</span></span>
+<span class="ltx_td ltx_align_left ltx_border_r ltx_border_t"><span class="ltx_text ltx_font_bold">Sub-Field</span></span>
+<span class="ltx_td ltx_align_left ltx_border_r ltx_border_t"><span class="ltx_text ltx_font_bold">DataType</span></span></span>
+<span class="ltx_tr">
+<span class="ltx_td ltx_align_left ltx_border_l ltx_border_r ltx_border_t">Metadata</span>
+<span class="ltx_td ltx_align_left ltx_border_r ltx_border_t">CoordinateSystem</span>
+<span class="ltx_td ltx_align_left ltx_border_r ltx_border_t">Attribute:ENUorNED</span></span>
+<span class="ltx_tr">
+<span class="ltx_td ltx_border_l ltx_border_r"></span>
+<span class="ltx_td ltx_align_left ltx_border_r">GridType</span>
+<span class="ltx_td ltx_align_left ltx_border_r">
+<span class="ltx_tabular ltx_align_middle">
+<span class="ltx_tr">
+<span class="ltx_td ltx_align_left">Attribute:</span></span>
+<span class="ltx_tr">
+<span class="ltx_td ltx_align_left">VELOCITY,</span></span>
+<span class="ltx_tr">
+<span class="ltx_td ltx_align_left">SLOWNESS,</span></span>
+<span class="ltx_tr">
+<span class="ltx_td ltx_align_left">ACCELERATION,</span></span>
+<span class="ltx_tr">
+<span class="ltx_td ltx_align_left">TIME,</span></span>
+<span class="ltx_tr">
+<span class="ltx_td ltx_align_left">TAKEOFF<span class="ltx_ERROR undefined">\_ANGLE</span>,</span></span>
+<span class="ltx_tr">
+<span class="ltx_td ltx_align_left">AZIMUTH<span class="ltx_ERROR undefined">\_ANGLE</span></span></span>
+</span></span></span>
+<span class="ltx_tr">
+<span class="ltx_td ltx_border_l ltx_border_r"></span>
+<span class="ltx_td ltx_align_left ltx_border_r">Phase</span>
+<span class="ltx_td ltx_align_left ltx_border_r">Attribute:PorS</span></span>
+<span class="ltx_tr">
+<span class="ltx_td ltx_align_left ltx_border_l ltx_border_r ltx_border_t">GridDefinition</span>
+<span class="ltx_td ltx_align_left ltx_border_r ltx_border_t">Origin</span>
+<span class="ltx_td ltx_border_r ltx_border_t"></span></span>
+<span class="ltx_tr">
+<span class="ltx_td ltx_border_l ltx_border_r"></span>
+<span class="ltx_td ltx_align_left ltx_border_r">X</span>
+<span class="ltx_td ltx_align_left ltx_border_r">Attribute:double</span></span>
+<span class="ltx_tr">
+<span class="ltx_td ltx_border_l ltx_border_r"></span>
+<span class="ltx_td ltx_align_left ltx_border_r">Y</span>
+<span class="ltx_td ltx_align_left ltx_border_r">Attribute:double</span></span>
+<span class="ltx_tr">
+<span class="ltx_td ltx_border_l ltx_border_r"></span>
+<span class="ltx_td ltx_align_left ltx_border_r">Z</span>
+<span class="ltx_td ltx_align_left ltx_border_r">Attribute:double</span></span>
+<span class="ltx_tr">
+<span class="ltx_td ltx_border_l ltx_border_r"></span>
+<span class="ltx_td ltx_align_left ltx_border_r">Spacing</span>
+<span class="ltx_td ltx_border_r"></span></span>
+<span class="ltx_tr">
+<span class="ltx_td ltx_border_l ltx_border_r"></span>
+<span class="ltx_td ltx_align_left ltx_border_r">X</span>
+<span class="ltx_td ltx_align_left ltx_border_r">Attribute:float</span></span>
+<span class="ltx_tr">
+<span class="ltx_td ltx_border_l ltx_border_r"></span>
+<span class="ltx_td ltx_align_left ltx_border_r">Y</span>
+<span class="ltx_td ltx_align_left ltx_border_r">Attribute:float</span></span>
+<span class="ltx_tr">
+<span class="ltx_td ltx_border_l ltx_border_r"></span>
+<span class="ltx_td ltx_align_left ltx_border_r">Z</span>
+<span class="ltx_td ltx_align_left ltx_border_r">Attribute:float</span></span>
+<span class="ltx_tr">
+<span class="ltx_td ltx_border_l ltx_border_r"></span>
+<span class="ltx_td ltx_align_left ltx_border_r">Dimension</span>
+<span class="ltx_td ltx_border_r"></span></span>
+<span class="ltx_tr">
+<span class="ltx_td ltx_border_l ltx_border_r"></span>
+<span class="ltx_td ltx_align_left ltx_border_r">X</span>
+<span class="ltx_td ltx_align_left ltx_border_r">Attribute:int</span></span>
+<span class="ltx_tr">
+<span class="ltx_td ltx_border_l ltx_border_r"></span>
+<span class="ltx_td ltx_align_left ltx_border_r">Y</span>
+<span class="ltx_td ltx_align_left ltx_border_r">Attribute:int</span></span>
+<span class="ltx_tr">
+<span class="ltx_td ltx_border_l ltx_border_r"></span>
+<span class="ltx_td ltx_align_left ltx_border_r">Z</span>
+<span class="ltx_td ltx_align_left ltx_border_r">Attribute:int</span></span>
+<span class="ltx_tr">
+<span class="ltx_td ltx_align_left ltx_border_b ltx_border_l ltx_border_r ltx_border_t">GridData</span>
+<span class="ltx_td ltx_align_left ltx_border_b ltx_border_r ltx_border_t">Data</span>
+<span class="ltx_td ltx_align_left ltx_border_b ltx_border_r ltx_border_t">Dataset:Flattenedvectorofgridvalues</span></span>
+</span>
+</span></p>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+<section class="ltx_glossary ltx_list_main">
+</section>
+<div id="S7.SS2.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">[type=acronym,title=ListofAcronyms]</p>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+</section>
+</section>
+<section id="S8" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">8 </span>References</h2>
+
+</section>
+<section id="bib" class="ltx_bibliography">
+<h2 class="ltx_title ltx_title_bibliography">References</h2>
+
+<ul id="bib.L1" class="ltx_biblist">
+</ul>
+</section>
+<div class="ltx_pagination ltx_role_newpage"></div>
+<div class="ltx_titlepage">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold" style="font-size:144%;">Appendices</span></p>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+<section id="A1" class="ltx_appendix">
+<h2 class="ltx_title ltx_title_appendix">
+<span class="ltx_tag ltx_tag_appendix">Appendix A </span>SourceParameterDefinitions</h2>
+
+<div id="A1.p1" class="ltx_para">
+<p class="ltx_p">Inthisappendix,weoutlinetheequationsthatrelatethecorecanonicalsourceparameters—SeismicMoment<math id="A1.p1.m1" class="ltx_Math" alttext="M_0" display="inline"><mrow><mi>M</mi><mo>⁢</mo><mi mathvariant="normal">_</mi><mo>⁢</mo><mn>0</mn></mrow></math>,CornerFrequency<math id="A1.p1.m2" class="ltx_Math" alttext="f_0" display="inline"><mrow><mi>f</mi><mo>⁢</mo><mi mathvariant="normal">_</mi><mo>⁢</mo><mn>0</mn></mrow></math>,andthe<span class="ltx_text ltx_font_italic">P</span>-and<span class="ltx_text ltx_font_italic">S</span>-waveEnergies<math id="A1.p1.m3" class="ltx_Math" alttext="E_p" display="inline"><mrow><mi>E</mi><mo>⁢</mo><mi mathvariant="normal">_</mi><mo>⁢</mo><mi>p</mi></mrow></math>and<math id="A1.p1.m4" class="ltx_Math" alttext="E_s" display="inline"><mrow><mi>E</mi><mo>⁢</mo><mi mathvariant="normal">_</mi><mo>⁢</mo><mi>s</mi></mrow></math>—tothederivedsourceparameterscommonlyusedinmicroseismicstudies.</p>
+</div>
+<figure id="A1.T5" class="ltx_table">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_table">Table 5: </span>Sourceparameterdefinitions</figcaption>
+<table class="ltx_tabular ltx_centering ltx_guessed_headers ltx_align_middle">
+<thead class="ltx_thead">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_column ltx_th_row" style="padding-top:5pt;padding-bottom:5pt;"><span class="ltx_text ltx_font_bold">DerivedParameter</span></th>
+<th class="ltx_td ltx_align_left ltx_th ltx_th_column" style="padding-top:5pt;padding-bottom:5pt;"><span class="ltx_text ltx_font_bold">Equation</span></th>
+</tr>
+</thead>
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_t" style="padding-top:5pt;padding-bottom:5pt;">MomentMagnitude</th>
+<td class="ltx_td ltx_align_left ltx_border_t" style="padding-top:5pt;padding-bottom:5pt;"><math id="A1.T5.m1" class="ltx_Math" alttext="M_w=\frac{2}{3}\left(\log_{10}M_0-9.1\right)" display="inline"><mrow><mrow><mi>M</mi><mo>⁢</mo><mi mathvariant="normal">_</mi><mo>⁢</mo><mi>w</mi></mrow><mo>=</mo><mrow><mfrac><mn>2</mn><mn>3</mn></mfrac><mo>⁢</mo><mrow><mo>(</mo><mrow><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\log_</mtext></merror><mo>⁢</mo><mn>10</mn><mo>⁢</mo><mi>M</mi><mo>⁢</mo><mi mathvariant="normal">_</mi><mo>⁢</mo><mn>0</mn></mrow><mo>-</mo><mn>9.1</mn></mrow><mo>)</mo></mrow></mrow></mrow></math></td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row" style="padding-top:5pt;padding-bottom:5pt;">Energy</th>
+<td class="ltx_td ltx_align_left" style="padding-top:5pt;padding-bottom:5pt;"><math id="A1.T5.m2" class="ltx_Math" alttext="E=E_p+E_s" display="inline"><mrow><mi>E</mi><mo>=</mo><mrow><mrow><mi>E</mi><mo>⁢</mo><mi mathvariant="normal">_</mi><mo>⁢</mo><mi>p</mi></mrow><mo>+</mo><mrow><mi>E</mi><mo>⁢</mo><mi mathvariant="normal">_</mi><mo>⁢</mo><mi>s</mi></mrow></mrow></mrow></math></td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row" style="padding-top:5pt;padding-bottom:5pt;">SourceRadius</th>
+<td class="ltx_td ltx_align_left" style="padding-top:5pt;padding-bottom:5pt;"><math id="A1.T5.m3" class="ltx_Math" alttext="R=\left(\frac{3M_0}{4\pi\mu}\right)^{1/3}" display="inline"><mrow><mi>R</mi><mo>=</mo><msup><mrow><mo>(</mo><mfrac><mrow><mn>3</mn><mo>⁢</mo><mi>M</mi><mo>⁢</mo><mi mathvariant="normal">_</mi><mo>⁢</mo><mn>0</mn></mrow><mrow><mn>4</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>μ</mi></mrow></mfrac><mo>)</mo></mrow><mrow><mn>1</mn><mo>/</mo><mn>3</mn></mrow></msup></mrow></math></td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row" style="padding-top:5pt;padding-bottom:5pt;">Potency</th>
+<td class="ltx_td ltx_align_left" style="padding-top:5pt;padding-bottom:5pt;"><math id="A1.T5.m4" class="ltx_Math" alttext="P=\frac{M_0}{\mu}" display="inline"><mrow><mi>P</mi><mo>=</mo><mfrac><mrow><mi>M</mi><mo>⁢</mo><mi mathvariant="normal">_</mi><mo>⁢</mo><mn>0</mn></mrow><mi>μ</mi></mfrac></mrow></math></td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row" style="padding-top:5pt;padding-bottom:5pt;">ApparentStress</th>
+<td class="ltx_td ltx_align_left" style="padding-top:5pt;padding-bottom:5pt;"><math id="A1.T5.m5" class="ltx_Math" alttext="\sigma_a=\frac{E}{M_0}" display="inline"><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\sigma_a</mtext></merror><mo>=</mo><mfrac><mi>E</mi><mrow><mi>M</mi><mo>⁢</mo><mi mathvariant="normal">_</mi><mo>⁢</mo><mn>0</mn></mrow></mfrac></mrow></math></td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row" style="padding-top:5pt;padding-bottom:5pt;">ApparentVolume</th>
+<td class="ltx_td ltx_align_left" style="padding-top:5pt;padding-bottom:5pt;"><math id="A1.T5.m6" class="ltx_Math" alttext="V_a=\frac{E}{\rho V_p^{2}}" display="inline"><mrow><mrow><mi>V</mi><mo>⁢</mo><mi mathvariant="normal">_</mi><mo>⁢</mo><mi>a</mi></mrow><mo>=</mo><mfrac><mi>E</mi><mrow><mi>ρ</mi><mo>⁢</mo><mi>V</mi><mo>⁢</mo><mi mathvariant="normal">_</mi><mo>⁢</mo><msup><mi>p</mi><mn>2</mn></msup></mrow></mfrac></mrow></math></td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row" style="padding-top:5pt;padding-bottom:5pt;">StaticStressDrop</th>
+<td class="ltx_td ltx_align_left" style="padding-top:5pt;padding-bottom:5pt;"><math id="A1.T5.m7" class="ltx_Math" alttext="\Delta\sigma_{\text{stat}}=\frac{7}{16}\left(\frac{M_0}{\pi R^{3}}\right)^{1/3}" display="inline"><mrow><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\sigma_</mtext></merror><mo>⁢</mo><mtext>stat</mtext></mrow><mo>=</mo><mrow><mfrac><mn>7</mn><mn>16</mn></mfrac><mo>⁢</mo><msup><mrow><mo>(</mo><mfrac><mrow><mi>M</mi><mo>⁢</mo><mi mathvariant="normal">_</mi><mo>⁢</mo><mn>0</mn></mrow><mrow><mi>π</mi><mo>⁢</mo><msup><mi>R</mi><mn>3</mn></msup></mrow></mfrac><mo>)</mo></mrow><mrow><mn>1</mn><mo>/</mo><mn>3</mn></mrow></msup></mrow></mrow></math></td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_b" style="padding-top:5pt;padding-bottom:5pt;">DynamicStressDrop</th>
+<td class="ltx_td ltx_align_left ltx_border_b" style="padding-top:5pt;padding-bottom:5pt;"><math id="A1.T5.m8" class="ltx_Math" alttext="\Delta\sigma_{\text{dyn}}=\frac{7}{16}\rho V_s^{2}\left(\frac{M_0}{\pi R^{3}}%
+\right)^{1/3}" display="inline"><mrow><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\sigma_</mtext></merror><mo>⁢</mo><mtext>dyn</mtext></mrow><mo>=</mo><mrow><mfrac><mn>7</mn><mn>16</mn></mfrac><mo>⁢</mo><mi>ρ</mi><mo>⁢</mo><mi>V</mi><mo>⁢</mo><mi mathvariant="normal">_</mi><mo>⁢</mo><msup><mi>s</mi><mn>2</mn></msup><mo>⁢</mo><msup><mrow><mo>(</mo><mfrac><mrow><mi>M</mi><mo>⁢</mo><mi mathvariant="normal">_</mi><mo>⁢</mo><mn>0</mn></mrow><mrow><mi>π</mi><mo>⁢</mo><msup><mi>R</mi><mn>3</mn></msup></mrow></mfrac><mo>)</mo></mrow><mrow><mn>1</mn><mo>/</mo><mn>3</mn></mrow></msup></mrow></mrow></math></td>
+</tr>
+</tbody>
+</table>
+</figure>
+<div id="A1.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">Where<math id="A1.p2.m1" class="ltx_Math" alttext="\rho" display="inline"><mi>ρ</mi></math>isthedensity,<math id="A1.p2.m2" class="ltx_Math" alttext="V_p" display="inline"><mrow><mi>V</mi><mo>⁢</mo><mi mathvariant="normal">_</mi><mo>⁢</mo><mi>p</mi></mrow></math>and<math id="A1.p2.m3" class="ltx_Math" alttext="V_s" display="inline"><mrow><mi>V</mi><mo>⁢</mo><mi mathvariant="normal">_</mi><mo>⁢</mo><mi>s</mi></mrow></math>arethe<span class="ltx_text ltx_font_italic">P</span>-and<span class="ltx_text ltx_font_italic">S</span>-wavevelocities,<math id="A1.p2.m4" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math>istheradiusofthesource,and<math id="A1.p2.m5" class="ltx_Math" alttext="\mu" display="inline"><mi>μ</mi></math>istheshearmodulus.</p>
+</div>
+</section>
+<section id="A2" class="ltx_appendix">
+<h2 class="ltx_title ltx_title_appendix">
+<span class="ltx_tag ltx_tag_appendix">Appendix B </span>InstrumentResponse</h2>
+
+<div id="A2.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Theinstrumentresponseisacomprehensiverepresentationofthesignaltransformationacrosstheentireseismicdataacquisitionchain.Itoutlineshowtheoriginalgroundmotiongetsconvertedintothedigitaldatarecorded.IntheSEEDandObspyframeworks,theinstrumentresponseisstructuredinachain-likemanner,connectingvariousstagessuchasthesensorresponse,pre-amplifiers,filters,anddigitizers.Eachstagecontributesitsfrequency-dependentcorrectionfactorstotheoverallinstrumentresponse,whichareoftencharacterizedbypolesandzerosintheLaplacedomain.Bychainingthesecomponentstogether,onecanobtainthecompleteresponsefunctionthatallowsforpreciseground-motionreconstructionfromtherecordeddata.Thefollowingexampledemonstrateshowtoconstructaresponsefora15Hzgeophoneelementconnectedtoa24-bitdigitizer.Thedataareassumedtoberecordedbetween<math id="A2.p1.m1" class="ltx_Math" alttext="\pm 2.5" display="inline"><mrow><mo>±</mo><mn>2.5</mn></mrow></math>voltsandstoredasADCcounts.Weutilizethe<math id="A2.p1.m2" class="ltx_Math" alttext="\upmu" display="inline"><mi mathvariant="normal">μ</mi></math>Quake library,anextensionoftheObspylibraryspecificallytailoredfor<math id="A2.p1.m3" class="ltx_Math" alttext="\upmu" display="inline"><mi mathvariant="normal">μ</mi></math>seismic applications.Theexampleincludescodetocreateasyntheticstreamwithrandomvaluestosimulatewaveformdata.Subsequently,itillustrateshowtochangethewaveformrepresentationfromADCcountstoacceleration,velocity,anddisplacement.<span class="ltx_ERROR undefined">{minted}</span>[label=lst:uquake˙example]pythonimportnumpyasnpfromuquake.coreimportStream,Trace,UTCDateTimefromuquake.core.inventoryimportInventory,Network,Station,Channel,Sitefromuquake.core.inventory.responseimportResponse,PolesZerosResponseStage,CoefficientsTypeResponseStage#CreateInventory,Network,andStationasbeforeinv=Inventory(networks=[],source=”Example”)net=Network(code=”XX”,stations=[],description=”ExampleNetwork”)sta=Station(code=”STA1”,x=0.0,y=0.0,z=0.0,site=Site(name=”ExampleSite”))#CreatetheChannelandResponseobjectscha=Channel(code=”HHZ”,location˙code=””,x=0.0,y=0.0,z=0.0,sample˙rate=100.0)resp=Response()#PolesandZerosfor15Hzgeophonepz˙stage=PolesZerosResponseStage(stage˙sequence˙number=1,stage˙gain=1.0,stage˙gain˙frequency=1.0,input˙units=”M/S”,output˙units=”V”,pz˙transfer˙function˙type=”LAPLACE(RADIANS/SECOND)”,normalization˙frequency=1.0,zeros=[0j],poles=[-94.44j,94.44j],normalization˙factor=1.0)#Coefficientsfor24-bitdigitizercoeff˙stage=CoefficientsTypeResponseStage(stage˙sequence˙number=2,stage˙gain=1/(2.5/(2**23)),stage˙gain˙frequency=1.0,input˙units=”V”,output˙units=”COUNT”,cf˙transfer˙function˙type=”DIGITAL”,numerator=[1.0],denominator=[])#Addstagesandcompletethehierarchyresp.response˙stages.append(pz˙stage)resp.response˙stages.append(coeff˙stage)cha.response=respsta.channels.append(cha)net.stations.append(sta)inv.networks.append(net)#CreateaStreamwithrandomADCcountvaluessimulatingthedatanpts=1000starttime=UTCDateTime(0)sampling˙rate=100.0#CreateasingleTraceobjecttrace=Trace(data=np.random.randint(-2**23,2**23,npts))trace.stats.starttime=starttimetrace.stats.sampling˙rate=sampling˙ratetrace.stats.network=”XX”trace.stats.station=”STA1”trace.stats.channel=”HHZ”#CreateaStreamobjectandappendtheTracestream=Stream(traces=[trace])#AttachtheresponsetotheStreamstream.attach˙response(inv)#ConvertwaveformfromADCcounttophysicalunitsstream.remove˙response(output=”ACC”)stream.remove˙response(output=”VEL”)stream.remove˙response(output=”DISP”)</p>
+</div>
+<section id="A2.SS1" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">B.1 </span>CableEffectonFrequencyResponse</h3>
+
+<div id="A2.SS1.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Theinteractionbetweensensoroutputresistanceandcablecapacitancebecomescriticalforlongcablelengths,effectivelyfunctioningasalow-passfilterduetotheRCcircuit.Thiscanbemodeledasanadditionalstageintheresponsechain.Considera1000 mcablewithalinearcapacitanceof10 pF/mandasensorwithanoutputresistanceof2500 <math id="A2.SS1.p1.m1" class="ltx_Math" alttext="\Omega" display="inline"><mi mathvariant="normal">Ω</mi></math>.Thetimeconstant<math id="A2.SS1.p1.m2" class="ltx_Math" alttext="\tau=RC" display="inline"><mrow><mi>τ</mi><mo>=</mo><mrow><mi>R</mi><mo>⁢</mo><mi>C</mi></mrow></mrow></math>canbecalculatedasfollows:</p>
+<table id="A2.Ex1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="A2.Ex1.m1" class="ltx_Math" alttext="\tau=2500\Omega\times 10\times 10^{-9}F=25\times 10^{-6}s" display="block"><mrow><mi>τ</mi><mo>=</mo><mrow><mrow><mrow><mn>2500</mn><mo>⁢</mo><mi mathvariant="normal">Ω</mi></mrow><mo>×</mo><mn>10</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>9</mn></mrow></msup></mrow><mo>⁢</mo><mi>F</mi></mrow><mo>=</mo><mrow><mrow><mn>25</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>6</mn></mrow></msup></mrow><mo>⁢</mo><mi>s</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Thistimeconstanttranslatesintoapole-zerorepresentation,enablingitsinclusionasastageintheresponse.<span class="ltx_ERROR undefined">{minted}</span>[frame=lines]pythonfromuquake.core.inventoryimport(Response,Coefficients,Polynomial,PolesZeros,Blockette)#Sensorresponsealreadycreatedresponse˙sensor=…#Createthecablestagecable˙tau=25e-6#insecondscable˙pole˙zero=PolesZeros(pz˙transfer˙function˙type=”LAPLACE(RADIANS/SECOND)”,normalization˙frequency=0.0,zeros=[0.0],poles=[-1/cable˙tau],normalization˙factor=1.0,)#Createthecableresponsestagecable˙stage=Blockette(stage˙sequence˙number=2,response=cable˙pole˙zero)#Addthecablestagetotheexistingresponseresponse˙sensor.response˙stages.append(cable˙stage)#Addthistoyourchannelchannel.response=response˙sensor</p>
+</div>
+</section>
+<section id="A2.SS2" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">B.2 </span>IRISNRL</h3>
+
+<div id="A2.SS2.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">TheIncorporatedResearchInstitutionsforSeismologyNominalResponseLibrary(<span title="" class="ltx_glossaryref">nominal response library (NRL)</span>)servesasacentralizedrepositoryforsensoranddigitizerresponses.Inclusionoftheequipmentutilizedin<math id="A2.SS2.p1.m1" class="ltx_Math" alttext="\upmu" display="inline"><mi mathvariant="normal">μ</mi></math>seismic monitoringwithintheNRLnotonlyguaranteestheaccuracyofresponsecharacteristicsbutalsopromotesstandardizationacrossplatforms.Thisisessentialforensuringdataintegrityandfacilitatingdatainterchangewithinthebroaderseismicresearchcommunity.Boththe<math id="A2.SS2.p1.m2" class="ltx_Math" alttext="\upmu" display="inline"><mi mathvariant="normal">μ</mi></math>Quake andObspylibrariesprovidemechanismstoeasilyintegratetheseNRL-specifiedresponsesintotheStationXMLformat,thusenhancingbothdatafidelityandworkflowefficiency.<span class="ltx_ERROR undefined">{minted}</span>[frame=lines]python#Usinguquakefromuquake.core.inventoryimportInventory,Network,Station,Channel,Sitefromuquake.clients.nrlimportNRL#InitializeNRLclientnrl=NRL()#ConstructresponsefromNRLresponse˙uquake=nrl.get˙response(sensor˙keys=[’SensorManufacturer’,’SensorModel’],datalogger˙keys=[’DataloggerManufacturer’,’DataloggerModel’])#Definechannelwithx,y,zcoordinateschannel=Channel(code=”EHZ”,location˙code=””,x=0.0,y=0.0,z=0.0,response=response˙uquake)</p>
+</div>
+</section>
+</section>
+<section id="A3" class="ltx_appendix">
+<h2 class="ltx_title ltx_title_appendix">
+<span class="ltx_tag ltx_tag_appendix">Appendix C </span>CoordinateSystemImplementation</h2>
+
+<div id="A3.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Fromversion2.2.0,<math id="A3.p1.m1" class="ltx_Math" alttext="\upmu" display="inline"><mi mathvariant="normal">μ</mi></math>Quake includesclassesforhandlingcoordinatesandtheirtransformations.Themainclassesare<span class="ltx_text ltx_font_typewriter">Coordinates</span>,<span class="ltx_text ltx_font_typewriter">CoordinateTransformation</span>,and<span class="ltx_text ltx_font_typewriter">CoordinateSystem</span>.Thoseclassesareusedtodescribecoordinatesandhavebeenintegratedinthefollowingclasses:</p>
+<ul id="A3.I1" class="ltx_itemize">
+<li id="A3.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="A3.I1.i1.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_typewriter">uquake.core.event.Origin</span>,</p>
+</div>
+</li>
+<li id="A3.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="A3.I1.i2.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_typewriter">uquake.core.inventory.Station</span>,</p>
+</div>
+</li>
+<li id="A3.I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="A3.I1.i3.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_typewriter">uquake.core.inventory.Channel</span>,and</p>
+</div>
+</li>
+<li id="A3.I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="A3.I1.i4.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_typewriter">uquake.grid.base.Grid</span></p>
+</div>
+</li>
+</ul>
+</div>
+<section id="A3.SS1" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">C.1 </span><span class="ltx_text ltx_font_typewriter">Coordinates</span>Class</h3>
+
+<div id="A3.SS1.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">The<span class="ltx_text ltx_font_typewriter">Coordinates</span>classrepresentsapointinaspecificcoordinatesystem.Itcontainsthefollowingattributesandmethods:</p>
+<dl id="A3.I2" class="ltx_description">
+<dt id="A3.I2.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_typewriter ltx_font_bold">x,y,z:float</span></span></dt>
+<dd class="ltx_item">
+<div id="A3.I2.ix1.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Coordinatesinthechosensystem.</p>
+</div>
+</dd>
+<dt id="A3.I2.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_typewriter ltx_font_bold">coordinate<span class="ltx_ERROR undefined">\_system:</span>CoordinateSystem</span></span></dt>
+<dd class="ltx_item">
+<div id="A3.I2.ix2.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Specifieswhetherthesystemis<span class="ltx_text ltx_font_typewriter">NED</span>or<span class="ltx_text ltx_font_typewriter">ENU</span>.</p>
+</div>
+</dd>
+<dt id="A3.I2.ix3" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_typewriter ltx_font_bold">transformation:CoordinateTransformation</span></span></dt>
+<dd class="ltx_item">
+<div id="A3.I2.ix3.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Objectforhandlingcoordinatetransformations.</p>
+</div>
+</dd>
+</dl>
+</div>
+</section>
+<section id="A3.SS2" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">C.2 </span><span class="ltx_text ltx_font_typewriter">CoordinateTransformation</span>Class</h3>
+
+<div id="A3.SS2.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">The<span class="ltx_text ltx_font_typewriter">CoordinateTransformation</span>classhandlestransformationsbetweencustomcoordinatesystemsandlatitude-longitude-basedsystems.Attributesinclude:</p>
+<dl id="A3.I3" class="ltx_description">
+<dt id="A3.I3.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_typewriter ltx_font_bold">translation:tuple</span></span></dt>
+<dd class="ltx_item">
+<div id="A3.I3.ix1.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Translationvectoras<math id="A3.I3.ix1.p1.m1" class="ltx_Math" alttext="(dx,dy,dz)" display="inline"><mrow><mo stretchy="false">(</mo><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow><mo>,</mo><mrow><mi>d</mi><mo>⁢</mo><mi>y</mi></mrow><mo>,</mo><mrow><mi>d</mi><mo>⁢</mo><mi>z</mi></mrow><mo stretchy="false">)</mo></mrow></math>.</p>
+</div>
+</dd>
+<dt id="A3.I3.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_typewriter ltx_font_bold">rotation:listortuple</span></span></dt>
+<dd class="ltx_item">
+<div id="A3.I3.ix2.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">RotationmatrixorEulerangles.</p>
+</div>
+</dd>
+<dt id="A3.I3.ix3" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_typewriter ltx_font_bold">epsg<span class="ltx_ERROR undefined">\_code:</span>int</span></span></dt>
+<dd class="ltx_item">
+<div id="A3.I3.ix3.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">EPSGcodeforthetargetcoordinatesystem.</p>
+</div>
+</dd>
+<dt id="A3.I3.ix4" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_typewriter ltx_font_bold">scaling:floatortuple</span></span></dt>
+<dd class="ltx_item">
+<div id="A3.I3.ix4.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Optionalscalingfactors.</p>
+</div>
+</dd>
+<dt id="A3.I3.ix5" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_typewriter ltx_font_bold">reference<span class="ltx_ERROR undefined">\_elevation:</span>float</span></span></dt>
+<dd class="ltx_item">
+<div id="A3.I3.ix5.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Referenceelevationfordepthconversions.</p>
+</div>
+</dd>
+</dl>
+</div>
+</section>
+<section id="A3.SS3" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">C.3 </span><span class="ltx_text ltx_font_typewriter">CoordinateSystem</span>Enumeration</h3>
+
+<div id="A3.SS3.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">The<span class="ltx_text ltx_font_typewriter">CoordinateSystem</span>enumerationspecifiesthecoordinatesystembeingused.Itenforcesaright-handcoordinatesystemandsupportstwotypes:</p>
+<dl id="A3.I4" class="ltx_description">
+<dt id="A3.I4.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_typewriter ltx_font_bold">NED</span></span></dt>
+<dd class="ltx_item">
+<div id="A3.I4.ix1.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">North,East,Downcoordinatesystem.</p>
+</div>
+</dd>
+<dt id="A3.I4.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_typewriter ltx_font_bold">ENU</span></span></dt>
+<dd class="ltx_item">
+<div id="A3.I4.ix2.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">East,North,Upcoordinatesystem.</p>
+</div>
+</dd>
+</dl>
+</div>
+</section>
+</section>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Tue Oct 31 15:21:19 2023 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>
+<link rel="stylesheet" type="text/css" href="custom_styles.css">
