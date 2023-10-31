@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - '*.tex'
+      - '.github/workflows/latex_to_html.yml'
 
 jobs:
   build:
