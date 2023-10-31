@@ -18,7 +18,7 @@ jobs:
 
     - name: Compile LaTeX to HTML
       run: |
-        latex2html -dir docs -mkdir main.tex
+        latex2html -dir docs -mkdir 00_main.tex
 
     - name: Commit and Push to Repository
       run: |
