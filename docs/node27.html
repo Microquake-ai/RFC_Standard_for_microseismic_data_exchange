@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2021.2 (Released July 1, 2021) -->
+<HTML lang="en">
+<HEAD>
+<TITLE>Stream Naming Convention</TITLE>
+<META NAME="description" CONTENT="Stream Naming Convention">
+<META NAME="keywords" CONTENT="00_main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2021.2">
+
+<LINK REL="STYLESHEET" HREF="00_main.css">
+
+<LINK REL="next" HREF="node28.html">
+<LINK REL="previous" HREF="node25.html">
+<LINK REL="next" HREF="node28.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node28.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node24.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node26.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html171"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node28.html">Waveform Representation and Response</A>
+<B> Up:</B> <A
+ HREF="node24.html">Waveforms and StationXML</A>
+<B> Previous:</B> <A
+ HREF="node26.html">Parameter Validation</A>
+ &nbsp; <B>  <A ID="tex2html172"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H3><A ID="SECTION00083200000000000000">
+Stream Naming Convention</A>
+</H3>
+
+<P>
+The asdf file format combines waveforms and inventory data. To ensure flawless integration, we must adopt a robust and standardized "stream" naming convention to ensure unambiguous association between waveforms and inventory. 
+
+<P>
+asdf adopts a relaxed version of the seed Identifier Convention, previously part of QuakeML and StationXML standards and now extended to the waveform data. The StationXML does not restrict the string length; QuakeML does. We therefore suggest adopting the convention presented in section 3.3.5 of the QuakeML Version 1.2 (revision 20130214b) (see <a href="https://quake.ethz.ch/quakeml/docs/latest?action=AttachFile&amp;do=get&amp;target=QuakeML-BED.pdf">QuakeML Reference Manual</a>). This convention provides a standardized approach to uniquely identify seismic data streams by anchoring them to their source network, station, location, and channel, ensuring clarity and consistency in data identification and handling across various seismic data systems.
+
+<P>
+The QuakeML naming convention comprises four distinct parts that are:
+
+<P>
+<DL>
+<DT><STRONG>Network</STRONG></DT>
+<DD>Represents a collection of stations grouped by a specific monitoring objective or designed to target a distinct area within a mine. This grouping may not necessarily reflect physical proximity but is often organized based on monitoring needs or operational considerations.
+  
+</DD>
+<DT><STRONG>Station</STRONG></DT>
+<DD>Within a given network, the term station denotes a coordinated set of instruments, often clustered together based on their monitoring function or spatial considerations. For example, a station can comprise a set of instruments installed in a single borehole or deployed from the same location in boreholes of different orientations.
+  
+</DD>
+<DT><STRONG>Location</STRONG></DT>
+<DD>Specifies an individual instrument within a station, allowing differentiation when multiple instruments exist at the same station. For example, each instrument would refer to a location in a borehole where multiple instruments are installed.
+  
+</DD>
+<DT><STRONG>Channel</STRONG></DT>
+<DD>Details the specific recording component or the type of measurement undertaken by the instrument at the given location.
+</DD>
+</DL>
+
+<P>
+A unique stream name is obtained by concatenating those parts together as follows:
+<DIV class="CENTER">
+<SPAN  CLASS="texttt">NETWORK.STATION.LOCATION.CHANNEL</SPAN>
+
+</DIV>
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A
+ HREF="node28.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node24.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node26.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html171"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node28.html">Waveform Representation and Response</A>
+<B> Up:</B> <A
+ HREF="node24.html">Waveforms and StationXML</A>
+<B> Previous:</B> <A
+ HREF="node26.html">Parameter Validation</A>
+ &nbsp; <B>  <A ID="tex2html172"
+  HREF="node2.html">Contents</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

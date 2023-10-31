@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2021.2 (Released July 1, 2021) -->
+<HTML lang="en">
+<HEAD>
+<TITLE>General Format</TITLE>
+<META NAME="description" CONTENT="General Format">
+<META NAME="keywords" CONTENT="00_main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2021.2">
+
+<LINK REL="STYLESHEET" HREF="00_main.css">
+
+<LINK REL="previous" HREF="node33.html">
+<LINK REL="next" HREF="node35.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node35.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node33.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node33.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html191"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node35.html">Global Grids</A>
+<B> Up:</B> <A
+ HREF="node33.html">overview</A>
+<B> Previous:</B> <A
+ HREF="node33.html">overview</A>
+ &nbsp; <B>  <A ID="tex2html192"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H3><A ID="SECTION00091100000000000000">
+General Format</A>
+</H3>
+
+<P>
+The grid data structure, whether global or instrument-specific, contains common elements that define its geometry and facilitate its interpretation. A straightforward yet effective description can be achieved using the origin, spacing, and dimensions of the grid.
+
+<P>
+<DL>
+<DT><STRONG>Origin</STRONG></DT>
+<DD>The origin refers to the coordinate point in the grid where the spatial indices are (0,0,0). It acts as the reference point for other grid points and is specified in the coordinate system used (e.g., enu or ned).
+
+<P>
+</DD>
+<DT><STRONG>Spacing</STRONG></DT>
+<DD>The spacing describes the distance between adjacent grid points along each axis (x, y, z). It dictates the resolution of the grid. In regular grids, the spacing is constant, while in rectilinear grids, it can vary along each axis. The spacing is generally provided in units consistent with the chosen coordinate system.
+
+<P>
+</DD>
+<DT><STRONG>Dimensions</STRONG></DT>
+<DD>The dimensions specify the total number of grid points along each axis (x, y, z), thereby determining the overall size and shape of the grid.
+</DD>
+</DL>
+
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

@@ -1,0 +1,287 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2021.2 (Released July 1, 2021) -->
+<HTML lang="en">
+<HEAD>
+<TITLE>Modifications</TITLE>
+<META NAME="description" CONTENT="Modifications">
+<META NAME="keywords" CONTENT="00_main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2021.2">
+
+<LINK REL="STYLESHEET" HREF="00_main.css">
+
+<LINK REL="previous" HREF="node21.html">
+<LINK REL="next" HREF="node23.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node23.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node21.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node21.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html155"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node23.html">Parameter Validation</A>
+<B> Up:</B> <A
+ HREF="node21.html">QuakeML</A>
+<B> Previous:</B> <A
+ HREF="node21.html">QuakeML</A>
+ &nbsp; <B>  <A ID="tex2html156"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H3><A ID="SECTION00082100000000000000">
+Modifications</A>
+</H3>
+
+<P>
+<BR><P></P>
+<DIV class="CENTER">
+<DIV class="CENTER">
+<A ID="194"></A>
+<TABLE class="PAD  BORDER" style="">
+<CAPTION><STRONG>Table:</STRONG>
+Summary of Modifications</CAPTION>
+<TR><TH CLASS="LEFT"><SPAN  CLASS="textbf">Object</SPAN></TH>
+<TH CLASS="LEFT"><SPAN  CLASS="textbf">New Parameter</SPAN></TH>
+<TH CLASS="LEFT"><SPAN  CLASS="textbf">Description</SPAN></TH>
+<TH CLASS="RIGHT"><SPAN  CLASS="textbf">Type</SPAN></TH>
+</TR>
+<TR><TD CLASS="LEFT" ROWSPAN=1><SPAN>Origin</SPAN></TD>
+<TD CLASS="LEFT">Coordinates</TD>
+<TD CLASS="LEFT">Coordinates information</TD>
+<TD CLASS="RIGHT">Coordinates<A ID="tex2html3"
+  HREF="footnode.html#foot336"><SUP><SPAN CLASS="arabic">1</SPAN></SUP></A></TD>
+</TR>
+<TR><TD CLASS="LEFT" ROWSPAN=3><SPAN>Magnitude</SPAN></TD>
+<TD CLASS="LEFT"><SPAN CLASS="MATH"><IMG
+ STYLE=""
+ SRC="img5.svg"
+ ALT="\(f_0\)"></SPAN></TD>
+<TD CLASS="LEFT">Corner frequency</TD>
+<TD CLASS="RIGHT">float</TD>
+</TR>
+<TR><TD CLASS="LEFT"><SPAN CLASS="MATH"><IMG
+ STYLE=""
+ SRC="img6.svg"
+ ALT="\(E_p\)"></SPAN></TD>
+<TD CLASS="LEFT"><SPAN CLASS="MATH"><IMG
+ STYLE=""
+ SRC="img7.svg"
+ ALT="\(P\)"></SPAN>-wave energy</TD>
+<TD CLASS="RIGHT">float</TD>
+</TR>
+<TR><TD CLASS="LEFT"><SPAN CLASS="MATH"><IMG
+ STYLE=""
+ SRC="img8.svg"
+ ALT="\(E_s\)"></SPAN></TD>
+<TD CLASS="LEFT"><SPAN CLASS="MATH"><IMG
+ STYLE=""
+ SRC="img9.svg"
+ ALT="\(S\)"></SPAN>-wave energy</TD>
+<TD CLASS="RIGHT">float</TD>
+</TR>
+</TABLE></DIV>
+</DIV>
+<BR>
+
+<P>
+We propose straightforward modifications to the QuakeML format to better suit <SPAN CLASS="MATH"><IMG
+ STYLE=""
+ SRC="img1.svg"
+ ALT="$\upmu$"></SPAN>seismic applications. The first concerns the expression of coordinates using the Cartesian system previously described instead of the longitude, latitude, and depth/elevation. The second pertains to expanding the magnitude definition to include the corner frequency and the <SPAN  CLASS="textit">P</SPAN>- and <SPAN  CLASS="textit">S</SPAN>-wave velocities. The third involves the overriding of event types.
+
+<P>
+Instead of the standard spherical coordinate system that relies on latitude and longitude for location specification, we advocate for a Cartesian coordinate system. Specifically, we recommend emptying the traditional fields for latitude, longitude, elevation, and depth. As a substitute, we propose adding a description of the Coordinates as a new field. The coordinate description object is implemented in <SPAN CLASS="MATH"><IMG
+ STYLE=""
+ SRC="img1.svg"
+ ALT="$\upmu$"></SPAN>Quake from version 2.0. In the current implementation, the information is stored as a JSON string in the extra parameters of the Origin object. The extra parameters are then stored in a specific namespace inside the QuakeML file. The coordinate object includes the x, y, and z coordinate, a description of the coordinate system (either enu or ned), and elements to allow for converting the coordinates between multiple representations including latitude, longitude if the required information is provided.
+
+<P>
+We propose an enhancement to the magnitude definition in QuakeML to represent seismic source properties better. The existing schema falls short in capturing key parameters such as the corner frequency (<SPAN CLASS="MATH"><IMG
+ STYLE=""
+ SRC="img10.svg"
+ ALT="$f_0$"></SPAN>), and the <SPAN  CLASS="textit">P</SPAN>- and <SPAN  CLASS="textit">S</SPAN>-wave energies (<SPAN CLASS="MATH"><IMG
+ STYLE=""
+ SRC="img11.svg"
+ ALT="$E_p$"></SPAN> and <SPAN CLASS="MATH"><IMG
+ STYLE=""
+ SRC="img12.svg"
+ ALT="$E_s$"></SPAN>, respectively). Similar to our approach for coordinate system modification, we suggest including <SPAN CLASS="MATH"><IMG
+ STYLE=""
+ SRC="img10.svg"
+ ALT="$f_0$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ STYLE=""
+ SRC="img11.svg"
+ ALT="$E_p$"></SPAN>, and <SPAN CLASS="MATH"><IMG
+ STYLE=""
+ SRC="img12.svg"
+ ALT="$E_s$"></SPAN> as extra parameters of the Magnitude object. This enables the on-the-fly calculation of other source parameters using the seismic moment (<SPAN CLASS="MATH"><IMG
+ STYLE=""
+ SRC="img13.svg"
+ ALT="$M_0$"></SPAN>), corner frequency, and wave energies. Relationships among these source parameters are elaborated in Appendix&nbsp;<A HREF="node38.html#sec:app_source_params"><IMG  ALT="[*]" SRC="crossref.png"></A>.
+
+<P>
+Transitioning to event classifications, the QuakeML schema has a predefined set of seismic event types that do not fully accommodate the specialized needs of <SPAN CLASS="MATH"><IMG
+ STYLE=""
+ SRC="img1.svg"
+ ALT="$\upmu$"></SPAN>seismic monitoring. We propose mapping existing event types to new, mining-specific descriptors and directly including a generic look-up table in the code for on-the-fly translation. While efforts were made to create logical mappings, limitations in the existing event types posed challenges in finding intuitive counterparts. Table&nbsp;<A HREF="#tab:event_type_mapping"><IMG  ALT="[*]" SRC="crossref.png"></A> presents this mapping between standard and <SPAN CLASS="MATH"><IMG
+ STYLE=""
+ SRC="img1.svg"
+ ALT="$\upmu$"></SPAN>seismic event types.
+
+<P>
+<A ID="220"></A>
+<TABLE class="PAD  BORDER" style="">
+<CAPTION><STRONG>Table:</STRONG>
+Mapping between standard and <SPAN CLASS="MATH"><IMG
+ STYLE=""
+ SRC="img1.svg"
+ ALT="$\upmu$"></SPAN>seismic event types.</CAPTION>
+<TR><TD CLASS="LEFT"><A ID="tab:event_type_mapping"></A></TD>
+<TD CLASS="LEFT">&nbsp;</TD>
+</TR>
+<TR><TD CLASS="LEFT">Event Type (mining)</TD>
+<TD CLASS="LEFT">Event Type (QuakeML)</TD>
+</TR>
+<TR><TD CLASS="LEFT">&nbsp;</TD>
+<TD CLASS="LEFT">&nbsp;</TD>
+</TR>
+<TR><TD CLASS="LEFT">earthquake/large event</TD>
+<TD CLASS="LEFT">earthquake</TD>
+</TR>
+<TR><TD CLASS="LEFT">seismic event</TD>
+<TD CLASS="LEFT">induced or triggered event</TD>
+</TR>
+<TR><TD CLASS="LEFT">offsite event</TD>
+<TD CLASS="LEFT">atmospheric event</TD>
+</TR>
+<TR><TD CLASS="LEFT">rock burst</TD>
+<TD CLASS="LEFT">rock burst</TD>
+</TR>
+<TR><TD CLASS="LEFT">fall of ground/rockfall</TD>
+<TD CLASS="LEFT">cavity collapse</TD>
+</TR>
+<TR><TD CLASS="LEFT">blast</TD>
+<TD CLASS="LEFT">explosion</TD>
+</TR>
+<TR><TD CLASS="LEFT">blast sequence</TD>
+<TD CLASS="LEFT">accidental explosion</TD>
+</TR>
+<TR><TD CLASS="LEFT">development blast</TD>
+<TD CLASS="LEFT">industrial explosion</TD>
+</TR>
+<TR><TD CLASS="LEFT">production blast</TD>
+<TD CLASS="LEFT">mining explosion</TD>
+</TR>
+<TR><TD CLASS="LEFT">far away blast/open pit blast</TD>
+<TD CLASS="LEFT">quarry blast</TD>
+</TR>
+<TR><TD CLASS="LEFT">offsite blast</TD>
+<TD CLASS="LEFT">nuclear explosion</TD>
+</TR>
+<TR><TD CLASS="LEFT">paste firing</TD>
+<TD CLASS="LEFT">chemical explosion</TD>
+</TR>
+<TR><TD CLASS="LEFT">calibration blast</TD>
+<TD CLASS="LEFT">controlled explosion</TD>
+</TR>
+<TR><TD CLASS="LEFT">other blast/slashing</TD>
+<TD CLASS="LEFT">experimental explosion</TD>
+</TR>
+<TR><TD CLASS="LEFT">mid-shift blast/slash blast</TD>
+<TD CLASS="LEFT">industrial explosion</TD>
+</TR>
+<TR><TD CLASS="LEFT">raise bore</TD>
+<TD CLASS="LEFT">hydroacoustic event</TD>
+</TR>
+<TR><TD CLASS="LEFT">crusher noise</TD>
+<TD CLASS="LEFT">road cut</TD>
+</TR>
+<TR><TD CLASS="LEFT">orepass noise</TD>
+<TD CLASS="LEFT">collapse</TD>
+</TR>
+<TR><TD CLASS="LEFT">drilling noise</TD>
+<TD CLASS="LEFT">acoustic noise</TD>
+</TR>
+<TR><TD CLASS="LEFT">electrical noise</TD>
+<TD CLASS="LEFT">thunder</TD>
+</TR>
+<TR><TD CLASS="LEFT">scaling noise</TD>
+<TD CLASS="LEFT">anthropogenic event</TD>
+</TR>
+<TR><TD CLASS="LEFT">mechanical noise</TD>
+<TD CLASS="LEFT">crash</TD>
+</TR>
+<TR><TD CLASS="LEFT">test pulse</TD>
+<TD CLASS="LEFT">sonic boom</TD>
+</TR>
+<TR><TD CLASS="LEFT">unidentified noise/other noise</TD>
+<TD CLASS="LEFT">other event</TD>
+</TR>
+<TR><TD CLASS="LEFT">duplicate</TD>
+<TD CLASS="LEFT">boat crash</TD>
+</TR>
+<TR><TD CLASS="LEFT">unknown</TD>
+<TD CLASS="LEFT">plane crash</TD>
+</TR>
+<TR><TD CLASS="LEFT">tap test/test</TD>
+<TD CLASS="LEFT">avalanche</TD>
+</TR>
+</TABLE>
+
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A ID="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><A ID="tex2html157"
+  HREF="node23.html">Parameter Validation</A>
+</UL>
+<!--End of Table of Child-Links-->
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A
+ HREF="node23.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node21.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node21.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html155"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node23.html">Parameter Validation</A>
+<B> Up:</B> <A
+ HREF="node21.html">QuakeML</A>
+<B> Previous:</B> <A
+ HREF="node21.html">QuakeML</A>
+ &nbsp; <B>  <A ID="tex2html156"
+  HREF="node2.html">Contents</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

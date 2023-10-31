@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2021.2 (Released July 1, 2021) -->
+<HTML lang="en">
+<HEAD>
+<TITLE>Cable Effect on Frequency Response</TITLE>
+<META NAME="description" CONTENT="Cable Effect on Frequency Response">
+<META NAME="keywords" CONTENT="00_main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2021.2">
+
+<LINK REL="STYLESHEET" HREF="00_main.css">
+
+<LINK REL="next" HREF="node41.html">
+<LINK REL="previous" HREF="node39.html">
+<LINK REL="next" HREF="node41.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node41.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node39.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node39.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html205"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node41.html">IRIS NRL</A>
+<B> Up:</B> <A
+ HREF="node39.html">Instrument Response</A>
+<B> Previous:</B> <A
+ HREF="node39.html">Instrument Response</A>
+ &nbsp; <B>  <A ID="tex2html206"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A ID="SECTION000131000000000000000">
+Cable Effect on Frequency Response</A>
+</H2>
+<DIV class="CENTER">
+</DIV>
+<P>
+<DIV class="CENTER">The interaction between sensor output resistance and cable capacitance becomes critical for long cable lengths, effectively functioning as a low-pass filter due to the RC circuit. This can be modeled as an additional stage in the response chain. Consider a 1000&nbsp;m cable with a linear capacitance of 10&nbsp;pF/m and a sensor with an output resistance of 2500&nbsp;<SPAN CLASS="MATH"><IMG
+ STYLE=""
+ SRC="img29.svg"
+ ALT="$\Omega$"></SPAN>. The time constant <SPAN CLASS="MATH"><IMG
+ STYLE=""
+ SRC="img30.svg"
+ ALT="\(\tau = RC\)"></SPAN> can be calculated as follows:
+</DIV>
+<P>
+<DIV class="CENTER"></DIV>
+<DIV CLASS="displaymath">
+<!-- MATH
+ \begin{displaymath}
+\tau = 2500 \Omega \times 10 \times 10^{-9} F = 25 \times 10^{-6} s
+\end{displaymath}
+ -->
+
+<IMG
+ STYLE=""
+ SRC="img31.svg"
+ ALT="$\displaystyle \tau = 2500 \Omega \times 10 \times 10^{-9} F = 25 \times 10^{-6} s
+$">
+</DIV>
+<DIV class="CENTER">
+</DIV>
+<P>
+<DIV class="CENTER">This time constant translates into a pole-zero representation, enabling its inclusion as a stage in the response.
+</DIV>
+<P>
+<DIV class="CENTER">
+<BR>
+<IMG
+ STYLE=""
+ SRC="img32.svg"
+ ALT="\begin{minted}[frame=lines]{python}
+from uquake.core.inventory import (Response,...
+...
+\par
+...">
+<BR>
+</DIV>
+<P>
+<DIV class="CENTER"></DIV>
+<BR><HR>
+
+</BODY>
+</HTML>

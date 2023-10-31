@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2021.2 (Released July 1, 2021) -->
+<HTML lang="en">
+<HEAD>
+<TITLE>Overview</TITLE>
+<META NAME="description" CONTENT="Overview">
+<META NAME="keywords" CONTENT="00_main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2021.2">
+
+<LINK REL="STYLESHEET" HREF="00_main.css">
+
+<LINK REL="next" HREF="node21.html">
+<LINK REL="previous" HREF="node19.html">
+<LINK REL="next" HREF="node21.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node21.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node19.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node19.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html149"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node21.html">QuakeML</A>
+<B> Up:</B> <A
+ HREF="node19.html">Data Format for Seismic</A>
+<B> Previous:</B> <A
+ HREF="node19.html">Data Format for Seismic</A>
+ &nbsp; <B>  <A ID="tex2html150"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A ID="SECTION00081000000000000000">
+Overview</A>
+</H2>
+
+<P>
+The recommended seismic data standard for adoption is the asdf (asdf) (<A
+ HREF="#krischer2016asdf">, </A>). Designed with modern challenges in mind, the asdf format efficiently addresses the complexities inherent to large and detailed seismic datasets. By employing the HDF5 container format, asdf is self-descriptive, ensuring data can be accessed and manipulated with ease across various seismological applications. Its overarching objective is to simplify the organization and exchange of seismic data, emphasizing interoperability, scalability, and the reduction of inconsistencies by amalgamating multiple seismic data components within a singular structure. The asdf format is suitable for trigger, continuous and das data to name only those.
+
+<P>
+Figure&nbsp;<A HREF="#fig:asdf_data_format"><IMG  ALT="[*]" SRC="crossref.png"></A> depicts the structure of the asdf format. Nested within the hdf5 (hdf5) container, asdf systematically organizes seismological components, including:
+
+<P>
+<DL>
+<DT><STRONG>uakeML</STRONG></DT>
+<DD>An XML-based language, QuakeML focuses on event metadata, cataloging seismic event descriptions such as event origins, magnitudes, and moment tensor solutions.
+
+<P>
+</DD>
+<DT><STRONG>Waveform Data</STRONG></DT>
+<DD>The heart of the asdf, this section contains time series representations of seismic waveforms. In the asdf format, waveform data are exclusively represented using single and double-precision floating point values, or signed integers. These representations are encapsulated as native data arrays within the HDF5 framework.
+
+<P>
+</DD>
+<DT><STRONG>StationXML</STRONG></DT>
+<DD>: Serving as a repository for station metadata, this section contains detailed instrument information, including their responses, station coordinates, and other specific attributes. This metadata provides vital context to the waveforms. In the asdf format, this inventory information is appended directly to the waveforms at the station level.
+
+<P>
+</DD>
+<DT><STRONG>Auxiliary Data</STRONG></DT>
+<DD>: Catering to the diverse needs of seismological analyses, this section allows the storage of additional data types, such as cross-correlations or synthetic seismograms.
+
+<P>
+</DD>
+<DT><STRONG>Provenance Data</STRONG></DT>
+<DD>: In the pursuit of rigorous transparency and reproducibility, this segment meticulously documents the historical progression of data alterations, enumerating each distinct processing operation along with its respective parameters. The provenance documentation adheres to the W3C PROV model (<A
+ HREF="#w3cprov2013">, </A>), a widely accepted standard for chronicling provenance specifics.
+
+<P>
+</DD>
+</DL>
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:asdf_data_format"></A><A ID="335"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure:</STRONG>
+asdf data structure overview from <A
+ HREF="#krischer2016asdf">()</A></CAPTION>
+<TR><TD>
+<DIV class="CENTER">    <IMG
+  WIDTH="621" HEIGHT="468" STYLE=""
+ SRC="./ASDF_Format_overview.jpeg"
+ ALT="Image ASDF_Format_overview">
+    </DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+Through its comprehensive integration of these components, asdf paves the way for a standardized, efficient, and in-depth approach to seismological research and data management.
+
+<P>
+While the asdf format provides a robust framework for general seismic data handling, specific adaptations are imperative to address the unique requirements of <SPAN CLASS="MATH"><IMG
+ STYLE=""
+ SRC="img1.svg"
+ ALT="$\upmu$"></SPAN>seismic monitoring within mining environments. Notably, the inherent geographical coordinate system utilized in asdf, based on latitude and longitude, necessitates transformation to a Cartesian coordinate system (x, y, z) to represent in-mine locations accurately. These conversions are essential for precise data representation and effective integration with other mining systems. The proposed changes are not fundamentally altering the asdf standard. Instead, they leverage the inherent flexibility and expandability of the QuakeML and StationXML formats, ensuring that the adapted schema remains consistent with the broader seismological community's practices.
+
+<P>
+<BR>
+<IMG
+ STYLE=""
+ SRC="img4.svg"
+ ALT="\begin{mdframed}
+% latex2html id marker 181
+[backgroundcolor=gray!20]
+\textbf{No...
+...ns:q=''http://quakeml.org/xmlns/quakeml/1.2''&gt;\end{verbatim}
+\par
+\end{mdframed}">
+<BR>
+
+<P>
+Note that the modifications discussed in the following sections, particularly concerning QuakeML and StationXML formats, have been operationalized in the <SPAN CLASS="MATH"><IMG
+ STYLE=""
+ SRC="img1.svg"
+ ALT="$\upmu$"></SPAN>Quake library. This library extends the Obspy package and is tailored to the specific needs of <SPAN CLASS="MATH"><IMG
+ STYLE=""
+ SRC="img1.svg"
+ ALT="$\upmu$"></SPAN>seismic monitoring within the mining contexts. Code examples detailing these customizations in <SPAN CLASS="MATH"><IMG
+ STYLE=""
+ SRC="img1.svg"
+ ALT="$\upmu$"></SPAN>Quake will be provided later in the document, demonstrating how these adaptations can be seamlessly integrated into existing data manipulation workflows.
+
+<P>
+The most significant deviation from the Obspy object definition concerns the 
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A
+ HREF="node21.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node19.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node19.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html149"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node21.html">QuakeML</A>
+<B> Up:</B> <A
+ HREF="node19.html">Data Format for Seismic</A>
+<B> Previous:</B> <A
+ HREF="node19.html">Data Format for Seismic</A>
+ &nbsp; <B>  <A ID="tex2html150"
+  HREF="node2.html">Contents</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

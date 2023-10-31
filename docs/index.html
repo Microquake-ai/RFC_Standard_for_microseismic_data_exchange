@@ -1,0 +1,194 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2021.2 (Released July 1, 2021) -->
+<HTML lang="en">
+<HEAD>
+<TITLE>Seismic Data Exchange Format for in-Mines System (MDEFM) - RFC</TITLE>
+<META NAME="description" CONTENT="Seismic Data Exchange Format for in-Mines System (MDEFM) - RFC">
+<META NAME="keywords" CONTENT="00_main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2021.2">
+
+<LINK REL="STYLESHEET" HREF="00_main.css">
+
+<LINK REL="next" HREF="node1.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node1.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up_g.png"> 
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev_g.png"> 
+<A ID="tex2html8"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node1.html">Executive Summary</A>
+ &nbsp; <B>  <A ID="tex2html9"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H1 class="CENTER"><SPAN CLASS="MATH"><IMG
+ STYLE=""
+ SRC="img1.svg"
+ ALT="$\upmu$"></SPAN>Seismic Data Exchange Format for in-Mines System (MDEFM) - RFC</H1>
+<DIV CLASS="author_info">
+
+<STRONG>Jean-Philippe Mercier</STRONG>
+<P>
+October 31, 2023</P>
+</DIV>
+
+<P>
+
+<BR><HR>
+<!--Table of Child-Links-->
+<A ID="CHILD_LINKS"></A>
+
+<UL CLASS="ChildLinks">
+<LI><A ID="tex2html10"
+  HREF="node1.html">Executive Summary</A>
+<LI><A ID="tex2html11"
+  HREF="node2.html">Contents</A>
+<LI><A ID="tex2html12"
+  HREF="node3.html">Introduction</A>
+<UL>
+<LI><A ID="tex2html13"
+  HREF="node4.html">Purpose</A>
+<LI><A ID="tex2html14"
+  HREF="node5.html">Scope</A>
+<LI><A ID="tex2html15"
+  HREF="node6.html">Objective</A>
+<LI><A ID="tex2html16"
+  HREF="node7.html">Rationale</A>
+<UL>
+<LI><A ID="tex2html17"
+  HREF="node8.html">Need for a New Standard</A>
+</UL>
+</UL>
+<BR>
+<LI><A ID="tex2html18"
+  HREF="node9.html">Terminology and Definitions</A>
+<LI><A ID="tex2html19"
+  HREF="node10.html">General Format Considerations</A>
+<UL>
+<LI><A ID="tex2html20"
+  HREF="node11.html">General Format Considerations</A>
+</UL>
+<BR>
+<LI><A ID="tex2html21"
+  HREF="node12.html">Essential Data Exchange Content</A>
+<UL>
+<LI><A ID="tex2html22"
+  HREF="node13.html">overview</A>
+</UL>
+<BR>
+<LI><A ID="tex2html23"
+  HREF="node14.html">Seismic System Information Categories</A>
+<UL>
+<LI><A ID="tex2html24"
+  HREF="node15.html">Waveforms</A>
+<LI><A ID="tex2html25"
+  HREF="node16.html">Catalog</A>
+<LI><A ID="tex2html26"
+  HREF="node17.html">Inventory</A>
+<LI><A ID="tex2html27"
+  HREF="node18.html">Velocity Grids</A>
+</UL>
+<BR>
+<LI><A ID="tex2html28"
+  HREF="node19.html">Data Format for Seismic Data</A>
+<UL>
+<LI><A ID="tex2html29"
+  HREF="node20.html">Overview</A>
+<LI><A ID="tex2html30"
+  HREF="node21.html">QuakeML</A>
+<UL>
+<LI><A ID="tex2html31"
+  HREF="node22.html">Modifications</A>
+<UL>
+<LI><A ID="tex2html32"
+  HREF="node23.html">Parameter Validation</A>
+</UL>
+</UL>
+<LI><A ID="tex2html33"
+  HREF="node24.html">Waveforms and StationXML</A>
+<UL>
+<LI><A ID="tex2html34"
+  HREF="node25.html">Modifications</A>
+<UL>
+<LI><A ID="tex2html35"
+  HREF="node26.html">Parameter Validation</A>
+</UL>
+<LI><A ID="tex2html36"
+  HREF="node27.html">Stream Naming Convention</A>
+<LI><A ID="tex2html37"
+  HREF="node28.html">Waveform Representation and Response Correction</A>
+</UL>
+<LI><A ID="tex2html38"
+  HREF="node29.html">Auxiliary Data</A>
+<UL>
+<LI><A ID="tex2html39"
+  HREF="node30.html">Overview</A>
+<LI><A ID="tex2html40"
+  HREF="node31.html">Rays</A>
+</UL>
+</UL>
+<BR>
+<LI><A ID="tex2html41"
+  HREF="node32.html">Data Format for Grids</A>
+<UL>
+<LI><A ID="tex2html42"
+  HREF="node33.html">overview</A>
+<UL>
+<LI><A ID="tex2html43"
+  HREF="node34.html">General Format</A>
+</UL>
+<LI><A ID="tex2html44"
+  HREF="node35.html">Global Grids</A>
+</UL>
+<BR>
+<LI><A ID="tex2html45"
+  HREF="node36.html">References</A>
+<LI><A ID="tex2html46"
+  HREF="node37.html">References</A>
+<LI><A ID="tex2html47"
+  HREF="node38.html">Source Parameter Definitions</A>
+<LI><A ID="tex2html48"
+  HREF="node39.html">Instrument Response</A>
+<UL>
+<LI><A ID="tex2html49"
+  HREF="node40.html">Cable Effect on Frequency Response</A>
+<LI><A ID="tex2html50"
+  HREF="node41.html">IRIS NRL</A>
+</UL>
+<BR>
+<LI><A ID="tex2html51"
+  HREF="node42.html">Coordinate System Implementation</A>
+<UL>
+<LI><A ID="tex2html52"
+  HREF="node43.html"><SPAN  CLASS="texttt">Coordinates</SPAN> Class</A>
+<LI><A ID="tex2html53"
+  HREF="node44.html"><SPAN  CLASS="texttt">CoordinateTransformation</SPAN> Class</A>
+<LI><A ID="tex2html54"
+  HREF="node45.html"><SPAN  CLASS="texttt">CoordinateSystem</SPAN> Enumeration</A>
+</UL>
+<BR>
+<LI><A ID="tex2html55"
+  HREF="node46.html">About this document ...</A>
+</UL>
+<!--End of Table of Child-Links-->
+<BR><HR>
+
+</BODY>
+</HTML>

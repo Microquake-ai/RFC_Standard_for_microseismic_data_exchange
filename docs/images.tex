@@ -1,0 +1,560 @@
+\batchmode
+\documentclass[12pt]{article}
+\RequirePackage{ifthen}
+
+
+
+
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{siunitx}
+\usepackage{upgreek}
+\usepackage{natbib}
+\usepackage{xspace}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{mdframed}
+\usepackage{minted}
+\usepackage[acronym]{glossaries}
+\usepackage[  colorlinks=true,           linkcolor=blue,            citecolor=green,           filecolor=magenta,         urlcolor=cyan            ]{hyperref}
+
+
+\hypersetup{
+    citecolor=blue
+}
+
+
+\usepackage{parskip} 
+
+\setlength{\parindent}{0pt}  % Removes first-line indent from paragraphs
+
+%
+\providecommand{\museismic}{$\upmu$seismic\xspace}%
+\providecommand{\muquake}{$\upmu$Quake\xspace} 
+
+
+\DeclareSIUnit{\foot}{ft}
+
+
+\makeglossaries
+
+
+\newacronym{das}{DAS}{distributed acoustic sensing}
+\newacronym{ai}{AI}{artificial intelligence}
+\newacronym{fba}{FBA}{force balance accelerometer}
+\newacronym{hdf5}{HDF5}{hierarchical data format version 5}
+\newacronym{asdf}{ASDF}{adaptable seismic data format}
+\newacronym{seed}{SEED}{standard for the exchange of earthquake data}
+\newacronym{utc}{UTC}{coordinated universal time}
+\newacronym{nrl}{NRL}{nominal response library}
+\newacronym{smti}{SMTI}{seismic moment tensor inversion}
+\newacronym{ppv}{PPV}{peak particle velocity}
+\newacronym{ppa}{PPA}{peak particle acceleration}
+\newacronym{ned}{NED}{north east down}
+\newacronym{enu}{ENU}{east north up}
+
+
+
+
+
+
+
+
+\makeatletter
+
+\makeatletter
+\count@=\the\catcode`\_ \catcode`\_=8 
+\newenvironment{tex2html_wrap}{}{}%
+\catcode`\<=12\catcode`\_=\count@
+\newcommand{\providedcommand}[1]{\expandafter\providecommand\csname #1\endcsname}%
+\newcommand{\renewedcommand}[1]{\expandafter\providecommand\csname #1\endcsname{}%
+  \expandafter\renewcommand\csname #1\endcsname}%
+\newcommand{\newedenvironment}[1]{\newenvironment{#1}{}{}\renewenvironment{#1}}%
+\let\newedcommand\renewedcommand
+\let\renewedenvironment\newedenvironment
+\makeatother
+\let\mathon=$
+\let\mathoff=$
+\ifx\AtBeginDocument\undefined \newcommand{\AtBeginDocument}[1]{}\fi
+\newbox\sizebox
+\setlength{\hoffset}{0pt}\setlength{\voffset}{0pt}
+\addtolength{\textheight}{\footskip}\setlength{\footskip}{0pt}
+\addtolength{\textheight}{\topmargin}\setlength{\topmargin}{0pt}
+\addtolength{\textheight}{\headheight}\setlength{\headheight}{0pt}
+\addtolength{\textheight}{\headsep}\setlength{\headsep}{0pt}
+\newwrite\lthtmlwrite
+\makeatletter
+\let\realnormalsize=\normalsize
+\global\topskip=2sp
+\def\preveqno{}\let\real@float=\@float \let\realend@float=\end@float
+\def\@float{\let\@savefreelist\@freelist\real@float}
+\def\liih@math{\ifmmode$\else\bad@math\fi}
+\def\end@float{\realend@float\global\let\@freelist\@savefreelist}
+\let\real@dbflt=\@dbflt \let\end@dblfloat=\end@float
+\let\@largefloatcheck=\relax
+\let\if@boxedmulticols=\iftrue
+\def\@dbflt{\let\@savefreelist\@freelist\real@dbflt}
+\def\adjustnormalsize{\def\normalsize{\mathsurround=0pt \realnormalsize
+ \parindent=0pt\abovedisplayskip=0pt\belowdisplayskip=0pt}%
+ \def\phantompar{\csname par\endcsname}\normalsize}%
+\def\lthtmltypeout#1{{\let\protect\string \immediate\write\lthtmlwrite{#1}}}%
+\usepackage[tightpage,active]{preview}
+\PreviewBorder=1bp
+\newbox\lthtmlPageBox
+\newdimen\lthtmlCropMarkHeight
+\newdimen\lthtmlCropMarkDepth
+\long\def\lthtmlTightVBoxA#1{\def\lthtmllabel{#1}
+    \setbox\lthtmlPageBox\vbox\bgroup\catcode`\_=8 }%
+\long\def\lthtmlTightVBoxZ{\egroup
+    \lthtmlCropMarkHeight=\ht\lthtmlPageBox \advance \lthtmlCropMarkHeight 6pt
+    \lthtmlCropMarkDepth=\dp\lthtmlPageBox
+    \lthtmltypeout{^^J:\lthtmllabel:lthtmlCropMarkHeight:=\the\lthtmlCropMarkHeight}%
+    \lthtmltypeout{^^J:\lthtmllabel:lthtmlCropMarkDepth:=\the\lthtmlCropMarkDepth:1ex:=\the \dimexpr 1ex}%
+    \begin{preview}\copy\lthtmlPageBox\end{preview}}%
+\long\def\lthtmlTightFBoxA#1{\def\lthtmllabel{#1}%
+    \adjustnormalsize\setbox\lthtmlPageBox=\vbox\bgroup\hbox\bgroup %
+    \let\ifinner=\iffalse \let\)\liih@math %
+    \bgroup\catcode`\_=8 }%
+\long\def\lthtmlTightFBoxZ{\egroup\egroup
+    \@next\next\@currlist{}{\def\next{\voidb@x}}%
+    \expandafter\box\next\egroup %
+    \lthtmlCropMarkHeight=\ht\lthtmlPageBox \advance \lthtmlCropMarkHeight 6pt
+    \lthtmlCropMarkDepth=\dp\lthtmlPageBox
+    \lthtmltypeout{^^J:\lthtmllabel:lthtmlCropMarkHeight:=\the\lthtmlCropMarkHeight}%
+    \lthtmltypeout{^^J:\lthtmllabel:lthtmlCropMarkDepth:=\the\lthtmlCropMarkDepth:1ex:=\the \dimexpr 1ex}%
+    \begin{preview}\copy\lthtmlPageBox\end{preview}}%
+    \long\def\lthtmlinlinemathA#1#2\lthtmlindisplaymathZ{\lthtmlTightVBoxA{#1}{\hbox\bgroup#2\egroup}\lthtmlTightVBoxZ}
+    \def\lthtmlinlineA#1#2\lthtmlinlineZ{\lthtmlTightVBoxA{#1}{\hbox\bgroup#2\egroup}\lthtmlTightVBoxZ}
+    \long\def\lthtmldisplayA#1#2\lthtmldisplayZ{\lthtmlTightVBoxA{#1}{#2}\lthtmlTightVBoxZ}
+    \long\def\lthtmldisplayB#1#2\lthtmldisplayZ{\\edef\preveqno{(\theequation)}%
+        \lthtmlTightVBoxA{#1}{\let\@eqnnum\relax#2}\lthtmlTightVBoxZ}
+    \long\def\lthtmlfigureA#1{\let\@savefreelist\@freelist
+        \lthtmlTightFBoxA{#1}}
+    \long\def\lthtmlfigureZ{
+        \lthtmlTightFBoxZ\global\let\@freelist\@savefreelist}
+    \long\def\lthtmlpictureA#1{\let\@savefreelist\@freelist
+        \lthtmlTightVBoxA{#1}}
+    \long\def\lthtmlpictureZ{
+        \lthtmlTightVBoxZ\global\let\@freelist\@savefreelist}
+\def\lthtmlcheckvsize{\ifdim\ht\sizebox<\vsize 
+  \ifdim\wd\sizebox<\hsize\expandafter\hfill\fi \expandafter\vfill
+  \else\expandafter\vss\fi}%
+\providecommand{\selectlanguage}[1]{}%
+\makeatletter \tracingstats = 1 
+
+
+\begin{document}
+\pagestyle{empty}\thispagestyle{empty}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength hsize=\the\hsize}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength vsize=\the\vsize}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength hoffset=\the\hoffset}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength voffset=\the\voffset}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength topmargin=\the\topmargin}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength topskip=\the\topskip}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength headheight=\the\headheight}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength headsep=\the\headsep}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength parskip=\the\parskip}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength oddsidemargin=\the\oddsidemargin}\lthtmltypeout{}%
+\makeatletter
+\if@twoside\lthtmltypeout{latex2htmlLength evensidemargin=\the\evensidemargin}%
+\else\lthtmltypeout{latex2htmlLength evensidemargin=\the\oddsidemargin}\fi%
+\lthtmltypeout{}%
+\makeatother
+\setcounter{page}{1}
+\onecolumn
+
+% !!! IMAGES START HERE !!!
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline360}%
+$\upmu$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsubsection}
+\stepcounter{section}
+\stepcounter{section}
+\stepcounter{subsection}
+\stepcounter{section}
+\stepcounter{subsection}
+\stepcounter{section}
+\stepcounter{subsection}
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline342}%
+\( M_0 \)%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline343}%
+\( f_c \)%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{section}
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{mdframed181}%
+\begin{mdframed}
+% latex2html id marker 181
+[backgroundcolor=gray!20]
+\textbf{Note on Coordinate Systems:} Utilizing a Cartesian coordinate system (x, y, z) introduces inherent ambiguities. Notably, the orientation of the x and y axes could align either with the North and East directions or be reversed. Additionally, the direction of the z-axis could be either upwards or downwards. To mitigate these ambiguities, we recommend imposing constraints on the alignment of the x, y, and z axes to ensure the coordinate system is right-handed and aligned with geographical axes. Specifically, we advocate the use of \gls{enu} and \gls{ned} coordinate systems.
+\par
+$\upmu$Quake\xspace version 2.0 introduces the \texttt{Coordinates} Class and implements the management of the Cartesian coordinate system in the relevant Obspy objects, allowing the integration of the information in the QuakeML and StationXML format (see Appendix~\ref{app:coordinate_system_handling}). The handling is done by converting the \texttt{Coordinate} object to JSON and writing the JSON string as an object extra parameters. The extra parameters are then persisted to the QuakeML or StationXML by creating a new namespace inside the QuakeML or StationXML file. 
+\par
+\begin{verbatim}
+
+<?xml version='1.0' encoding='utf-8'?>
+    <q:quakeml xmlns:mq="https://microquake.ai/xml/event/1" 
+    xmlns="http://quakeml.org/xmlns/bed/1.2" 
+    xmlns:q="http://quakeml.org/xmlns/quakeml/1.2">\end{verbatim}
+
+\par
+\end{mdframed}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline344}%
+\(f_0\)%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline345}%
+\(E_p\)%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline346}%
+\(P\)%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline347}%
+\(E_s\)%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline348}%
+\(S\)%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline398}%
+$f_0$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline400}%
+$E_p$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline402}%
+$E_s$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline410}%
+$M_0$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{paragraph}
+\stepcounter{subsection}
+\stepcounter{subsubsection}
+\stepcounter{paragraph}
+\stepcounter{subsubsection}
+\stepcounter{subsubsection}
+\stepcounter{subsection}
+\stepcounter{subsubsection}
+\stepcounter{subsubsection}
+\stepcounter{section}
+\stepcounter{subsection}
+\stepcounter{subsubsection}
+\stepcounter{subsection}
+\stepcounter{section}
+\appendix
+\stepcounter{section}
+
+\renewcommand{\arraystretch}{2}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline793}%
+$M_w = \frac{2}{3} \left( \log_{10} M_0 - 9.1 \right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline795}%
+$E = E_p + E_s$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline797}%
+$R = \left(\frac{3M_0}{4\pi\mu}\right)^{1/3}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline799}%
+$P = \frac{M_0}{\mu}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline801}%
+$\sigma_a = \frac{E}{M_0}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline803}%
+$V_a = \frac{E}{\rho V_p^2}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline805}%
+$\Delta\sigma_{\text{stat}} = \frac{7}{16} \left(\frac{M_0}{\pi R^3}\right)^{1/3}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline807}%
+$\Delta\sigma_{\text{dyn}} = \frac{7}{16} \rho V_s^2 \left(\frac{M_0}{\pi R^3}\right)^{1/3}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline809}%
+$\rho$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline811}%
+$V_p$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline813}%
+$V_s$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline815}%
+$R$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline817}%
+$\mu$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline849}%
+\( \pm 2.5 \)%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{minted834}%
+\begin{minted}[frame=lines, framesep=2mm]{python} label=lst:uquake_example]
+import numpy as np
+from uquake.core import Stream, Trace, UTCDateTime
+from uquake.core.inventory import Inventory, Network, Station, Channel, Site
+from uquake.core.inventory.response import Response, PolesZerosResponseStage, CoefficientsTypeResponseStage
+\par
+# Create Inventory, Network, and Station as before
+inv = Inventory(networks=[], source="Example")
+net = Network(code="XX", stations=[], description="Example Network")
+sta = Station(code="STA1", x=0.0, y=0.0, z=0.0, site=Site(name="Example Site"))
+\par
+# Create the Channel and Response objects
+cha = Channel(code="HHZ", location_code="", x=0.0, y=0.0, z=0.0, sample_rate=100.0)
+resp = Response()
+\par
+# Poles and Zeros for 15 Hz geophone
+pz_stage = PolesZerosResponseStage(
+    stage_sequence_number=1,
+    stage_gain=1.0,
+    stage_gain_frequency=1.0,
+    input_units="M/S",
+    output_units="V",
+    pz_transfer_function_type="LAPLACE (RADIANS/SECOND)",
+    normalization_frequency=1.0,
+    zeros=[0j],
+    poles=[-94.44j, 94.44j],
+    normalization_factor=1.0
+)
+\par
+# Coefficients for 24-bit digitizer
+coeff_stage = CoefficientsTypeResponseStage(
+    stage_sequence_number=2,
+    stage_gain=1 / (2.5 / (2**23)),
+    stage_gain_frequency=1.0,
+    input_units="V",
+    output_units="COUNT",
+    cf_transfer_function_type="DIGITAL",
+    numerator=[1.0],
+    denominator=[]
+)
+\par
+# Add stages and complete the hierarchy
+resp.response_stages.append(pz_stage)
+resp.response_stages.append(coeff_stage)
+cha.response = resp
+sta.channels.append(cha)
+net.stations.append(sta)
+inv.networks.append(net)
+\par
+# Create a Stream with random ADC count values simulating the data
+npts = 1000
+starttime = UTCDateTime(0)
+sampling_rate = 100.0
+\par
+# Create a single Trace object
+trace = Trace(data=np.random.randint(-2**23, 2**23, npts))
+trace.stats.starttime = starttime
+trace.stats.sampling_rate = sampling_rate
+trace.stats.network = "XX"
+trace.stats.station = "STA1"
+trace.stats.channel = "HHZ"
+\par
+# Create a Stream object and append the Trace
+stream = Stream(traces=[trace])
+\par
+# Attach the response to the Stream
+stream.attach_response(inv)
+\par
+# Convert waveform from ADC count to physical units
+stream.remove_response(output="ACC")
+stream.remove_response(output="VEL")
+stream.remove_response(output="DISP")
+\end{minted}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline859}%
+$\Omega$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline850}%
+\(\tau = RC\)%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay1376}%
+$\displaystyle \tau = 2500 \Omega \times 10 \times 10^{-9} F = 25 \times 10^{-6} s
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{minted840}%
+\begin{minted}[frame=lines]{python}
+from uquake.core.inventory import (Response, Coefficients, Polynomial, 
+                                   PolesZeros, Blockette)
+\par
+# Sensor response already created
+response_sensor = ...
+\par
+# Create the cable stage
+cable_tau = 25e-6  # in seconds
+cable_pole_zero = PolesZeros(
+    pz_transfer_function_type="LAPLACE (RADIANS/SECOND)",
+    normalization_frequency=0.0,
+    zeros=[0.0],
+    poles=[-1 / cable_tau],
+    normalization_factor=1.0,
+)
+\par
+# Create the cable response stage
+cable_stage = Blockette(
+    stage_sequence_number=2,
+    response=cable_pole_zero
+)
+\par
+# Add the cable stage to the existing response
+response_sensor.response_stages.append(cable_stage)
+\par
+# Add this to your channel
+channel.response = response_sensor
+\end{minted}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{minted845}%
+\begin{minted}[frame=lines]{python}
+# Using uquake
+from uquake.core.inventory import Inventory, Network, Station, Channel, Site
+from uquake.clients.nrl import NRL
+\par
+# Initialize NRL client
+nrl = NRL()
+\par
+# Construct response from NRL
+response_uquake = nrl.get_response(
+    sensor_keys=['Sensor Manufacturer', 'Sensor Model'],
+    datalogger_keys=['Datalogger Manufacturer', 'Datalogger Model']
+)
+\par
+# Define channel with x, y, z coordinates
+channel = Channel(
+    code="EHZ",
+    location_code="",
+    x=0.0,
+    y=0.0,
+    z=0.0,
+    response=response_uquake
+)
+\end{minted}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+\stepcounter{subsection}
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline961}%
+\((dx, dy, dz)\)%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+
+\end{document}

@@ -1,0 +1,152 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2021.2 (Released July 1, 2021) -->
+<HTML lang="en">
+<HEAD>
+<TITLE>Rays</TITLE>
+<META NAME="description" CONTENT="Rays">
+<META NAME="keywords" CONTENT="00_main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2021.2">
+
+<LINK REL="STYLESHEET" HREF="00_main.css">
+
+<LINK REL="previous" HREF="node30.html">
+<LINK REL="next" HREF="node32.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node32.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node29.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node30.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html181"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node32.html">Data Format for Grids</A>
+<B> Up:</B> <A
+ HREF="node29.html">Auxiliary Data</A>
+<B> Previous:</B> <A
+ HREF="node30.html">Overview</A>
+ &nbsp; <B>  <A ID="tex2html182"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H3><A ID="SECTION00084200000000000000">
+Rays</A>
+</H3>
+
+<P>
+Rays and their derivative information serve as key inputs in microseismic monitoring analyses, such as magnitude calculation and smti evaluation. Calculating these rays on the fly poses computational challenges. Without precomputed rays, analyses often resort to the straight-ray assumption or require resource-intensive recalculations. Microseismic monitoring systems rarely keep or save ray information due to the lack of containers or structures for preserving it. This hinders the ability to easily reproduce results, especially when velocity models and travel-time grids are not readily accessible. Storing rays in the asdf file within <SPAN CLASS="MATH"><IMG
+ STYLE=""
+ SRC="img1.svg"
+ ALT="$\upmu$"></SPAN>Quake streamlines computational processes by obviating repetitive, costly ray tracing and by providing more complete information downstream.
+
+<P>
+<BR><P></P>
+<DIV class="CENTER">
+<DIV class="CENTER">
+<A ID="291"></A>
+<TABLE class="PAD  BORDER" style="">
+<CAPTION><STRONG>Table:</STRONG>
+Ray Object Data Structure</CAPTION>
+<TR><TH CLASS="LEFT"><SPAN  CLASS="textbf">Object</SPAN></TH>
+<TH CLASS="LEFT"><SPAN  CLASS="textbf">Parameter</SPAN></TH>
+<TH CLASS="LEFT TOP"  WIDTH=218><SPAN  CLASS="textbf">Description</SPAN></TH>
+<TH CLASS="LEFT"><SPAN  CLASS="textbf">Type</SPAN></TH>
+</TR>
+<TR><TD CLASS="LEFT" ROWSPAN=4 WIDTH=145><SPAN>WaveformStreamID</SPAN></TD>
+<TD CLASS="LEFT">site_code</TD>
+<TD CLASS="LEFT TOP"  WIDTH=218>Site code of the receiver station</TD>
+<TD CLASS="LEFT">str</TD>
+</TR>
+<TR><TD CLASS="LEFT">event_id</TD>
+<TD CLASS="LEFT TOP"  WIDTH=218>ResourceIdentifier for the seismic event</TD>
+<TD CLASS="LEFT">ResourceIdentifier</TD>
+</TR>
+<TR><TD CLASS="LEFT">origin_id</TD>
+<TD CLASS="LEFT TOP"  WIDTH=218>ResourceIdentifier for the origin</TD>
+<TD CLASS="LEFT">ResourceIdentifier</TD>
+</TR>
+<TR><TD CLASS="LEFT">arrival_id</TD>
+<TD CLASS="LEFT TOP"  WIDTH=218>ResourceIdentifier for the arrival</TD>
+<TD CLASS="LEFT">ResourceIdentifier</TD>
+</TR>
+<TR><TD CLASS="LEFT">Ray trace</TD>
+<TD CLASS="LEFT">nodes</TD>
+<TD CLASS="LEFT TOP"  WIDTH=218>List of 3D coordinates defining the ray path</TD>
+<TD CLASS="LEFT">np.array</TD>
+</TR>
+<TR><TD CLASS="LEFT">Ray parameters</TD>
+<TD CLASS="LEFT">phase</TD>
+<TD CLASS="LEFT TOP"  WIDTH=218>Seismic phase (P or S)</TD>
+<TD CLASS="LEFT">str</TD>
+</TR>
+<TR><TD CLASS="LEFT">&nbsp;</TD>
+<TD CLASS="LEFT">azimuth</TD>
+<TD CLASS="LEFT TOP"  WIDTH=218>Azimuth angle in degrees</TD>
+<TD CLASS="LEFT">float</TD>
+</TR>
+<TR><TD CLASS="LEFT">&nbsp;</TD>
+<TD CLASS="LEFT">takeoff_angle</TD>
+<TD CLASS="LEFT TOP"  WIDTH=218>Takeoff angle in degrees</TD>
+<TD CLASS="LEFT">float</TD>
+</TR>
+<TR><TD CLASS="LEFT">&nbsp;</TD>
+<TD CLASS="LEFT">travel_time</TD>
+<TD CLASS="LEFT TOP"  WIDTH=218>Travel time in seconds</TD>
+<TD CLASS="LEFT">float</TD>
+</TR>
+<TR><TD CLASS="LEFT">Metadata</TD>
+<TD CLASS="LEFT">earth_model_id</TD>
+<TD CLASS="LEFT TOP"  WIDTH=218>ResourceIdentifier for the Earth velocity model</TD>
+<TD CLASS="LEFT">ResourceIdentifier</TD>
+</TR>
+</TABLE></DIV>
+</DIV>
+<BR>
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A
+ HREF="node32.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node29.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node30.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html181"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node32.html">Data Format for Grids</A>
+<B> Up:</B> <A
+ HREF="node29.html">Auxiliary Data</A>
+<B> Previous:</B> <A
+ HREF="node30.html">Overview</A>
+ &nbsp; <B>  <A ID="tex2html182"
+  HREF="node2.html">Contents</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>
