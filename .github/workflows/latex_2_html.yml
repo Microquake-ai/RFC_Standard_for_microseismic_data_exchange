@@ -29,10 +29,10 @@ jobs:
       run: |
         latex2html -dir docs -mkdir 00_main.tex
 
-    # - name: Add custom styling
-    #   run: |
-    #     cp custom_styles.css docs/
-    #     echo '<link rel="stylesheet" type="text/css" href="custom_styles.css">' >> docs/00_main.html
+    - name: Add custom styling
+      run: |
+        cp custom_styles.css docs/
+        echo '<link rel="stylesheet" type="text/css" href="custom_styles.css">' >> docs/00_main.html
 
     - name: Commit and Push to Repository
       run: |
