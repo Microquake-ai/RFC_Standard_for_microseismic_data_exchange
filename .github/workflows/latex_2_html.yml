@@ -28,12 +28,15 @@ jobs:
         ssh-key: ${{ secrets.GH_SSH_KEY }}
         repository: Microquake-ai/RFC_Standard_for_microseismic_data_exchange
 
-    - name: Install TeX Live, latex2html, and other required packages
+    - name: Install TeX Live and other required packages
       run: |
-        sudo apt-get install -y texlive texlive-latex-extra texlive-bibtex-extra biber latex2html 
+        sudo apt-get install -y texlive texlive-latex-extra texlive-bibtex-extra biber
         sudo apt-get install -y texlive-science texlive-fonts-extra texlive-humanities texlive-pictures texlive-publishers texlive-xetex
         sudo apt-get install -y texlive-luatex python3-pygments
 
+    - name: Install LaTeXML
+      run: |
+        sudo apt-get install -y latexml
 
     - name: Compile LaTeX with references and glossary
       run: |
@@ -43,9 +46,10 @@ jobs:
         pdflatex -shell-escape 00_main.tex
         pdflatex -shell-escape 00_main.tex
 
-    - name: Convert PDF to HTML
+    - name: Convert LaTeX to HTML using LaTeXML
       run: |
-        latex2html -dir docs -mkdir 00_main.tex
+        latexml --dest=docs/00_main.xml 00_main.tex
+        latexmlpost --dest=docs/00_main.html docs/00_main.xml
 
     - name: Add custom styling
       run: |
@@ -59,5 +63,3 @@ jobs:
         git add docs/*
         git commit -m "Add generated HTML page" || exit 0
         git push origin || exit 0
-
-
