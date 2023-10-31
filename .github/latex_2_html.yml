@@ -1,0 +1,29 @@
+name: Compile LaTeX to HTML
+
+on:
+  push:
+    paths:
+      - '*.tex'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Install TeX Live and latex2html
+      run: sudo apt-get install -y texlive latex2html
+
+    - name: Compile LaTeX to HTML
+      run: |
+        latex2html -dir docs -mkdir main.tex
+
+    - name: Commit and Push to Repository
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add docs/*
+        git commit -m "Add generated HTML page" || exit 0
+        git push origin || exit 0
