@@ -3,7 +3,7 @@ name: Compile LaTeX to HTML
 on:
   push:
     paths:
-      - '*.tex'
+      - '*'
 
 jobs:
   build:
@@ -17,6 +17,7 @@ jobs:
       run: |
         echo "${{ secrets.GH_SSH_KEY }}" > private_key.pem
         chmod 600 private_key.pem
+        eval "$(ssh-agent -s)"
         ssh-add private_key.pem
 
     - name: Install TeX Live and latex2html
