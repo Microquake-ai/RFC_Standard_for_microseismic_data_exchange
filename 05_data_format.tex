@@ -7,11 +7,11 @@ Figure~\ref{fig:asdf_data_format} depicts the structure of the \gls{asdf} format
 \begin{description}
     \item[uakeML] An XML-based language, QuakeML focuses on event metadata, cataloging seismic event descriptions such as event origins, magnitudes, and moment tensor solutions.
     
-    \item[Waveform Data] The heart of the \gls{asdf}, this section contains time series representations of seismic waveforms. In the \gls{asdf} format, waveform data are exclusively represented using single and double precision floating point values, or signed integers. These representations are encapsulated as native data arrays within the HDF5 framework.
+    \item[Waveform Data] The heart of the \gls{asdf}, this section contains time series representations of seismic waveforms. In the \gls{asdf} format, waveform data are exclusively represented using single and double-precision floating point values, or signed integers. These representations are encapsulated as native data arrays within the HDF5 framework.
 
     \item[StationXML]: Serving as a repository for station metadata, this section contains detailed instrument information, including their responses, station coordinates, and other specific attributes. This metadata provides vital context to the waveforms. In the \gls{asdf} format, this inventory information is appended directly to the waveforms at the station level.
     
-    \item[Auxiliary Data]: Catering to the diverse needs of seismological analyses, this section allows storage of additional data types, such as cross-correlations or synthetic seismograms.
+    \item[Auxiliary Data]: Catering to the diverse needs of seismological analyses, this section allows the storage of additional data types, such as cross-correlations or synthetic seismograms.
     
     \item[Provenance Data]: In the pursuit of rigorous transparency and reproducibility, this segment meticulously documents the historical progression of data alterations, enumerating each distinct processing operation along with its respective parameters. The provenance documentation adheres to the W3C PROV model \citep{w3cprov2013}, a widely accepted standard for chronicling provenance specifics.
 
@@ -37,7 +37,7 @@ While the \gls{asdf} format provides a robust framework for general seismic data
 Note that the modifications discussed in the following sections, particularly concerning QuakeML and StationXML formats, have been operationalized in the \muquake library. This library extends the Obspy package and is tailored to the specific needs of \museismic monitoring within the mining contexts. Code examples detailing these customizations in \muquake will be provided later in the document, demonstrating how these adaptations can be seamlessly integrated into existing data manipulation workflows.
 
 
-The most significant deviation from the Obspy object definition concern the 
+The most significant deviation from the Obspy object definition concerns the 
 
 
 \subsection{QuakeML}
