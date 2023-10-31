@@ -40,7 +40,7 @@ jobs:
 
     - name: Compile LaTeX with references and glossary
       run: |
-        pdflatex -shell-escape 00_main.tex
+        pdflatex 00-shell-escape _main.tex
         bibtex 00_main
         makeglossaries 00_main
         pdflatex -shell-escape 00_main.tex
