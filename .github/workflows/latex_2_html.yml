@@ -13,6 +13,12 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
+    - name: Setup SSH
+      run: |
+        echo "${{ secrets.GH_SSH_KEY }}" > private_key.pem
+        chmod 600 private_key.pem
+        ssh-add private_key.pem
+
     - name: Install TeX Live and latex2html
       run: sudo apt-get install -y texlive latex2html
 
@@ -26,5 +32,5 @@ jobs:
         git config --local user.name "GitHub Action"
         git add docs/*
         git commit -m "Add generated HTML page" || exit 0
-        git push "https://${{ secrets.GH_TOKEN }}@github.com/Microquake-ai/RFC_Standard_for_microseismic_data_exchange.git" || exit 0
+        git push origin || exit 0
 
