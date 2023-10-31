@@ -1,0 +1,172 @@
+\documentclass[12pt]{article}
+
+% Packages
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{siunitx}
+\usepackage{upgreek}
+\usepackage{natbib}
+\usepackage{xspace}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{mdframed}
+\usepackage{minted}
+\usepackage[acronym]{glossaries}
+\usepackage[
+  colorlinks=true,         % enable colored links
+  linkcolor=blue,          % color of internal links
+  citecolor=green,         % color of links to bibliography
+  filecolor=magenta,       % color of file links
+  urlcolor=cyan            % color of external links
+]{hyperref}
+
+\hypersetup{
+    citecolor=blue
+}
+
+
+% Document Settings
+\usepackage{parskip} % Adds spacing between paragraphs
+\setlength{\parindent}{0pt} % Removes first-line indent from paragraphs
+
+% command
+\newcommand{\museismic}{$\upmu$seismic\xspace}
+\newcommand{\muquake}{$\upmu$Quake\xspace}
+
+\DeclareSIUnit{\foot}{ft}
+
+\input{glossary}
+
+
+\begin{document}
+\title{$\upmu$Seismic Data Exchange Format for in-Mines System (MDEFM) - RFC}
+\author{Jean-Philippe Mercier}
+\date{\today}
+\maketitle
+
+\newpage
+\section*{Executive Summary}
+\addcontentsline{toc}{section}{Executive Summary} % Optional: to include in TOC
+
+\lipsum[1-2] % Replace with your summary text
+
+\newpage
+
+\tableofcontents
+\pagebreak
+
+\section{Introduction}
+\input{01_introduction}
+
+\section{Terminology and Definitions}
+\input{02_terminology}
+
+\section{General Format Considerations}
+\input{03_general_format_considerations}
+
+\section{Essential Data Exchange Content}
+\input{04_data_exchange_needs}
+
+\section{Data Format for Seismic Data}
+\input{05_data_format}
+
+\section{Data Format for Grids}
+\input{06_data_format_grids}
+
+% \section{Conventions}
+% \input{03_conventions}
+% \section{Terminology and Definitionds}
+% % Add definitions as \item[Term] Definition.
+
+% \begin{description}
+%     \item[Example Term] Here is a definition for the example term.
+% \end{description}
+
+
+% \subsection{Encoding}
+% \subsection{Compression and Decompression Methods}
+% \subsection{Versioning}
+
+% \section{Data Structure and Elements}
+% \subsection{Overview}
+% \subsection{Data Header}
+% \subsubsection{Metadata}
+% \subsubsection{Format Version}
+% \subsubsection{Equipment Details}
+% \subsection{Data Body}
+% \subsubsection{Time Series Data}
+% \subsubsection{Event Data}
+% \subsubsection{Comments or Annotations}
+% \subsection{Data Footer}
+
+% \section{Examples}
+% % Insert example with \includegraphics if needed
+% % \includegraphics[width=\linewidth]{filename.png}
+
+% \section{Best Practices}
+% \subsection{Handling Large Volumes of Data}
+% \subsection{Data Integrity Checks}
+% \subsection{Recommendations for Software Implementation}
+
+% \section{Compatibility and Integration}
+% \subsection{Recommendations for Integrating with Existing Systems}
+% \subsection{Backward Compatibility}
+
+% \section{Security Considerations}
+% \subsection{Data Privacy}
+% \subsection{Data Integrity}
+% \subsection{Encryption and Decryption}
+
+% \section{Error Handling}
+% % You can list errors as items or in a table.
+
+% \section{Implementation Guidelines}
+% \subsection{SDKs or Libraries}
+% \subsection{Testing and Verification Methods}
+
+% \section{Future Work}
+% \subsection{Expected Updates or Revisions}
+% \subsection{Areas of Expansion}
+
+% \section{Appendices}
+% \subsection{Supplementary Information}
+% \subsection{References to External Documentation or Standards}
+
+% \section{Acknowledgments}
+
+% \section{Change Log}
+
+\newpage
+\clearpage
+\printglossary[type=\acronymtype,title=List of Acronyms]
+
+\newpage
+\section{References}
+\bibliographystyle{apalike}  % This determines the style in which the references are printed -- 'plain' is a basic style
+\bibliography{references}  % This is your .bib file. No need to add the .bib extension
+
+\newpage
+\begin{titlepage}
+  \centering
+  \vspace*{4cm}
+  \textbf{\Large Appendices}
+  \vfill
+\end{titlepage}
+
+\newpage
+\appendix
+\section{Source Parameter Definitions}
+\include{AA_source_parameters}
+
+\section{Instrument Response}
+\include{AB_response}
+
+\section{Coordinate System Implementation}
+\include{AC_coordinate_system_handling}
+
+% \printglossary
+
+\end{document}

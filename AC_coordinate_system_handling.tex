@@ -1,0 +1,38 @@
+\label{app:coordinate_system_handling}
+
+From version 2.2.0, \muquake includes classes for handling coordinates and their transformations. The main classes are \texttt{Coordinates}, \texttt{CoordinateTransformation}, and \texttt{CoordinateSystem}. Those classes are used to describe coordinates and have been integrated in the following classes: 
+
+\begin{itemize}
+\item \texttt{uquake.core.event.Origin}, 
+\item \texttt{uquake.core.inventory.Station}, 
+\item \texttt{uquake.core.inventory.Channel}, and
+\item \texttt{uquake.grid.base.Grid}
+\end{itemize}
+
+\subsection{\texttt{Coordinates} Class}
+The \texttt{Coordinates} class represents a point in a specific coordinate system. It contains the following attributes and methods:
+
+\begin{description}
+    \item[\texttt{x, y, z: float}] Coordinates in the chosen system.
+    \item[\texttt{coordinate\_system: CoordinateSystem}] Specifies whether the system is \texttt{NED} or \texttt{ENU}.
+    \item[\texttt{transformation: CoordinateTransformation}] Object for handling coordinate transformations.
+\end{description}
+
+\subsection{\texttt{CoordinateTransformation} Class}
+The \texttt{CoordinateTransformation} class handles transformations between custom coordinate systems and latitude-longitude-based systems. Attributes include:
+
+\begin{description}
+    \item[\texttt{translation: tuple}] Translation vector as \((dx, dy, dz)\).
+    \item[\texttt{rotation: list or tuple}] Rotation matrix or Euler angles.
+    \item[\texttt{epsg\_code: int}] EPSG code for the target coordinate system.
+    \item[\texttt{scaling: float or tuple}] Optional scaling factors.
+    \item[\texttt{reference\_elevation: float}] Reference elevation for depth conversions.
+\end{description}
+
+\subsection{\texttt{CoordinateSystem} Enumeration}
+The \texttt{CoordinateSystem} enumeration specifies the coordinate system being used. It enforces a right-hand coordinate system and supports two types:
+
+\begin{description}
+    \item[\texttt{NED}] North, East, Down coordinate system.
+    \item[\texttt{ENU}] East, North, Up coordinate system.
+\end{description}

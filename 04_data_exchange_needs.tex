@@ -1,0 +1,82 @@
+% The data requirements are closely correlated with the intended purpose. For some applications, the delivery of catalog data alone may be sufficient, that is, if the data quality is high enough and one is confident enough in the classification, location and source parameters. For other applications, having access to the waveform is a must. For instance, applications based on artificial intelligence and machine learning greatly benefit from direct access to the waveforms and all the information required to make sense of the data. Information from the catalog can be used as parameters, but are often not optimal and lead to ill-posed problems where the model space does not afford the level of orthogonality permitting an unambiguous solution. Exploiting the waveforms requires having access to the inventory or system information. This type of metadata allows for the localization of the acquisition instrument and provides information on the sensor's nature and response. Another important metadata that is often overlooked, is the velocities. For more and more applications, it is difficult to make sense of the information or reproduce the data without knowledge of the underlying velocity models. It is becoming increasingly frequent for 3D velocity grids to be utilized in the processing of the data. 
+
+\subsection{overview}
+
+The intended application directly governs the specificity of data requirements. When catalog data meets quality standards and its classification, location, and source parameters are reliable, it may suffice for certain applications. However, for more demanding or complex tasks, raw waveforms and accompanying metadata become essential. Sole reliance on catalog data in such instances often leads to ill-posed problems characterized by insufficient model space orthogonality and ambiguous solutions. To fully leverage waveform data, access to inventory or system metadata is imperative for instrument localization and sensor characterization. For completeness, one could also benefit from access to seismic velocities, especially when 3D models are used.
+
+\section{Seismic System Information Categories}
+
+Seismic system information can be partitioned into four main categories:
+
+\begin{description}
+    \item[Catalog] Catalog data includes processed attributes related to seismic events: time, location, magnitude, amplitude (\gls{ppv}, \gls{ppa}), classification, \textit{P}- and \textit{S}-wave picks, and moment tensor/focal mechanism data.
+    
+    \item[Inventory] Details the seismic network, stations, and sensor configurations. This includes sensor location, type, response, and orientations. Inventory data should facilitate necessary data manipulation for analysis.
+    
+    \item[Waveform] Raw or event-triggered time-series data recorded by the instruments, foundational for all seismic analyses.
+    
+    \item[Velocities/Travel Time Grids] Required for location, magnitude calculation, and moment tensor inversion. Allows for ray tracing and wavefield rotation to isolate \textit{P}- and \textit{S}-waves.
+\end{description}
+
+Information in these categories must be internally coherent, enabling straightforward cross-referencing and understanding of data provenance and relationships.
+
+\subsection{Waveforms}
+
+Waveforms should include:
+
+\begin{itemize}
+    \item Instrument and channel ID
+    \item Sampling rate or interval
+    \item Start time
+    \item Amplitude, in ADC counts or physical units
+\end{itemize}
+
+\subsection{Catalog}
+
+Catalog data is bifurcated into:
+
+\begin{description}
+    \item[Event-related] Minimum requirements:
+    \begin{itemize}
+        \item Time (local and UTC)
+        \item Location
+        \item Classification 
+        \item Magnitude, along with seismic moment \( M_0 \) and corner frequency \( f_c \) for moment magnitude
+        \item Radiated energy for \textit{P}- and \textit{S}-waves
+        \item Moment tensor solution if available
+    \end{itemize}
+    \item[Waveform-related] Derived from waveform data:
+    \begin{itemize}
+        \item Picks: \textit{P}- and \textit{S}-wave onset times
+        \item Amplitude: Information, evaluation mode, and status
+    \end{itemize}
+\end{description}
+
+\subsection{Inventory}
+
+Minimum inventory requirements:
+
+\begin{itemize}
+    \item Instrument ID
+    \item Location
+    \item Channel orientations
+    \item Instrument response, per channel
+\end{itemize}
+
+\subsection{Velocity Grids}
+
+A functional velocity grid should comprise:
+
+\begin{itemize}
+    \item Origin
+    \item Spacing between grid nodes
+    \item Dimensions: Number of grid points in each axis
+    \item Data: Grid values
+    \item Units (\si{\meter} or \si{\foot})
+\end{itemize}
+
+
+
+
+
+
