@@ -26,4 +26,5 @@ jobs:
         git config --local user.name "GitHub Action"
         git add docs/*
         git commit -m "Add generated HTML page" || exit 0
-        git push origin || exit 0
+        git push "https://${{ secrets.GH_TOKEN }}@github.com/Microquake-ai/RFC_Standard_for_microseismic_data_exchange.git" || exit 0
+
