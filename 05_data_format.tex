@@ -181,7 +181,7 @@ A unique stream name is obtained by concatenating those parts together as follow
 
 \subsubsection{Waveform Representation and Response Correction}
 
-Waveform data in \museismic can be stored as either integers representing ADC counts or as physical units such as \si{\meter}, \si{\meter\per\second}, and \si{\meter\per\second\squared} using 32-bit single-precision floats. An essential aspect of data integrity and interpretation is the correction of the instrument's response, embedded in the StationXML. The \muquake library, through Obspy, provides functionalities for both response correction and unit transformation, allowing the waveforms to be accurately expressed in terms of acceleration, velocity, or displacement. Detailed guidelines for constructing the instrument's response and examples for correction are discussed in Appendix~\ref{sec:app_response}.
+Waveform data in \museismic can be stored as either integers representing ADC counts or as physical units such as \si{\meter}, \si{\meter\per\second}, and \si{\meter\per\second\squared} using 32-bit single-precision floats. An essential aspect of data integrity and interpretation is the correction of the instrument's response embedded in the StationXML. The \muquake library, through Obspy, provides functionalities for both response correction and unit transformation, allowing the waveforms to be accurately expressed in terms of acceleration, velocity, or displacement. Detailed guidelines for constructing the instrument's response and examples for correction are discussed in Appendix~\ref{sec:app_response}.
 
  
 \subsection{Auxiliary Data}
