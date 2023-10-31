@@ -4,16 +4,13 @@ on:
   push:
     paths:
       - '*.tex'
-      - '.github/workflows/latex_to_html.yml'
+      - '.github/workflows/latex_2_html.yml'
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-
     - name: Setup SSH
       run: |
         mkdir -p ~/.ssh
@@ -24,6 +21,12 @@ jobs:
         chmod 600 private_key.pem
         eval "$(ssh-agent -s)"
         ssh-add private_key.pem
+
+    - name: Checkout code
+      uses: actions/checkout@v2
+      with:
+        ssh-key: ${{ secrets.GH_SSH_KEY }}
+        repository: Microquake-ai/RFC_Standard_for_microseismic_data_exchange
 
     - name: Install TeX Live and latex2html
       run: sudo apt-get install -y texlive latex2html
