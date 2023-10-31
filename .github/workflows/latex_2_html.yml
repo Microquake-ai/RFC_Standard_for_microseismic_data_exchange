@@ -32,7 +32,7 @@ jobs:
       run: |
         sudo apt-get install -y texlive texlive-latex-extra texlive-bibtex-extra biber latex2html 
         sudo apt-get install -y texlive-science texlive-fonts-extra texlive-humanities texlive-pictures texlive-publishers texlive-xetex
-        sudo apt-get install -y texlive-luatex python-pygments
+        sudo apt-get install -y texlive-luatex python3-pygments
 
 
     - name: Compile LaTeX with references and glossary
