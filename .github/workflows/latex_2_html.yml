@@ -13,9 +13,6 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
-      with:
-        ssh-key: ${{ secrets.GH_SSH_KEY }}
-        repository: git@github.com:Microquake-ai/RFC_Standard_for_microseismic_data_exchange
 
     - name: Setup SSH
       run: |
