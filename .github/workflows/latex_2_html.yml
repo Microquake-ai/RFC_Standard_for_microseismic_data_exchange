@@ -5,6 +5,7 @@ on:
     paths:
       - '*.tex'
       - '.github/workflows/latex_2_html.yml'
+      - 'custom_styles.css'
 
 jobs:
   build:
