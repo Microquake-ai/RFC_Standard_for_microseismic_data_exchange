@@ -29,7 +29,11 @@ jobs:
         repository: Microquake-ai/RFC_Standard_for_microseismic_data_exchange
 
     - name: Install TeX Live, latex2html, and other required packages
-      run: sudo apt-get install -y texlive texlive-latex-extra texlive-bibtex-extra biber latex2html
+      run: |
+        sudo apt-get install -y texlive texlive-latex-extra texlive-bibtex-extra biber latex2html 
+        sudo apt-get install -y texlive-science texlive-fonts-extra texlive-humanities texlive-pictures texlive-publishers texlive-xetex
+        sudo apt-get install -y texlive-luatex python-pygments
+
 
     - name: Compile LaTeX with references and glossary
       run: |
