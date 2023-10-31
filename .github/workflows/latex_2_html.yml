@@ -45,7 +45,12 @@ jobs:
 
     - name: Convert PDF to HTML
       run: |
+        pdflatex -shell-escape 00_main.tex
+        bibtex 00_main.aux
+        pdflatex -shell-escape 00_main.tex
+        pdflatex -shell-escape 00_main.tex
         latex2html -dir docs -mkdir 00_main.tex
+
 
     - name: Add custom styling
       run: |
