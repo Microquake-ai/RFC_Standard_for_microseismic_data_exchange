@@ -25,7 +25,7 @@ Note that the regular grid is a special case of a rectilinear grid where the spa
 The grid data structure, whether global or instrument-specific, contains common elements that define its geometry and facilitate its interpretation. A straightforward yet effective description can be achieved using the origin, spacing, and dimensions of the grid.
 
 \begin{description}
-    \item[Origin] The origin refers to the coordinate point in the grid where the spatial indices are (0,0,0). It acts as the reference point for other grid points and is specified in the coordinate system used (e.g., ENU or NED).
+    \item[Origin] The origin refers to the coordinate point in the grid where the spatial indices are (0,0,0). It acts as the reference point for other grid points and is specified in the coordinate system used (e.g., \gls{enu} or \gls{ned}).
     
     \item[Spacing] The spacing describes the distance between adjacent grid points along each axis (x, y, z). It dictates the resolution of the grid. In regular grids, the spacing is constant, while in rectilinear grids, it can vary along each axis. The spacing is generally provided in units consistent with the chosen coordinate system.
     
