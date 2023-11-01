@@ -123,30 +123,7 @@ The ASDF file format combines waveforms and inventory data. To ensure flawless i
 
 ASDF adopts a relaxed version of the SEED Identifier Convention, previously part of QuakeML and StationXML standards and now extended to the waveform data. The StationXML does not restrict the string length; QuakeML does. We therefore suggest adopting the convention presented in section 3.3.5 of the [QuakeML Version 1.2 (revision 20130214b)](https://quake.ethz.ch/quakeml/docs/latest?action=AttachFile&do=get&target=QuakeML-BED.pdf).
 
-## Auxiliary Data
-
-### Overview
-
-The design of the ASDF format incorporates provisions for extensibility, enabling the inclusion of auxiliary data beyond the predefined schema for catalogs, inventory information, and waveform data. Given the dynamic and varied nature of seismological research, and the specificity of the different fields where seismology applies, including museismic monitoring in mines, it is neither possible nor practically feasible to create a rigid schema that accommodates all potential use cases. While ASDF prescribes a structured format for fundamental seismic data types like catalogs, inventory, and waveforms, it concurrently provides flexible containers, which structure is yet to be defined. These containers capture the broad and evolving range of applications in seismology, both current and future, thereby ensuring the format's utility and relevance over time.
-
-Auxiliary data in ASDF is intentionally loosely defined, allowing for a broad range of data types beyond seismic waveforms. Each piece of auxiliary data is allocated within an arbitrarily nested path in the auxiliary data group. The data can take on any dimensional form, accompanied by a flexible key-value representation for metadata. This flexibility is not accidental but rather designed to cater to the rapidly evolving needs and active research in various areas of seismology.
-
-As of version 2.0, μquake offers support for the ASDF format, although it has yet to exploit the format's full capabilities. To date, μquake has implemented methods to store two types of auxiliary data that enhance the system performance: rays and alternative event locations obtained through resampling methods used for statistical uncertainty estimation, including Monte Carlo and jackknife techniques. These inclusions obviate the need for repeated, computationally intensive operations by saving results for future use. Looking ahead, we anticipate that community-driven conventions for storing other types of data will emerge, further leveraging the extensibility of the ASDF format for standardized and comprehensive data storage.
-
-### Rays
-
-Rays and their derivative information serve as key inputs in microseismic monitoring analyses, such as magnitude calculation and SMTI evaluation. Calculating these rays on the fly poses computational challenges. Without precomputed rays, analyses often resort to the straight-ray assumption or require resource-intensive recalculations. Microseismic monitoring systems rarely keep or save ray information due to the lack of containers or structures for preserving it. This hinders the ability to easily reproduce results, especially when velocity models and travel-time grids are not readily accessible. Storing rays in the ASDF file within μquake streamlines computational processes by obviating repetitive, costly ray tracing and by providing more complete information downstream.
-
-| Object            | Parameter     | Description                                        | Type               |
-|-------------------|---------------|----------------------------------------------------|--------------------|
-| WaveformStreamID  | site_code     | Site code of the receiver station                  | str                |
-|                   | event_id      | ResourceIdentifier for the seismic event          | ResourceIdentifier |
-|                   | origin_id     | ResourceIdentifier for the origin                 | ResourceIdentifier |
-|                   | arrival_id    | ResourceIdentifier for the arrival                | ResourceIdentifier |
-| Ray trace         | nodes         | List of 3D coordinates defining the ray path       | np.array           |
-| Ray parameters    | phase...      |                                                    |                    |
-
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDAzMzg1MjUsLTEyNzY5MjUxOTZdfQ
+eyJoaXN0b3J5IjpbLTE5MjYxNjI1NzIsLTEyNzY5MjUxOTZdfQ
 ==
 -->
