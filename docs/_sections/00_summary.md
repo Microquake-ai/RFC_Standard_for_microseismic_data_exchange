@@ -1,6 +1,6 @@
 ## Executive Summary
 
-This purpose of the RFC is to seek comments and suggestion regarding a proposed format for the exchange of microseismic data. The focus is on microseismic data collected by 
+This purpose of the RFC is to seek comments and suggestion regarding a proposed format for the exchange of microseismic data. The focus is on microseismic data collected by in-mine monitoring system, however, the proposed format is suited for any kind of microseismic data expressed in local coordinate
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODM2MjY4MTAwXX0=
+eyJoaXN0b3J5IjpbLTU5NjE4NzAzNF19
 -->
