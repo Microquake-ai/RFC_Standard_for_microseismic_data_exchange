@@ -1,7 +1,8 @@
 ---
+
 ---
 
-# Terminology and Definitions
+## Terminology and Definitions
 
 - **Waveforms**  
   A time series representation of seismic wave amplitudes detected by sensors in microseismic monitoring. Originating from subsurface events like rock fractures.

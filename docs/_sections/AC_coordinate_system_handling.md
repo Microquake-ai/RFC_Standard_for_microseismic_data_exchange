@@ -1,7 +1,8 @@
 ---
+
 ---
 
-## Appendix C: Coordinate System Handling {#sec:app_coordinate_system_handling label="sec:app_coordinate_system_handling"}
+## Appendix C: Coordinate System Handling 
 
 ### Coordinate System Handling
 

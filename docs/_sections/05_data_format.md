@@ -1,14 +1,15 @@
 ---
+
 ---
 
-# Data Format
+## Data Format
 
-## Overview
+### Overview
 
 The recommended seismic data standard for adoption is the Adaptable Seismic Data Format (ASDF) [Krischer et al., 2016]. Designed with modern challenges in mind, the ASDF format efficiently addresses the complexities inherent to large and detailed seismic datasets. By employing the Hierarchical Data Format Version 5 (HDF5) container format, ASDF is self-descriptive, ensuring data can be accessed and manipulated with ease across various seismological applications. Its overarching objective is to simplify the organization and exchange of seismic data, emphasizing interoperability, scalability, and the reduction of inconsistencies by amalgamating multiple seismic data components within a singular structure. The ASDF format is suitable for trigger, continuous, and Distributed Acoustic Sensing (DAS) data to name only those.
 
-![ASDF Data Format](ASDF_Format_overview.jpeg)  
-*Figure: Structure of the ASDF format.*
+![ASDF Data Format](../assets/images/ASDF_Format_overview.jpeg)  
+*Figure: ASDF data structure overview (Krischer et al. 2016)*
 
 Nested within the HDF5 container, ASDF systematically organizes seismological components, including:
 
@@ -22,9 +23,6 @@ Nested within the HDF5 container, ASDF systematically organizes seismological co
   
 - **Provenance Data**: In the pursuit of rigorous transparency and reproducibility, this segment meticulously documents the historical progression of data alterations, enumerating each distinct processing operation along with its respective parameters. The provenance documentation adheres to the W3C PROV model [Moreau et al., 2013], a widely accepted standard for chronicling provenance specifics.
 
-
-[//]: # (![ASDF Data Structure Overview]&#40;ASDF_Format_overview.jpeg&#41;)
-*ASDF data structure overview from Krischer et al. (2016)*
 
 Through its comprehensive integration of these components, ASDF paves the way for a standardized, efficient, and in-depth approach to seismological research and data management.
 
@@ -44,16 +42,16 @@ While the ASDF format provides a robust framework for general seismic data handl
 
 The modifications discussed in the following sections, particularly concerning QuakeML and StationXML formats, have been operationalized in the μquake library. This library extends the Obspy package and is tailored to the specific needs of μseismic monitoring within the mining contexts.
 
-## QuakeML
+### QuakeML
 
-### Modifications
+#### Modifications
 
-| **Object** | **New Parameter** | **Description** | **Type** |
-|------------|-------------------|-----------------|----------|
-| Origin     | Coordinates       | Coordinates information | Coordinates[^1] |
-|            | \(f_0\)           | Corner frequency | float |
-| Magnitude  | \(E_p\)           | \(P\)-wave energy | float |
-|            | \(E_s\)           | \(S\)-wave energy | float |
+| **Object** | **New Parameter** | **Description**         | **Type**         |
+|------------|-------------------|-------------------------|------------------|
+| Origin     | Coordinates       | Coordinates information | Coordinates[^1]  |
+|            | f<sub>0</sub>     | Corner frequency        | float            |
+| Magnitude  | E<sub>p</sub>     | *P*-wave energy         | float            |
+|            | E<sub>s</sub>     | *S*-wave energy         | float            |
 
 [^1]: Coordinate class described in the Appendix
 

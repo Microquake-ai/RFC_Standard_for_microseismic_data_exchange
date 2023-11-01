@@ -1,9 +1,10 @@
 ---
+
 ---
 
-# Introduction
+## Introduction
 
-## Purpose
+### Purpose
 
 This RFC aims to invite comments on a suggested format to allow for standardized and consistent access to μseismic data collected by mine μseismic monitoring systems. The proposed conventions and format objective is to enable a seamless, lossless and convenient exchange between different platforms. It considers future needs for developing high-performance, flexible, and accurate artificial intelligence that is envisioned to use the full range of available seismic data.
 
@@ -19,7 +20,7 @@ This document proposes conventions and a format for the lossless and seamless ex
 
 We seek alignment from different stakeholders, including μseismic system and service providers, end-clients, industry practitioners, academic researchers, and research institutions.
 
-## Scope
+### Scope
 
 The standard outlined in this RFC seeks to:
 
@@ -30,7 +31,7 @@ The standard outlined in this RFC seeks to:
   - Establishing an unequivocal and standardized naming convention for the logical organization of the seismic system components.
   - Prescribing a directory structure and file naming convention.
 
-## Objective
+### Objective
 
 This RFC aims to:
 
@@ -39,9 +40,9 @@ This RFC aims to:
 - Promote cross-platform compatibility, ensuring the data can be seamlessly processed, interpreted, and utilized irrespective of the platform, tool, or system.
 - Enhance data integrity, ensuring it remains consistent, accurate, and unaltered during exchanges, making it reliable for various analytical and operational purposes.
 
-## Rationale
+### Rationale
 
-### Need for a New Standard
+#### Need for a New Standard
 
 The increase in microseismic data, particularly from expansive monitoring systems and new technologies like DAS, underscores the pressing need for an efficient and unified data format. Currently, the system information, catalog, and waveform data are provided in a series of files that do not allow simple cross-referencing. For instance, one file may refer to a sensor with a long name, whereas another uses a numerical ID. The link between the name and the numerical ID is left ambiguous. Some other essential information such as the sensor types to identify whether the sensor is a 4.5Hz or 15Hz geophone, a high-frequency accelerometer, or a low-frequency FBA.
 

@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 ---
 
 1. [Introduction](#introduction)
@@ -12,9 +12,10 @@ layout: home
 8. [Appendix A: Source Parameters](#appendix-a-source-parameters)
 9. [Appendix B: Response](#appendix-b-response)
 10. [Appendix C: Coordinate System Handling](#appendix-c-coordinate-system-handling)
-11. [Glossary](#glossary)
-12. [References](#references)
+11. [References](#references)
+12. [Glossary](#glossary)
 
+{% katexmm %}
 {% include_relative _sections/01_introduction.md %}
 {% include_relative _sections/02_terminology.md %}
 {% include_relative _sections/03_general_format_considerations.md %}
@@ -25,5 +26,6 @@ layout: home
 {% include_relative _sections/AA_source_parameters.md %}
 {% include_relative _sections/AB_response.md %}
 {% include_relative _sections/AC_coordinate_system_handling.md %}
-{% include_relative _sections/glossary.md %}
 {% include_relative _sections/references.md %}
+{% include_relative _sections/glossary.md %}
+{% endkatexmm %}

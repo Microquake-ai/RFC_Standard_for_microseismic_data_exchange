@@ -1,7 +1,8 @@
 ---
+
 ---
 
-# Glossary
+## Abbreviations
 
 - **DAS**: Distributed Acoustic Sensing
 - **AI**: Artificial Intelligence
