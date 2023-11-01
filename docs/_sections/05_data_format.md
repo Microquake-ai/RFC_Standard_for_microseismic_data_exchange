@@ -56,7 +56,7 @@ The modifications discussed in the following sections, particularly concerning Q
 | Magnitude  | E<sub>p</sub>\(E_p\)           | *P*\(P\)-wave energy         | float           | float |
 |            | E<sub>s</sub>\(E_s\)           | *S*\(S\)-wave energy         | float           | float |
 
-[^1]: Coordinate class described in the Appendix[appendix-A]
+[^1]: Coordinate class described in the [Appendix C: Coordinate System Handling](#appendix-c-coordinate-system-handling)
 
 We propose straightforward modifications to the QuakeML format to better suit *museismic* applications. The first concerns the expression of coordinates using the Cartesian system previously described instead of the longitude, latitude, and depth/elevation. The second pertains to expanding the magnitude definition to include the corner frequency and the *P*- and *S*-wave velocities. The third involves the overriding of event types.
 
@@ -147,5 +147,5 @@ Rays and their derivative information serve as key inputs in microseismic monito
 | Ray parameters    | phase...      |                                                    |                    |
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzY2NjU3MDgwLC0xMjc2OTI1MTk2XX0=
+eyJoaXN0b3J5IjpbODkzMzgyNzQ4LC0xMjc2OTI1MTk2XX0=
 -->
