@@ -13,18 +13,9 @@ The table below provides an overview of the different types of data and the prop
 | Inventory/System | StationXML |
 | Grid | HDF5 |
 
-To facilitate the packaging and distribution, we propose to exploit the ASDF format further package
+For distributing the information, we propose exploiting the Adaptable Seismic Data Format (ASDF) to further and consistently package the Waveform, Catalog and Inventory information in one single file. 
 
 To facilitate the adoption of the format and the manipulation of seismological objects, we are releasing the $\mu$quake (micro-quake) library, an open source Python API built on top of Obspy. The $\mu$quake library provide access to objects and functions enabling to transparent handling of elements specific to $\mu$seismic monitoring. In particular, it allows the seamless use of a Cartesian coordinate system instead of the latitude and longitude.
-
-T
-
-|Data Type  | Container  |
-|--|--|
-| Waveform | miniSEED  |
-| Catalog  | QuakeML   |
-| Inventory/System | StationXML |
-| Grid | HDF5 |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTg2NTMzNTldfQ==
+eyJoaXN0b3J5IjpbMTI5NTQ0MjUyOV19
 -->
