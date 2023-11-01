@@ -273,6 +273,7 @@ DEPENDENCIES
   jekyll-feed (~> 0.12)
   jekyll-katex
   minima (~> 2.5)
+  racc
   tzinfo (>= 1, < 3)
   tzinfo-data
   wdm (~> 0.1.1)

@@ -16,6 +16,8 @@ theme: minima
 
 plugins:
   - jekyll-katex
+  - webrick
+  - racc
 
 # Plugins
 #plugins:
