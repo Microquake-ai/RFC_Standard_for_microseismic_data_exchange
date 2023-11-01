@@ -16,6 +16,8 @@ The table below provides an overview of the different types of data and the prop
 For distributing the information, we propose exploiting the Adaptable Seismic Data Format (ASDF) to further and consistently package the Waveform, Catalog and Inventory information in one single file. 
 
 To facilitate the adoption of the format and the manipulation of seismological objects, we are releasing the $\mu$quake (micro-quake) library, an open source Python API built on top of Obspy. The $\mu$quake library provide access to objects and functions enabling to transparent handling of elements specific to $\mu$seismic monitoring. In particular, it allows the seamless use of a Cartesian coordinate system instead of the latitude and longitude.
+
+The o
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5NTQ0MjUyOV19
+eyJoaXN0b3J5IjpbLTg1MjkzOTY4OV19
 -->
