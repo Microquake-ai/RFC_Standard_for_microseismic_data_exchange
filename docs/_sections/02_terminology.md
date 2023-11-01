@@ -2,7 +2,7 @@
 
 ---
 
-## Terminology and Definitions
+## Terminology and Definitions {:#terminology}
 
 - **Waveforms**  
   A time series representation of seismic wave amplitudes detected by sensors in microseismic monitoring. Originating from subsurface events like rock fractures.
@@ -36,3 +36,6 @@
 
 - **Instrument**  
   A comprehensive setup encompassing one or multiple sensors and associated components, including casings, and internal electronics if applicable. In microseismic monitoring, an instrument refers to the entire arrangement employed for seismic detection. Its response combines the characteristics of the individual sensors. Example: a tri-axial dual element geophone.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTEwNzgzNjgwNTZdfQ==
+-->
