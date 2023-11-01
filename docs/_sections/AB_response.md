@@ -2,7 +2,7 @@
 
 ---
 
-## Appendix B: Response
+## Appendix B: Response {:#appendix-b-response}
 
 ### Instrument Response
 
@@ -113,5 +113,5 @@ channel = Channel(
 )
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjMyNDMwMDY0XX0=
+eyJoaXN0b3J5IjpbMTM5NzgxNDQ5NywyMzI0MzAwNjRdfQ==
 -->
