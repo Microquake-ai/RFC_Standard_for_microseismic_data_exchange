@@ -1,25 +1,25 @@
+
 ## Executive Summary
 
-This purpose of the RFC is to seek comments and suggestion regarding a proposed format for the exchange of microseismic data. The focus is on microseismic data collected by in-mine monitoring system, however, the proposed format is suited for any kind of microseismic data expressed in local coordinate system. 
+The RFC aims to solicit feedback on a standardized format for microseismic data exchange. While the format is optimized for in-mine monitoring systems, it is applicable to all microseismic data reliant on local coordinate systems. 
 
-The scope of the exchange format encompasses four types of data including the waveforms, the catalogs and system information and grids. The proposed format exploits versatile and powerful formats broadly adopted by the seismology community. 
+The proposed schema covers four categories of data: waveforms, catalogs, system information, and grids. Existing data formats widely recognized in seismology are employed for each type:
 
-The table below provides an overview of the different types of data and the proposed containers.
+|Data Type        | Format     |
+|-----------------|------------|
+| Waveform        | miniSEED    |
+| Catalog         | QuakeML     |
+| System Inventory| StationXML  |
+| Grid            | HDF5        |
 
-|Data Type  | Format  |
-|--|--|
-| Waveform | miniSEED  |
-| Catalog  | QuakeML   |
-| Inventory/System | StationXML |
-| Grid | HDF5 |
+To streamline data distribution, we recommend the use of the Adaptable Seismic Data Format (ASDF), which allows for the cohesive packaging of Waveform, Catalog, and System Inventory into a single file.
 
-For distributing the information, we propose exploiting the Adaptable Seismic Data Format (ASDF) to further and consistently package the Waveform, Catalog and Inventory information in one single file. 
+To facil μquake library—a Python API built upon Obspy—for easier manipulation of seismological objects. This library offers specialized functions for microseismic monitoring, including the provision for a Cartesian coordinate system as an alternative to geographic coordinates.
 
-To facilitate the adoption of the format and the manipulation of seismological objects, we are releasing the $\mu$quake (micro-quake) library, an open source Python API built on top of Obspy. The $\mu$quake library provide access to objects and functions enabling to transparent handling of elements specific to $\mu$seismic monitoring. In particular, it allows the seamless use of a Cartesian coordinate system instead of the latitude and longitude.
+The ultimate goal is to secure industry and supplier consensus on this format by the close of 2024. 
 
-The objective is to get consensus and approval by the industry and suppliers of $\mu$seismic monitoring on the data format by the end of 2024. 
+Feedback is both encouraged and welcomed.
 
-Contribution and comments are encouraged and welcome.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4MTQ2Nzg5MV19
+eyJoaXN0b3J5IjpbMTY1NDU0NTQxLDE0ODE0Njc4OTFdfQ==
 -->
