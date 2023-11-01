@@ -12,7 +12,7 @@ The intended application directly governs the specificity of data requirements. 
 
 Seismic system information can be partitioned into four main categories:
 
-- **Catalog:** Catalog data includes processed attributes related to seismic events: time, location, magnitude, amplitude (PPV, PPA), classification, *P*- and *S*-wave picks, and moment tensor/focal mechanism data.
+- **Catalog:** Catalog data includes processed attributes related to seismic events: time, location, magnitude, amplitude (PPV, PPA), classification, *P*P- and *S*S-wave picks, and moment tensor/focal mechanism data.
     
 - **Inventory:** Details the seismic network, stations, and sensor configurations. This includes sensor location, type, response, and orientations. Inventory data should facilitate necessary data manipulation for analysis.
     
@@ -39,12 +39,12 @@ Catalog data is bifurcated into:
     - Time (local and UTC)
     - Location
     - Classification 
-    - Magnitude, along with seismic moment \( M<sub>0</sub> \) and corner frequency \( f<sub>c</sub> \) for moment magnitude
-    - Radiated energy for *P*- and *S*-waves
+    - Magnitude, along with seismic moment \( M<sub>0</sub>_0 \) and corner frequency \( f<sub>c</sub>_c \) for moment magnitude
+    - Radiated energy for *P*P- and *S*S-waves
     - Moment tensor solution if available
 
 - **Waveform-related:** Derived from waveform data:
-    - Picks: *P*- and *S*-wave onset times
+    - Picks: *P*P- and *S*S-wave onset times
     - Amplitude: Information, evaluation mode, and status
 
 ### Inventory/System Information
@@ -65,3 +65,6 @@ A functional velocity grid should comprise:
 - Dimensions: Number of grid points in each axis
 - Data: Grid values
 - Units (m or ft)
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTQ5NjUzMzY2NV19
+-->
