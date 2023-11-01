@@ -10,10 +10,9 @@ github_username: microquake-ai
 
 # Rendering Settings
 markdown: kramdown
-theme: minima
-
 kramdown:
     math_engine: katex
+theme: minima
 
 plugins:
   - jekyll-katex
