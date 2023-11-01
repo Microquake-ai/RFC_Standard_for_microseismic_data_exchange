@@ -2,8 +2,6 @@
 layout: home
 ---
 
-# Table of Contents
-
 1. [Introduction](#introduction)
 2. [Terminology](#terminology)
 3. [General Format Considerations](#general-format-considerations)
