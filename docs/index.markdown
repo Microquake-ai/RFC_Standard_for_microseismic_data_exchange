@@ -2,7 +2,8 @@
 layout: default
 ---
 
-1. [Introduction](#introduction)
+1. [Executive Summary](#executive-summary)
+2. [Introduction](#introduction)
 2. [Terminology](#terminology)
 3. [General Format Considerations](#general-format-considerations)
 4. [Data Exchange Requirements](#data-exchange-needs)
@@ -16,6 +17,7 @@ layout: default
 12. [Glossary](#glossary)
 
 {% katexmm %}
+{% include_relative _sections/00_summary.md %}
 {% include_relative _sections/01_introduction.md %}
 {% include_relative _sections/02_terminology.md %}
 {% include_relative _sections/03_general_format_considerations.md %}
