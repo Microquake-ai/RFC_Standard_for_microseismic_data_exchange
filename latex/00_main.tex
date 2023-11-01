@@ -1,0 +1,111 @@
+\documentclass[12pt]{article}
+
+% Packages
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\definecolor{bg}{rgb}{0.95,0.95,0.95} % light gray background
+\usepackage{graphicx}
+\usepackage{siunitx}
+\usepackage{upgreek}
+\usepackage{natbib}
+\usepackage{xspace}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{mdframed}
+\usepackage{minted}
+\usepackage{lipsum}
+\usepackage[acronym]{glossaries}
+\usepackage[
+  colorlinks=true,         % enable colored links
+  linkcolor=blue,          % color of internal links
+  citecolor=green,         % color of links to bibliography
+  filecolor=magenta,       % color of file links
+  urlcolor=cyan            % color of external links
+]{hyperref}
+
+\hypersetup{
+    citecolor=blue
+}
+
+
+% Document Settings
+\usepackage{parskip} % Adds spacing between paragraphs
+\setlength{\parindent}{0pt} % Removes first-line indent from paragraphs
+
+% command
+\newcommand{\museismic}{$\upmu$seismic\xspace}
+\newcommand{\muquake}{$\upmu$Quake\xspace}
+
+\DeclareSIUnit{\foot}{ft}
+
+\input{glossary}
+
+
+\begin{document}
+\title{$\upmu$Seismic Data Exchange Format for in-Mines System (MDEFM) - RFC}
+\author{Jean-Philippe Mercier}
+\date{\today}
+\maketitle
+
+\newpage
+\section*{Executive Summary}
+\addcontentsline{toc}{section}{Executive Summary} % Optional: to include in TOC
+
+\lipsum[1-2] % Replace with your summary text
+
+\newpage
+
+\tableofcontents
+\pagebreak
+
+\section{Introduction}
+\input{01_introduction}
+
+\section{Terminology and Definitions}
+\input{02_terminology}
+
+\section{General Format Considerations}
+\input{03_general_format_considerations}
+
+\section{Essential Data Exchange Content}
+\input{04_data_exchange_needs}
+
+\section{Data Format for Seismic Data}
+\input{05_data_format}
+
+\section{Data Format for Grids}
+\input{06_data_format_grids}
+
+\newpage
+\clearpage
+\printglossary[type=\acronymtype,title=List of Acronyms]
+
+\newpage
+\section{References}
+\bibliographystyle{apalike}  % This determines the style in which the references are printed -- 'plain' is a basic style
+\bibliography{references}  % This is your .bib file. No need to add the .bib extension
+
+\newpage
+\begin{titlepage}
+  \centering
+  \vspace*{4cm}
+  \textbf{\Large Appendices}
+  \vfill
+\end{titlepage}
+
+\newpage
+\appendix
+\section{Source Parameter Definitions}
+\include{AA_source_parameters}
+
+\section{Instrument Response}
+\include{AB_response}
+
+\section{Coordinate System Implementation}
+\include{AC_coordinate_system_handling}
+
+% \printglossary
+
+\end{document}

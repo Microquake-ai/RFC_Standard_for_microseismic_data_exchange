@@ -1,66 +1,66 @@
 name: Compile LaTeX to HTML
-
-on:
-  push:
-    paths:
-      - '*.tex'
-      - '.github/workflows/latex_2_html.yml'
-      - 'custom_styles.css'
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-    - name: Setup SSH
-      run: |
-        mkdir -p ~/.ssh
-        echo "github.com,207.97.227.239 ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81eFzLQNnPHt4EVVUh7VfDESU84KezmD5QlWpXLmvU31/yMf+Se8xhHTvKSCZIFImWwoG6mbUoWf9nzpIoaSjB+weqqUUmpaaasXVal72J+UX2B+2RPW3RcT0eOzQgqlJL3RKrTJvdsjE3JEAvGq3lGHSZXy28G3skua2SmVi/w4yCE6gbODqnTWlg7+wC604ydGXA8VJiS5ap43JXiUFFAaQ==" >> ~/.ssh/known_hosts
-        chmod 600 ~/.ssh/known_hosts
-
-        echo "${{ secrets.GH_SSH_KEY }}" > private_key.pem
-        chmod 600 private_key.pem
-        eval "$(ssh-agent -s)"
-        ssh-add private_key.pem
-
-    - name: Checkout code
-      uses: actions/checkout@v2
-      with:
-        ssh-key: ${{ secrets.GH_SSH_KEY }}
-        repository: Microquake-ai/RFC_Standard_for_microseismic_data_exchange
-
-    - name: Install TeX Live and other required packages
-      run: |
-        sudo apt-get install -y texlive texlive-latex-extra texlive-bibtex-extra biber
-        sudo apt-get install -y texlive-science texlive-fonts-extra texlive-humanities texlive-pictures texlive-publishers texlive-xetex
-        sudo apt-get install -y texlive-luatex python3-pygments
-
-    - name: Install LaTeXML
-      run: |
-        sudo apt-get install -y latexml
-
-    - name: Compile LaTeX with references and glossary
-      run: |
-        pdflatex -shell-escape 00_main.tex
-        bibtex 00_main
-        makeglossaries 00_main
-        pdflatex -shell-escape 00_main.tex
-        pdflatex -shell-escape 00_main.tex
-
-    - name: Convert LaTeX to HTML using LaTeXML
-      run: |
-        latexml --dest=docs/00_main.xml 00_main.tex
-        latexmlpost --dest=docs/00_main.html docs/00_main.xml
-
-    - name: Add custom styling
-      run: |
-        cp custom_styles.css docs/
-        echo '<link rel="stylesheet" type="text/css" href="custom_styles.css">' >> docs/00_main.html
-
-    - name: Commit and Push to Repository
-      run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git add docs/*
-        git commit -m "Add generated HTML page" || exit 0
-        git push origin || exit 0
+#
+#on:
+#  push:
+#    paths:
+#      - '*.tex'
+#      - '.github/workflows/latex_2_html.yml'
+#      - 'custom_styles.css'
+#
+#jobs:
+#  build:
+#    runs-on: ubuntu-latest
+#
+#    steps:
+#    - name: Setup SSH
+#      run: |
+#        mkdir -p ~/.ssh
+#        echo "github.com,207.97.227.239 ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81eFzLQNnPHt4EVVUh7VfDESU84KezmD5QlWpXLmvU31/yMf+Se8xhHTvKSCZIFImWwoG6mbUoWf9nzpIoaSjB+weqqUUmpaaasXVal72J+UX2B+2RPW3RcT0eOzQgqlJL3RKrTJvdsjE3JEAvGq3lGHSZXy28G3skua2SmVi/w4yCE6gbODqnTWlg7+wC604ydGXA8VJiS5ap43JXiUFFAaQ==" >> ~/.ssh/known_hosts
+#        chmod 600 ~/.ssh/known_hosts
+#
+#        echo "${{ secrets.GH_SSH_KEY }}" > private_key.pem
+#        chmod 600 private_key.pem
+#        eval "$(ssh-agent -s)"
+#        ssh-add private_key.pem
+#
+#    - name: Checkout code
+#      uses: actions/checkout@v2
+#      with:
+#        ssh-key: ${{ secrets.GH_SSH_KEY }}
+#        repository: Microquake-ai/RFC_Standard_for_microseismic_data_exchange
+#
+#    - name: Install TeX Live and other required packages
+#      run: |
+#        sudo apt-get install -y texlive texlive-latex-extra texlive-bibtex-extra biber
+#        sudo apt-get install -y texlive-science texlive-fonts-extra texlive-humanities texlive-pictures texlive-publishers texlive-xetex
+#        sudo apt-get install -y texlive-luatex python3-pygments
+#
+#    - name: Install LaTeXML
+#      run: |
+#        sudo apt-get install -y latexml
+#
+#    - name: Compile LaTeX with references and glossary
+#      run: |
+#        pdflatex -shell-escape 00_main.tex
+#        bibtex 00_main
+#        makeglossaries 00_main
+#        pdflatex -shell-escape 00_main.tex
+#        pdflatex -shell-escape 00_main.tex
+#
+#    - name: Convert LaTeX to HTML using LaTeXML
+#      run: |
+#        latexml --dest=docs/00_main.xml 00_main.tex
+#        latexmlpost --dest=docs/00_main.html docs/00_main.xml
+#
+#    - name: Add custom styling
+#      run: |
+#        cp custom_styles.css docs/
+#        echo '<link rel="stylesheet" type="text/css" href="custom_styles.css">' >> docs/00_main.html
+#
+#    - name: Commit and Push to Repository
+#      run: |
+#        git config --local user.email "action@github.com"
+#        git config --local user.name "GitHub Action"
+#        git add docs/*
+#        git commit -m "Add generated HTML page" || exit 0
+#        git push origin || exit 0

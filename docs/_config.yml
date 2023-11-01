@@ -1,0 +1,32 @@
+# Jekyll Configuration for Microseismic Data Exchange Format for in-Mines System (MDEFM) - RFC
+
+# Basic Site Information
+title: "Microseismic Data Exchange Format for in-Mines System (MDEFM) - RFC"
+email: jpmercier@microquake.ai
+description: "A request for comment document describing a data exchange format for microseismic data in mines."
+domain: microquake-ai.github.io/RFC_microseismic_data_exchange_format
+url: "" # Ensure this reflects the base hostname & protocol for your site if applicable.
+github_username: microquake-ai
+
+# Rendering Settings
+markdown: kramdown
+theme: minima
+
+# Plugins
+#plugins:
+#  - jekyll-feed
+
+# Exclusion Settings
+# Items listed under `exclude:` won't be processed. If any items are to be included in the future,
+# ensure they are either uncommented here or listed explicitly under `include:`.
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
