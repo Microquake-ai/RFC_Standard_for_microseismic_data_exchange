@@ -19,7 +19,7 @@ To facilitate the adoption of the format and the manipulation of seismological o
 
 The objective is to get consensus and approval by the industry and suppliers of $\mu$seismic monitoring on the data format by the end of 2024. 
 
-Contribution and comments are encourwelcome
+Contribution and comments are encouraged and welcome.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0MzU3ODY4OV19
+eyJoaXN0b3J5IjpbMTQ4MTQ2Nzg5MV19
 -->
