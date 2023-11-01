@@ -2,7 +2,7 @@
 
 ---
 
-## Grid Data Format
+## Grid Data Format {:#data-format-grid}
 
 ### Overview
 
@@ -26,3 +26,6 @@ The grid data structure, whether global or instrument-specific, contains common 
 - **Origin**: The origin refers to the coordinate point in the grid where the spatial indices are (0,0,0). It acts as the reference point for other grid points and is specified in the coordinate system used (e.g., `enu` or `ned`).
 - **Spacing**: The spacing describes the distance between adjacent grid points along each axis (x, y, z). It dictates the resolution of the grid. In regular grids, the spacing is constant, while in rectilinear grids, it can vary along each axis. The spacing is generally provided in units consistent with the chosen coordinate system.
 - **Dimensions**: The dimensions specify the total number of grid points along each axis (x, y, z), thereby determining the overall size and shape of the grid.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTQ2MjA0NjQzOV19
+-->
