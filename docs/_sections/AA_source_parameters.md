@@ -4,9 +4,9 @@ style: default
 
 ## Apendices
 
-### Appendix A: Source Parameters {#sec:app_source_params label="sec:app_source_params"}
+### Appendix A: Source Parameters
 
-In this appendix, we outline the equations that relate the core canonical source parameters — —Seismic Moment \(M<sub>0</sub>_0\), Corner Frequency \(f<sub>0</sub>_0\), and the *P*- and *S*-wave Energies \(E<sub>p</sub>_p\) and \(E<sub>s</sub>) — _s\)—to the derived source parameters commonly used in microseismic studies.
+In this appendix, we outline the equations that relate the core canonical source parameters — —Seismic Moment (M<sub>0</sub>_0), Corner Frequency \(f<sub>0</sub>_0\), and the *P*- and *S*-wave Energies (E<sub>p</sub>_p and E<sub>s</sub> — _s — to the derived source parameters commonly used in microseismic studies.
 
 
 
@@ -22,7 +22,7 @@ In this appendix, we outline the equations that relate the core canonical source
 | Static Stress Drop    | $\Delta\sigma_{\text{stat}} = \frac{7}{16} \left(\frac{M_0}{\pi R^3}\right)^{1/3}$                       |
 | Dynamic Stress Drop   | $\Delta\sigma_{\text{dyn}} = \frac{7}{16} \rho V_s^2 \left(\frac{M_0}{\pi R^3}\right)^{1/3}$  |            |
 
-**Note**: Where $\(\rho$\) is the density, $\(V_p$\) and $\(V_s$\) are the *P*- and *S*-wave velocities, $R$\(R\) is the radius of the source, and $\(\mu$\) is the shear modulus.
+**Note**: Where $\rho$ is the density, $V_p$ and $V_s$ are the *P*- and *S*-wave velocities, $R$ is the radius of the source, and $\mu$ is the shear modulus.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzg5NjQxNTRdfQ==
+eyJoaXN0b3J5IjpbLTcyODI0NjY3NF19
 -->
