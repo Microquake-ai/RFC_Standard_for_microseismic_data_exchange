@@ -16,9 +16,9 @@ For the purpose of microseismic monitoring, we suggest organizing the informatio
 
 In this context, we suggest limiting the scope of the grid storage to two types of structured grids: regular or rectilinear grids.
 - **Regular Grid**: A grid in which the spacing between the points is constant in each dimension. In 3D, this would resemble a cubic lattice.
-- **Rectilinear Grid**: A grid in which the spacing between the points can vary along each axis but remains orthogonal. In 3D, this would look like a deformed cubic lattice where the deformations are axis-aligned.
+- **Rectilinear Grid**: A grid in which the spacing between the points can vary along each axis but remains orthogonal. In 3D, this would look like a deformed cubic lattice, where the deformations are axis-aligned.
 
-Note that the regular grid is a special case of a rectilinear grid where the spacing is the same along each axis.
+Note that the regular grid is a special case of a rectilinear grid, where the spacing is the same along each axis.
 
 #### General Format
 
@@ -26,6 +26,9 @@ The grid data structure, whether global or instrument-specific, contains common 
 - **Origin**: The origin refers to the coordinate point in the grid where the spatial indices are (0,0,0). It acts as the reference point for other grid points and is specified in the coordinate system used (e.g., `enu` or `ned`).
 - **Spacing**: The spacing describes the distance between adjacent grid points along each axis (x, y, z). It dictates the resolution of the grid. In regular grids, the spacing is constant, while in rectilinear grids, it can vary along each axis. The spacing is generally provided in units consistent with the chosen coordinate system.
 - **Dimensions**: The dimensions specify the total number of grid points along each axis (x, y, z), thereby determining the overall size and shape of the grid.
+- **Data**: The value at grid points
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2MjA0NjQzOV19
+eyJoaXN0b3J5IjpbLTIxNDQ3MDg5NThdfQ==
 -->
