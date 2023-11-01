@@ -2,9 +2,9 @@
 style: default
 ---
 
-## Apendices
+## Appendices
 
-### Appendix A: Source Parameters
+## Appendix A: Source Parameters {:#appendix-a-source-parameters}
 
 In this appendix, we outline the equations that relate the core canonical source parameters — Seismic Moment $M_0$, Corner Frequency, $f_0$ and the *P*- and *S*-wave Energies $E_p$ and $E_s$ — to the derived source parameters commonly used in microseismic studies.
 
@@ -24,5 +24,5 @@ In this appendix, we outline the equations that relate the core canonical source
 
 **Note**: Where $\rho$ is the density, $V_p$ and $V_s$ are the *P*- and *S*-wave velocities, $R$ is the radius of the source, and $\mu$ is the shear modulus.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0NDY1Njc5XX0=
+eyJoaXN0b3J5IjpbLTE5OTc4MTMwNzksMTc0NDY1Njc5XX0=
 -->
