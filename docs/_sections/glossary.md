@@ -2,7 +2,7 @@
 
 ---
 
-## Abbreviations Glossary
+## Abbreviations Glossary {:#glossary}
 
 - **DAS**: Distributed Acoustic Sensing
 - **AI**: Artificial Intelligence
@@ -19,5 +19,5 @@
 - **ENU**: East North Up
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwODAzODQ1OF19
+eyJoaXN0b3J5IjpbMTgwMjU0NzM2MSwtOTA4MDM4NDU4XX0=
 -->
