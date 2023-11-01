@@ -9,7 +9,7 @@
 The recommended seismic data standard for adoption is the Adaptable Seismic Data Format (ASDF) [Krischer et al., 2016]. Designed with modern challenges in mind, the ASDF format efficiently addresses the complexities inherent to large and detailed seismic datasets. By employing the Hierarchical Data Format Version 5 (HDF5) container format, ASDF is self-descriptive, ensuring data can be accessed and manipulated with ease across various seismological applications. Its overarching objective is to simplify the organization and exchange of seismic data, emphasizing interoperability, scalability, and the reduction of inconsistencies by amalgamating multiple seismic data components within a singular structure. The ASDF format is suitable for trigger, continuous, and Distributed Acoustic Sensing (DAS) data to name only those.
 
 ![ASDF Data Format](../assets/images/ASDF_Format_overview.jpeg)  
-*Figure: ASDF data structure overview (Krischer et al. 2016)*
+*Figure: ASDF data structure overview (Krischer et al. 2016)Structure of the ASDF format.*
 
 Nested within the HDF5 container, ASDF systematically organizes seismological components, including:
 
@@ -23,6 +23,9 @@ Nested within the HDF5 container, ASDF systematically organizes seismological co
   
 - **Provenance Data**: In the pursuit of rigorous transparency and reproducibility, this segment meticulously documents the historical progression of data alterations, enumerating each distinct processing operation along with its respective parameters. The provenance documentation adheres to the W3C PROV model [Moreau et al., 2013], a widely accepted standard for chronicling provenance specifics.
 
+
+[//]: # (![ASDF Data Structure Overview]&#40;ASDF_Format_overview.jpeg&#41;)
+*ASDF data structure overview from Krischer et al. (2016)*
 
 Through its comprehensive integration of these components, ASDF paves the way for a standardized, efficient, and in-depth approach to seismological research and data management.
 
@@ -47,11 +50,11 @@ The modifications discussed in the following sections, particularly concerning Q
 #### Modifications
 
 | **Object** | **New Parameter** | **Description**         | **Type**         |
-|------------|-------------------|-------------------------|------------------|
+|------------|-------------------|-------------------------|--------|----------|
 | Origin     | Coordinates       | Coordinates information | Coordinates[^1]  |
-|            | f<sub>0</sub>     | Corner frequency        | float            |
-| Magnitude  | E<sub>p</sub>     | *P*-wave energy         | float            |
-|            | E<sub>s</sub>     | *S*-wave energy         | float            |
+|            | f<sub>0</sub>\(f_0\)           | Corner frequency        | float            |
+| Magnitude  | E<sub>p</sub>\(E_p\)           | *P*\(P\)-wave energy         | float           | float |
+|            | E<sub>s</sub>\(E_s\)           | *S*\(S\)-wave energy         | float           | float |
 
 [^1]: Coordinate class described in the Appendix
 
@@ -147,3 +150,6 @@ Rays and their derivative information serve as key inputs in microseismic monito
 | Ray trace         | nodes         | List of 3D coordinates defining the ray path       | np.array           |
 | Ray parameters    | phase...      |                                                    |                    |
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTEyNzY5MjUxOTZdfQ==
+-->
