@@ -8,7 +8,7 @@
 
 The instrument response is a comprehensive representation of the signal transformation across the entire seismic data acquisition chain. It outlines how the original ground motion gets converted into the digital data recorded. In the SEED and Obspy frameworks, the instrument response is structured in a chain-like manner, connecting various stages such as the sensor response, pre-amplifiers, filters, and digitizers. Each stage contributes its frequency-dependent correction factors to the overall instrument response, which are often characterized by poles and zeros in the Laplace domain. By chaining these components together, one can obtain the complete response function that allows for precise ground-motion reconstruction from the recorded data.
 
-The following example demonstrates how to construct a response for a 15 Hz geophone element connected to a 24-bit digitizer. The data are assumed to be recorded between $\pm$ 2.5 volts and stored as ADC counts. We utilize the \muquake library, an extension of the Obspy library specifically tailored for \museismic applications. The example includes code to create a synthetic stream with random values to simulate waveform data. Subsequently, it illustrates how to change the waveform representation from ADC counts to acceleration, velocity, and displacement.
+The following example demonstrates how to construct a response for a 15 Hz geophone element connected to a 24-bit digitizer. The data are assumed to be recorded between $\( \pm$ 2.5 \) volts and stored as ADC counts. We utilize the \muquake library, an extension of the Obspy library specifically tailored for \museismic applications. The example includes code to create a synthetic stream with random values to simulate waveform data. Subsequently, it illustrates how to change the waveform representation from ADC counts to acceleration, velocity, and displacement.
 
 ```python
 import numpy as np
@@ -112,3 +112,6 @@ channel = Channel(
     response=response_uquake
 )
 ```
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNzY3OTE0MzIzXX0=
+-->
