@@ -2,39 +2,63 @@
 
 ---
 
+
 ## Grid Data Format {:#data-format-grid}
 
 ### Overview
 
-The HDF5 format is a flexible, high-performance data storage format designed for complex, large datasets. In the context of storing grid information, HDF5 offers a hierarchical file structure similar to a file system, facilitating the organization of data into groups and datasets. This structure allows for efficient and intuitive storage of multidimensional grid data, along with associated metadata, in a single, portable file.
+The HDF5 format serves as a robust and scalable data storage platform optimized for handling complex and large datasets. In the realm of microseismic monitoring, the format's hierarchical file architecture, akin to a filesystem, proves invaluable for organizing grid data and associated metadata efficiently.
 
-We suggest defining two types of grids:
-- **Global**: Grids that apply to the entire network like the *P*- and *S*-wave velocities grids
-- **Instrument Specific**: Grids that apply to a specific instrument, like the travel time and angle grids
+Two primary categories of grids are relevant:
+- **Global**: These grids extend across the entire network, typical examples being *P*- and *S*-wave velocity grids.
+- **Instrument Specific**: These grids are confined to individual instruments and are typically used for storing travel time and angle information.
 
-For the purpose of microseismic monitoring, we suggest organizing the information by storing all similar elements in a single file. For example, we would store all the velocity models in one file, all the travel time grids in another, and the angle grids in yet another.
+We recommend compartmentalizing similar types of grids into single HDF5 files for clarity and accessibility. For instance, all *P*- and *S*-wave velocity grids would reside in one file, all travel time grids in another, and all angle grids in a separate file.
 
-In this context, we suggest limiting the scope of the grid storage to two types of structured grids: regular or rectilinear grids.
-- **Regular Grid**: A grid in which the spacing between the points is constant in each dimension. In 3D, this would resemble a cubic lattice.
-- **Rectilinear Grid**: A grid in which the spacing between the points can vary along each axis but remains orthogonal. In 3D, this would look like a deformed cubic lattice, where the deformations are axis-aligned.
+The scope for these grid storages is confined to two categories—regular and rectilinear grids:
+- **Regular Grid**: This grid maintains uniform spacing between grid points across all dimensions, essentially forming a cubic lattice in 3D.
+- **Rectilinear Grid**: Here, the spacing can differ along each axis while still maintaining orthogonality. In 3D, it manifests as an axis-aligned, deformed cubic lattice.
 
-Note that the regular grid is a special case of a rectilinear grid, where the spacing is the same along each axis.
+### Data Structure and Metadata
 
-#### General Format
+The proposed HDF5 data structure for both global and instrument-specific grids comprises consistent metadata attributes to define the grid's geometric properties.
 
-The grid data structure, whether global or instrument-specific, contains common elements that define its geometry and facilitate its interpretation. A straightforward yet effective description can be achieved using the origin, spacing, and dimensions of the grid.
-- **Origin**: The origin refers to the coordinate point in the grid where the spatial indices are (0,0,0). It acts as the reference point for other grid points and is specified in the coordinate system used (e.g., `enu` or `ned`).
-- **Spacing**: The spacing describes the distance between adjacent grid points along each axis (x, y, z). It dictates the resolution of the grid. In regular grids, the spacing is constant, while in rectilinear grids, it can vary along each axis. The spacing is generally provided in units consistent with the chosen coordinate system.
-- **Dimensions**: The dimensions specify the total number of grid points along each axis (x, y, z), thereby determining the overall size and shape of the grid.
-- **Type**: This describes the type of value store inside the grids possible values are
-	- VELOCITY:  velocity (m/sec); 
-	- SLOWNESS: slowness (sec/m);  
-	- TIME: time (sec);  
-	- TAKEOFF: takeoff angles 3D grid;
-	- AZIMUTH: Azimuth angle. 
-- **Data**: The value at grid points
+#### Common Attributes
 
+- **Origin**: Coordinate of the grid's origin point where spatial indices are (0,0,0), defined in the coordinate system in use (`enu` or `ned`).
+- **Spacing**: Describes the inter-point spacing along each axis (x, y, z), specified in units congruent with the coordinate system.
+- **Dimensions**: Indicates the number of grid points along each axis (x, y, z), dictating the grid's size and shape.
+- **Type**: Enumerated data field indicating the kind of values stored in the grid. Possible types include:
+  - `VELOCITY` for velocity in m/sec
+  - `SLOWNESS` for slowness in sec/m
+  - `TIME` for time in sec
+  - `TAKEOFF` for takeoff angles in a 3D grid
+  - `AZIMUTH` for azimuth angles
+- **Data**: The actual grid data points storing the values.
+
+#### HDF5 Structure
+
+For global grids, the suggested HDF5 structure is as follows:
+
+```
+/phase
+  /grids
+    /P-wave_velocity
+    /S-wave_velocity
+```
+
+For instrument-specific grids, the structure is proposed to be:
+
+``\`
+/instrumentID
+  /grid
+    /travel_time
+    /angle
+\`\`\`
+
+This layout ensures a standardized and accessible approach to microseismic grid data storage, accommodating both global and instrument-specific needs.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzk5MjY3NTg1LC0yMTQ0NzA4OTU4XX0=
+eyJoaXN0b3J5IjpbLTE3NTQ5MjQ4MTYsMzk5MjY3NTg1LC0yMT
+Q0NzA4OTU4XX0=
 -->
