@@ -31,11 +31,10 @@ The grid data structure, whether global or instrument-specific, contains common 
 	- SLOWNESS: slowness (sec/m);  
 	- TIME: time (sec);  
 	- TAKEOFF: takeoff angles 3D grid;
-	- AZIMUTH: Azimuth angle 
-`**ANGLE2D**`  = take-off angles on 2D grid / 1D model; 
+	- AZIMUTH: Azimuth angle. 
 - **Data**: The value at grid points
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjUxMDI1OTI5LC0yMTQ0NzA4OTU4XX0=
+eyJoaXN0b3J5IjpbMzk5MjY3NTg1LC0yMTQ0NzA4OTU4XX0=
 -->
