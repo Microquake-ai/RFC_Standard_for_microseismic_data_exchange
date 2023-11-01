@@ -52,6 +52,7 @@ For global grids, the suggested HDF5 structure is as follows:
 
 For instrument-specific grids, the structure is proposed to be:
 
+```
 /type
     /instrumentID
         /grid
@@ -59,11 +60,11 @@ For instrument-specific grids, the structure is proposed to be:
             @spacing
             @dimensions
             /data
-
+```
 
 This layout ensures a standardized and accessible approach to microseismic grid data storage, accommodating both global and instrument-specific needs.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzE4MTcwNzU3LC0xNDk2ODMwOTA1LDM5OT
-I2NzU4NSwtMjE0NDcwODk1OF19
+eyJoaXN0b3J5IjpbMjEyNDIyMzU2MywtMTQ5NjgzMDkwNSwzOT
+kyNjc1ODUsLTIxNDQ3MDg5NThdfQ==
 -->
