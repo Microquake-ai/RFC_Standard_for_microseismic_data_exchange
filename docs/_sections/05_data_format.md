@@ -51,7 +51,7 @@ The modifications discussed in the following sections, particularly concerning Q
 
 | **Object** | **New Parameter** | **Description**         | **Type**         |
 |------------|-------------------|-------------------------|--------|----------|
-| Origin     | Coordinates       | Coordinates information | Coordinates[^1]  |
+| Origin     | coordinates       | Coordinates information | Coordinates[^1]  |
 |            | f<sub>0</sub>\(f_0\)           | Corner frequency        | float            |
 | Magnitude  | E<sub>p</sub>\(E_p\)           | *P*\(P\)-wave energy         | float           | float |
 |            | E<sub>s</sub>\(E_s\)           | *S*\(S\)-wave energy         | float           | float |
@@ -105,8 +105,8 @@ Transitioning to event classifications, the QuakeML schema has a predefined set 
 | **Object**  | **New Parameter** | **Description**                          | **Type**  |
 |-------------|-------------------|------------------------------------------|-----------|
 | Network     | Time Zone         | IANA Time Zone or time offset            | string    |
-| Station     | coordinates       | x, y, z and coordinate system              | coordinates  |
-| Channel     | coordinates       | x, y, z and coordinate system                            | float     
+| Station     | coordinates       | Coordinates information              | coordinates  |
+| Channel     | coordinates       | x, y, z, coordinate system                            | float     
 |             | oriented          | True if orientation is known             | boolean   |
 |             | active            | True if the channel is active            | boolean   |
 
@@ -147,5 +147,5 @@ Rays and their derivative information serve as key inputs in microseismic monito
 | Ray parameters    | phase...      |                                                    |                    |
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcyMjUxNDQzNSwtMTI3NjkyNTE5Nl19
+eyJoaXN0b3J5IjpbLTU5NzIzMzI1OCwtMTI3NjkyNTE5Nl19
 -->
