@@ -2,7 +2,7 @@
 
 ---
 
-## Introduction
+## Introduction {:#introduction}
 
 ### Purpose
 
@@ -47,3 +47,6 @@ This RFC aims to:
 The increase in microseismic data, particularly from expansive monitoring systems and new technologies like DAS, underscores the pressing need for an efficient and unified data format. Currently, the system information, catalog, and waveform data are provided in a series of files that do not allow simple cross-referencing. For instance, one file may refer to a sensor with a long name, whereas another uses a numerical ID. The link between the name and the numerical ID is left ambiguous. Some other essential information such as the sensor types to identify whether the sensor is a 4.5Hz or 15Hz geophone, a high-frequency accelerometer, or a low-frequency FBA.
 
 The varied nature of microseismic data formats hinders streamlined integration and analysis, posing challenges in managing and deriving value in datasets collected by in-mine monitoring systems. The lossy and incoherent nature of current data exchange formats hinders innovation and makes the utilization of μseismic data unnecessarily tricky. Given the critical importance of microseismic data in ensuring safety and improving underground mining operations, establishing a standardized format and mechanism of exchange becomes imperative. The proposed standard objective is facilitating more straightforward data access, efficient storage, smoother data exchanges across different platforms, and accommodating various data types.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTM5ODQ1MDg2OV19
+-->
