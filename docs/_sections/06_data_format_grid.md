@@ -27,22 +27,15 @@ The grid data structure, whether global or instrument-specific, contains common 
 - **Spacing**: The spacing describes the distance between adjacent grid points along each axis (x, y, z). It dictates the resolution of the grid. In regular grids, the spacing is constant, while in rectilinear grids, it can vary along each axis. The spacing is generally provided in units consistent with the chosen coordinate system.
 - **Dimensions**: The dimensions specify the total number of grid points along each axis (x, y, z), thereby determining the overall size and shape of the grid.
 - **Type**: This describes the type of value store inside the grids possible values are
-	- **VELOCITY**:  velocity (m/sec); 
+	- VELOCITY:  velocity (m/sec); 
 	- SLOWNESS: slowness (sec/m);  
-`**VEL2**`  = velocity**2 ((km/sec)**2);  
-`**SLOW2**`  = slowness**2 ((sec/km)**2);  
-`**SLOW2_METERS**`  = slowness**2 (sec/m)**2;  
-`**SLOW_LEN**`  = slowness*length (sec);  
-`**TIME**`  = time (sec) 3D grid;  
-`**TIME2D**`  = time (sec) on 2D grid / 1D model;  
-`**PROB_DENSITY**`  = probability density;  
-`**MISFIT**`  = misfit (sec);  
-`**ANGLE**`  = take-off angles 3D grid;  
+	- TIME: time (sec);  
+	- TAKEOFF: takeoff angles 3D grid;
+	- AZIMUTH: Azimuth angle 
 `**ANGLE2D**`  = take-off angles on 2D grid / 1D model; 
 - **Data**: The value at grid points
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDA3MjAzMTEsLTIxNDQ3MDg5NThdfQ
-==
+eyJoaXN0b3J5IjpbMjUxMDI1OTI5LC0yMTQ0NzA4OTU4XX0=
 -->
