@@ -2,7 +2,7 @@
 
 ---
 
-## Feedback Mechanism
+## Feedback Mechanism {:#feedback-mechanism}
 
 Feedback and contributions from the community are essential to refining and improving this RFC. There are two primary ways through which stakeholders, developers, and interested parties can provide their feedback:
 
@@ -22,3 +22,6 @@ Feedback and contributions from the community are essential to refining and impr
 Whether you choose to leave an issue on GitHub or send an email, your feedback is invaluable. It aids in ensuring that the proposed micro-seismic data exchange format is robust, relevant, and addresses the needs of the community.
 
 Thank you for taking the time to review this RFC and for your contributions towards its continual improvement.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTg1NTAwMTY1Nl19
+-->
