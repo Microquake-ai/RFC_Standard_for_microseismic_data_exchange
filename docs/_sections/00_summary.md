@@ -17,7 +17,9 @@ For distributing the information, we propose exploiting the Adaptable Seismic Da
 
 To facilitate the adoption of the format and the manipulation of seismological objects, we are releasing the $\mu$quake (micro-quake) library, an open source Python API built on top of Obspy. The $\mu$quake library provide access to objects and functions enabling to transparent handling of elements specific to $\mu$seismic monitoring. In particular, it allows the seamless use of a Cartesian coordinate system instead of the latitude and longitude.
 
-The o
+The objective is to get consensus and approval by the industry and suppliers of $\mu$seismic monitoring on the data format by the end of 2024. 
+
+Contribution and comments are encourwelcome
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1MjkzOTY4OV19
+eyJoaXN0b3J5IjpbMTY0MzU3ODY4OV19
 -->
