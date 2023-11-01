@@ -15,7 +15,7 @@ Two primary categories of grids are relevant:
 
 We recommend compartmentalizing similar types of grids into single HDF5 files for clarity and accessibility. For instance, all *P*- and *S*-wave velocity grids would reside in one file, all travel time grids in another, and all angle grids in a separate file.
 
-The scope for these grid storages is confined to two categories—regular and rectilinear grids:
+The scope for these grid storage is confined to two categories—regular and rectilinear grids:
 - **Regular Grid**: This grid maintains uniform spacing between grid points across all dimensions, essentially forming a cubic lattice in 3D.
 - **Rectilinear Grid**: Here, the spacing can differ along each axis while still maintaining orthogonality. In 3D, it manifests as an axis-aligned, deformed cubic lattice.
 
@@ -65,6 +65,6 @@ For instrument-specific grids, the structure is proposed to be:
 This layout ensures a standardized and accessible approach to microseismic grid data storage, accommodating both global and instrument-specific needs.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyNDIyMzU2MywtMTQ5NjgzMDkwNSwzOT
-kyNjc1ODUsLTIxNDQ3MDg5NThdfQ==
+eyJoaXN0b3J5IjpbOTU2NDA5NzQsMjEyNDIyMzU2MywtMTQ5Nj
+gzMDkwNSwzOTkyNjc1ODUsLTIxNDQ3MDg5NThdfQ==
 -->
