@@ -12,9 +12,6 @@ github_username: microquake-ai
 markdown: kramdown
 theme: minima
 
-plugins:
-  - jekyll-katex
-
 # Plugins
 #plugins:
 #  - jekyll-feed

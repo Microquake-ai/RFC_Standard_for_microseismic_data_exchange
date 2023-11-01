@@ -16,7 +16,6 @@ layout: default
 11. [References](#references)
 12. [Glossary](#glossary)
 
-{% katexmm %}
 {% include_relative _sections/00_summary.md %}
 {% include_relative _sections/01_introduction.md %}
 {% include_relative _sections/02_terminology.md %}
@@ -30,4 +29,3 @@ layout: default
 {% include_relative _sections/AC_coordinate_system_handling.md %}
 {% include_relative _sections/references.md %}
 {% include_relative _sections/glossary.md %}
-{% endkatexmm %}
