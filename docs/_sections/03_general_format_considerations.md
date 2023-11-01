@@ -2,7 +2,7 @@
 
 ---
 
-## General Format Considerations
+## General Format Considerations {:#general-format-considerations}
 
 This section delves into the overarching design principles and foundational elements underpinning the proposed format, ensuring adherence to the objectives of seamless, lossless, and convenient data interchange across platforms.
 
@@ -21,3 +21,6 @@ This section delves into the overarching design principles and foundational elem
 7. **Standardized References**: Incorporating standardized naming conventions, directory structures, and file naming conventions.
     
 8. **Interoperability with Existing Formats**: Examination of the format's relationship or interaction with prevailing data formats in the domain.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTEwMTgxMTM0NzFdfQ==
+-->
