@@ -105,12 +105,8 @@ Transitioning to event classifications, the QuakeML schema has a predefined set 
 | **Object**  | **New Parameter** | **Description**                          | **Type**  |
 |-------------|-------------------|------------------------------------------|-----------|
 | Network     | Time Zone         | IANA Time Zone or time offset            | string    |
-| Station     | x                 | x-coordinate                             | float     |
-|             | y                 | y-coordinate                             | float     |
-|             | z                 | z-coordinate                             | float     |
-| Channel     | x                 | x-coordinate                             | float     |
-|             | y                 | y-coordinate                             | float     |
-|             | z                 | z-coordinate                             | float     |
+| Station     | coordinates       | x, y, z and coordinate system              | coordinates  |
+| Channel     | coordinates       | x, y, z and coordinate system                            | float     
 |             | oriented          | True if orientation is known             | boolean   |
 |             | active            | True if the channel is active            | boolean   |
 
@@ -151,6 +147,5 @@ Rays and their derivative information serve as key inputs in microseismic monito
 | Ray parameters    | phase...      |                                                    |                    |
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTE3NzU1MTIsLTEyNzY5MjUxOTZdfQ
-==
+eyJoaXN0b3J5IjpbLTcyMjUxNDQzNSwtMTI3NjkyNTE5Nl19
 -->
