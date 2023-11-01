@@ -2,7 +2,7 @@
 
 ---
 
-## Appendix C: Coordinate System Handling 
+## Appendix C: Coordinate System Handling {#sec:app_coordinate_system_handling label="sec:app_coordinate_system_handling"}
 
 ### Coordinate System Handling
 
@@ -37,3 +37,6 @@ The `CoordinateSystem` enumeration specifies the coordinate system being used. I
 
 - **NED** - North, East, Down coordinate system.
 - **ENU** - East, North, Up coordinate system.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTIxNDU0ODAwMDZdfQ==
+-->
