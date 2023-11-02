@@ -17,13 +17,13 @@ The ASDF format is well-designed, extensible and allow for atomic computationall
 
 We also extend the proposal to grid data to store and transfer the *P*- and *S*-wave velocity information to name only those.
 
-In tandem with this proposal, we present the μQuake (microQuake) library. As an open-source Python API built on Obspy, μQuake provides a convenient 
+In tandem with this proposal, we present the μQuake (microQuake) library. As an open-source Python API built on Obspy, μQuake provides a convenient interface allowing the seamless 
 
 Our aspiration is to achieve industry and supplier consensus on this format by the end of 2024.
 
 Your feedback is essential and greatly appreciated.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzMzQwMzQ0NSwxODQ3ODYzMzQ0LC0yMD
-YwNTE5MTQwLDE0ODE0Njc4OTFdfQ==
+eyJoaXN0b3J5IjpbLTEyMzYzNDk5MjUsMTg0Nzg2MzM0NCwtMj
+A2MDUxOTE0MCwxNDgxNDY3ODkxXX0=
 -->
