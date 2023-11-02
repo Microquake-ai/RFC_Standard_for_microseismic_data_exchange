@@ -5,7 +5,7 @@ This Request for Comments (RFC) introduces a proposed standardized format for mi
 
 The goal is simple: to ease the exchange of microseismic data across different platforms and vendors. Currently, data conversions often result in a lossy transformation, leading to reconciliation challenges and inconsistencies. Cross-referencing various data components, such as event data, system information, sensor response, and waveform data, is often complex and ambiguous.
 
-Our proposed schema exploits the adaptable seismic data format (ASDF), which is based on well-established file formats widely adopted in seismology that are:
+Our proposed schema exploits the adaptable seismic data format (ASDF) suggesting minor modifications that do not alter the compatibility with other platforms. ASDF is  is based on well-established file formats widely adopted in seismology that are:
 
 |Data Type        | Format     |
 |-----------------|------------|
@@ -24,6 +24,6 @@ Our aspiration is to achieve industry and supplier consensus on this format by t
 Your feedback is essential and greatly appreciated.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzYzNDk5MjUsMTg0Nzg2MzM0NCwtMj
-A2MDUxOTE0MCwxNDgxNDY3ODkxXX0=
+eyJoaXN0b3J5IjpbLTEzOTc2MzI4MiwxODQ3ODYzMzQ0LC0yMD
+YwNTE5MTQwLDE0ODE0Njc4OTFdfQ==
 -->
