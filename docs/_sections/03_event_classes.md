@@ -22,25 +22,26 @@ That would, however, be too reductionist and lead to ambiguity. The list suggest
 | blast                             |                          |
 | blast sequence                    |               |
 | development blast                 |               |
-| production blast                  | mining explosion                 |
-| far away blast/open pit blast     | quarry blast                      |
-| offsite blast                     | nuclear explosion                 |
-| paste firing                      | chemical explosion                |
-| calibration blast                 | controlled explosion              |
-| other blast/slashing              | experimental explosion            |
-| mid-shift blast/slash blast       | industrial explosion              |
-| raise bore                        | hydroacoustic event               |
-| crusher noise                     | road cut                         |
-| orepass noise                     | collapse                         |
-| drilling noise                    | acoustic noise                   |
-| electrical noise                  | thunder                          |
-| scaling noise                     | anthropogenic event               |
-| mechanical noise                  | crash                            |
-| test pulse                        | sonic boom                       |
-| unidentified noise/other noise    | other event                      |
-| duplicate                         | boat crash                       |
-| unknown                           | plane crash                      |
-| tap test/test                     | avalanche                        |
+| production blast                  |                  |
+| far away blast/open pit blast     |                       |
+| offsite blast                     |                  |
+| paste firing                      |                 |
+| calibration blast                 |               |
+| other blast/slashing              |             |
+| mid-shift blast/slash blast       |               |
+| raise bore                        |                |
+| crusher noise                     |                          |
+| orepass noise                     |                          |
+| drilling noise                    |                    |
+| electrical noise                  |                           |
+| scaling noise                     |                |
+| mechanical noise                  |                             |
+| test pulse                        |                        |
+| unidentified noise/other noise    |                       |
+| duplicate                         |                        |
+| unknown                           |                       |
+| tap test/test                     |                         |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzQ1Mzk2NTRdfQ==
+eyJoaXN0b3J5IjpbLTIwNTUxOTA1MzgsLTE5NzQ1Mzk2NTRdfQ
+==
 -->
