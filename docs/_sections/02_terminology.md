@@ -13,15 +13,13 @@ Indiscriminately, represent any association of "impulsive" trigger usually bundl
 - **Seismic Event (mining induced)**
 Usually refers to a mining induced event that results from the interaction of stress (increase or decrease) and the rock mass that can be linked to a series of phenomena including but not limited to:
 
-     - **Rock/Strain burst**:  The violent ejection of rock Tha is a primary concern in mines.
+     - **Rock/Strain burst**:  The violent ejection of rock that is a primary concern in mines.
   
-     - **Slip motion (Fault slip)**: Covers the movement along existing geological features, which can be a precursor or result of mining activities.
+     - **Slip motion (Fault slip)**: Movement along existing geological features.
 
-     - **Fall of ground**
-       A broad term that effectively captures events like rock falls, which can be dangerous in mining settings.
+     - **Fall of ground**: A broad term that effectively captures events like rock falls.
 
-     - **Tensile or compressive fracturing**
-       Important to differentiate as the mechanism and implications of tensile fracturing can be different from those of compressive fracturing.
+     - **Tensile or compressive fracturing**: The breakage of of compressive or tensile forces.
 
     - **Shear rupture**
        A primary mechanism of failure in rocks, crucial to understand and monitor.
@@ -67,6 +65,6 @@ A time series representation of seismic wave amplitudes detected by sensors in m
 - **Instrument**  
   A comprehensive setup encompassing one or multiple sensors and associated components, including casings, and internal electronics if applicable. In microseismic monitoring, an instrument refers to the entire arrangement employed for seismic detection. Its response combines the characteristics of the individual sensors. Example: a tri-axial dual element geophone.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5MjgwNjQ3NywzNjk0Mzk2OTIsMTY2OT
+eyJoaXN0b3J5IjpbMTY5NTgxMjkwNywzNjk0Mzk2OTIsMTY2OT
 Y4OTkwMCwtMTA3ODM2ODA1Nl19
 -->
