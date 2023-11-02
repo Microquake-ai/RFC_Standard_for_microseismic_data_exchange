@@ -1,11 +1,14 @@
 
 ## Executive Summary
 
-This Request for Comments (RFC) introduces a proposed standardized format for microseismic data exchange. Optimized primarily for in-mine monitoring systems, this format is universally suitable for any microseismic data dependent on local coordinate systems.
 
-The goal is simple: to ease the exchange of microseismic data across different platforms and vendors. Currently, data conversions often result in a lossy transformation, leading to reconciliation challenges and inconsistencies. Cross-referencing various data components, such as event data, system information, sensor response, and waveform data, is often complex and ambiguous.
+## Executive Summary
 
-Our proposed schema exploits the adaptable seismic data format (ASDF) suggesting minor modifications that do not alter the compatibility with other platforms. The ASDF is based on well-established file formats widely adopted in seismology that are:
+This Request for Comments (RFC) proposes a standardized format for microseismic data exchange. Primarily optimized for in-mine monitoring systems, the format holds universal relevance for all microseismic data dependent on local coordinate systems.
+
+Our objective is to simplify the exchange of microseismic data between various platforms and vendors. Presently, data conversions can undergo lossy transformations, ushering in reconciliation challenges and inconsistencies. The task of cross-referencing multiple data elements, such as event data, system information, sensor response, and waveform data, remains intricate and often ambiguous.
+
+Central to our proposal is the exploitation of the Adaptable Seismic Data Format (ASDF), with suggested minor adjustments ensuring unchanged compatibility with other platforms. The ASDF adopts well-established file formats from seismology:
 
 |Data Type        | Format     |
 |-----------------|------------|
@@ -24,6 +27,6 @@ Our aspiration is to achieve industry and supplier consensus on this format by t
 Your feedback is essential and greatly appreciated.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTU4NjMxNSwxODQ3ODYzMzQ0LC0yMD
-YwNTE5MTQwLDE0ODE0Njc4OTFdfQ==
+eyJoaXN0b3J5IjpbNjE3NjExMTMsMTg0Nzg2MzM0NCwtMjA2MD
+UxOTE0MCwxNDgxNDY3ODkxXX0=
 -->
