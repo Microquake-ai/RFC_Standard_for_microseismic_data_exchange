@@ -2,14 +2,14 @@
 
 ---
 
-## Data Format
+## $\mu$Seismic Data Format
 
 ### Overview
 
 The recommended seismic data standard for adoption is the Adaptable Seismic Data Format (ASDF) [Krischer et al., 2016]. Designed with modern challenges in mind, the ASDF format efficiently addresses the complexities inherent to large and detailed seismic datasets. By employing the Hierarchical Data Format Version 5 (HDF5) container format, ASDF is self-descriptive, ensuring data can be accessed and manipulated with ease across various seismological applications. Its overarching objective is to simplify the organization and exchange of seismic data, emphasizing interoperability, scalability, and the reduction of inconsistencies by amalgamating multiple seismic data components within a singular structure. The ASDF format is suitable for trigger, continuous, and Distributed Acoustic Sensing (DAS) data to name only those. 
 
 ![ASDF Data Format](../assets/images/ASDF_Format_overview.jpeg)  
-*Figure: ASDF data structure overview (Krischer et al. 2016)Structure of the ASDF format.*
+*Figure: ASDF data structure overview (Krischer et al. 2016)
 
 Nested within the HDF5 container, ASDF systematically organizes seismological components, including:
 
@@ -22,10 +22,6 @@ Nested within the HDF5 container, ASDF systematically organizes seismological co
 - **Auxiliary Data**: Catering to the diverse needs of seismological analyses, this section allows the storage of additional data types, such as cross-correlations or synthetic seismograms.
   
 - **Provenance Data**: In the pursuit of rigorous transparency and reproducibility, this segment meticulously documents the historical progression of data alterations, enumerating each distinct processing operation along with its respective parameters. The provenance documentation adheres to the W3C PROV model [Moreau et al., 2013], a widely accepted standard for chronicling provenance specifics.
-
-
-[//]: # (![ASDF Data Structure Overview]&#40;ASDF_Format_overview.jpeg&#41;)
-*ASDF data structure overview from Krischer et al. (2016)*
 
 Through its comprehensive integration of these components, ASDF paves the way for a standardized, efficient, and in-depth approach to seismological research and data management.
 
@@ -52,9 +48,9 @@ The modifications discussed in the following sections, particularly concerning Q
 | **Object** | **New Parameter** | **Description**         | **Type**         |
 |------------|-------------------|-------------------------|--------|----------|
 | Origin     | coordinates       | Coordinates information | Coordinates[^1]  |
-|            | f<sub>0</sub>\(f_0\)           | Corner frequency        | float            |
-| Magnitude  | E<sub>p</sub>\(E_p\)           | *P*\(P\)-wave energy         | float           | float |
-|            | E<sub>s</sub>\(E_s\)           | *S*\(S\)-wave energy         | float           | float |
+|     Magnitude | $f_0$          | Corner frequency        | float            |
+|            | $E_p$           | *P*-wave energy         | float           | float |
+|            | $E_s$           | *S*-wave energy         | float           | float |
 
 [^1]: Coordinate class described in the [Appendix C: Coordinate System Handling](#appendix-c-coordinate-system-handling)
 
@@ -62,7 +58,7 @@ We propose straightforward modifications to the QuakeML format to better suit *m
 
 Instead of the standard spherical coordinate system that relies on latitude and longitude for location specification, we advocate for a Cartesian coordinate system. Specifically, we recommend emptying the traditional fields for latitude, longitude, elevation, and depth. As a substitute, we propose adding a description of the Coordinates as a new field. The coordinate description object is implemented in *muquake* from version 2.0. In the current implementation, the information is stored as a JSON string in the extra parameters of the Origin object. The extra parameters are then stored in a specific namespace inside the QuakeML file. The coordinate object includes the x, y, and z coordinate, a description of the coordinate system (either ENU or NED), and elements to allow for converting the coordinates between multiple representations including latitude, longitude if the required information is provided.
 
-We propose an enhancement to the magnitude definition in QuakeML to represent seismic source properties better. The existing schema falls short in capturing key parameters such as the corner frequency (\(f_0\)), and the *P*- and *S*-wave energies (\(E_p\) and \(E_s\), respectively). Similar to our approach for coordinate system modification, we suggest including \(f_0\), \(E_p\), and \(E_s\) as extra parameters of the Magnitude object. This enables the on-the-fly calculation of other source parameters using the seismic moment (\(M_0\)), corner frequency, and wave energies. Relationships among these source parameters are elaborated in Appendix.
+We propose an enhancement to the magnitude definition in QuakeML to represent seismic source properties better. The existing schema falls short in capturing key parameters such as the corner frequency ($f_0$), and the *P*- and *S*-wave energies $E_p$ and $E_s$, respectively). Similar to our approach for coordinate system modification, we suggest including $f_0$, $E_p$, and $E_s$ as extra parameters of the Magnitude object. This enables the on-the-fly calculation of other source parameters using the seismic moment $M_0$, corner frequency, and wave energies. Relationships among these source parameters are elaborated in Appendix.
 
 Transitioning to event classifications, the QuakeML schema has a predefined set of seismic event types that do not fully accommodate the specialized needs of *museismic* monitoring. We propose mapping existing event types to new, mining-specific descriptors and directly including a generic look-up table in the code for on-the-fly translation. While efforts were made to create logical mappings, limitations in the existing event types posed challenges in finding intuitive counterparts. The following table presents this mapping between standard and *museismic* event types.
 
@@ -96,11 +92,9 @@ Transitioning to event classifications, the QuakeML schema has a predefined set 
 | unknown                           | plane crash                      |
 | tap test/test                     | avalanche                        |
 
-*Note: The table continues with the respective mappings.*
+### Waveforms and StationXML
 
-## Waveforms and StationXML
-
-### Modifications
+#### Modifications
 
 | **Object**  | **New Parameter** | **Description**                          | **Type**  |
 |-------------|-------------------|------------------------------------------|-----------|
@@ -114,16 +108,16 @@ In a manner analogous to our QuakeML modifications, we adapt the StationXML form
 
 The waveform format does not require any alteration.
 
-### Parameter Validation
+#### Parameter Validation
 As for the QuakeML, the validation for the newly introduced parameters is performed within the μquake library. For standard parameters, validation is handled by the Obspy package. This ensures a cohesive framework for both standard and specialized seismic data types.
 
-### Stream Naming Convention
+#### Stream Naming Convention
 
 The ASDF file format combines waveforms and inventory data. To ensure flawless integration, we must adopt a robust and standardized "stream" naming convention to ensure unambiguous association between waveforms and inventory. 
 
 ASDF adopts a relaxed version of the SEED Identifier Convention, previously part of QuakeML and StationXML standards and now extended to the waveform data. The StationXML does not restrict the string length; QuakeML does. We therefore suggest adopting the convention presented in section 3.3.5 of the [QuakeML Version 1.2 (revision 20130214b)](https://quake.ethz.ch/quakeml/docs/latest?action=AttachFile&do=get&target=QuakeML-BED.pdf).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjYxNjI1NzIsLTEyNzY5MjUxOTZdfQ
-==
+eyJoaXN0b3J5IjpbMTI5Nzk3MjkyMCwxMTI5ODEyMzM0LC0xOT
+I2MTYyNTcyLC0xMjc2OTI1MTk2XX0=
 -->
