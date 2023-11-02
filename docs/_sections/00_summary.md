@@ -23,14 +23,14 @@ Your insightful feedback is both crucial and welcomed.
 
 Beyond the ASDF, our proposal encompasses grid data considerations. We present a format tailored for the storage and transfer of such data. This suggested format is versatile, accommodating various grid types including but not limited to velocity, and travel time.
 
-Parallel to this proposal, we introduce the μQuake (microQuake) library. While based on Obspy, μQuake is not just a mere adaptation: it significantly extends Obspy's functionalities tailored specifically for microseismic data. Beyond its inherent capabilities for reading, writing, and managing seismological information, μQuake incorporates additional tools and an optimized interface to seamlessly integrate the changes we've proposed. This includes adept handling of various file types like ASDF and the grid formats delineated in this document.
+The μQuake (microQuake) library serves as a practical mechanism to adopt the standards we outline in this proposal. While its foundation lies in Obspy, μQuake is tailored specifically to the nuances of microseismic monitoring. Beyond the core capabilities of Obspy, μQuake has evolved over time, with Version 2.0 poised to incorporate support for the ASDF file format and the grid structures proposed herein, ensuring a seamless integration of these new standards.
 
 Our aspiration is to achieve industry and supplier consensus on this format by the end of 2024.
 
 Your feedback is essential and greatly appreciated.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjMyNDIyNCwxNDg3NDA1MjUzLC0xMT
-k0MTg1NTMwLDE4NDc4NjMzNDQsLTIwNjA1MTkxNDAsMTQ4MTQ2
-Nzg5MV19
+eyJoaXN0b3J5IjpbMTc5NzM1MjAxOCwtMTUyMzI0MjI0LDE0OD
+c0MDUyNTMsLTExOTQxODU1MzAsMTg0Nzg2MzM0NCwtMjA2MDUx
+OTE0MCwxNDgxNDY3ODkxXX0=
 -->
