@@ -12,8 +12,8 @@ Indiscriminately, represent any association of "impulsive" trigger usually bundl
 
 - **Seismic Event (mining induced)**
 Usually refers to a mining induced event that results from the interaction of stress (increase or decrease) and the rock mass that can be linked to a series of phenomena including but not limited to:
-	- Rock/Strain burst
-	- Slip motion (Fault slip)
+	- **Rock/Strain burst**: This encompasses the violent ejection of rock and is a primary concern in mines.
+	- **Slip motion (Fault slip)
 	- Fall of ground
 	- Tensile or compressive fracturing
 	- Shear rupture
@@ -56,6 +56,6 @@ A time series representation of seismic wave amplitudes detected by sensors in m
 - **Instrument**  
   A comprehensive setup encompassing one or multiple sensors and associated components, including casings, and internal electronics if applicable. In microseismic monitoring, an instrument refers to the entire arrangement employed for seismic detection. Its response combines the characteristics of the individual sensors. Example: a tri-axial dual element geophone.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTQ2MTQ4MzcsMTY2OTY4OTkwMCwtMT
-A3ODM2ODA1Nl19
+eyJoaXN0b3J5IjpbMzY5NDM5NjkyLDE2Njk2ODk5MDAsLTEwNz
+gzNjgwNTZdfQ==
 -->
