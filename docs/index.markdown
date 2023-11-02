@@ -15,6 +15,7 @@ layout: default
 10. [Appendix C: Coordinate System Handling](#appendix-c-coordinate-system-handling)
 11. [References](#references)
 12. [Glossary](#glossary)
+{: toc}
 
 {% include_relative _sections/00_summary.md %}
 {% include_relative _sections/01_introduction.md %}
