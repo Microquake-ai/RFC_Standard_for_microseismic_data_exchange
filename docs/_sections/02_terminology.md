@@ -4,6 +4,8 @@
 
 ## Terminology and Definitions
 
+### Signals
+
 - **Trigger**
 Represents any type of signal, usually but not always impulsive, that "triggers" the seismic system.
 
@@ -28,6 +30,8 @@ Usually refers to a mining induced event that results from the interaction of st
 
 - **Blast (development, production, other)**
 Refers to a man made controlled explosion linked to the development of excavation or the extraction of ore. 
+
+### Seismological Objects and Formats
 
 - **Waveforms**  
 A time series representation of seismic wave amplitudes detected by sensors in microseismic monitoring. Originating from subsurface events like rock fractures.
@@ -56,12 +60,14 @@ A time series representation of seismic wave amplitudes detected by sensors in m
 - **ASDF (Adaptable Seismic Data Format)**  
   A modern data format explicitly designed for seismological data and related metadata. Building on the HDF5 infrastructure, ASDF is tailored for efficiency, scalability, and adaptability in both storage and processing of seismic data. It facilitates the integration of raw waveforms, processed data products, event parameters, and station metadata within a single file structure. The format's adaptability and hierarchical structure ensure consistent and optimized handling of diverse seismic datasets, making it a valuable choice for advanced seismological research and applications.
 
+### Equipment
+
 - **Sensor**  
   A device specifically designed to detect or measure a physical property and convert this input into an electrical signal. A sensor (e.g., geophone element) is responsible for directly detecting seismic waves and transducing them into voltage variations based on its sensitivity. Example: a 4.5 Hz geophone.
 
 - **Instrument**  
   A comprehensive setup encompassing one or multiple sensors and associated components, including casings, and internal electronics if applicable. In microseismic monitoring, an instrument refers to the entire arrangement employed for seismic detection. Its response combines the characteristics of the individual sensors. Example: a tri-axial dual element geophone.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzA5NDExNzksMzY5NDM5NjkyLDE2Nj
-k2ODk5MDAsLTEwNzgzNjgwNTZdfQ==
+eyJoaXN0b3J5IjpbLTY3NzA5NzI2MywtMjAzMDk0MTE3OSwzNj
+k0Mzk2OTIsMTY2OTY4OTkwMCwtMTA3ODM2ODA1Nl19
 -->
