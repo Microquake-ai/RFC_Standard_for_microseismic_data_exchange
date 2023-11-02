@@ -48,9 +48,9 @@ The modifications discussed in the following sections, particularly concerning Q
 | **Object** | **New Parameter** | **Description**         | **Type**         |
 |------------|-------------------|-------------------------|--------|----------|
 | Origin     | coordinates       | Coordinates information | Coordinates[^1]  |
-|            | f<sub>0</sub>\(f_0\)           | Corner frequency        | float            |
-| Magnitude  | E<sub>p</sub>\(E_p\)           | *P*\(P\)-wave energy         | float           | float |
-|            | E<sub>s</sub>\(E_s\)           | *S*\(S\)-wave energy         | float           | float |
+|            | $f_0$          | Corner frequency        | float            |
+| Magnitude  | $E_p$           | *P*-wave energy         | float           | float |
+|            | $E_s$           | *S*-wave energy         | float           | float |
 
 [^1]: Coordinate class described in the [Appendix C: Coordinate System Handling](#appendix-c-coordinate-system-handling)
 
@@ -58,7 +58,7 @@ We propose straightforward modifications to the QuakeML format to better suit *m
 
 Instead of the standard spherical coordinate system that relies on latitude and longitude for location specification, we advocate for a Cartesian coordinate system. Specifically, we recommend emptying the traditional fields for latitude, longitude, elevation, and depth. As a substitute, we propose adding a description of the Coordinates as a new field. The coordinate description object is implemented in *muquake* from version 2.0. In the current implementation, the information is stored as a JSON string in the extra parameters of the Origin object. The extra parameters are then stored in a specific namespace inside the QuakeML file. The coordinate object includes the x, y, and z coordinate, a description of the coordinate system (either ENU or NED), and elements to allow for converting the coordinates between multiple representations including latitude, longitude if the required information is provided.
 
-We propose an enhancement to the magnitude definition in QuakeML to represent seismic source properties better. The existing schema falls short in capturing key parameters such as the corner frequency (\(f_0\)), and the *P*- and *S*-wave energies (\(E_p\) and \(E_s\), respectively). Similar to our approach for coordinate system modification, we suggest including \(f_0\), \(E_p\), and \(E_s\) as extra parameters of the Magnitude object. This enables the on-the-fly calculation of other source parameters using the seismic moment (\(M_0\)), corner frequency, and wave energies. Relationships among these source parameters are elaborated in Appendix.
+We propose an enhancement to the magnitude definition in QuakeML to represent seismic source properties better. The existing schema falls short in capturing key parameters such as the corner frequency (f<sub_0\)), and the *P*- and *S*-wave energies (\(E_p\) and \(E_s\), respectively). Similar to our approach for coordinate system modification, we suggest including \(f_0\), \(E_p\), and \(E_s\) as extra parameters of the Magnitude object. This enables the on-the-fly calculation of other source parameters using the seismic moment (\(M_0\)), corner frequency, and wave energies. Relationships among these source parameters are elaborated in Appendix.
 
 Transitioning to event classifications, the QuakeML schema has a predefined set of seismic event types that do not fully accommodate the specialized needs of *museismic* monitoring. We propose mapping existing event types to new, mining-specific descriptors and directly including a generic look-up table in the code for on-the-fly translation. While efforts were made to create logical mappings, limitations in the existing event types posed challenges in finding intuitive counterparts. The following table presents this mapping between standard and *museismic* event types.
 
@@ -120,6 +120,6 @@ The ASDF file format combines waveforms and inventory data. To ensure flawless i
 ASDF adopts a relaxed version of the SEED Identifier Convention, previously part of QuakeML and StationXML standards and now extended to the waveform data. The StationXML does not restrict the string length; QuakeML does. We therefore suggest adopting the convention presented in section 3.3.5 of the [QuakeML Version 1.2 (revision 20130214b)](https://quake.ethz.ch/quakeml/docs/latest?action=AttachFile&do=get&target=QuakeML-BED.pdf).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDY4MTk1MjI5LC0xOTI2MTYyNTcyLC0xMj
-c2OTI1MTk2XX0=
+eyJoaXN0b3J5IjpbMTAzOTUxMjI4MSwtMTkyNjE2MjU3MiwtMT
+I3NjkyNTE5Nl19
 -->
