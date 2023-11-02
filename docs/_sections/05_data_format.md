@@ -2,14 +2,14 @@
 
 ---
 
-## Data Format
+## $\mu$Seismic Data Format
 
 ### Overview
 
 The recommended seismic data standard for adoption is the Adaptable Seismic Data Format (ASDF) [Krischer et al., 2016]. Designed with modern challenges in mind, the ASDF format efficiently addresses the complexities inherent to large and detailed seismic datasets. By employing the Hierarchical Data Format Version 5 (HDF5) container format, ASDF is self-descriptive, ensuring data can be accessed and manipulated with ease across various seismological applications. Its overarching objective is to simplify the organization and exchange of seismic data, emphasizing interoperability, scalability, and the reduction of inconsistencies by amalgamating multiple seismic data components within a singular structure. The ASDF format is suitable for trigger, continuous, and Distributed Acoustic Sensing (DAS) data to name only those. 
 
 ![ASDF Data Format](../assets/images/ASDF_Format_overview.jpeg)  
-*Figure: ASDF data structure overview (Krischer et al. 2016)Structure of the ASDF format.*
+*Figure: ASDF data structure overview (Krischer et al. 2016)
 
 Nested within the HDF5 container, ASDF systematically organizes seismological components, including:
 
@@ -22,10 +22,6 @@ Nested within the HDF5 container, ASDF systematically organizes seismological co
 - **Auxiliary Data**: Catering to the diverse needs of seismological analyses, this section allows the storage of additional data types, such as cross-correlations or synthetic seismograms.
   
 - **Provenance Data**: In the pursuit of rigorous transparency and reproducibility, this segment meticulously documents the historical progression of data alterations, enumerating each distinct processing operation along with its respective parameters. The provenance documentation adheres to the W3C PROV model [Moreau et al., 2013], a widely accepted standard for chronicling provenance specifics.
-
-
-[//]: # (![ASDF Data Structure Overview]&#40;ASDF_Format_overview.jpeg&#41;)
-*ASDF data structure overview from Krischer et al. (2016)*
 
 Through its comprehensive integration of these components, ASDF paves the way for a standardized, efficient, and in-depth approach to seismological research and data management.
 
@@ -124,6 +120,6 @@ The ASDF file format combines waveforms and inventory data. To ensure flawless i
 ASDF adopts a relaxed version of the SEED Identifier Convention, previously part of QuakeML and StationXML standards and now extended to the waveform data. The StationXML does not restrict the string length; QuakeML does. We therefore suggest adopting the convention presented in section 3.3.5 of the [QuakeML Version 1.2 (revision 20130214b)](https://quake.ethz.ch/quakeml/docs/latest?action=AttachFile&do=get&target=QuakeML-BED.pdf).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjYxNjI1NzIsLTEyNzY5MjUxOTZdfQ
-==
+eyJoaXN0b3J5IjpbNDY4MTk1MjI5LC0xOTI2MTYyNTcyLC0xMj
+c2OTI1MTk2XX0=
 -->
