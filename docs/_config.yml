@@ -12,6 +12,9 @@ github_username: microquake-ai
 markdown: kramdown
 theme: minima
 
+kramdown:
+  toc_levels: 1,2
+
 # Plugins
 #plugins:
 #  - jekyll-feed
