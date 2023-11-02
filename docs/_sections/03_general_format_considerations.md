@@ -2,7 +2,7 @@
 
 ---
 
-## General Format Considerations {:#general-format-considerations}
+## General Format Considerations
 
 This section delves into the overarching design principles and foundational elements underpinning the proposed format, ensuring adherence to the objectives of seamless, lossless, and convenient data interchange across platforms.
 

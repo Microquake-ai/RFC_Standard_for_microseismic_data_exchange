@@ -1,5 +1,5 @@
 
-## Executive Summary {:#executive-summary}
+## Executive Summary
 
 The RFC aims to solicit feedback on a standardized format for microseismic data exchange. While the format is optimized for in-mine monitoring systems, it is applicable to all microseismic data reliant on local coordinate systems. 
 

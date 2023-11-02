@@ -2,7 +2,7 @@
 
 ---
 
-## Data Format {:#data-format}
+## Data Format
 
 ### Overview
 

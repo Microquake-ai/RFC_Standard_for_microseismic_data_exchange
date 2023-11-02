@@ -2,7 +2,7 @@
 
 ---
 
-## Appendix B: Response {:#appendix-b-response}
+## Appendix B: Response
 
 ### Instrument Response
 

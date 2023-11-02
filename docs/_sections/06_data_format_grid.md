@@ -3,7 +3,7 @@
 ---
 
 
-## Grid Data Format {:#data-format-grid}
+## Grid Data Format
 
 ### Overview
 

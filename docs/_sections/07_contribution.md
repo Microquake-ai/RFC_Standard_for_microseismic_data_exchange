@@ -2,7 +2,7 @@
 
 ---
 
-## Feedback Mechanism {:#feedback-mechanism}
+## Feedback Mechanism
 
 Feedback and contributions from the community are essential to refining and improving this RFC. There are two primary ways through which stakeholders, developers, and interested parties can provide their feedback:
 

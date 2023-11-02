@@ -2,7 +2,7 @@
 
 ---
 
-## Appendix C: Coordinate System Handling {:#appendix-c-coordinate-system-handling}
+## Appendix C: Coordinate System Handling
 
 ### Coordinate System Handling
 
