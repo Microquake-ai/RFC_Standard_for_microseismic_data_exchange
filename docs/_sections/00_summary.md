@@ -3,7 +3,7 @@
 
 The RFC aims to solicit feedback on a standardized format for microseismic data exchange. While the format is optimized for in-mine monitoring systems, it is applicable to all microseismic data reliant on local coordinate systems.
 
-This initiative's purpose is to reduce friction in sharing μseismic data across multipdefine a format 
+This initiative's purpose is to reduce friction in sharing μseismic data across multiple platforms and vendors. The data conversion is seldom lossless, and the reconciliation process is inconsistent and
 
 The proposed schema covers four categories of data: waveforms, catalogs, system information, and grids. Existing data formats widely recognized in seismology are employed for each type, with only minor additions that do not alter the portability or compatibility:
 
@@ -23,6 +23,6 @@ The ultimate goal is to secure industry and supplier consensus on this format by
 Feedback is both encouraged and welcomed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTIzNzgxMDMyLC0yMDYwNTE5MTQwLDE0OD
-E0Njc4OTFdfQ==
+eyJoaXN0b3J5IjpbLTExMjc4NzkyMDMsLTIwNjA1MTkxNDAsMT
+Q4MTQ2Nzg5MV19
 -->
