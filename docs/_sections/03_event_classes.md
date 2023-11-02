@@ -13,8 +13,19 @@ If simplicity is the objective, the classification could be limited to the follo
 
 That would, however, be too reductionist and lead to ambiguity. The list suggested below is quite comprehensive, and from experience, encompass almost all event types that can be recorded by a mine $\mu$seismic monitoring system. 
 
+| Suggested Event Types                 | Description                                                           |
+|--------------------------------------|-----------------------------------------------------------------------|
+| earthquake/large event               | Tectonic earthquake |
+| seismic event                        |   |
+| offsite event                        | |
+| rock burst                          | Sudden and violent release of built-up stress within the rock.         |
+| fall of ground/rockfall              | Dislodgement and downward movement of rock or ground.                  |
+| raise bore                          | Mechanical method for drilling between levels in mines.                |
+| duplicate                            | Event already recorded or identified; redundant entry.                 |
+| unknown                              | Event type or origin not determined or identified.                     |
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzNjUxNTM0NywtMjA1NTE5MDUzOCwtMT
-k3NDUzOTY1NF19
+eyJoaXN0b3J5IjpbNDU1MjExODYwLC0yMDU1MTkwNTM4LC0xOT
+c0NTM5NjU0XX0=
 -->
