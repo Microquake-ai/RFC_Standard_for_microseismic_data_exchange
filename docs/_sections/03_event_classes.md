@@ -25,7 +25,7 @@ That would, however, be too reductionist and lead to ambiguity. The list suggest
 | Suggested Event Types                 | Description                                                           |
 |--------------------------------------|-----------------------------------------------------------------------|
 | blast                                | Controlled detonation for mining purposes.                             |
-| blast sequence                       | Series of controlled detonations conducted in a specific order.        |
+| blast sequence                       | Would apply for a series of blasts organized in a longer file containing the whole blast sequenc        |
 | development blast                    | Detonation to facilitate mine infrastructure and access.               |
 | production blast                     | Detonation specifically for ore extraction.                            |
 | far away blast/open pit blast        | Detonation outside underground mine, often in open pit operations.     |
@@ -48,10 +48,15 @@ That would, however, be too reductionist and lead to ambiguity. The list suggest
 | mechanical noise                     | Sound from general mechanical operations or machinery.                 |
 | test pulse                           | Controlled signal used to test or calibrate seismic equipment.         |
 | unidentified noise/other noise       | Acoustic disturbances without clear origin or classification.          |
-| raise bore                          | Mechanical method for drilling between levels in mines.                |
-| duplicate                            | Event already recorded or identified; redundant entry.                 |
+| raise bore                          | Mechanical method for drilling between levels in mines.                |             |
 | unknown                              | Event type or origin not determined or identified.                     |
+
+**Other**
+| Suggested Event Types                 | Description                                                           |
+|--------------------------------------|-----------------------------------------------------------------------|
+| duplicate                            | Event already recorded or identified; redundant entry.    
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTc4NDg4NDQzLC0yMDU1MTkwNTM4LC0xOT
-c0NTM5NjU0XX0=
+eyJoaXN0b3J5IjpbMTI5NjgwMzIyMSwtMjA1NTE5MDUzOCwtMT
+k3NDUzOTY1NF19
 -->
