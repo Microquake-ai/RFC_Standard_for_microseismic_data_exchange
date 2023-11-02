@@ -17,15 +17,13 @@ The ASDF format is well-designed, extensible and allow for atomic computationall
 
 We also extend the proposal to grid data to store and transfer the *P*- and *S*-wave velocity information to name only those.
 
+In tandem with this proposal, we present the μQuake (microQuake) library. As an open-source Python API built on Obspy, μQuake provides a convenient 
 
+Our aspiration is to achieve industry and supplier consensus on this format by the end of 2024.
 
-To facilitate the adoption of the proposed format, we introduce the μQuake (microQuake) library for easier manipulation of seismological objects. μQuake is an open source, Python API built upon Obspy. This library offers specialized functions for microseismic monitoring, including the provision for a Cartesian coordinate system as an alternative to geographic coordinates.
-
-The ultimate goal is to secure industry and supplier consensus on this format by the close of 2024. 
-
-Feedback is both encouraged and welcomed.
+Your feedback is essential and greatly appreciated.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTI2OTI1NzIzLDE4NDc4NjMzNDQsLTIwNj
-A1MTkxNDAsMTQ4MTQ2Nzg5MV19
+eyJoaXN0b3J5IjpbMTEzMzQwMzQ0NSwxODQ3ODYzMzQ0LC0yMD
+YwNTE5MTQwLDE0ODE0Njc4OTFdfQ==
 -->
