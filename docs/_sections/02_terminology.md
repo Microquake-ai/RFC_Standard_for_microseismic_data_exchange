@@ -8,7 +8,7 @@
 Represents any type of signal, usually but not always impulsive, that "triggers" the seismic system.
 
 - **Event**
-Indiscriminately, represent any association of "impulsive" trigger usually bundled into an event file.
+Indiscriminately, represent any association triggers ocwithin a predefined time window.
 
 - **Seismic Event (mining induced)**
 Usually refers to a mining induced event that results from the interaction of stress (increase or decrease) and the rock mass that can be linked to a series of phenomena including but not limited to:
@@ -23,7 +23,7 @@ Usually refers to a mining induced event that results from the interaction of st
 
     - **Shear rupture**: A rupture along weaknesses in the rock that results in a shear motion.
 
-     - **Pillar crushing/damage**:  Fracturing of the rock and .
+     - **Pillar crushing/damage**:  Fracturing of the rock inside a pillar resulting the pillar integrity to be .
 
 	- 
 
@@ -63,6 +63,6 @@ A time series representation of seismic wave amplitudes detected by sensors in m
 - **Instrument**  
   A comprehensive setup encompassing one or multiple sensors and associated components, including casings, and internal electronics if applicable. In microseismic monitoring, an instrument refers to the entire arrangement employed for seismic detection. Its response combines the characteristics of the individual sensors. Example: a tri-axial dual element geophone.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5OTc5MzkxMSwzNjk0Mzk2OTIsMTY2OT
+eyJoaXN0b3J5IjpbLTMyMzg0ODUwNSwzNjk0Mzk2OTIsMTY2OT
 Y4OTkwMCwtMTA3ODM2ODA1Nl19
 -->
