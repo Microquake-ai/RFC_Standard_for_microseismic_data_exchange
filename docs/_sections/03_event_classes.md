@@ -25,10 +25,10 @@ That would, however, be too reductionist and lead to ambiguity. The list suggest
 | Suggested Event Types                 | Description                                                           |
 |--------------------------------------|-----------------------------------------------------------------------|
 | blast                                | Controlled detonation for mining purposes.                             |
-| blast sequence                       | Would apply for a series of blasts organized in a longer file containing the whole blast sequenc        |
-| development blast                    | Detonation to facilitate mine infrastructure and access.               |
-| production blast                     | Detonation specifically for ore extraction.                            |
-| far away blast/open pit blast        | Detonation outside underground mine, often in open pit operations.     |
+| blast sequence                       | Would apply for a series of blasts organized in a longer file containing the whole blast sequence.        |
+| development blast                    | Specific type of blast for development               |
+| production blast                     | Specific type of blast related to production                            |
+| far away blast/open pit blast        | Detonation outside underground mine, often in open pit operations or nearby.     |
 | offsite blast                        | Controlled explosion occurring outside the mine's premises.            |
 | paste firing                         | Detonation within cemented paste backfills.                            |
 | calibration blast                    | Detonation to calibrate or test seismic monitoring equipment.          |
@@ -57,6 +57,6 @@ That would, however, be too reductionist and lead to ambiguity. The list suggest
 | duplicate                            | Event already recorded or identified; redundant entry.    
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5NjgwMzIyMSwtMjA1NTE5MDUzOCwtMT
+eyJoaXN0b3J5IjpbMTMxMzc2ODgwMywtMjA1NTE5MDUzOCwtMT
 k3NDUzOTY1NF19
 -->
