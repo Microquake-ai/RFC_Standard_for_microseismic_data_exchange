@@ -1,9 +1,9 @@
 
 ## Executive Summary
 
-The RFC aims to solicit feedback on a standardized format for microseismic data exchange. While the format is optimized for in-mine monitoring systems, it is applicable to all microseismic data reliant on local coordinate systems.
+This Request for Comments (RFC) introduces a proposed standardized format for microseismic data exchange. Optimized primarily for in-mine monitoring systems, this format is universally suitable for any microseismic data dependent on local coordinate systems.
 
-This initiative's purpose is to reduce friction in sharing μseismic data across multiple platforms and vendors. The data conversion is seldom lossless, leading to a difficult and involved reconciliation process, inconsistent. Cross-referencing the event data, system information, sensor's response with the waveform data can be a daunting task. 
+The goal is simple: to ease the exchange of microseismic data across different platforms and vendors. Currently, data conversions often result in a lossy transformation, leading to reconciliation challenges and inconsistencies. Cross-referencing various data components, such as event data, system information, sensor response, and waveform data, is often dauntin.
 
 The proposed schema covers four categories of data: waveforms, catalogs, system information, and grids. Existing data formats widely recognized in seismology are employed for each type, with only minor additions that do not alter the portability or compatibility:
 
@@ -23,6 +23,6 @@ The ultimate goal is to secure industry and supplier consensus on this format by
 Feedback is both encouraged and welcomed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0Nzg2MzM0NCwtMjA2MDUxOTE0MCwxND
-gxNDY3ODkxXX0=
+eyJoaXN0b3J5IjpbMTM2MzgxNTA4MCwxODQ3ODYzMzQ0LC0yMD
+YwNTE5MTQwLDE0ODE0Njc4OTFdfQ==
 -->
