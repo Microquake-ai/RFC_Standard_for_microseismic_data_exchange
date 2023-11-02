@@ -72,11 +72,11 @@ A time series representation of seismic wave amplitudes detected by sensors in m
 Represents a location where an instrument is deployed. The location could refer to an instrument.
 
 - **Station**
-A logical or physical grouping of instruments. In the most minimalist case, a station can compri
+A logical or physical grouping of instruments deployed at one or multiple "locations". In the most minimalist case, a station can comprise only one instrument.
 
 - **Network**
 A logical grouping of multiple stations used to detect, locate and characterized events.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4ODE0NDcxMSwtMjAzMDk0MTE3OSwzNj
-k0Mzk2OTIsMTY2OTY4OTkwMCwtMTA3ODM2ODA1Nl19
+eyJoaXN0b3J5IjpbLTM2Mjg4OTM0LC0yMDMwOTQxMTc5LDM2OT
+QzOTY5MiwxNjY5Njg5OTAwLC0xMDc4MzY4MDU2XX0=
 -->
