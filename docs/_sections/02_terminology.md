@@ -4,8 +4,10 @@
 
 ## Terminology and Definitions
 
-- **Event or Trigger**
-Indiscriminately, represent any kind of "impulsive" signal that trigger a seismic system.  
+- **Trigger**
+Represents any type of signal, usually impulsive, that "triggers" the seismic system
+- **Event**
+Indiscriminately, represent any association of "impulsive" trigger usually bundled into an event file.
 
 - **Waveforms**  
 A time series representation of seismic wave amplitudes detected by sensors in microseismic monitoring. Originating from subsurface events like rock fractures.
@@ -40,5 +42,5 @@ A time series representation of seismic wave amplitudes detected by sensors in m
 - **Instrument**  
   A comprehensive setup encompassing one or multiple sensors and associated components, including casings, and internal electronics if applicable. In microseismic monitoring, an instrument refers to the entire arrangement employed for seismic detection. Its response combines the characteristics of the individual sensors. Example: a tri-axial dual element geophone.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4MjUwODk0NSwtMTA3ODM2ODA1Nl19
+eyJoaXN0b3J5IjpbMTAyODI5MTg2MiwtMTA3ODM2ODA1Nl19
 -->
