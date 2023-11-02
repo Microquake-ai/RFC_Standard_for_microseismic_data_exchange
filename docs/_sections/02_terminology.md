@@ -69,14 +69,14 @@ A time series representation of seismic wave amplitudes detected by sensors in m
   A comprehensive setup encompassing one or multiple sensors and associated components, including casings, and internal electronics if applicable. In microseismic monitoring, an instrument refers to the entire arrangement employed for seismic detection. Its response combines the characteristics of the individual sensors. Example: a tri-axial dual element geophone.
 
 - **Location**
-Represents a location where an instrument is deployed
+Represents a location where an instrument is deployed. The location could refer to an instrument.
 
 - **Station**
-A logical or physical grouping of instruments
+A logical or physical grouping of instruments. In the most minimalist case, a station can compri
 
 - **Network**
-A logical grouping of multiple stations used to 
+A logical grouping of multiple stations used to detect, locate and characterized events.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODgwNTcwMTQsLTIwMzA5NDExNzksMz
-Y5NDM5NjkyLDE2Njk2ODk5MDAsLTEwNzgzNjgwNTZdfQ==
+eyJoaXN0b3J5IjpbMTQ4ODE0NDcxMSwtMjAzMDk0MTE3OSwzNj
+k0Mzk2OTIsMTY2OTY4OTkwMCwtMTA3ODM2ODA1Nl19
 -->
