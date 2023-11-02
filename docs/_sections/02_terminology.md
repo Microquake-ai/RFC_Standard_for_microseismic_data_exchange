@@ -17,7 +17,8 @@ Usually refers to a mining induced event that results from the interaction of st
 	- Rock fall
 	- Rock burst
 
-- 
+- **Blast (development, production, other)**
+Refers to a man made controlled explosion linked to the development of excavation or the extraction of ore. 
 
 - **Waveforms**  
 A time series representation of seismic wave amplitudes detected by sensors in microseismic monitoring. Originating from subsurface events like rock fractures.
@@ -52,6 +53,5 @@ A time series representation of seismic wave amplitudes detected by sensors in m
 - **Instrument**  
   A comprehensive setup encompassing one or multiple sensors and associated components, including casings, and internal electronics if applicable. In microseismic monitoring, an instrument refers to the entire arrangement employed for seismic detection. Its response combines the characteristics of the individual sensors. Example: a tri-axial dual element geophone.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTM0NzI2NjcsLTEwNzgzNjgwNTZdfQ
-==
+eyJoaXN0b3J5IjpbMTY2OTY4OTkwMCwtMTA3ODM2ODA1Nl19
 -->
