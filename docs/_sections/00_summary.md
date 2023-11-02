@@ -13,8 +13,11 @@ Our proposed schema exploits the adaptable seismic data format (ASDF), which is 
 | Catalog         | QuakeML  |
 | System Inventory| StationXML  |
 
-The ASDF format is well-designed, extensible and allow for atomic access to the waveform data essential for when working with a large volume of data as it is the case for continuous data or distributed acoustic sensing. high performance computing
-To streamline data distribution, we recommend the use of the Adaptable Seismic Data Format (ASDF), which allows for the cohesive packaging of Waveform, Catalog, and System Inventory serialized in familiar and widely adopted format into a single convenient file that is adapted for computational efficiency. This document details the data format, the additions and how the modifications are implemented.
+The ASDF format is well-designed, extensible and allow for atomic computationally efficient access to the waveform data, essential for when working with a large volume of data as it is the case for continuous data or distributed acoustic sensing (ASDF). 
+
+We also extend the propos
+
+
 
 To facilitate the adoption of the proposed format, we introduce the μQuake (microQuake) library for easier manipulation of seismological objects. μQuake is an open source, Python API built upon Obspy. This library offers specialized functions for microseismic monitoring, including the provision for a Cartesian coordinate system as an alternative to geographic coordinates.
 
@@ -23,6 +26,6 @@ The ultimate goal is to secure industry and supplier consensus on this format by
 Feedback is both encouraged and welcomed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzAyMTUzMDksMTg0Nzg2MzM0NCwtMj
+eyJoaXN0b3J5IjpbLTEyNzc3MjI1NzcsMTg0Nzg2MzM0NCwtMj
 A2MDUxOTE0MCwxNDgxNDY3ODkxXX0=
 -->
