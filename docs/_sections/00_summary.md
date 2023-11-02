@@ -3,7 +3,8 @@
 
 This Request for Comments (RFC) introduces a proposed standardized format for microseismic data exchange. Optimized primarily for in-mine monitoring systems, this format is universally suitable for any microseismic data dependent on local coordinate systems.
 
-The goal is simple: to ease the exchange of microseismic data across different platforms and vendors. Currently, data conversions often result in a lossy transformation, leading to reconciliation challenges and inconsistencies. Cross-referencing various data components, such as event data, system information, sensor response, and waveform data, is often dauntin.
+The goal is simple: to ease the exchange of microseismic data across different platforms and vendors. Currently, data conversions often result in a lossy transformation, leading to reconciliation challenges and inconsistencies. Cross-referencing various data components, such as event data, system information, sensor response, and waveform data, is often complex and ambiguous.
+Our proposed schema exploits already well-established and widely adopded file foin seismology:
 
 The proposed schema covers four categories of data: waveforms, catalogs, system information, and grids. Existing data formats widely recognized in seismology are employed for each type, with only minor additions that do not alter the portability or compatibility:
 
@@ -23,6 +24,6 @@ The ultimate goal is to secure industry and supplier consensus on this format by
 Feedback is both encouraged and welcomed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2MzgxNTA4MCwxODQ3ODYzMzQ0LC0yMD
+eyJoaXN0b3J5IjpbLTE0NTA1NDgzNywxODQ3ODYzMzQ0LC0yMD
 YwNTE5MTQwLDE0ODE0Njc4OTFdfQ==
 -->
