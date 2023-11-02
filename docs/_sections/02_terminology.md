@@ -13,23 +13,21 @@ Indiscriminately, represent any association of "impulsive" trigger usually bundl
 - **Seismic Event (mining induced)**
 Usually refers to a mining induced event that results from the interaction of stress (increase or decrease) and the rock mass that can be linked to a series of phenomena including but not limited to:
 
-     - **Rock/Strain burst** 
-       - Encompasses the violent ejection of rock and is a primary concern in mines.
+     - **Rock/Strain burst**:  The violent ejection of rock Tha is a primary concern in mines.
   
-     2. **Slip motion (Fault slip)**
-       Fundamental and covers the movement along existing geological features, which can be a precursor or result of mining activities.
+     - **Slip motion (Fault slip)**: Covers the movement along existing geological features, which can be a precursor or result of mining activities.
 
-     3. **Fall of ground**
-       - A broad term that effectively captures events like rock falls, which can be dangerous in mining settings.
+     - **Fall of ground**
+       A broad term that effectively captures events like rock falls, which can be dangerous in mining settings.
 
-     4. **Tensile or compressive fracturing**
-       - Important to differentiate as the mechanism and implications of tensile fracturing can be different from those of compressive fracturing.
+     - **Tensile or compressive fracturing**
+       Important to differentiate as the mechanism and implications of tensile fracturing can be different from those of compressive fracturing.
 
-     5. **Shear rupture**
-       - A primary mechanism of failure in rocks, crucial to understand and monitor.
+    - **Shear rupture**
+       A primary mechanism of failure in rocks, crucial to understand and monitor.
 
-     6. **Pillar crushing/damage**
-       - Specific to the integrity of the mined-out regions and is essential for safety considerations.
+     - **Pillar crushing/damage**
+      Specific to the integrity of the mined-out regions and is essential for safety considerations.
 
 	- 
 
@@ -69,6 +67,6 @@ A time series representation of seismic wave amplitudes detected by sensors in m
 - **Instrument**  
   A comprehensive setup encompassing one or multiple sensors and associated components, including casings, and internal electronics if applicable. In microseismic monitoring, an instrument refers to the entire arrangement employed for seismic detection. Its response combines the characteristics of the individual sensors. Example: a tri-axial dual element geophone.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3MTAzNjQ4NiwzNjk0Mzk2OTIsMTY2OT
+eyJoaXN0b3J5IjpbLTU5MjgwNjQ3NywzNjk0Mzk2OTIsMTY2OT
 Y4OTkwMCwtMTA3ODM2ODA1Nl19
 -->
