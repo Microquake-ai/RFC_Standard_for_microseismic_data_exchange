@@ -6,7 +6,7 @@
 
 ### Purpose
 
-This RFC aims to invite comments on a suggested format to allow for standardized and consistent access to μseismic data collected by mine μseismic monitoring systems. The proposed conventions and format objective is to enable a seamless, lossless and convenient exchange between different platforms. It considers future needs for developing high-performance, flexible, and accurate artificial intelligence that is envisioned to use the full range of available seismic data.
+This RFC aims to invite comments on a suggested format to allow for standardized and consistent access to $\mu$seismic data collected by mine μseismic monitoring systems. The proposed conventions and format objective is to enable a seamless, lossless and convenient exchange between different platforms. It considers future needs for developing high-performance, flexible, and accurate artificial intelligence that is envisioned to use the full range of available seismic data.
 
 > **Note:** The objective of the proposed standard **does not** concern or prescribe how seismic data are **internally managed** within proprietary platforms, although the proposed implementation is designed for high performance and computational efficiency and would be suited for that purpose.
 
@@ -24,7 +24,7 @@ We seek alignment from different stakeholders, including μseismic system and se
 
 The standard outlined in this RFC seeks to:
 
-- Define comprehensive data formats and structure for μseismic data exchange, encapsulating all necessary data elements and fostering the normalization of data processing and analysis. The proposed framework is designed to enhance interoperability between various sites and vendors, minimizing discrepancies stemming from the lack of common reference.
+- Define comprehensive, flexible and extensible data formats and structure for μseismic data exchange, encapsulating all necessary data elements to foster the normalization of data processing and analysis. The proposed framework is designed to enhance interoperability between various sites and vendors, minimizing discrepancies stemming from the lack of common reference.
 - Propose adaptations to the base format to capture the essence of mining data.
   - Defining a list of acceptable event types in mining.
   - Establishing an unequivocal and standardized naming convention for the logical organization of the seismic system components.
@@ -46,5 +46,5 @@ The increase in microseismic data, particularly from expansive monitoring system
 
 The varied nature of microseismic data formats hinders streamlined integration and analysis, posing challenges in managing and deriving value in datasets collected by in-mine monitoring systems. The lossy and incoherent nature of current data exchange formats hinders innovation and makes the utilization of μseismic data unnecessarily tricky. Given the critical importance of microseismic data in ensuring safety and improving underground mining operations, establishing a standardized format and mechanism of exchange becomes imperative. The proposed standard objective is facilitating more straightforward data access, efficient storage, smoother data exchanges across different platforms, and accommodating various data types.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjU4MTgxMDExLDEzOTg0NTA4NjldfQ==
+eyJoaXN0b3J5IjpbLTE0NDUwNTk3MDAsMTM5ODQ1MDg2OV19
 -->
