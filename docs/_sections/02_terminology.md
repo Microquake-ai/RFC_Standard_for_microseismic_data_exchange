@@ -21,10 +21,9 @@ Usually refers to a mining induced event that results from the interaction of st
 
      - **Tensile or compressive fracturing**: The breakage of the rock as a result of compressive or tensile forces.
 
-    - **Shear rupture**: A rupture along weaknesses in the rock A primary mechanism of failure in rocks, crucial to understand and monitor.
+    - **Shear rupture**: A rupture along weaknesses in the rock that results in a shear motion.
 
-     - **Pillar crushing/damage**
-      Specific to the integrity of the mined-out regions and is essential for safety considerations.
+     - **Pillar crushing/damage**:  Fracturing of the rock and .
 
 	- 
 
@@ -64,6 +63,6 @@ A time series representation of seismic wave amplitudes detected by sensors in m
 - **Instrument**  
   A comprehensive setup encompassing one or multiple sensors and associated components, including casings, and internal electronics if applicable. In microseismic monitoring, an instrument refers to the entire arrangement employed for seismic detection. Its response combines the characteristics of the individual sensors. Example: a tri-axial dual element geophone.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxNjY4MDQ1MCwzNjk0Mzk2OTIsMTY2OT
+eyJoaXN0b3J5IjpbMjA5OTc5MzkxMSwzNjk0Mzk2OTIsMTY2OT
 Y4OTkwMCwtMTA3ODM2ODA1Nl19
 -->
