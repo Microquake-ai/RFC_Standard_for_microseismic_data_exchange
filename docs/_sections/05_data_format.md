@@ -48,8 +48,8 @@ The modifications discussed in the following sections, particularly concerning Q
 | **Object** | **New Parameter** | **Description**         | **Type**         |
 |------------|-------------------|-------------------------|--------|----------|
 | Origin     | coordinates       | Coordinates information | Coordinates[^1]  |
-|            | $f_0$          | Corner frequency        | float            |
-| Magnitude  | $E_p$           | *P*-wave energy         | float           | float |
+|     Magnitude | $f_0$          | Corner frequency        | float            |
+|            | $E_p$           | *P*-wave energy         | float           | float |
 |            | $E_s$           | *S*-wave energy         | float           | float |
 
 [^1]: Coordinate class described in the [Appendix C: Coordinate System Handling](#appendix-c-coordinate-system-handling)
@@ -118,6 +118,6 @@ The ASDF file format combines waveforms and inventory data. To ensure flawless i
 ASDF adopts a relaxed version of the SEED Identifier Convention, previously part of QuakeML and StationXML standards and now extended to the waveform data. The StationXML does not restrict the string length; QuakeML does. We therefore suggest adopting the convention presented in section 3.3.5 of the [QuakeML Version 1.2 (revision 20130214b)](https://quake.ethz.ch/quakeml/docs/latest?action=AttachFile&do=get&target=QuakeML-BED.pdf).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyOTgxMjMzNCwtMTkyNjE2MjU3MiwtMT
-I3NjkyNTE5Nl19
+eyJoaXN0b3J5IjpbMTI5Nzk3MjkyMCwxMTI5ODEyMzM0LC0xOT
+I2MTYyNTcyLC0xMjc2OTI1MTk2XX0=
 -->
