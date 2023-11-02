@@ -10,8 +10,14 @@ Represents any type of signal, usually but not always impulsive, that "triggers"
 - **Event**
 Indiscriminately, represent any association of "impulsive" trigger usually bundled into an event file.
 
-- **Seismic Event**
-An event that results from the interaction of stress (increase or decrease) and the rock mass that can be linked to a series of phenomenon 
+- **Seismic Event (mining induced)**
+Usually refers to a mining induced event that results from the interaction of stress (increase or decrease) and the rock mass that can be linked to a series of phenomena including but not limited to:
+	- Rock breakage
+	- Slip motion
+	- Rock fall
+	- Rock burst
+
+- 
 
 - **Waveforms**  
 A time series representation of seismic wave amplitudes detected by sensors in microseismic monitoring. Originating from subsurface events like rock fractures.
@@ -46,5 +52,6 @@ A time series representation of seismic wave amplitudes detected by sensors in m
 - **Instrument**  
   A comprehensive setup encompassing one or multiple sensors and associated components, including casings, and internal electronics if applicable. In microseismic monitoring, an instrument refers to the entire arrangement employed for seismic detection. Its response combines the characteristics of the individual sensors. Example: a tri-axial dual element geophone.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjQ2ODM4NiwtMTA3ODM2ODA1Nl19
+eyJoaXN0b3J5IjpbLTExOTM0NzI2NjcsLTEwNzgzNjgwNTZdfQ
+==
 -->
