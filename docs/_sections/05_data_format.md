@@ -108,16 +108,16 @@ In a manner analogous to our QuakeML modifications, we adapt the StationXML form
 
 The waveform format does not require any alteration.
 
-### Parameter Validation
+#### Parameter Validation
 As for the QuakeML, the validation for the newly introduced parameters is performed within the μquake library. For standard parameters, validation is handled by the Obspy package. This ensures a cohesive framework for both standard and specialized seismic data types.
 
-### Stream Naming Convention
+#### Stream Naming Convention
 
 The ASDF file format combines waveforms and inventory data. To ensure flawless integration, we must adopt a robust and standardized "stream" naming convention to ensure unambiguous association between waveforms and inventory. 
 
 ASDF adopts a relaxed version of the SEED Identifier Convention, previously part of QuakeML and StationXML standards and now extended to the waveform data. The StationXML does not restrict the string length; QuakeML does. We therefore suggest adopting the convention presented in section 3.3.5 of the [QuakeML Version 1.2 (revision 20130214b)](https://quake.ethz.ch/quakeml/docs/latest?action=AttachFile&do=get&target=QuakeML-BED.pdf).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3MDc1NzM0MCwtMTkyNjE2MjU3MiwtMT
+eyJoaXN0b3J5IjpbMTEyOTgxMjMzNCwtMTkyNjE2MjU3MiwtMT
 I3NjkyNTE5Nl19
 -->
