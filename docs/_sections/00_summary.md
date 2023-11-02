@@ -15,7 +15,7 @@ Our proposed schema exploits the adaptable seismic data format (ASDF), which is 
 
 The ASDF format is well-designed, extensible and allow for atomic computationally efficient access to the waveform data, essential for when working with a large volume of data as it is the case for continuous data or distributed acoustic sensing (ASDF). 
 
-We also extend the proposal to grid data. Grid data are used to store 
+We also extend the proposal to grid data to store and transfer the *P*- and *S*-wave velocity information to name only those.
 
 
 
@@ -26,6 +26,6 @@ The ultimate goal is to secure industry and supplier consensus on this format by
 Feedback is both encouraged and welcomed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3Mjc1OTg4NiwxODQ3ODYzMzQ0LC0yMD
-YwNTE5MTQwLDE0ODE0Njc4OTFdfQ==
+eyJoaXN0b3J5IjpbOTI2OTI1NzIzLDE4NDc4NjMzNDQsLTIwNj
+A1MTkxNDAsMTQ4MTQ2Nzg5MV19
 -->
