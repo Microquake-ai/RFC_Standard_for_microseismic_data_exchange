@@ -21,7 +21,7 @@ Our aim is clear: secure industry and supplier consensus on this format by the c
 
 Your insightful feedback is both crucial and welcomed.
 
-We also extend the proposal to grid data to store and transfer the *P*- and *S*-wave velocity information to name only those.
+Beyond the ASDF, our proposal encompasses grid data considerations. We present a format tailored for the storage and transfer of such data. This suggested format is versatile, accommodating various grid types including but not limited to velocity, and travel time.
 
 In tandem with this proposal, we present the μQuake (microQuake) library. As an open-source Python API built on Obspy, μQuake provides a convenient interface allowing the seamless 
 
@@ -30,6 +30,6 @@ Our aspiration is to achieve industry and supplier consensus on this format by t
 Your feedback is essential and greatly appreciated.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTQxODU1MzAsMTg0Nzg2MzM0NCwtMj
-A2MDUxOTE0MCwxNDgxNDY3ODkxXX0=
+eyJoaXN0b3J5IjpbMTQ4NzQwNTI1MywtMTE5NDE4NTUzMCwxOD
+Q3ODYzMzQ0LC0yMDYwNTE5MTQwLDE0ODE0Njc4OTFdfQ==
 -->
