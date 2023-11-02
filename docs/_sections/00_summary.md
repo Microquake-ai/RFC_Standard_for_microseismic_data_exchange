@@ -23,13 +23,14 @@ Your insightful feedback is both crucial and welcomed.
 
 Beyond the ASDF, our proposal encompasses grid data considerations. We present a format tailored for the storage and transfer of such data. This suggested format is versatile, accommodating various grid types including but not limited to velocity, and travel time.
 
-In tandem with this proposal, we present the μQuake (microQuake) library. As an open-source Python API built on Obspy, μQuake provides a convenient interface allowing the seamless 
+Parallel to this proposal, we introduce the μQuake (microQuake) library. While based on Obspy, μQuake is not just a mere adaptation: it significantly extends Obspy's functionalities tailored specifically for microseismic data. Beyond its inherent capabilities for reading, writing, and managing seismological information, μQuake incorporates additional tools and an optimized interface to seamlessly integrate the changes we've proposed. This includes adept handling of various file types like ASDF and the grid formats delineated in this document.
 
 Our aspiration is to achieve industry and supplier consensus on this format by the end of 2024.
 
 Your feedback is essential and greatly appreciated.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4NzQwNTI1MywtMTE5NDE4NTUzMCwxOD
-Q3ODYzMzQ0LC0yMDYwNTE5MTQwLDE0ODE0Njc4OTFdfQ==
+eyJoaXN0b3J5IjpbLTE1MjMyNDIyNCwxNDg3NDA1MjUzLC0xMT
+k0MTg1NTMwLDE4NDc4NjMzNDQsLTIwNjA1MTkxNDAsMTQ4MTQ2
+Nzg5MV19
 -->
