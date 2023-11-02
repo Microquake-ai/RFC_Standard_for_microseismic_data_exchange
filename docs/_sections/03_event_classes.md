@@ -14,14 +14,14 @@ That would, however, be too reductionist and lead to ambiguity. The list suggest
 
 | Suggested Event Types                 | Description              |
 |-----------------------------------|-----------------------------------|
-| earthquake/large event            | earthquake                        |
-| seismic event                     | induced or triggered event        |
-| offsite event                     | atmospheric event                 |
-| rock burst                        | rock burst                        |
-| fall of ground/rockfall           | cavity collapse                   |
-| blast                             | explosion                         |
-| blast sequence                    | accidental explosion              |
-| development blast                 | industrial explosion              |
+| earthquake/large event            |                         |
+| seismic event                     |         |
+| offsite event                     |                  |
+| rock burst                        |                         |
+| fall of ground/rockfall           |                    |
+| blast                             |                          |
+| blast sequence                    |               |
+| development blast                 |               |
 | production blast                  | mining explosion                 |
 | far away blast/open pit blast     | quarry blast                      |
 | offsite blast                     | nuclear explosion                 |
@@ -42,5 +42,5 @@ That would, however, be too reductionist and lead to ambiguity. The list suggest
 | unknown                           | plane crash                      |
 | tap test/test                     | avalanche                        |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0NDY0OTI1Ml19
+eyJoaXN0b3J5IjpbLTE5NzQ1Mzk2NTRdfQ==
 -->
