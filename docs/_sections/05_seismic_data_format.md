@@ -27,7 +27,7 @@ Through its comprehensive integration of these components, ASDF paves the way fo
 
 While the ASDF format provides a robust framework for general seismic data handling, specific adaptations are imperative to address the unique requirements of μseismic monitoring within mining environments. The proposed changes leverage the inherent flexibility and expandability of the QuakeML and StationXML formats.
 
-> **Note on Coordinate Systems:**  
+> **Note: Coordinate Systems:**  
 > Utilizing a Cartesian coordinate system (x, y, z) introduces inherent ambiguities. We recommend imposing constraints on the alignment of the x, y, and z axes to ensure the coordinate system is right-handed and aligned with geographical axes. Specifically, we advocate the use of ENU and NED coordinate systems.
 >
 > μquake version 2.0 introduces the `Coordinates` Class. The handling is done by converting the `Coordinate` object to JSON and writing the JSON string as an object extra parameters.
@@ -38,6 +38,8 @@ While the ASDF format provides a robust framework for general seismic data handl
 >     xmlns="http://quakeml.org/xmlns/bed/1.2" 
 >     xmlns:q="http://quakeml.org/xmlns/quakeml/1.2">
 > ```
+
+> **Note
 
 The modifications discussed in the following sections, particularly concerning QuakeML and StationXML formats, have been operationalized in the μquake library. This library extends the Obspy package and is tailored to the specific needs of μseismic monitoring within the mining contexts.
 
@@ -118,5 +120,5 @@ The ASDF file format combines waveforms and inventory data. To ensure flawless i
 ASDF adopts a relaxed version of the SEED Identifier Convention, previously part of QuakeML and StationXML standards and now extended to the waveform data. The StationXML does not restrict the string length; QuakeML does. We therefore suggest adopting the convention presented in section 3.3.5 of the [QuakeML Version 1.2 (revision 20130214b)](https://quake.ethz.ch/quakeml/docs/latest?action=AttachFile&do=get&target=QuakeML-BED.pdf).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyNDQzNDg3MiwxMDk2NjM5OTYxXX0=
+eyJoaXN0b3J5IjpbNDA4MjMyNTY1LDEwOTY2Mzk5NjFdfQ==
 -->
