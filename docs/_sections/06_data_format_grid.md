@@ -37,7 +37,7 @@ The proposed HDF5 data structure for both global and instrument-specific grids c
 
 #### HDF5 Structure
 
-For global grids, the suggested HDF5 structure is as follows:
+For global grids containing the velocity information, the suggested HDF5 structure is as follows:
 
 ```
 /Phase {P or S} (Group)
@@ -57,6 +57,7 @@ For global grids, the suggested HDF5 structure is as follows:
 
 ```
 
+The structure accommodates both a single and multiple phase.
 
 For instrument-specific grids, the structure is proposed to be:
 
@@ -82,8 +83,8 @@ For instrument-specific grids, the structure is proposed to be:
 This layout ensures a standardized and accessible approach to microseismic grid data storage, accommodating both global and instrument-specific needs.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwMTM1NDQ4NCwxMzY2OTkwNTg0LDIwOT
-UwOTk0NTAsLTExMjY3MjE0NjUsOTU2NDA5NzQsMjEyNDIyMzU2
-MywtMTQ5NjgzMDkwNSwzOTkyNjc1ODUsLTIxNDQ3MDg5NThdfQ
-==
+eyJoaXN0b3J5IjpbLTI1MDk0MDI2NCwxODAxMzU0NDg0LDEzNj
+Y5OTA1ODQsMjA5NTA5OTQ1MCwtMTEyNjcyMTQ2NSw5NTY0MDk3
+NCwyMTI0MjIzNTYzLC0xNDk2ODMwOTA1LDM5OTI2NzU4NSwtMj
+E0NDcwODk1OF19
 -->
