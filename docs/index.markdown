@@ -8,9 +8,10 @@ layout: default
 {% include_relative _sections/00_summary.md %}
 {% include_relative _sections/01_introduction.md %}
 {% include_relative _sections/02_terminology.md %}
+{% include_relative _sections/03_event_classes.md %}
 {% include_relative _sections/03_general_format_considerations.md %}
 {% include_relative _sections/04_data_exchange_needs.md %}
-{% include_relative _sections/05_data_format.md %}
+{% include_relative _sections/05_seismic_data_format.md %}
 {% include_relative _sections/06_data_format_grid.md %}
 {% include_relative _sections/07_contribution.md %}
 {% include_relative _sections/AA_source_parameters.md %}
