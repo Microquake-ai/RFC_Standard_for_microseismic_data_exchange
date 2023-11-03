@@ -20,7 +20,8 @@ That would, however, be too reductionist and lead to ambiguity. The list suggest
 | earthquake/large event               | Tectonic earthquake or very large events recorded by national seismograph network|
 | seismic event                        | Mining induced seismic event  |
 | offsite event                        | Used for a seismic event happening at, for instance, a nearby operation|
-| rock burst                          | Sudden and violent release of built-up stress within the rock.| |fall of ground/rockfall              | Dislodgement and downward movement of rock or ground. |  
+| rock burst                          | Sudden and violent release of built-up stress within the rock.| 
+|fall of ground/rockfall              | Dislodgement and downward movement of rock or ground. |  
 
 **Blast**
 
@@ -60,6 +61,6 @@ That would, however, be too reductionist and lead to ambiguity. The list suggest
 | tap test/test                        | Controlled tapping or impact to test response of monitoring systems usually done during the installation and commissioning of the system to test the equipment.   |
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODA3MzU4NDUsLTIwNTUxOTA1MzgsLT
-E5NzQ1Mzk2NTRdfQ==
+eyJoaXN0b3J5IjpbMTI5MzM0MjI4MSwtMTA4MDczNTg0NSwtMj
+A1NTE5MDUzOCwtMTk3NDUzOTY1NF19
 -->
