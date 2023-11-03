@@ -14,6 +14,7 @@ If simplicity is the objective, the classification could be limited to the follo
 That would, however, be too reductionist and lead to ambiguity. The list suggested below is quite comprehensive, and from experience, encompass almost all event types that can be recorded by a mine μseismic monitoring system. 
 
 **Seismic Event**
+
 | Suggested Event Types                 | Description                                             |
 |--------------------------------------|----------------------------------------------------------|
 | earthquake/large event               | Tectonic earthquake or very large events recorded by national seismograph network|
@@ -22,6 +23,7 @@ That would, however, be too reductionist and lead to ambiguity. The list suggest
 | rock burst                          | Sudden and violent release of built-up stress within the rock.| |fall of ground/rockfall              | Dislodgement and downward movement of rock or ground. |  
 
 **Blast**
+
 | Suggested Event Types                 | Description                                                           |
 |--------------------------------------|-----------------------------------------------------------------------|
 | blast                                | Controlled detonation for mining purposes.                             |
@@ -51,12 +53,13 @@ That would, however, be too reductionist and lead to ambiguity. The list suggest
 | unknown                              | Event type or origin not determined or identified.                     |
 
 **Other**
+
 | Suggested Event Types                 | Description                                                           |
 |--------------------------------------|-----------------------------------------------------------------------|
 | duplicate                            | Event already recorded or identified; redundant entry.    
 | tap test/test                        | Controlled tapping or impact to test response of monitoring systems usually done during the installation and commissioning of the system to test the equipment.   |
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTQwOTU4MywtMjA1NTE5MDUzOCwtMT
-k3NDUzOTY1NF19
+eyJoaXN0b3J5IjpbLTEwODA3MzU4NDUsLTIwNTUxOTA1MzgsLT
+E5NzQ1Mzk2NTRdfQ==
 -->
