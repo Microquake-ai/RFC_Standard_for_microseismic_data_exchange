@@ -55,12 +55,12 @@ That would, however, be too reductionist and lead to ambiguity. The list suggest
 
 **Other**
 
-| Suggested Event Types                 | Description                                                           |
+| Suggested Event Types                 | Description                                               |
 |--------------------------------------|-----------------------------------------------------------------------|
-| duplicate                            | Event already recorded or identified; redundant entry.    
+| duplicate                            | Event already recorded or identified; redundant entry.    |
 | tap test/test                        | Controlled tapping or impact to test response of monitoring systems usually done during the installation and commissioning of the system to test the equipment.   |
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTQxOTY0ODUsLTEwODA3MzU4NDUsLT
-IwNTUxOTA1MzgsLTE5NzQ1Mzk2NTRdfQ==
+eyJoaXN0b3J5IjpbLTgzMTAxNjUxMywtMTA4MDczNTg0NSwtMj
+A1NTE5MDUzOCwtMTk3NDUzOTY1NF19
 -->
