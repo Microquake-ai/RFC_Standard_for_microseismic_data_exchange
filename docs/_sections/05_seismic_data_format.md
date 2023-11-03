@@ -105,7 +105,7 @@ In addition to the changes mentioned above, for convenience, $\mu$Quake library 
 |-------------|-------------------|------------------------------------------|-----------|
 | Network     | Time Zone         | IANA Time Zone or time offset            | string    |
 | Station     | coordinates       | Coordinates information              | coordinates  |
-| Channel     | coordinates       | Coordinates information                            | float     
+| Channel     | coordinates       | Coordinates information               | float     |
 |             | oriented          | True if orientation is known             | boolean   |
 |             | active            | True if the channel is active            | boolean   |
 
@@ -123,5 +123,5 @@ The ASDF file format combines waveforms and inventory data. To ensure flawless i
 ASDF adopts a relaxed version of the SEED Identifier Convention, previously part of QuakeML and StationXML standards and now extended to the waveform data. The StationXML does not restrict the string length; QuakeML does. We therefore suggest adopting the convention presented in section 3.3.5 of the [QuakeML Version 1.2 (revision 20130214b)](https://quake.ethz.ch/quakeml/docs/latest?action=AttachFile&do=get&target=QuakeML-BED.pdf).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTIxODcwMzAsMTA5NjYzOTk2MV19
+eyJoaXN0b3J5IjpbLTEyMTAyNDk4NjYsMTA5NjYzOTk2MV19
 -->
