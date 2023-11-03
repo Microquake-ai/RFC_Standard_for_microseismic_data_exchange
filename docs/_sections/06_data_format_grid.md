@@ -45,7 +45,7 @@ For global grids, the suggested HDF5 structure is as follows:
     @Schema Version (Attribute, type: string)
     @Creation Timestamp (Attribute, type: string - ISO 8601 format)
     @Type (Attribute, type: string - value from the set 
-    {'VELOCITY', 'VELOCITY_METER', 'SLOWNESS', 'SLONESS_METER'})
+    {'VELOCITY', 'SLOWNESS', 'SLOW_LEN'})
     @Units (Attribute, type: string - value from the set {'m/s', 'ft/s', 's/m', 'ft/s'})
     @Coordinate System (Attribute, type: string - reference to coordinate system used)
     @Data Order (Attribute, type: string - value from the set {'Row-major', 'Column-major'})
@@ -68,7 +68,7 @@ For instrument-specific grids, the structure is proposed to be:
             @Schema Version (Attribute, type: string)
             @Modification Timestamp (Attribute, type: string - ISO 8601 format)
             @Type (Attribute, type: string - value from the set {'TIME', 'ANGLE'})
-            @Units (Attribute, type: string - value from the set {'s', 'degrees'})
+            @Units (Attribute, type: string - value from the set {'SECOND', 'DEGREES'})
             @Coordinate System (Attribute, type: string - reference to coordinate system used)
             @Data Order (Attribute, type: string - value from the set {'Row-major', 'Column-major'})
             @Origin (Attribute, type: float[3])
@@ -82,7 +82,7 @@ For instrument-specific grids, the structure is proposed to be:
 This layout ensures a standardized and accessible approach to microseismic grid data storage, accommodating both global and instrument-specific needs.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4ODA4OTE4MCwxMzY2OTkwNTg0LDIwOT
+eyJoaXN0b3J5IjpbMTgwMTM1NDQ4NCwxMzY2OTkwNTg0LDIwOT
 UwOTk0NTAsLTExMjY3MjE0NjUsOTU2NDA5NzQsMjEyNDIyMzU2
 MywtMTQ5NjgzMDkwNSwzOTkyNjc1ODUsLTIxNDQ3MDg5NThdfQ
 ==
