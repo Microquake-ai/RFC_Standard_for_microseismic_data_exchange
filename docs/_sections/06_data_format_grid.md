@@ -40,13 +40,14 @@ The proposed HDF5 data structure for both global and instrument-specific grids c
 For global grids, the suggested HDF5 structure is as follows:
 
 ```
-/Phase {P or S}
-	@Grid ID
-    @Origin
-    @Spacing
-    @Dimensions
-    @Type
-    /Data
+/Phase {P or S} (Group)
+    @Grid ID (Attribute, type: string)
+    @Units (Att
+    @Origin (Attribute, type: float[3] - representing x, y, z coordinates)
+    @Spacing (Attribute, type: float[3] - representing spacing in x, y, z directions)
+    @Dimensions (Attribute, type: int[3] - representing number of grid points in x, y, z)
+    @Type (Attribute, type: string - describing the grid type, e.g., "Velocity")
+    /Data (Dataset, type: float[n, m, l] - where n, m, l are the dimensions of the grid)
 ```
 
 
@@ -56,16 +57,17 @@ For instrument-specific grids, the structure is proposed to be:
 /type
     /instrumentID
         /grid
-            @origin
-            @spacing
-            @dimensions
+	        @Grid ID (Attribute, type: string)
+		    @Origin (Attribute, type: float[3] - representing x, y, z coordinates)
+		    @Spacing (Attribute, type: float[3] - representing spacing in x, y, z directions)
+		    @Dimensions (Attribute, type: int[3] - representing number of grid points in x, y, z)
             /data
 ```
 
 This layout ensures a standardized and accessible approach to microseismic grid data storage, accommodating both global and instrument-specific needs.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjY3MjE0NjUsOTU2NDA5NzQsMjEyND
-IyMzU2MywtMTQ5NjgzMDkwNSwzOTkyNjc1ODUsLTIxNDQ3MDg5
-NThdfQ==
+eyJoaXN0b3J5IjpbLTE2NzE0ODkwMjIsLTExMjY3MjE0NjUsOT
+U2NDA5NzQsMjEyNDIyMzU2MywtMTQ5NjgzMDkwNSwzOTkyNjc1
+ODUsLTIxNDQ3MDg5NThdfQ==
 -->
