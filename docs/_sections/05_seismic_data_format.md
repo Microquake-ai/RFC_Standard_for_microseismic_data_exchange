@@ -95,7 +95,7 @@ Transitioning to event classifications, the QuakeML schema has a predefined set 
 | unknown                           | plane crash                      |
 | tap test/test                     | avalanche                        |
 
-In addition to the fundamentat
+In addition to the changes mentioned above, for convenience, $\mu$Quake library offers mechanism to store `Ray` and `Proba
 
 ### Waveforms and StationXML
 
@@ -123,5 +123,5 @@ The ASDF file format combines waveforms and inventory data. To ensure flawless i
 ASDF adopts a relaxed version of the SEED Identifier Convention, previously part of QuakeML and StationXML standards and now extended to the waveform data. The StationXML does not restrict the string length; QuakeML does. We therefore suggest adopting the convention presented in section 3.3.5 of the [QuakeML Version 1.2 (revision 20130214b)](https://quake.ethz.ch/quakeml/docs/latest?action=AttachFile&do=get&target=QuakeML-BED.pdf).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2MTI2NjEwOCwxMDk2NjM5OTYxXX0=
+eyJoaXN0b3J5IjpbLTE5MDcwNDgzODUsMTA5NjYzOTk2MV19
 -->
