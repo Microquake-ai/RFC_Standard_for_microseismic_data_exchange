@@ -28,15 +28,15 @@ That would, however, be too reductionist and lead to ambiguity. The list suggest
 | Suggested Event Types                 | Description                                                           |
 |--------------------------------------|-----------------------------------------------------------------------|
 | blast                                | Controlled detonation for mining purposes.             |
-| blast sequence                       | Would apply for a series of blasts organized in a longer file containing the whole blast sequence.        |
+| blast sequence                       | Would apply for a series of blasts organized in a longer file containing the whole blast sequence.    |
 | development blast                    | Specific type of blast for development               |
-| production blast                     | Specific type of blast related to production                            |
+| production blast                     | Specific type of blast related to production      |
 | far away blast/open pit blast        | Detonation outside underground mine, often in open pit operations or nearby quarry.     |
-| offsite blast                        | Controlled explosion occurring outside the mine's premises.            |
-| paste firing                         | Detonation within cemented paste backfills.                            |
-| calibration blast                    | Detonation to calibrate or test seismic monitoring equipment.          |
-| other blast/slashing                 | Miscellaneous detonations not fitting standard categories.            |
-| mid-shift blast/slash blast          | Detonation conducted during a shift change or mid-shift.              |
+| offsite blast                        | Controlled explosion occurring outside the mine's premises. |
+| paste firing                         | Detonation within cemented paste backfills.                 |
+| calibration blast                    | Detonation to calibrate or test seismic monitoring equipment.|
+| other blast/slashing                 | Miscellaneous detonations not fitting standard categories.   |
+| mid-shift blast/slash blast          | Detonation conducted during a shift change or mid-shift.     |
 
 **Noise**
 
@@ -61,6 +61,6 @@ That would, however, be too reductionist and lead to ambiguity. The list suggest
 | tap test/test                        | Controlled tapping or impact to test response of monitoring systems usually done during the installation and commissioning of the system to test the equipment.   |
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxNTI1OTg0MywtMTA4MDczNTg0NSwtMj
-A1NTE5MDUzOCwtMTk3NDUzOTY1NF19
+eyJoaXN0b3J5IjpbLTIwNTQxOTY0ODUsLTEwODA3MzU4NDUsLT
+IwNTUxOTA1MzgsLTE5NzQ1Mzk2NTRdfQ==
 -->
