@@ -11,7 +11,7 @@ If simplicity is the objective, the classification could be limited to the follo
 - blast; and 
 - noise. 
 
-That would, however, be too reductionist and lead to ambiguity. The list suggested below is quite comprehensive, and from experience, encompass almost all event types that can be recorded by a mine $\mu$seismic monitoring system. 
+That would, however, be too reductionist and lead to ambiguity. The list suggested below is quite comprehensive, and from experience, encompass almost all event types that can be recorded by a mine μseismic monitoring system. 
 
 **Seismic Event**
 | Suggested Event Types                 | Description                                             |
@@ -57,6 +57,6 @@ That would, however, be too reductionist and lead to ambiguity. The list suggest
 | tap test/test                        | Controlled tapping or impact to test response of monitoring systems usually done during the installation and commissioning of the system to test the equipment.   |
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTYzNjczMDU5LC0yMDU1MTkwNTM4LC0xOT
-c0NTM5NjU0XX0=
+eyJoaXN0b3J5IjpbLTIwOTQwOTU4MywtMjA1NTE5MDUzOCwtMT
+k3NDUzOTY1NF19
 -->
