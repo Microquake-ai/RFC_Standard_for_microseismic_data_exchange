@@ -2,7 +2,6 @@
 
 ---
 
-
 ## Grid Data Format
 
 ### Overview
@@ -65,6 +64,7 @@ For instrument-specific grids, the structure is proposed to be:
 This layout ensures a standardized and accessible approach to microseismic grid data storage, accommodating both global and instrument-specific needs.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTU2NDA5NzQsMjEyNDIyMzU2MywtMTQ5Nj
-gzMDkwNSwzOTkyNjc1ODUsLTIxNDQ3MDg5NThdfQ==
+eyJoaXN0b3J5IjpbLTgxMTgyMTg1MCw5NTY0MDk3NCwyMTI0Mj
+IzNTYzLC0xNDk2ODMwOTA1LDM5OTI2NzU4NSwtMjE0NDcwODk1
+OF19
 -->
