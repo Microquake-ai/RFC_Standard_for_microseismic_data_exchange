@@ -48,13 +48,13 @@ The modifications discussed in the following sections, particularly concerning Q
 | **Object** | **New Parameter** | **Description**         | **Type**         |
 |------------|-------------------|-------------------------|--------|----------|
 | Origin     | coordinates       | Coordinates information | Coordinates[^1]  |
-|     Magnitude | $f_0$          | Corner frequency        | float            |
+|  Magnitude | $f_0$          | Corner frequency        | float            |
 |            | $E_p$           | *P*-wave energy         | float           | float |
 |            | $E_s$           | *S*-wave energy         | float           | float |
 
 [^1]: Coordinate class described in the [Appendix C: Coordinate System Handling](#appendix-c-coordinate-system-handling)
 
-We propose straightforward modifications to the QuakeML format to better suit *museismic* applications. The first concerns the expression of coordinates using the Cartesian system previously described instead of the longitude, latitude, and depth/elevation. The second pertains to expanding the magnitude definition to include the corner frequency and the *P*- and *S*-wave velocities. The third involves the overriding of event types.
+We propose straightforward modifications to the QuakeML format to better suit *museismic* applications. The first concerns the expression of coordinates using the Cartesian system previously described instead of the longitude, latitude, and depth/elevation. The second pertains to expanding the magnitude definition to include the corner frequency and the *P*- and *S*-wave energies. The third involves the overriding of event types.
 
 Instead of the standard spherical coordinate system that relies on latitude and longitude for location specification, we advocate for a Cartesian coordinate system. Specifically, we recommend emptying the traditional fields for latitude, longitude, elevation, and depth. As a substitute, we propose adding a description of the Coordinates as a new field. The coordinate description object is implemented in *muquake* from version 2.0. In the current implementation, the information is stored as a JSON string in the extra parameters of the Origin object. The extra parameters are then stored in a specific namespace inside the QuakeML file. The coordinate object includes the x, y, and z coordinate, a description of the coordinate system (either ENU or NED), and elements to allow for converting the coordinates between multiple representations including latitude, longitude if the required information is provided.
 
@@ -118,5 +118,5 @@ The ASDF file format combines waveforms and inventory data. To ensure flawless i
 ASDF adopts a relaxed version of the SEED Identifier Convention, previously part of QuakeML and StationXML standards and now extended to the waveform data. The StationXML does not restrict the string length; QuakeML does. We therefore suggest adopting the convention presented in section 3.3.5 of the [QuakeML Version 1.2 (revision 20130214b)](https://quake.ethz.ch/quakeml/docs/latest?action=AttachFile&do=get&target=QuakeML-BED.pdf).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5NjYzOTk2MV19
+eyJoaXN0b3J5IjpbMjEyNDQzNDg3MiwxMDk2NjM5OTYxXX0=
 -->
