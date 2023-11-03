@@ -66,7 +66,7 @@ For instrument-specific grids, the structure is proposed to be:
             @Grid ID (Attribute, type: string)
             @Schema Version (Attribute, type: string)
             @Modification Timestamp (Attribute, type: string - ISO 8601 format)
-            @Type (Attribute, type: string - value from the set {'TRAVELTIME', 'ANGLE'})
+            @Type (Attribute, type: string - value from the set {'TIME', 'ANGLE'})
             @Units (Attribute, type: string - value from the set {'s', 'degrees'})
             @Coordinate System (Attribute, type: string - reference to coordinate system used)
             @Data Order (Attribute, type: string - value from the set {'Row-major', 'Column-major'})
@@ -81,7 +81,8 @@ For instrument-specific grids, the structure is proposed to be:
 This layout ensures a standardized and accessible approach to microseismic grid data storage, accommodating both global and instrument-specific needs.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2Njk5MDU4NCwyMDk1MDk5NDUwLC0xMT
-I2NzIxNDY1LDk1NjQwOTc0LDIxMjQyMjM1NjMsLTE0OTY4MzA5
-MDUsMzk5MjY3NTg1LC0yMTQ0NzA4OTU4XX0=
+eyJoaXN0b3J5IjpbMTEwODAzOTMxNCwxMzY2OTkwNTg0LDIwOT
+UwOTk0NTAsLTExMjY3MjE0NjUsOTU2NDA5NzQsMjEyNDIyMzU2
+MywtMTQ5NjgzMDkwNSwzOTkyNjc1ODUsLTIxNDQ3MDg5NThdfQ
+==
 -->
