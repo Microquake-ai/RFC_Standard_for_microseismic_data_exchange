@@ -42,35 +42,34 @@ For global grids, the suggested HDF5 structure is as follows:
 ```
 /Phase {P or S} (Group)
     @Grid ID (Attribute, type: string)
-    @Type (Attribute, type: string - describing the grid type, e.g., "Velocity")
-    @Units (Attribute, type: Enum('m/s', 'ft/s', 's/m', 'ft/s')
-    @Origin (Attribute, type: float[3] - representing x, y, z coordinates)
-    @Spacing (Attribute, type: float[3] - representing spacing in x, y, z directions)
-    @Dimensions (Attribute, type: int[3] - representing number of grid points in x, y, z)
-    
+    @Type (Attribute, type: string - value from the set {'VELOCITY', 'SLOWNESS')
+    @Units (Attribute, type: string - value from the set {'m/s', 'ft/s', 's/m', 'ft/s'})
+    @Origin (Attribute, type: float[3])
+    @Spacing (Attribute, type: float[3])
+    @Dimensions (Attribute, type: int[3])
     /Data (Dataset, type: float[n, m, l] - where n, m, l are the dimensions of the grid)
 ```
 
 
 For instrument-specific grids, the structure is proposed to be:
 
-
+```
 /type
     /instrumentID (Group)
         /grid (Group)
             @Grid ID (Attribute, type: string)
-            @Type (Attribute, type: string - "Velocity")
+            @Type (Attribute, type: string - value from the set {'VELOCITY', 'SLOWNESS')
             @Units (Attribute, type: string - value from the set {'m/s', 'ft/s', 's/m', 'ft/s'})
             @Origin (Attribute, type: float[3])
             @Spacing (Attribute, type: float[3])
             @Dimensions (Attribute, type: int[3])
             /Data (Dataset, type: float[n, m, l])
-
+```
 
 This layout ensures a standardized and accessible approach to microseismic grid data storage, accommodating both global and instrument-specific needs.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzODQxMDAzNiwtMTEyNjcyMTQ2NSw5NT
-Y0MDk3NCwyMTI0MjIzNTYzLC0xNDk2ODMwOTA1LDM5OTI2NzU4
-NSwtMjE0NDcwODk1OF19
+eyJoaXN0b3J5IjpbLTEwOTMxNDQzODUsLTExMjY3MjE0NjUsOT
+U2NDA5NzQsMjEyNDIyMzU2MywtMTQ5NjgzMDkwNSwzOTkyNjc1
+ODUsLTIxNDQ3MDg5NThdfQ==
 -->
