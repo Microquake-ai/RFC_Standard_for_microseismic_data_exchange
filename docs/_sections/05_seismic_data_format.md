@@ -40,7 +40,7 @@ While the ASDF format provides a robust framework for general seismic data handl
 > ```
 
 > **Note: Provenance and Auxiliary Data
-> The ASDF format implementation of the provenance information and the extensibility through the use of the auxiliary data allows for the file format to 1
+> The ASDF format implementation of the provenance information and the extensibility through the use of the auxiliary data allows for the file format to 1) allow to rigourously trace the steps taken in transforming the data and 2) provides convenient and robust mean of future proofing the data format so additional information can be added in the future withouth breaking the compatibility. 
 
 The modifications discussed in the following sections, particularly concerning QuakeML and StationXML formats, have been operationalized in the μquake library. This library extends the Obspy package and is tailored to the specific needs of μseismic monitoring within the mining contexts.
 
@@ -121,5 +121,5 @@ The ASDF file format combines waveforms and inventory data. To ensure flawless i
 ASDF adopts a relaxed version of the SEED Identifier Convention, previously part of QuakeML and StationXML standards and now extended to the waveform data. The StationXML does not restrict the string length; QuakeML does. We therefore suggest adopting the convention presented in section 3.3.5 of the [QuakeML Version 1.2 (revision 20130214b)](https://quake.ethz.ch/quakeml/docs/latest?action=AttachFile&do=get&target=QuakeML-BED.pdf).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1MTQxODQxNSwxMDk2NjM5OTYxXX0=
+eyJoaXN0b3J5IjpbOTYyNTU4MzYxLDEwOTY2Mzk5NjFdfQ==
 -->
