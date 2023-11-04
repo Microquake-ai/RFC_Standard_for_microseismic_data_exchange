@@ -12,13 +12,13 @@ The intended application directly governs the specificity of data requirements. 
 
 Seismic system information can be partitioned into four main categories:
 
-- **Catalog:** Catalog data includes processed attributes related to seismic events: time, location, magnitude, amplitude (PPV, PPA), classification, *P*P- and *S*S-wave picks, and moment tensor/focal mechanism data.
+- **Catalog:** Catalog data includes processed attributes related to seismic events: time, location, magnitude, amplitude (PPV, PPA), classification, *P*- and *S*-wave picks, and moment tensor/focal mechanism data.
     
 - **Inventory:** Details the seismic network, stations, and sensor configurations. This includes sensor location, type, response, and orientations. Inventory data should facilitate necessary data manipulation for analysis.
     
 - **Waveform:** Raw or event-triggered time-series data recorded by the instruments, foundational for all seismic analyses.
     
-- **Velocities/Travel Time Grids:** Required for location, magnitude calculation, and moment tensor inversion. Allows for ray tracing and wavefield rotation to isolate P- and S-waves.
+- **Velocities/Travel Time Grids:** Required for location, magnitude calculation, and moment tensor inversion. Allows for ray tracing and wavefield rotation to isolate *P*- and *S*-waves.
 
 Information in these categories must be internally coherent, enabling straightforward cross-referencing and understanding of data provenance and relationships.
 
@@ -39,7 +39,7 @@ Catalog data is bifurcated into:
     - Time (local and UTC)
     - Location
     - Classification 
-    - Magnitude, along with seismic moment `$M_0$` and corner frequency `$f_c$` for moment magnitude
+    - Magnitude, along with seismic moment $M_0$ and corner frequency $f_c$ for moment magnitude
     - Radiated energy for *P*- and *S*-waves
     - Moment tensor solution if available
 
@@ -66,5 +66,6 @@ A functional velocity grid should comprise:
 - Data: Grid values
 - Units (m or ft)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3ODI3NDAzLC0xMzMxNjQ3NjUxXX0=
+eyJoaXN0b3J5IjpbLTg0NjQxMDQ4NiwtOTc4Mjc0MDMsLTEzMz
+E2NDc2NTFdfQ==
 -->
