@@ -63,6 +63,7 @@ For instrument-specific grids, the structure is proposed to be:
 
 ```
 /InstrumentID (Group)
+	@Network (Attribute, type: string)
     @Grid ID (Attribute, type: string)
     @Velocity Model ID (Attribute, type: string)
     @Schema Version (Attribute, type: string)
@@ -82,8 +83,9 @@ For instrument-specific grids, the structure is proposed to be:
 This layout ensures a standardized and accessible approach to microseismic grid data storage, accommodating both global and instrument-specific needs.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjY3MjAwMjcsMjA4NDE3Mzk4MywtMj
-UwOTQwMjY0LDE4MDEzNTQ0ODQsMTM2Njk5MDU4NCwyMDk1MDk5
-NDUwLC0xMTI2NzIxNDY1LDk1NjQwOTc0LDIxMjQyMjM1NjMsLT
-E0OTY4MzA5MDUsMzk5MjY3NTg1LC0yMTQ0NzA4OTU4XX0=
+eyJoaXN0b3J5IjpbNzczNTQ1NTQ5LC0yMDI2NzIwMDI3LDIwOD
+QxNzM5ODMsLTI1MDk0MDI2NCwxODAxMzU0NDg0LDEzNjY5OTA1
+ODQsMjA5NTA5OTQ1MCwtMTEyNjcyMTQ2NSw5NTY0MDk3NCwyMT
+I0MjIzNTYzLC0xNDk2ODMwOTA1LDM5OTI2NzU4NSwtMjE0NDcw
+ODk1OF19
 -->
