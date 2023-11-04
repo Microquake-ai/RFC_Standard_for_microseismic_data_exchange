@@ -40,6 +40,7 @@ The proposed HDF5 data structure for both global and instrument-specific grids c
 For global grids containing the velocity information, the suggested HDF5 structure is as follows:
 
 ```
+/N
 /Phase {P or S} (Group)
     @Grid ID (Attribute, type: string)
     @Schema Version (Attribute, type: string)
@@ -62,30 +63,30 @@ The structure accommodates both a single and multiple phase.
 For instrument-specific grids, the structure is proposed to be:
 
 ```
-/InstrumentID (Group)
-	@Network (Attribute, type: string)
-    @Grid ID (Attribute, type: string)
-    @Velocity Model ID (Attribute, type: string)
-    @Schema Version (Attribute, type: string)
-    @Modification Timestamp (Attribute, type: string - ISO 8601 format)
-    @Type (Attribute, type: string - value from the set {'TIME', 'ANGLE'})
-    @Units (Attribute, type: string - value from the set {'SECOND', 'DEGREES'})
-    @Coordinate System (Attribute, type: string - reference to coordinate system used)
-    @Data Order (Attribute, type: string - value from the set {'Row-major', 'Column-major'})
-    @Origin (Attribute, type: float[3])
-    @Spacing (Attribute, type: float[3])
-    @Dimensions (Attribute, type: int[3])
-    @Compression (Attribute, type: string - description of any compression used)
-    /Data (Dataset, type: float[n, m, l], optional: checksum)
+/Network (group)
+	/InstrumentID (Group)
+	    @Grid ID (Attribute, type: string)
+	    @Velocity Model ID (Attribute, type: string)
+	    @Schema Version (Attribute, type: string)
+	    @Modification Timestamp (Attribute, type: string - ISO 8601 format)
+	    @Type (Attribute, type: string - value from the set {'TIME', 'ANGLE'})
+	    @Units (Attribute, type: string - value from the set {'SECOND', 'DEGREES'})
+	    @Coordinate System (Attribute, type: string - reference to coordinate system used)
+	    @Data Order (Attribute, type: string - value from the set {'Row-major', 'Column-major'})
+	    @Origin (Attribute, type: float[3])
+	    @Spacing (Attribute, type: float[3])
+	    @Dimensions (Attribute, type: int[3])
+	    @Compression (Attribute, type: string - description of any compression used)
+	    /Data (Dataset, type: float[n, m, l], optional: checksum)
 
 ```
 
 This layout ensures a standardized and accessible approach to microseismic grid data storage, accommodating both global and instrument-specific needs.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzczNTQ1NTQ5LC0yMDI2NzIwMDI3LDIwOD
-QxNzM5ODMsLTI1MDk0MDI2NCwxODAxMzU0NDg0LDEzNjY5OTA1
-ODQsMjA5NTA5OTQ1MCwtMTEyNjcyMTQ2NSw5NTY0MDk3NCwyMT
-I0MjIzNTYzLC0xNDk2ODMwOTA1LDM5OTI2NzU4NSwtMjE0NDcw
-ODk1OF19
+eyJoaXN0b3J5IjpbLTIwOTk1MzcxNjcsNzczNTQ1NTQ5LC0yMD
+I2NzIwMDI3LDIwODQxNzM5ODMsLTI1MDk0MDI2NCwxODAxMzU0
+NDg0LDEzNjY5OTA1ODQsMjA5NTA5OTQ1MCwtMTEyNjcyMTQ2NS
+w5NTY0MDk3NCwyMTI0MjIzNTYzLC0xNDk2ODMwOTA1LDM5OTI2
+NzU4NSwtMjE0NDcwODk1OF19
 -->
