@@ -39,12 +39,12 @@ Catalog data is bifurcated into:
     - Time (local and UTC)
     - Location
     - Classification 
-    - Magnitude, along with seismic moment \( M<sub>0</sub>_0 \) and corner frequency \( f<sub>c</sub>_c \) for moment magnitude
-    - Radiated energy for *P*P- and *S*S-waves
+    - Magnitude, along with seismic moment M<sub>0</sub> and corner frequency f<sub>c</sub>_c \) for moment magnitude
+    - Radiated energy for *P*- and *S*-waves
     - Moment tensor solution if available
 
 - **Waveform-related:** Derived from waveform data:
-    - Picks: *P*P- and *S*S-wave onset times
+    - Picks: *P*- and *S*-wave onset times
     - Amplitude: Information, evaluation mode, and status
 
 ### Inventory/System Information
@@ -66,5 +66,5 @@ A functional velocity grid should comprise:
 - Data: Grid values
 - Units (m or ft)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzE2NDc2NTFdfQ==
+eyJoaXN0b3J5IjpbLTk4MzQ4MTI2LC0xMzMxNjQ3NjUxXX0=
 -->
