@@ -40,21 +40,21 @@ The proposed HDF5 data structure for both global and instrument-specific grids c
 For global grids containing the velocity information, the suggested HDF5 structure is as follows:
 
 ```
-/N
-/Phase {P or S} (Group)
-    @Grid ID (Attribute, type: string)
-    @Schema Version (Attribute, type: string)
-    @Creation Timestamp (Attribute, type: string - ISO 8601 format)
-    @Type (Attribute, type: string - value from the set 
-    {'VELOCITY', 'SLOWNESS', 'SLOW_LEN'})
-    @Units (Attribute, type: string - value from the set {'m/s', 'ft/s', 's/m', 'ft/s'})
-    @Coordinate System (Attribute, type: string - reference to coordinate system used)
-    @Data Order (Attribute, type: string - value from the set {'Row-major', 'Column-major'})
-    @Origin (Attribute, type: float[3])
-    @Spacing (Attribute, type: float[3])
-    @Dimensions (Attribute, type: int[3])
-    @Compression (Attribute, type: string - description of any compression used)
-    /Data (Dataset, type: float[n, m, l], optional: checksum)
+/Network (group)
+	/Phase {P or S} (Group)
+	    @Grid ID (Attribute, type: string)
+	    @Schema Version (Attribute, type: string)
+	    @Creation Timestamp (Attribute, type: string - ISO 8601 format)
+	    @Type (Attribute, type: string - value from the set 
+	    {'VELOCITY', 'SLOWNESS', 'SLOW_LEN'})
+	    @Units (Attribute, type: string - value from the set {'m/s', 'ft/s', 's/m', 'ft/s'})
+	    @Coordinate System (Attribute, type: string - reference to coordinate system used)
+	    @Data Order (Attribute, type: string - value from the set {'Row-major', 'Column-major'})
+	    @Origin (Attribute, type: float[3])
+	    @Spacing (Attribute, type: float[3])
+	    @Dimensions (Attribute, type: int[3])
+	    @Compression (Attribute, type: string - description of any compression used)
+	    /Data (Dataset, type: float[n, m, l], optional: checksum)
 
 ```
 
@@ -84,7 +84,7 @@ For instrument-specific grids, the structure is proposed to be:
 This layout ensures a standardized and accessible approach to microseismic grid data storage, accommodating both global and instrument-specific needs.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTk1MzcxNjcsNzczNTQ1NTQ5LC0yMD
+eyJoaXN0b3J5IjpbLTE4NTQ4ODA1MjksNzczNTQ1NTQ5LC0yMD
 I2NzIwMDI3LDIwODQxNzM5ODMsLTI1MDk0MDI2NCwxODAxMzU0
 NDg0LDEzNjY5OTA1ODQsMjA5NTA5OTQ1MCwtMTEyNjcyMTQ2NS
 w5NTY0MDk3NCwyMTI0MjIzNTYzLC0xNDk2ODMwOTA1LDM5OTI2
