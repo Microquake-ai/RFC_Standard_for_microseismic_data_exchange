@@ -40,7 +40,7 @@ The proposed HDF5 data structure for both global and instrument-specific grids c
 For global grids containing the velocity information, the suggested HDF5 structure is as follows:
 
 ```
-/Tag (group)
+/Label (group)
 	/Phase {P or S} (Group)
 	    @Grid ID (Attribute, type: string)
 	    @Schema Version (Attribute, type: string)
@@ -84,9 +84,9 @@ For instrument-specific grids, the structure is proposed to be:
 This layout ensures a standardized and accessible approach to microseismic grid data storage, accommodating both global and instrument-specific needs.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjgwMjYwMTE5LC0xODU0ODgwNTI5LDc3Mz
-U0NTU0OSwtMjAyNjcyMDAyNywyMDg0MTczOTgzLC0yNTA5NDAy
-NjQsMTgwMTM1NDQ4NCwxMzY2OTkwNTg0LDIwOTUwOTk0NTAsLT
-ExMjY3MjE0NjUsOTU2NDA5NzQsMjEyNDIyMzU2MywtMTQ5Njgz
-MDkwNSwzOTkyNjc1ODUsLTIxNDQ3MDg5NThdfQ==
+eyJoaXN0b3J5IjpbLTI3NDg2MjY1OSwtMTg1NDg4MDUyOSw3Nz
+M1NDU1NDksLTIwMjY3MjAwMjcsMjA4NDE3Mzk4MywtMjUwOTQw
+MjY0LDE4MDEzNTQ0ODQsMTM2Njk5MDU4NCwyMDk1MDk5NDUwLC
+0xMTI2NzIxNDY1LDk1NjQwOTc0LDIxMjQyMjM1NjMsLTE0OTY4
+MzA5MDUsMzk5MjY3NTg1LC0yMTQ0NzA4OTU4XX0=
 -->
