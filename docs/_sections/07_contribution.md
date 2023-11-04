@@ -8,7 +8,7 @@ Feedback and contributions from the community are essential to refining and impr
 
 1.  **GitHub Issues**:
     
-    -   Navigate to the [RFC micro-seismic data exchange format repository on GitHub](https://github.com/Microquake-ai/RFC-micro-seismic-data-exchange-format/tree/main).
+    -   Navigate to the [RFC micro-seismic data exchange format repository on GitHub]().
     -   Go to the `Issues` tab.
     -   Click on `New Issue` to create a new issue.
     -   Provide a concise title and detailed description of your feedback, suggestions, or concerns.
@@ -23,5 +23,5 @@ Whether you choose to leave an issue on GitHub or send an email, your feedback i
 
 Thank you for taking the time to review this RFC and for your contributions towards its continual improvement.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1NTAwMTY1Nl19
+eyJoaXN0b3J5IjpbMjEzMTc2NjQxLC04NTUwMDE2NTZdfQ==
 -->
