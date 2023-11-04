@@ -6,7 +6,7 @@
 
 ### Overview
 
-The HDF5 format serves as a robust and scalable data storage platform optimized for handling complex and large datasets. In the realm of microseismic monitoring, the format's hierarchical file architecture, akin to a filesystem, proves invaluable for organizing grid data and associated metadata efficiently.
+The HDF5 format serves as a robust and scalable data storage platform optimized for handling complex and large datasets. In the realm of microseismic monitoring, the format's hierarchical file architecture, akin to a file system, proves invaluable for organizing grid data and associated metadata efficiently.
 
 Two primary categories of grids are relevant:
 - **Global**: These grids extend across the entire network, typical examples being *P*- and *S*-wave velocity grids.
@@ -84,7 +84,7 @@ For instrument-specific grids, the structure is proposed to be:
 This layout ensures a standardized and accessible approach to microseismic grid data storage, accommodating both global and instrument-specific needs.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTI2NjM1ODEsLTE4NTQ4ODA1MjksNz
+eyJoaXN0b3J5IjpbLTIxMDA1MzYxMDEsLTE4NTQ4ODA1MjksNz
 czNTQ1NTQ5LC0yMDI2NzIwMDI3LDIwODQxNzM5ODMsLTI1MDk0
 MDI2NCwxODAxMzU0NDg0LDEzNjY5OTA1ODQsMjA5NTA5OTQ1MC
 wtMTEyNjcyMTQ2NSw5NTY0MDk3NCwyMTI0MjIzNTYzLC0xNDk2
