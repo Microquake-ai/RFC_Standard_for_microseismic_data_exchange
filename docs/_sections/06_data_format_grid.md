@@ -62,28 +62,28 @@ The structure accommodates both a single and multiple phase.
 For instrument-specific grids, the structure is proposed to be:
 
 ```
-/type
-    /InstrumentID (Group)
-       @Grid ID (Attribute, type: string)
-       @Schema Version (Attribute, type: string)
-       @Modification Timestamp (Attribute, type: string - ISO 8601 format)
-       @Type (Attribute, type: string - value from the set {'TIME', 'ANGLE'})
-       @Units (Attribute, type: string - value from the set {'SECOND', 'DEGREES'})
-       @Coordinate System (Attribute, type: string - reference to coordinate system used)
-       @Data Order (Attribute, type: string - value from the set {'Row-major', 'Column-major'})
-       @Origin (Attribute, type: float[3])
-       @Spacing (Attribute, type: float[3])
-       @Dimensions (Attribute, type: int[3])
-       @Compression (Attribute, type: string - description of any compression used)
-       /Data (Dataset, type: float[n, m, l], optional: checksum)
+/InstrumentID (Group)
+    @Grid ID (Attribute, type: string)
+    @Velocity Model ID (Attribute, type: string)
+    @Schema Version (Attribute, type: string)
+    @Modification Timestamp (Attribute, type: string - ISO 8601 format)
+    @Type (Attribute, type: string - value from the set {'TIME', 'ANGLE'})
+    @Units (Attribute, type: string - value from the set {'SECOND', 'DEGREES'})
+    @Coordinate System (Attribute, type: string - reference to coordinate system used)
+    @Data Order (Attribute, type: string - value from the set {'Row-major', 'Column-major'})
+    @Origin (Attribute, type: float[3])
+    @Spacing (Attribute, type: float[3])
+    @Dimensions (Attribute, type: int[3])
+    @Compression (Attribute, type: string - description of any compression used)
+    /Data (Dataset, type: float[n, m, l], optional: checksum)
 
 ```
 
 This layout ensures a standardized and accessible approach to microseismic grid data storage, accommodating both global and instrument-specific needs.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4NDE3Mzk4MywtMjUwOTQwMjY0LDE4MD
-EzNTQ0ODQsMTM2Njk5MDU4NCwyMDk1MDk5NDUwLC0xMTI2NzIx
-NDY1LDk1NjQwOTc0LDIxMjQyMjM1NjMsLTE0OTY4MzA5MDUsMz
-k5MjY3NTg1LC0yMTQ0NzA4OTU4XX0=
+eyJoaXN0b3J5IjpbLTIwMjY3MjAwMjcsMjA4NDE3Mzk4MywtMj
+UwOTQwMjY0LDE4MDEzNTQ0ODQsMTM2Njk5MDU4NCwyMDk1MDk5
+NDUwLC0xMTI2NzIxNDY1LDk1NjQwOTc0LDIxMjQyMjM1NjMsLT
+E0OTY4MzA5MDUsMzk5MjY3NTg1LC0yMTQ0NzA4OTU4XX0=
 -->
