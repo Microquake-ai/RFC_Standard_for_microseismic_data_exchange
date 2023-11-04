@@ -63,7 +63,7 @@ The structure accommodates both a single and multiple phase.
 For instrument-specific grids, the structure is proposed to be:
 
 ```
-/Tag (group)
+/Label (group)
 	/InstrumentID (Group)
 	    @Grid ID (Attribute, type: string)
 	    @Velocity Model ID (Attribute, type: string)
@@ -84,9 +84,9 @@ For instrument-specific grids, the structure is proposed to be:
 This layout ensures a standardized and accessible approach to microseismic grid data storage, accommodating both global and instrument-specific needs.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3NDg2MjY1OSwtMTg1NDg4MDUyOSw3Nz
-M1NDU1NDksLTIwMjY3MjAwMjcsMjA4NDE3Mzk4MywtMjUwOTQw
-MjY0LDE4MDEzNTQ0ODQsMTM2Njk5MDU4NCwyMDk1MDk5NDUwLC
-0xMTI2NzIxNDY1LDk1NjQwOTc0LDIxMjQyMjM1NjMsLTE0OTY4
-MzA5MDUsMzk5MjY3NTg1LC0yMTQ0NzA4OTU4XX0=
+eyJoaXN0b3J5IjpbLTEyOTI2NjM1ODEsLTE4NTQ4ODA1MjksNz
+czNTQ1NTQ5LC0yMDI2NzIwMDI3LDIwODQxNzM5ODMsLTI1MDk0
+MDI2NCwxODAxMzU0NDg0LDEzNjY5OTA1ODQsMjA5NTA5OTQ1MC
+wtMTEyNjcyMTQ2NSw5NTY0MDk3NCwyMTI0MjIzNTYzLC0xNDk2
+ODMwOTA1LDM5OTI2NzU4NSwtMjE0NDcwODk1OF19
 -->
