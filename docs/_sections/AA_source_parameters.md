@@ -6,9 +6,6 @@ style: default
 
 In this appendix, we outline the equations that relate the core canonical source parameters — Seismic Moment $M_0$, Corner Frequency, $f_0$ and the *P*- and *S*-wave Energies $E_p$ and $E_s$ — to the derived source parameters commonly used in microseismic studies.
 
-
-
-
 | Derived Parameter     | Equation                                                                                                  |
 |-----------------------|-----------------------------------------------------------------------------------------------------------|
 | Moment Magnitude      | $M_w = \frac{2}{3} \left( \log_{10} M_0 - 9.1 \right)$                                                   |
@@ -22,6 +19,6 @@ In this appendix, we outline the equations that relate the core canonical source
 
 **Note**: Where $\rho$ is the density, $V_p$ and $V_s$ are the *P*- and *S*-wave velocities, $R$ is the radius of the source, and $\mu$ is the shear modulus.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1NjYwMTk2NiwtMTk5NzgxMzA3OSwxNz
-Q0NjU2NzldfQ==
+eyJoaXN0b3J5IjpbMTU1MTYyNDIwMCwtNDU2NjAxOTY2LC0xOT
+k3ODEzMDc5LDE3NDQ2NTY3OV19
 -->
