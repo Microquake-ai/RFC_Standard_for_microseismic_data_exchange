@@ -15,7 +15,7 @@ Feedback and contributions from the community are essential to refining and impr
     -   Once submitted, the issue will be visible to the community, and the project maintainers will review and address it as appropriate.
 2.  **Email**:
     
-    -   If you prefer a more direct approach or have feedback that you'd like to keep private, you can send an email to [rfc_format@microquake.ai](mailto:rfc_format@microquake.ai).
+    -   If you prefer a more direct approach or have feedback that you'd like to keep private, you can email [rfc_format@microquake.ai](mailto:rfc_format@microquake.ai).
     -   Please provide a clear subject line relevant to your feedback to ensure swift handling of your email.
     -   While we appreciate all feedback, do note that due to the volume of emails, it might take some time before you receive a response.
 
@@ -23,5 +23,6 @@ Whether you choose to leave an issue on GitHub or send an email, your feedback i
 
 Thank you for taking the time to review this RFC and for your contributions towards its continual improvement.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwMTA2Mjc5NiwtODU1MDAxNjU2XX0=
+eyJoaXN0b3J5IjpbLTE4NjI3Mzc3MzgsMTMwMTA2Mjc5NiwtOD
+U1MDAxNjU2XX0=
 -->
