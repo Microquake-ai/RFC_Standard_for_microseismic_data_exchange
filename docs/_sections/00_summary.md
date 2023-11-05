@@ -15,7 +15,7 @@ Central to our proposal is the exploitation of the Adaptable Seismic Data Format
 
 Designed for extensibility, the ASDF format facilitates atomic, computationally efficient access to waveform data. This is crucial when handling vast data volumes, such as with continuous data streams or distributed acoustic sensing (DAS).
 
-Beyond the seismic data format, our proposal extends to the definition of grid data. We present a format tailored for the storage and transfer of such data. This suggested format is versatile, accommodating various grid types including but not limited to velocity, and travel time.
+Beyond the seismic data format, our proposal extends to the definition of grid data. We present a format tailored for the storage and transfer of such data. The suggested format is versatile, accommodating various grid types including but not limited to velocity, and travel time.
 
 The [μQuake](https://github.com/Microquake-ai/uquake) (microQuake) library serves as a practical mechanism to adopt the standards we outline in this proposal. While its foundation lies in Obspy, μQuake is tailored specifically to the nuances of microseismic monitoring. Beyond the core capabilities of Obspy, μQuake has evolved over time, with Version 2.0 poised to incorporate support for the ASDF file format and the grid structures proposed herein, ensuring a seamless integration of these new standards.
 
@@ -24,8 +24,8 @@ Our objective is to see a progressive adoption of the standard by the industry a
 Your feedback is essential and greatly appreciated. Feedback can be provided either through the github issues associated with the RFC ([RFC micro-seismic data exchange format repository on GitHub](https://github.com/Microquake-ai/RFC_Standard_for_microseismic_data_exchange.git) or by contacting us via [email](mailto:rfc_format@microquake.ai). 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3NjgyODQwNiwxMjUyODAzODM4LC03OT
-g4MzQzMSwtMTQ3NzA2NzgwLC0xNTIzMjQyMjQsMTQ4NzQwNTI1
-MywtMTE5NDE4NTUzMCwxODQ3ODYzMzQ0LC0yMDYwNTE5MTQwLD
-E0ODE0Njc4OTFdfQ==
+eyJoaXN0b3J5IjpbLTE2OTc4NDIxNTcsLTc3NjgyODQwNiwxMj
+UyODAzODM4LC03OTg4MzQzMSwtMTQ3NzA2NzgwLC0xNTIzMjQy
+MjQsMTQ4NzQwNTI1MywtMTE5NDE4NTUzMCwxODQ3ODYzMzQ0LC
+0yMDYwNTE5MTQwLDE0ODE0Njc4OTFdfQ==
 -->
