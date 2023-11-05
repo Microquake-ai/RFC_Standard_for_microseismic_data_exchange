@@ -21,15 +21,15 @@ gem "minima", "~> 2.5"
 #   gem 'jekyll-katex'
 # end
 
-source "https://rubygems.org"
+# source "https://rubygems.org"
 
-gem "jekyll-feed"
-gem "jekyll-gist"
-gem "jekyll-paginate"
-gem "jekyll-remote-theme"
-gem "jekyll-scholar"
-gem "katex"
-gem "kramdown-math-katex"
+# gem "jekyll-feed"
+# gem "jekyll-gist"
+# gem "jekyll-paginate"
+# gem "jekyll-remote-theme"
+# gem "jekyll-scholar"
+# gem "katex"
+# gem "kramdown-math-katex"
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
