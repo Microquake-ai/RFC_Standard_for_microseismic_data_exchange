@@ -10,7 +10,7 @@ This section delves into the overarching design principles and foundational elem
     
 2. **Platform Independence**: Insights into how the format maintains neutrality to specific proprietary platforms, endorsing cross-platform compatibility.
     
-3. **Scalability and Flexibility**: Addressing the format's ability to manage both small and expansive datasets, e.g., high-density [DAS](#distributed-acoustic-sensing) data.
+3. **Scalability and Flexibility**: Addressing the format's ability to manage both small and expansive datasets, e.g., high-density DAS (Distributed Acoustic Sensing) data.
     
 4. **Usability**: Features enhancing the user-friendliness of the format, which may encompass aspects like readability, annotations, or metadata.
     
@@ -22,5 +22,5 @@ This section delves into the overarching design principles and foundational elem
     
 8. **Interoperability with Existing Formats**: Examination of the format's relationship or interaction with prevailing data formats in the domain.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTgxMTM0NzFdfQ==
+eyJoaXN0b3J5IjpbMjEzMjMzNjY5NywtMTAxODExMzQ3MV19
 -->
