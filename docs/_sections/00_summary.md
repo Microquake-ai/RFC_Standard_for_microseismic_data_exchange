@@ -19,12 +19,13 @@ Beyond the seismic data format, our proposal extends to the definition of grid d
 
 The μQuake (microQuake) library serves as a practical mechanism to adopt the standards we outline in this proposal. While its foundation lies in Obspy, μQuake is tailored specifically to the nuances of microseismic monitoring. Beyond the core capabilities of Obspy, μQuake has evolved over time, with Version 2.0 poised to incorporate support for the ASDF file format and the grid structures proposed herein, ensuring a seamless integration of these new standards.
 
-Our aspiration is to achieve industry and supplier consensus on this format by the end of 2024.
+Our objective is to see a progressive adoption of the standard by the industry and the supplier and to provide a blueprint for a mode.
 
 Your feedback is essential and greatly appreciated.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5ODgzNDMxLC0xNDc3MDY3ODAsLTE1Mj
-MyNDIyNCwxNDg3NDA1MjUzLC0xMTk0MTg1NTMwLDE4NDc4NjMz
-NDQsLTIwNjA1MTkxNDAsMTQ4MTQ2Nzg5MV19
+eyJoaXN0b3J5IjpbLTg4Njg3MDQ4NywtNzk4ODM0MzEsLTE0Nz
+cwNjc4MCwtMTUyMzI0MjI0LDE0ODc0MDUyNTMsLTExOTQxODU1
+MzAsMTg0Nzg2MzM0NCwtMjA2MDUxOTE0MCwxNDgxNDY3ODkxXX
+0=
 -->
