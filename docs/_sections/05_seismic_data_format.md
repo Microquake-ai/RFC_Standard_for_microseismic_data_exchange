@@ -65,6 +65,8 @@ We propose an enhancement to the `Magnitude` definition in QuakeML to represent 
 
 Transitioning to event classifications, the QuakeML schema has a predefined set of seismic event types that do not fully accommodate the specialized needs of μseismic monitoring. We propose mapping existing event types to new, mining-specific descriptors and directly including a generic look-up table in the code for on-the-fly translation. While efforts were made to create logical mappings, limitations in the existing event types posed challenges in finding intuitive counterparts. The following table presents this mapping between standard and μseismic event types.
 
+**Seismic Event**
+
 | Event Type (mining)                | Event Type (QuakeML)              |
 |-----------------------------------|-----------------------------------|
 | earthquake/large event            | earthquake                        |
@@ -123,6 +125,6 @@ The ASDF file format combines waveforms and inventory data. To ensure flawless i
 ASDF adopts a relaxed version of the SEED Identifier Convention, previously part of QuakeML and StationXML standards and now extended to the waveform data. The StationXML does not restrict the string length; QuakeML does. We therefore suggest adopting the convention presented in section 3.3.5 of the [QuakeML Version 1.2 (revision 20130214b)](https://quake.ethz.ch/quakeml/docs/latest?action=AttachFile&do=get&target=QuakeML-BED.pdf).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5NDQ5NTQ1LC0xMjEwMjQ5ODY2LDEwOT
-Y2Mzk5NjFdfQ==
+eyJoaXN0b3J5IjpbMTMwMTUyNzkwMCwtMzk0NDk1NDUsLTEyMT
+AyNDk4NjYsMTA5NjYzOTk2MV19
 -->
