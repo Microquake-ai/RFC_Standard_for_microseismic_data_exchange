@@ -21,11 +21,11 @@ The μQuake (microQuake) library serves as a practical mechanism to adopt the st
 
 Our objective is to see a progressive adoption of the standard by the industry and the supplier and to provide a blueprint for a modern, expandable and computationally efficient data format suitable for conventional upcoming monitoring alike.
 
-Your feedback is essential and greatly appreciated. Feedback can be provided either through the github issues associated with the RFC ([RFC micro-seismic data exchange format repository on GitHub](https://github.com/Microquake-ai/RFC_Standard_for_microseismic_data_exchange.git) or by using email directly [email](rfc_format@microquake.ai). 
+Your feedback is essential and greatly appreciated. Feedback can be provided either through the github issues associated with the RFC ([RFC micro-seismic data exchange format repository on GitHub](https://github.com/Microquake-ai/RFC_Standard_for_microseismic_data_exchange.git) or by contacting us via [email](rfc_format@microquake.ai). 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODE2NzQxMDAwLC03OTg4MzQzMSwtMTQ3Nz
-A2NzgwLC0xNTIzMjQyMjQsMTQ4NzQwNTI1MywtMTE5NDE4NTUz
-MCwxODQ3ODYzMzQ0LC0yMDYwNTE5MTQwLDE0ODE0Njc4OTFdfQ
-==
+eyJoaXN0b3J5IjpbMTI1MjgwMzgzOCwtNzk4ODM0MzEsLTE0Nz
+cwNjc4MCwtMTUyMzI0MjI0LDE0ODc0MDUyNTMsLTExOTQxODU1
+MzAsMTg0Nzg2MzM0NCwtMjA2MDUxOTE0MCwxNDgxNDY3ODkxXX
+0=
 -->
