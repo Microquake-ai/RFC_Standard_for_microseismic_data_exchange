@@ -13,7 +13,16 @@ markdown: kramdown
 theme: minima
 
 plugins:
-  - jekyll-katex
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-remote-theme
+  - jekyll-scholar
+
+kramdown:
+  math_engine: katex
+  math_engine_opts:
+    output: mathml
 
 # Plugins
 #plugins:
