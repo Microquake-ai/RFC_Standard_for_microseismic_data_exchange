@@ -60,44 +60,43 @@ A time series representation of seismic wave amplitudes detected by sensors in m
 - **ASDF (Adaptable Seismic Data Format)**  
   A modern data format explicitly designed for seismological data and related metadata. Building on the HDF5 infrastructure, ASDF is tailored for efficiency, scalability, and adaptability in both storage and processing of seismic data. It facilitates the integration of raw waveforms, processed data products, event parameters, and station metadata within a single file structure. The format's adaptability and hierarchical structure ensure consistent and optimized handling of diverse seismic datasets, making it a valuable choice for advanced seismological research and applications.
 
-### Equipment and hierarchical relationship
+### Equipment and Hierarchical Relationship
 
-- **Sensor**  
-  A device specifically designed to detect or measure a physical property and convert this input into an electrical signal. A sensor (e.g., geophone element) is responsible for directly detecting seismic waves and transducing them into voltage variations based on its sensitivity. Example: a 4.5 Hz geophone.
+The suggested hierarchy deviates from the standard Obspy/StationXML definition 
 
-- **Instrument**  
-  A comprehensive setup encompassing one or multiple sensors and associated components, including casings, and internal electronics if applicable. In microseismic monitoring, an instrument refers to the entire arrangement employed for seismic detection. Its response combines the characteristics of the individual sensors. Example: a tri-axial dual element geophone.
+**Inventory**
 
-- **Location**
-Represents a location where an instrument is deployed. The location could refer to an instrument.
+-   **Definition**: The collective framework that encapsulates all networks within a microseismic monitoring system.
 
-- **Station**
-A logical or physical grouping of instruments deployed at one or multiple "locations". In the most minimalist case, a station can comprise only one instrument.
+**Network (e.g., N1)**
 
-- **Network**
-A logical grouping of multiple stations used to detect, locate and characterized events.
+-   **Definition**: A two-character code that aggregates several stations for the purpose of seismic event detection, location, and characterization.
+-   **Relation**: Top-level entity within the Inventory.
 
-At the top of the hierarchy, you have the **Inventory**, which encompasses everything below it.
+**Station (e.g., N1.STA01)**
 
-1.  **Inventory**
-A comprehensive collection of networks in a microseismic monitoring system.
-3.  **Network**
-A logical grouping of multiple stations to detect, locate, and characterize seismic events.
-    -   Child of: Inventory
-4.  **Station**
-    A logical or physical grouping of instruments at one or multiple locations.
-    -   Child of: Network
-5.  **Location**
-  A specific point where one or more instruments are deployed; synonymous in this context with the physical aspect of Instrument.
-   Child of: Station
-6.  **Instrument**
-    
-    -   Definition: A setup that may include one or multiple sensors and associated components for seismic detection.
-    -   Child of: Location
-7.  **Sensor**
-    
-    -   Definition: A device designed to detect seismic waves and convert them into an electrical signal.
-    -   Child of: Instrument
+-   **Definition**: A logical identifier with five characters for a set of instruments at one or more defined locations to capture seismic data.
+-   **Relation**: Constituent of a Network.
+
+**Location (e.g., N1.STA01.00)**
+
+-   **Definition**: A geospatial identifier with two characters, equivalent to the physical installation point of an Instrument.
+-   **Relation**: Component of a Station.
+
+**Instrument**
+
+-   **Definition**: The physical equipment installed at a Location, potentially inclusive of multiple sensors and their ancillary components for seismic signal capture.
+-   **Correspondence**: Directly associated with a Location, not a hierarchical dependency.
+
+**Channel (e.g., N1.STA01.00.GNX)**
+
+-   **Definition**: A three-character designation for a data stream from a sensor, indicative of its bandwidth, type, and orientation.
+-   **Correspondence**: Specifically linked to a single Sensor type within an Instrument.
+
+**Sensor (e.g., Sensor - Type 1)**
+
+-   **Definition**: A device engineered to detect seismic waves and transduce them into a measurable electrical signal, with a distinct type for each Channel.
+-   **Correspondence**: Each Sensor is uniquely coupled with a Channel; they are mutually inclusive.
 
 **Hierarchy**
 ```
@@ -137,7 +136,7 @@ Inventory
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzI1NDgxNSwxODIwODIwMzMyLDIxMz
-Y1Mjc0MTQsLTM2Mjg4OTM0LC0yMDMwOTQxMTc5LDM2OTQzOTY5
-MiwxNjY5Njg5OTAwLC0xMDc4MzY4MDU2XX0=
+eyJoaXN0b3J5IjpbNDExMTcwMTM5LC0xOTMyNTQ4MTUsMTgyMD
+gyMDMzMiwyMTM2NTI3NDE0LC0zNjI4ODkzNCwtMjAzMDk0MTE3
+OSwzNjk0Mzk2OTIsMTY2OTY4OTkwMCwtMTA3ODM2ODA1Nl19
 -->
