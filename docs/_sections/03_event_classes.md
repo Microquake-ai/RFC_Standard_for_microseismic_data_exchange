@@ -42,7 +42,7 @@ That would, however, be too reductionist and lead to ambiguity. The list suggest
 
 | Suggested Event Types                 | Description                                                           |
 |--------------------------------------|-----------------------------------------------------------------------|
-| *noise*									| *Generic Noise* |
+| *noise*									| *Generic Noise/ Unknown* |
 | crusher noise                        | Sound from machinery crushing ore or rock.                             |
 | orepass noise                        | Sound originating from ore movement in passes or chutes.               |
 | drilling noise                       | Acoustic disturbance from drilling activities.                         |
@@ -51,8 +51,7 @@ That would, however, be too reductionist and lead to ambiguity. The list suggest
 | mechanical noise                     | Sound from general mechanical operations or machinery.                 |
 | test pulse                           | Controlled signal used to test or calibrate seismic equipment.         |
 | unidentified noise/other noise       | Acoustic disturbances without clear origin or classification.          |
-| raise bore                          | Mechanical method for drilling between levels in mines.                |             |
-| unknown                              | Event type or origin not determined or identified.                     |
+| raise bore                          | Mechanical method for drilling between levels in mines.                |     
 
 **Other**
 
@@ -62,6 +61,6 @@ That would, however, be too reductionist and lead to ambiguity. The list suggest
 | tap test/test                        | Controlled tapping or impact to test response of monitoring systems usually done during the installation and commissioning of the system to test the equipment.   |
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5Njc0ODMyOSwtODMxMDE2NTEzLC0xMD
+eyJoaXN0b3J5IjpbMTU1Mzg2NjU2NSwtODMxMDE2NTEzLC0xMD
 gwNzM1ODQ1LC0yMDU1MTkwNTM4LC0xOTc0NTM5NjU0XX0=
 -->
