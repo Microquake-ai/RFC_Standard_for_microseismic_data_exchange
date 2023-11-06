@@ -42,7 +42,7 @@ For global grids containing the velocity information, the suggested HDF5 structu
 ```	
 @Type (Attribute, type: string - value from the set 
     {'VELOCITY', 'SLOWNESS', 'SLOW_LEN'})
-/Label (Group) - Phase {P or S} for Velocity Grid and InstrumentID for travel time 
+/Label Phase {P or S} for Velocity Grid and InstrumentID for travel time 
     @Grid ID (Attribute, type: string)
     @Schema Version (Attribute, type: string)
     @Creation Timestamp (Attribute, type: string - ISO 8601 format)
@@ -63,30 +63,30 @@ For instrument-specific grids, the structure is proposed to be:
 
 ```
 @Type (Attribute, type: string - value from the set {'TIME', 'ANGLE'})
-
-/InstrumentID (Group)
-    @Grid ID (Attribute, type: string)
-    @Schema Version (Attribute, type: string
-    @Velocity Model ID (Attribute, type: string)
-    @Schema Version (Attribute, type: string)
-    @Modification Timestamp (Attribute, type: string - ISO 8601 format)
-    @Type (Attribute, type: string - value from the set {'TIME', 'ANGLE'})
-    @Units (Attribute, type: string - value from the set {'SECOND', 'DEGREES'})
-    @Coordinate System (Attribute, type: string - reference to coordinate system used)
-    @Origin (Attribute, type: float[3])
-    @Spacing (Attribute, type: float[3])
-    @Dimensions (Attribute, type: int[3])
-    @Compression (Attribute, type: string - description of any compression used)
-    /Data (Dataset, type: float[n, m, l], optional: checksum)
+/Phase {P or S} (Group)
+	/InstrumentID (Group)
+	    @Grid ID (Attribute, type: string)
+	    @Schema Version (Attribute, type: string
+	    @Velocity Model ID (Attribute, type: string)
+	    @Schema Version (Attribute, type: string)
+	    @Modification Timestamp (Attribute, type: string - ISO 8601 format)
+	    @Type (Attribute, type: string - value from the set {'TIME', 'ANGLE'})
+	    @Units (Attribute, type: string - value from the set {'SECOND', 'DEGREES'})
+	    @Coordinate System (Attribute, type: string - reference to coordinate system used)
+	    @Origin (Attribute, type: float[3])
+	    @Spacing (Attribute, type: float[3])
+	    @Dimensions (Attribute, type: int[3])
+	    @Compression (Attribute, type: string - description of any compression used)
+	    /Data (Dataset, type: float[n, m, l], optional: checksum)
 ```
 
 This layout ensures a standardized and accessible approach to microseismic grid data storage, accommodating both global and instrument-specific needs.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODYxMzM4NTMsLTEzMzY4OTkwNDEsLT
-IwNzMwMDAzNTEsLTIxMDA1MzYxMDEsLTE4NTQ4ODA1MjksNzcz
-NTQ1NTQ5LC0yMDI2NzIwMDI3LDIwODQxNzM5ODMsLTI1MDk0MD
-I2NCwxODAxMzU0NDg0LDEzNjY5OTA1ODQsMjA5NTA5OTQ1MCwt
-MTEyNjcyMTQ2NSw5NTY0MDk3NCwyMTI0MjIzNTYzLC0xNDk2OD
-MwOTA1LDM5OTI2NzU4NSwtMjE0NDcwODk1OF19
+eyJoaXN0b3J5IjpbLTI1Njg3ODc4LC0xMzM2ODk5MDQxLC0yMD
+czMDAwMzUxLC0yMTAwNTM2MTAxLC0xODU0ODgwNTI5LDc3MzU0
+NTU0OSwtMjAyNjcyMDAyNywyMDg0MTczOTgzLC0yNTA5NDAyNj
+QsMTgwMTM1NDQ4NCwxMzY2OTkwNTg0LDIwOTUwOTk0NTAsLTEx
+MjY3MjE0NjUsOTU2NDA5NzQsMjEyNDIyMzU2MywtMTQ5NjgzMD
+kwNSwzOTkyNjc1ODUsLTIxNDQ3MDg5NThdfQ==
 -->
