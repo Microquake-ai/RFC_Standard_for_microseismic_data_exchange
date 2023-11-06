@@ -40,14 +40,12 @@ The proposed HDF5 data structure for both global and instrument-specific grids c
 For global grids containing the velocity information, the suggested HDF5 structure is as follows:
 
 ```	
-@Type (Attribute, type: string - value from the set 
-    {'VELOCITY', 'SLOWNESS', 'SLOW_LEN'})
+@Type (Attribute, type: {'GLOBAL', 'LOCAL'})
 /Label Phase {P or S} for Velocity Grid and InstrumentID for travel time 
     @Grid ID (Attribute, type: string)
     @Schema Version (Attribute, type: string)
     @Creation Timestamp (Attribute, type: string - ISO 8601 format)
-    @Type (Attribute, type: string - value from the set 
-    {'VELOCITY', 'SLOWNESS', 'SLOW_LEN'})
+    @Type (Attribute, type: string - value from the set {'VELOCITY'})
     @Units (Attribute, type: string - value from the set {'m/s', 'ft/s', 's/m', 'ft/s'})
     @Coordinate System (Attribute, type: string - reference to coordinate system used)
     @Origin (Attribute, type: float[3])
@@ -83,7 +81,7 @@ For instrument-specific grids, the structure is proposed to be:
 This layout ensures a standardized and accessible approach to microseismic grid data storage, accommodating both global and instrument-specific needs.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1Njg3ODc4LC0xMzM2ODk5MDQxLC0yMD
+eyJoaXN0b3J5IjpbMTI4OTgxOTk1LC0xMzM2ODk5MDQxLC0yMD
 czMDAwMzUxLC0yMTAwNTM2MTAxLC0xODU0ODgwNTI5LDc3MzU0
 NTU0OSwtMjAyNjcyMDAyNywyMDg0MTczOTgzLC0yNTA5NDAyNj
 QsMTgwMTM1NDQ4NCwxMzY2OTkwNTg0LDIwOTUwOTk0NTAsLTEx
