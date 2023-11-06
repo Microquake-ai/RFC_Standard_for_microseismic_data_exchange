@@ -79,7 +79,7 @@ Transitioning to event classifications, the QuakeML schema has a predefined set 
 
 | Event Type (mining)                | Event Type (QuakeML)              |
 |-----------------------------------|-----------------------------------|
-| blast                             | explosion                         |
+| *blast*                            | explosion                         |
 | blast sequence                    | accidental explosion              |
 | development blast                 | industrial explosion              |
 | production blast                  | mining explosion                 |
@@ -94,6 +94,7 @@ Transitioning to event classifications, the QuakeML schema has a predefined set 
 
 | Event Type (mining)                | Event Type (QuakeML)              |
 |-----------------------------------|-----------------------------------|
+| unidentified noise/other noise    | other event                      |
 | raise bore                        | hydroacoustic event               |
 | crusher noise                     | road cut                         |
 | orepass noise                     | collapse                         |
@@ -102,7 +103,6 @@ Transitioning to event classifications, the QuakeML schema has a predefined set 
 | scaling noise                     | anthropogenic event               |
 | mechanical noise                  | crash                            |
 | test pulse                        | sonic boom                       |
-| unidentified noise/other noise    | other event                      |
 
 **Other**
 
@@ -140,7 +140,7 @@ The ASDF file format combines waveforms and inventory data. To ensure flawless i
 ASDF adopts a relaxed version of the SEED Identifier Convention, previously part of QuakeML and StationXML standards and now extended to the waveform data. The StationXML does not restrict the string length; QuakeML does. We therefore suggest adopting the convention presented in section 3.3.5 of the [QuakeML Version 1.2 (revision 20130214b)](https://quake.ethz.ch/quakeml/docs/latest?action=AttachFile&do=get&target=QuakeML-BED.pdf).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzU4Njc4MTMsMjM2ODA3MDUxLDIwND
+eyJoaXN0b3J5IjpbLTExMDE5NjQ5NjksMjM2ODA3MDUxLDIwND
 UyOTI2NzQsNzY1ODA5OTQsMjA0NTI5MjY3NCwtMzk0NDk1NDUs
 LTEyMTAyNDk4NjYsMTA5NjYzOTk2MV19
 -->
