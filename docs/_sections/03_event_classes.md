@@ -6,14 +6,12 @@
 ### Overview
 Uniformity and portability can only be achieved if the event classification is constrained to a series of classes broad enough to encompass most situation and event types encountered, but not so large that it become ambiguous. 
 
-If simplicity is the objective, the classification could be limited to the following three categories: 
+If simplicity is the objective, the classification could be limited to the following three generic categories: 
 - seismic event;
 - blast; and 
 - noise. 
 
 That would, however, be too reductionist and lead to ambiguity. The list suggested below is quite comprehensive, and from experience, encompass almost all event types that can be recorded by a mine μseismic monitoring system. 
-
-Th
 
 **Seismic Event**
 
@@ -64,6 +62,6 @@ Th
 | tap test/test                        | Controlled tapping or impact to test response of monitoring systems usually done during the installation and commissioning of the system to test the equipment.   |
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExNzE4MTM0MCwtODMxMDE2NTEzLC0xMD
-gwNzM1ODQ1LC0yMDU1MTkwNTM4LC0xOTc0NTM5NjU0XX0=
+eyJoaXN0b3J5IjpbODgyNTE1NjU5LC04MzEwMTY1MTMsLTEwOD
+A3MzU4NDUsLTIwNTUxOTA1MzgsLTE5NzQ1Mzk2NTRdfQ==
 -->
