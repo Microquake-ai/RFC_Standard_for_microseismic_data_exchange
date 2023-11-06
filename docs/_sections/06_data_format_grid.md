@@ -62,6 +62,7 @@ For instrument-specific grids, the structure is proposed to be:
 ```
 @Type (Attribute, type: string - value from the set {'TIME', 'ANGLE'})
 /Phase {P or S} (Group)
+	
 	/InstrumentID (Group)
 	    @Grid ID (Attribute, type: string)
 	    @Schema Version (Attribute, type: string
@@ -81,10 +82,10 @@ For instrument-specific grids, the structure is proposed to be:
 This layout ensures a standardized and accessible approach to microseismic grid data storage, accommodating both global and instrument-specific needs.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4OTgxOTk1LC0xMzM2ODk5MDQxLC0yMD
-czMDAwMzUxLC0yMTAwNTM2MTAxLC0xODU0ODgwNTI5LDc3MzU0
-NTU0OSwtMjAyNjcyMDAyNywyMDg0MTczOTgzLC0yNTA5NDAyNj
-QsMTgwMTM1NDQ4NCwxMzY2OTkwNTg0LDIwOTUwOTk0NTAsLTEx
-MjY3MjE0NjUsOTU2NDA5NzQsMjEyNDIyMzU2MywtMTQ5NjgzMD
-kwNSwzOTkyNjc1ODUsLTIxNDQ3MDg5NThdfQ==
+eyJoaXN0b3J5IjpbLTEyNjI3NjkyNzksLTEzMzY4OTkwNDEsLT
+IwNzMwMDAzNTEsLTIxMDA1MzYxMDEsLTE4NTQ4ODA1MjksNzcz
+NTQ1NTQ5LC0yMDI2NzIwMDI3LDIwODQxNzM5ODMsLTI1MDk0MD
+I2NCwxODAxMzU0NDg0LDEzNjY5OTA1ODQsMjA5NTA5OTQ1MCwt
+MTEyNjcyMTQ2NSw5NTY0MDk3NCwyMTI0MjIzNTYzLC0xNDk2OD
+MwOTA1LDM5OTI2NzU4NSwtMjE0NDcwODk1OF19
 -->
