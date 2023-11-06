@@ -62,7 +62,7 @@ A time series representation of seismic wave amplitudes detected by sensors in m
 
 ### Equipment and Hierarchical Relationship
 
-The suggested hierarchy deviates from the standard Obspy/StationXML definition 
+The suggested hierarchy deviates from the standard Obspy/StationXML definition. We suggest some small amendments that do not infer with the compatibility but provide a logical way to organize the Equipment or inventory in a microseismic monitoring system.
 
 **Inventory**
 
@@ -136,7 +136,7 @@ Inventory
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDExMTcwMTM5LC0xOTMyNTQ4MTUsMTgyMD
+eyJoaXN0b3J5IjpbNjk5MjM2NzAzLC0xOTMyNTQ4MTUsMTgyMD
 gyMDMzMiwyMTM2NTI3NDE0LC0zNjI4ODkzNCwtMjAzMDk0MTE3
 OSwzNjk0Mzk2OTIsMTY2OTY4OTkwMCwtMTA3ODM2ODA1Nl19
 -->
