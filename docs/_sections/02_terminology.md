@@ -76,7 +76,10 @@ A logical or physical grouping of instruments deployed at one or multiple "locat
 
 - **Network**
 A logical grouping of multiple stations used to detect, locate and characterized events.
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2Mjg4OTM0LC0yMDMwOTQxMTc5LDM2OT
-QzOTY5MiwxNjY5Njg5OTAwLC0xMDc4MzY4MDU2XX0=
+eyJoaXN0b3J5IjpbMjEzNjUyNzQxNCwtMzYyODg5MzQsLTIwMz
+A5NDExNzksMzY5NDM5NjkyLDE2Njk2ODk5MDAsLTEwNzgzNjgw
+NTZdfQ==
 -->
