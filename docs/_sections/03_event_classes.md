@@ -13,11 +13,13 @@ If simplicity is the objective, the classification could be limited to the follo
 
 That would, however, be too reductionist and lead to ambiguity. The list suggested below is quite comprehensive, and from experience, encompass almost all event types that can be recorded by a mine μseismic monitoring system. 
 
+Th
+
 **Seismic Event**
 
 | Suggested Event Types                 | Description                                             |
 |--------------------------------------|----------------------------------------------------------|
-| *seismic event*                        | *Mining induced seismic event*  |
+| *seismic event*                        | *Generic* Mining induced seismic event*  |
 | earthquake/large event               | Tectonic earthquake or very large events recorded by national seismograph network|
 | offsite event                        | Used for a seismic event happening at, for instance, a nearby operation|
 | rock burst                          | Sudden and violent release of built-up stress within the rock.| 
@@ -27,7 +29,7 @@ That would, however, be too reductionist and lead to ambiguity. The list suggest
 
 | Suggested Event Types                 | Description                                                           |
 |--------------------------------------|-----------------------------------------------------------------------|
-| blast                                | Controlled detonation for mining purposes.             |
+| *blast*                                | *Generic Blast: Controlled detonation for mining purposes.*             |
 | blast sequence                       | Would apply for a series of blasts organized in a longer file containing the whole blast sequence.    |
 | development blast                    | Specific type of blast for development               |
 | production blast                     | Specific type of blast related to production      |
@@ -42,6 +44,7 @@ That would, however, be too reductionist and lead to ambiguity. The list suggest
 
 | Suggested Event Types                 | Description                                                           |
 |--------------------------------------|-----------------------------------------------------------------------|
+| *noise*									| *Generic Noise* |
 | crusher noise                        | Sound from machinery crushing ore or rock.                             |
 | orepass noise                        | Sound originating from ore movement in passes or chutes.               |
 | drilling noise                       | Acoustic disturbance from drilling activities.                         |
@@ -61,6 +64,6 @@ That would, however, be too reductionist and lead to ambiguity. The list suggest
 | tap test/test                        | Controlled tapping or impact to test response of monitoring systems usually done during the installation and commissioning of the system to test the equipment.   |
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTIyMDIxNywtODMxMDE2NTEzLC0xMD
+eyJoaXN0b3J5IjpbMjExNzE4MTM0MCwtODMxMDE2NTEzLC0xMD
 gwNzM1ODQ1LC0yMDU1MTkwNTM4LC0xOTc0NTM5NjU0XX0=
 -->
