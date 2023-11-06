@@ -48,7 +48,6 @@ For global grids containing the velocity information, the suggested HDF5 structu
     {'VELOCITY', 'SLOWNESS', 'SLOW_LEN'})
     @Units (Attribute, type: string - value from the set {'m/s', 'ft/s', 's/m', 'ft/s'})
     @Coordinate System (Attribute, type: string - reference to coordinate system used)
-    @Data Order (Attribute, type: string - value from the set {'Row-major', 'Column-major'})
     @Origin (Attribute, type: float[3])
     @Spacing (Attribute, type: float[3])
     @Dimensions (Attribute, type: int[3])
@@ -80,10 +79,10 @@ For instrument-specific grids, the structure is proposed to be:
 This layout ensures a standardized and accessible approach to microseismic grid data storage, accommodating both global and instrument-specific needs.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzMwMDAzNTEsLTIxMDA1MzYxMDEsLT
-E4NTQ4ODA1MjksNzczNTQ1NTQ5LC0yMDI2NzIwMDI3LDIwODQx
-NzM5ODMsLTI1MDk0MDI2NCwxODAxMzU0NDg0LDEzNjY5OTA1OD
-QsMjA5NTA5OTQ1MCwtMTEyNjcyMTQ2NSw5NTY0MDk3NCwyMTI0
-MjIzNTYzLC0xNDk2ODMwOTA1LDM5OTI2NzU4NSwtMjE0NDcwOD
-k1OF19
+eyJoaXN0b3J5IjpbLTQ5OTUxNzIxNiwtMjA3MzAwMDM1MSwtMj
+EwMDUzNjEwMSwtMTg1NDg4MDUyOSw3NzM1NDU1NDksLTIwMjY3
+MjAwMjcsMjA4NDE3Mzk4MywtMjUwOTQwMjY0LDE4MDEzNTQ0OD
+QsMTM2Njk5MDU4NCwyMDk1MDk5NDUwLC0xMTI2NzIxNDY1LDk1
+NjQwOTc0LDIxMjQyMjM1NjMsLTE0OTY4MzA5MDUsMzk5MjY3NT
+g1LC0yMTQ0NzA4OTU4XX0=
 -->
