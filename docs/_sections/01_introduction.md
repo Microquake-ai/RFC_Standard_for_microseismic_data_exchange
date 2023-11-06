@@ -18,7 +18,9 @@ To ensure mines have access to technologies and approaches leading to optimal ou
 
 This document proposes conventions and a format for the lossless and seamless exchange of μseismic data.
 
-We seek alignment from different stakeholders, including μseismic system and service providers, end-clients, industry practitioners, academic researchers, and research institutions.
+We want to provide a blueprint for a modern, expandable and computationally efficient data format suitable for conventional upcoming monitoring alike. We seek progressive adoption from different stakeholders, including μseismic system and service providers, end-clients, industry practitioners, academic researchers, and research institutions.
+
+Our objective is to see a progressive adoption of the standard by the industry and the supplier and to provide a blueprint for a modern, expandable and computationally efficient data format suitable for conventional upcoming monitoring alike. 
 
 ### Scope
 
@@ -46,5 +48,6 @@ The increase in microseismic data, particularly from expansive monitoring system
 
 The varied nature of microseismic data formats hinders streamlined integration and analysis, posing challenges in managing and deriving value in datasets collected by in-mine monitoring systems. The lossy and incoherent nature of current data exchange formats hinders innovation and makes the utilization of μseismic data unnecessarily tricky. Given the critical importance of microseismic data in ensuring safety and improving underground mining operations, establishing a standardized format and mechanism of exchange becomes imperative. The proposed standard objective is facilitating more straightforward data access, efficient storage, smoother data exchanges across different platforms, and accommodating various data types.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NjE1Mjc1MDQsMTM5ODQ1MDg2OV19
+eyJoaXN0b3J5IjpbLTQwOTQwMjA2NSwtMTg2MTUyNzUwNCwxMz
+k4NDUwODY5XX0=
 -->
