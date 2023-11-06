@@ -12,7 +12,7 @@ Two primary categories of grids are relevant:
 - **Global**: These grids extend across the entire network, typical examples being *P*- and *S*-wave velocity grids.
 - **Instrument Specific**: These grids are confined to individual instruments and are typically used for storing travel time and angle information.
 
-We recommend compartmentalizing similar types of grids into single HDF5 files for clarity and accessibility. For instance, all *P*- and *S*-wave velocity grids would reside in one file, all travel time grids in another, and all angle grids in a separate file.
+We suggest combining the grids 
 
 The scope for these grid storage is confined to two categories—regular and rectilinear grids:
 - **Regular Grid**: This grid maintains uniform spacing between grid points across all dimensions, essentially forming a cubic lattice in 3D.
@@ -37,7 +37,7 @@ The proposed HDF5 data structure for both global and instrument-specific grids c
 
 #### HDF5 Structure
 
-For global grids containing the velocity information, the suggested HDF5 structure is as follows:
+
 
 ```	
 @Type (Attribute, type: {'GLOBAL', 'LOCAL'})
@@ -84,7 +84,7 @@ For instrument-specific grids, the structure is proposed to be:
 This layout ensures a standardized and accessible approach to microseismic grid data storage, accommodating both global and instrument-specific needs.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwOTAzOTg3MiwtMTMzNjg5OTA0MSwtMj
+eyJoaXN0b3J5IjpbMTMyODY4ODk1MywtMTMzNjg5OTA0MSwtMj
 A3MzAwMDM1MSwtMjEwMDUzNjEwMSwtMTg1NDg4MDUyOSw3NzM1
 NDU1NDksLTIwMjY3MjAwMjcsMjA4NDE3Mzk4MywtMjUwOTQwMj
 Y0LDE4MDEzNTQ0ODQsMTM2Njk5MDU4NCwyMDk1MDk5NDUwLC0x
