@@ -37,7 +37,6 @@ For instrument-specific grids, the structure is proposed to be:
 /Phase {P or S} (Group)
 	/InstrumentID (Group)
 		/Grid Type ('TIME', 'AZIMUTH', 'TAKEOFF', ...) 
-			Local Grid
 		    @Grid ID (Attribute, type: string)
 		    @Schema Version (Attribute, type: string
 		    @Velocity Model ID (Attribute, type: string)
@@ -53,10 +52,10 @@ For instrument-specific grids, the structure is proposed to be:
 		    /Data (Dataset, type: float[n, m, l], optional: checksum)
 ```
 
-
+> Note: The only difference between the global (Velocity) and instrument specific grid definition is that for instrument grid, an additional parameter is added t 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwMTE3NzM5NywyMTg3NTM5NTQsMTk1MD
+eyJoaXN0b3J5IjpbMTQ0Mzc0NDQyMSwyMTg3NTM5NTQsMTk1MD
 Q2Njc3NCwtMTMzNjg5OTA0MSwtMjA3MzAwMDM1MSwtMjEwMDUz
 NjEwMSwtMTg1NDg4MDUyOSw3NzM1NDU1NDksLTIwMjY3MjAwMj
 csMjA4NDE3Mzk4MywtMjUwOTQwMjY0LDE4MDEzNTQ0ODQsMTM2
