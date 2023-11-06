@@ -53,10 +53,10 @@ For instrument-specific grids, the structure is proposed to be:
 		    /Data (Dataset, type: float[n, m, l], optional: checksum)
 ```
 
-This layout ensures a standardized and accessible approach to microseismic grid data storage, accommodating both global and instrument-specific needs.
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4MDU2NTc3OCwyMTg3NTM5NTQsMTk1MD
+eyJoaXN0b3J5IjpbMjEwMTE3NzM5NywyMTg3NTM5NTQsMTk1MD
 Q2Njc3NCwtMTMzNjg5OTA0MSwtMjA3MzAwMDM1MSwtMjEwMDUz
 NjEwMSwtMTg1NDg4MDUyOSw3NzM1NDU1NDksLTIwMjY3MjAwMj
 csMjA4NDE3Mzk4MywtMjUwOTQwMjY0LDE4MDEzNTQ0ODQsMTM2
