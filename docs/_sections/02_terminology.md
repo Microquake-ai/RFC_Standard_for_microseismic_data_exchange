@@ -77,9 +77,41 @@ A logical or physical grouping of instruments deployed at one or multiple "locat
 - **Network**
 A logical grouping of multiple stations used to detect, locate and characterized events.
 
+```
+Inventory
+|
+|-- Network (Net1)
+|   |
+|   |-- Station (Net1.StaA)
+|   |   |
+|   |   |-- Location: Instrument (Net1.StaA.Loc1)
+|   |   |   |
+|   |   |   |-- Channel (Net1.StaA.Loc1: Sensor - Type 1)
+|   |   |   |   |
+|   |   |   |   |-- Sensor - Type 1
+|   |   |   |
+|   |   |   |-- Channel (Net1.StaA.Loc1: Instrument A1-1.CH2)
+|   |   |       |
+|   |   |       |-- Sensor - Type 2
+|   |   |
+|   |   |-- Location: Instrument (Net1.StaA.Loc2: Instrument A1-2)
+|   |       |
+|   |       |-- Channel (Net1.StaA.Loc2: Instrument A1-2.CH1)
+|   |           |
+|   |           |-- Sensor - Type 1
+|   |
+|   |-- Station (Net1.StaB)
+|       |
+|       |-- (similar structure as Station Net1.StaA)
+|
+|-- Network (Net2)
+    |
+    |-- (similar structure as Network Net1)
+```
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzNjUyNzQxNCwtMzYyODg5MzQsLTIwMz
-A5NDExNzksMzY5NDM5NjkyLDE2Njk2ODk5MDAsLTEwNzgzNjgw
-NTZdfQ==
+eyJoaXN0b3J5IjpbMTgyMDgyMDMzMiwyMTM2NTI3NDE0LC0zNj
+I4ODkzNCwtMjAzMDk0MTE3OSwzNjk0Mzk2OTIsMTY2OTY4OTkw
+MCwtMTA3ODM2ODA1Nl19
 -->
