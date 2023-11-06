@@ -54,7 +54,6 @@ For global grids containing the velocity information, the suggested HDF5 structu
     @Dimensions (Attribute, type: int[3])
     @Compression (Attribute, type: string - description of any compression used)
     /Data (Dataset, type: float[n, m, l], optional: checksum)
-
 ```
 
 The structure accommodates both a single and multiple phase.
@@ -81,7 +80,7 @@ For instrument-specific grids, the structure is proposed to be:
 This layout ensures a standardized and accessible approach to microseismic grid data storage, accommodating both global and instrument-specific needs.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTMyMTM3NzMsLTIxMDA1MzYxMDEsLT
+eyJoaXN0b3J5IjpbLTIwNzMwMDAzNTEsLTIxMDA1MzYxMDEsLT
 E4NTQ4ODA1MjksNzczNTQ1NTQ5LC0yMDI2NzIwMDI3LDIwODQx
 NzM5ODMsLTI1MDk0MDI2NCwxODAxMzU0NDg0LDEzNjY5OTA1OD
 QsMjA5NTA5OTQ1MCwtMTEyNjcyMTQ2NSw5NTY0MDk3NCwyMTI0
