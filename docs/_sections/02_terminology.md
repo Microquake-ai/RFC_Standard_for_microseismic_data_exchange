@@ -77,6 +77,28 @@ A logical or physical grouping of instruments deployed at one or multiple "locat
 - **Network**
 A logical grouping of multiple stations used to detect, locate and characterized events.
 
+At the top of the hierarchy, you have the **Inventory**, which encompasses everything below it.
+
+1.  **Inventory**
+A comprehensive collection of networks in a microseismic monitoring system.
+3.  **Network**
+A logical grouping of multiple stations to detect, locate, and characterize seismic events.
+    -   Child of: Inventory
+4.  **Station**
+    A logical or physical grouping of instruments at one or multiple locations.
+    -   Child of: Network
+5.  **Location**
+  A specific point where one or more instruments are deployed; synonymous in this context with the physical aspect of Instrument.
+   Child of: Station
+6.  **Instrument**
+    
+    -   Definition: A setup that may include one or multiple sensors and associated components for seismic detection.
+    -   Child of: Location
+7.  **Sensor**
+    
+    -   Definition: A device designed to detect seismic waves and convert them into an electrical signal.
+    -   Child of: Instrument
+
 **Hierarchy**
 ```
 Inventory
@@ -115,7 +137,7 @@ Inventory
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4ODg3NTU3MCwxODIwODIwMzMyLDIxMz
+eyJoaXN0b3J5IjpbLTE5MzI1NDgxNSwxODIwODIwMzMyLDIxMz
 Y1Mjc0MTQsLTM2Mjg4OTM0LC0yMDMwOTQxMTc5LDM2OTQzOTY5
 MiwxNjY5Njg5OTAwLC0xMDc4MzY4MDU2XX0=
 -->
