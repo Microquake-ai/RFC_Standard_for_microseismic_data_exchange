@@ -52,14 +52,14 @@ For instrument-specific grids, the structure is proposed to be:
 		    /Data (Dataset, type: float[n, m, l], optional: checksum)
 ```
 
-> Note: The only difference between the global (Velocity) and instrument specific grid definition is that for instrument grid, an additional parameter is added t 
+> Note: The only difference between the global (Velocity) and instrument specific grid definition is that for instrument grid, an additional parameter is added to ensure cross-referencing to a velocity grid.  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0Mzc0NDQyMSwyMTg3NTM5NTQsMTk1MD
-Q2Njc3NCwtMTMzNjg5OTA0MSwtMjA3MzAwMDM1MSwtMjEwMDUz
-NjEwMSwtMTg1NDg4MDUyOSw3NzM1NDU1NDksLTIwMjY3MjAwMj
-csMjA4NDE3Mzk4MywtMjUwOTQwMjY0LDE4MDEzNTQ0ODQsMTM2
-Njk5MDU4NCwyMDk1MDk5NDUwLC0xMTI2NzIxNDY1LDk1NjQwOT
-c0LDIxMjQyMjM1NjMsLTE0OTY4MzA5MDUsMzk5MjY3NTg1LC0y
-MTQ0NzA4OTU4XX0=
+eyJoaXN0b3J5IjpbMTEyNDQ3ODMyLDIxODc1Mzk1NCwxOTUwND
+Y2Nzc0LC0xMzM2ODk5MDQxLC0yMDczMDAwMzUxLC0yMTAwNTM2
+MTAxLC0xODU0ODgwNTI5LDc3MzU0NTU0OSwtMjAyNjcyMDAyNy
+wyMDg0MTczOTgzLC0yNTA5NDAyNjQsMTgwMTM1NDQ4NCwxMzY2
+OTkwNTg0LDIwOTUwOTk0NTAsLTExMjY3MjE0NjUsOTU2NDA5Nz
+QsMjEyNDIyMzU2MywtMTQ5NjgzMDkwNSwzOTkyNjc1ODUsLTIx
+NDQ3MDg5NThdfQ==
 -->
