@@ -14,7 +14,25 @@ Two primary categories of grids are relevant:
 
 For simplicity and portability, we suggest combining the grids in one convenient containers with the following structure
 
-
+```
+/Phase {P or S} (Group)
+	Velocity Grid
+	/InstrumentID (Group)
+		/Grid Type ('TIME', 'AZIMUTH', 'TAKEOFF', ...) 
+		    @Grid ID (Attribute, type: string)
+		    @Schema Version (Attribute, type: string
+		    @Velocity Model ID (Attribute, type: string)
+		    @Schema Version (Attribute, type: string)
+		    @Modification Timestamp (Attribute, type: string - ISO 8601 format)
+		    @Type (Attribute, type: string - value from the set {'TIME', 'ANGLE'})
+		    @Units (Attribute, type: string - value from the set {'SECOND', 'DEGREES'})
+		    @Coordinate System (Attribute, type: string - reference to coordinate system used)
+		    @Origin (Attribute, type: float[3])
+		    @Spacing (Attribute, type: float[3])
+		    @Dimensions (Attribute, type: int[3])
+		    @Compression (Attribute, type: string - description of any compression used)
+		    /Data (Dataset, type: float[n, m, l], optional: checksum)
+```
 
 
 
@@ -39,7 +57,6 @@ The structure accommodates both a single and multiple phase.
 For instrument-specific grids, the structure is proposed to be:
 
 ```
-@Type (Attribute, type: string - value from the set {'TIME', 'ANGLE'})
 /Phase {P or S} (Group)
 	Velocity Grid
 	/InstrumentID (Group)
@@ -63,7 +80,7 @@ For instrument-specific grids, the structure is proposed to be:
 This layout ensures a standardized and accessible approach to microseismic grid data storage, accommodating both global and instrument-specific needs.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzNjQzMDU5NSwtMTMzNjg5OTA0MSwtMj
+eyJoaXN0b3J5IjpbMTk1MDQ2Njc3NCwtMTMzNjg5OTA0MSwtMj
 A3MzAwMDM1MSwtMjEwMDUzNjEwMSwtMTg1NDg4MDUyOSw3NzM1
 NDU1NDksLTIwMjY3MjAwMjcsMjA4NDE3Mzk4MywtMjUwOTQwMj
 Y0LDE4MDEzNTQ0ODQsMTM2Njk5MDU4NCwyMDk1MDk5NDUwLC0x
