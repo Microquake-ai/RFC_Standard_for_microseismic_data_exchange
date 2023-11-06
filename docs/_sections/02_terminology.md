@@ -60,7 +60,7 @@ A time series representation of seismic wave amplitudes detected by sensors in m
 - **ASDF (Adaptable Seismic Data Format)**  
   A modern data format explicitly designed for seismological data and related metadata. Building on the HDF5 infrastructure, ASDF is tailored for efficiency, scalability, and adaptability in both storage and processing of seismic data. It facilitates the integration of raw waveforms, processed data products, event parameters, and station metadata within a single file structure. The format's adaptability and hierarchical structure ensure consistent and optimized handling of diverse seismic datasets, making it a valuable choice for advanced seismological research and applications.
 
-### Equipment
+### Equipment and hierarchical relationship
 
 - **Sensor**  
   A device specifically designed to detect or measure a physical property and convert this input into an electrical signal. A sensor (e.g., geophone element) is responsible for directly detecting seismic waves and transducing them into voltage variations based on its sensitivity. Example: a 4.5 Hz geophone.
@@ -77,41 +77,45 @@ A logical or physical grouping of instruments deployed at one or multiple "locat
 - **Network**
 A logical grouping of multiple stations used to detect, locate and characterized events.
 
+**Hierarchy**
 ```
 Inventory
 |
-|-- Network (Net1)
+|-- Network (N1)
 |   |
-|   |-- Station (Net1.StaA)
+|   |-- Station (N1.STA01)
 |   |   |
-|   |   |-- Location: Instrument (Net1.StaA.Loc1)
-|   |   |   |
-|   |   |   |-- Channel (Net1.StaA.Loc1: Sensor - Type 1)
-|   |   |   |   |
-|   |   |   |   |-- Sensor - Type 1
-|   |   |   |
-|   |   |   |-- Channel (Net1.StaA.Loc1: Instrument A1-1.CH2)
-|   |   |       |
-|   |   |       |-- Sensor - Type 2
-|   |   |
-|   |   |-- Location: Instrument (Net1.StaA.Loc2: Instrument A1-2)
+|   |   |-- Location: Instrument (N1.STA01.00)
 |   |       |
-|   |       |-- Channel (Net1.StaA.Loc2: Instrument A1-2.CH1)
+|   |       |-- Channel (N1.STA01.00.GNX)
+|   |       |   |
+|   |       |   |-- Sensor - Type 1
+|   |       |
+|   |       |-- Channel (N1.STA01.00.GNY)
+|   |       |   |
+|   |       |   |-- Sensor - Type 2
+|   |       |
+|   |       |-- Channel (N1.STA01.00.GNZ)
 |   |           |
-|   |           |-- Sensor - Type 1
+|   |           |-- Sensor - Type 3
 |   |
-|   |-- Station (Net1.StaB)
-|       |
-|       |-- (similar structure as Station Net1.StaA)
+|   |-- Station (N1.STA02)
+|   |   |
+|   |   |-- (similar structure as N1.STA01)
+|   |
+|   |-- (Additional stations with unique codes)
 |
-|-- Network (Net2)
-    |
-    |-- (similar structure as Network Net1)
+|-- Network (N2)
+|   |
+|   |-- (similar structure as Network N1)
+|
+|-- (Additional networks with unique codes)
+
 ```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyMDgyMDMzMiwyMTM2NTI3NDE0LC0zNj
-I4ODkzNCwtMjAzMDk0MTE3OSwzNjk0Mzk2OTIsMTY2OTY4OTkw
-MCwtMTA3ODM2ODA1Nl19
+eyJoaXN0b3J5IjpbMTg4ODg3NTU3MCwxODIwODIwMzMyLDIxMz
+Y1Mjc0MTQsLTM2Mjg4OTM0LC0yMDMwOTQxMTc5LDM2OTQzOTY5
+MiwxNjY5Njg5OTAwLC0xMDc4MzY4MDU2XX0=
 -->
