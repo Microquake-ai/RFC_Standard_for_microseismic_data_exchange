@@ -12,7 +12,7 @@ Two primary categories of grids are relevant:
 - **Global**: These grids extend across the entire network, typical examples being *P*- and *S*-wave velocity grids.
 - **Instrument Specific**: These grids are confined to individual instruments and are typically used for storing travel time and angle information.
 
-For simplicity and portability, we suggest combining the grids in one convenient containers with the following structure
+For convenience, we suggest combining the grids in one convenient containers with the following structure
 
 ```
 /Phase {P or S} (Group)
@@ -80,10 +80,11 @@ For instrument-specific grids, the structure is proposed to be:
 This layout ensures a standardized and accessible approach to microseismic grid data storage, accommodating both global and instrument-specific needs.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1MDQ2Njc3NCwtMTMzNjg5OTA0MSwtMj
-A3MzAwMDM1MSwtMjEwMDUzNjEwMSwtMTg1NDg4MDUyOSw3NzM1
-NDU1NDksLTIwMjY3MjAwMjcsMjA4NDE3Mzk4MywtMjUwOTQwMj
-Y0LDE4MDEzNTQ0ODQsMTM2Njk5MDU4NCwyMDk1MDk5NDUwLC0x
-MTI2NzIxNDY1LDk1NjQwOTc0LDIxMjQyMjM1NjMsLTE0OTY4Mz
-A5MDUsMzk5MjY3NTg1LC0yMTQ0NzA4OTU4XX0=
+eyJoaXN0b3J5IjpbMjE4NzUzOTU0LDE5NTA0NjY3NzQsLTEzMz
+Y4OTkwNDEsLTIwNzMwMDAzNTEsLTIxMDA1MzYxMDEsLTE4NTQ4
+ODA1MjksNzczNTQ1NTQ5LC0yMDI2NzIwMDI3LDIwODQxNzM5OD
+MsLTI1MDk0MDI2NCwxODAxMzU0NDg0LDEzNjY5OTA1ODQsMjA5
+NTA5OTQ1MCwtMTEyNjcyMTQ2NSw5NTY0MDk3NCwyMTI0MjIzNT
+YzLC0xNDk2ODMwOTA1LDM5OTI2NzU4NSwtMjE0NDcwODk1OF19
+
 -->
