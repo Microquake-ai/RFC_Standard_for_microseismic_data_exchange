@@ -27,7 +27,7 @@ That would, however, be too reductionist and lead to ambiguity. The list suggest
 
 | Suggested Event Types                 | Description                                                           |
 |--------------------------------------|-----------------------------------------------------------------------|
-| *blast*                                | *Generic Blast: Controlled detonation for mining purposes.*             |
+| *blast*                                | *Generic Blast: Controlled detonation for mining purposes.*|
 | blast sequence                       | Would apply for a series of blasts organized in a longer file containing the whole blast sequence.    |
 | development blast                    | Specific type of blast for development               |
 | production blast                     | Specific type of blast related to production      |
@@ -62,6 +62,6 @@ That would, however, be too reductionist and lead to ambiguity. The list suggest
 | tap test/test                        | Controlled tapping or impact to test response of monitoring systems usually done during the installation and commissioning of the system to test the equipment.   |
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODgyNTE1NjU5LC04MzEwMTY1MTMsLTEwOD
-A3MzU4NDUsLTIwNTUxOTA1MzgsLTE5NzQ1Mzk2NTRdfQ==
+eyJoaXN0b3J5IjpbLTc5Njc0ODMyOSwtODMxMDE2NTEzLC0xMD
+gwNzM1ODQ1LC0yMDU1MTkwNTM4LC0xOTc0NTM5NjU0XX0=
 -->
