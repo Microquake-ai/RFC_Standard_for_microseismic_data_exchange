@@ -38,6 +38,7 @@ For instrument-specific grids, the structure is proposed to be:
 	/InstrumentID (Group)
 		/Grid Type ('TIME', 'AZIMUTH', 'TAKEOFF', ...) 
 		    @Grid ID (Attribute, type: string)
+		    @Seed (Attribute, type: float[3])
 		    @Schema Version (Attribute, type: string
 		    @Velocity Model ID (Attribute, type: string)
 		    @Schema Version (Attribute, type: string)
@@ -55,11 +56,11 @@ For instrument-specific grids, the structure is proposed to be:
 > Note: The only difference between the global (Velocity) and instrument specific grid definition is that for instrument grid, an additional parameter is added to ensure cross-referencing to a velocity grid.  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyNDQ3ODMyLDIxODc1Mzk1NCwxOTUwND
-Y2Nzc0LC0xMzM2ODk5MDQxLC0yMDczMDAwMzUxLC0yMTAwNTM2
-MTAxLC0xODU0ODgwNTI5LDc3MzU0NTU0OSwtMjAyNjcyMDAyNy
-wyMDg0MTczOTgzLC0yNTA5NDAyNjQsMTgwMTM1NDQ4NCwxMzY2
-OTkwNTg0LDIwOTUwOTk0NTAsLTExMjY3MjE0NjUsOTU2NDA5Nz
-QsMjEyNDIyMzU2MywtMTQ5NjgzMDkwNSwzOTkyNjc1ODUsLTIx
-NDQ3MDg5NThdfQ==
+eyJoaXN0b3J5IjpbLTEyOTIxNjg5NTUsMTEyNDQ3ODMyLDIxOD
+c1Mzk1NCwxOTUwNDY2Nzc0LC0xMzM2ODk5MDQxLC0yMDczMDAw
+MzUxLC0yMTAwNTM2MTAxLC0xODU0ODgwNTI5LDc3MzU0NTU0OS
+wtMjAyNjcyMDAyNywyMDg0MTczOTgzLC0yNTA5NDAyNjQsMTgw
+MTM1NDQ4NCwxMzY2OTkwNTg0LDIwOTUwOTk0NTAsLTExMjY3Mj
+E0NjUsOTU2NDA5NzQsMjEyNDIyMzU2MywtMTQ5NjgzMDkwNSwz
+OTkyNjc1ODVdfQ==
 -->
