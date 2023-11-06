@@ -73,8 +73,8 @@ Transitioning to event classifications, the QuakeML schema has a predefined set 
 
 | Event Type (mining)                | Event Type (QuakeML)              |
 |-----------------------------------|-----------------------------------|
+| *seismic event*                     | induced or triggered event        |
 | earthquake/large event            | earthquake                        |
-| seismic event                     | induced or triggered event        |
 | offsite event                     | atmospheric event                 |
 | rock burst                        | rock burst                        |
 | fall of ground/rockfall           | cavity collapse                   |
@@ -144,7 +144,7 @@ The ASDF file format combines waveforms and inventory data. To ensure flawless i
 ASDF adopts a relaxed version of the SEED Identifier Convention, previously part of QuakeML and StationXML standards and now extended to the waveform data. The StationXML does not restrict the string length; QuakeML does. We therefore suggest adopting the convention presented in section 3.3.5 of the [QuakeML Version 1.2 (revision 20130214b)](https://quake.ethz.ch/quakeml/docs/latest?action=AttachFile&do=get&target=QuakeML-BED.pdf).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTIxNTEzMzEsMjM2ODA3MDUxLDIwND
-UyOTI2NzQsNzY1ODA5OTQsMjA0NTI5MjY3NCwtMzk0NDk1NDUs
-LTEyMTAyNDk4NjYsMTA5NjYzOTk2MV19
+eyJoaXN0b3J5IjpbLTU5NDg3NjkwMywyMzY4MDcwNTEsMjA0NT
+I5MjY3NCw3NjU4MDk5NCwyMDQ1MjkyNjc0LC0zOTQ0OTU0NSwt
+MTIxMDI0OTg2NiwxMDk2NjM5OTYxXX0=
 -->
