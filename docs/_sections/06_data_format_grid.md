@@ -62,30 +62,32 @@ For instrument-specific grids, the structure is proposed to be:
 ```
 @Type (Attribute, type: string - value from the set {'TIME', 'ANGLE'})
 /Phase {P or S} (Group)
-	
+	Velocity Grid
 	/InstrumentID (Group)
-	    @Grid ID (Attribute, type: string)
-	    @Schema Version (Attribute, type: string
-	    @Velocity Model ID (Attribute, type: string)
-	    @Schema Version (Attribute, type: string)
-	    @Modification Timestamp (Attribute, type: string - ISO 8601 format)
-	    @Type (Attribute, type: string - value from the set {'TIME', 'ANGLE'})
-	    @Units (Attribute, type: string - value from the set {'SECOND', 'DEGREES'})
-	    @Coordinate System (Attribute, type: string - reference to coordinate system used)
-	    @Origin (Attribute, type: float[3])
-	    @Spacing (Attribute, type: float[3])
-	    @Dimensions (Attribute, type: int[3])
-	    @Compression (Attribute, type: string - description of any compression used)
-	    /Data (Dataset, type: float[n, m, l], optional: checksum)
+		/Grid Type ('TIME', 'AZIMUTH', 'TAKEOFF', ...) 
+			Local Grid
+		    @Grid ID (Attribute, type: string)
+		    @Schema Version (Attribute, type: string
+		    @Velocity Model ID (Attribute, type: string)
+		    @Schema Version (Attribute, type: string)
+		    @Modification Timestamp (Attribute, type: string - ISO 8601 format)
+		    @Type (Attribute, type: string - value from the set {'TIME', 'ANGLE'})
+		    @Units (Attribute, type: string - value from the set {'SECOND', 'DEGREES'})
+		    @Coordinate System (Attribute, type: string - reference to coordinate system used)
+		    @Origin (Attribute, type: float[3])
+		    @Spacing (Attribute, type: float[3])
+		    @Dimensions (Attribute, type: int[3])
+		    @Compression (Attribute, type: string - description of any compression used)
+		    /Data (Dataset, type: float[n, m, l], optional: checksum)
 ```
 
 This layout ensures a standardized and accessible approach to microseismic grid data storage, accommodating both global and instrument-specific needs.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjI3NjkyNzksLTEzMzY4OTkwNDEsLT
-IwNzMwMDAzNTEsLTIxMDA1MzYxMDEsLTE4NTQ4ODA1MjksNzcz
-NTQ1NTQ5LC0yMDI2NzIwMDI3LDIwODQxNzM5ODMsLTI1MDk0MD
-I2NCwxODAxMzU0NDg0LDEzNjY5OTA1ODQsMjA5NTA5OTQ1MCwt
-MTEyNjcyMTQ2NSw5NTY0MDk3NCwyMTI0MjIzNTYzLC0xNDk2OD
-MwOTA1LDM5OTI2NzU4NSwtMjE0NDcwODk1OF19
+eyJoaXN0b3J5IjpbMTUwOTAzOTg3MiwtMTMzNjg5OTA0MSwtMj
+A3MzAwMDM1MSwtMjEwMDUzNjEwMSwtMTg1NDg4MDUyOSw3NzM1
+NDU1NDksLTIwMjY3MjAwMjcsMjA4NDE3Mzk4MywtMjUwOTQwMj
+Y0LDE4MDEzNTQ0ODQsMTM2Njk5MDU4NCwyMDk1MDk5NDUwLC0x
+MTI2NzIxNDY1LDk1NjQwOTc0LDIxMjQyMjM1NjMsLTE0OTY4Mz
+A5MDUsMzk5MjY3NTg1LC0yMTQ0NzA4OTU4XX0=
 -->
