@@ -68,7 +68,6 @@ For instrument-specific grids, the structure is proposed to be:
     @Type (Attribute, type: string - value from the set {'TIME', 'ANGLE'})
     @Units (Attribute, type: string - value from the set {'SECOND', 'DEGREES'})
     @Coordinate System (Attribute, type: string - reference to coordinate system used)
-    @Data Order (Attribute, type: string - value from the set {'Row-major', 'Column-major'})
     @Origin (Attribute, type: float[3])
     @Spacing (Attribute, type: float[3])
     @Dimensions (Attribute, type: int[3])
@@ -79,10 +78,10 @@ For instrument-specific grids, the structure is proposed to be:
 This layout ensures a standardized and accessible approach to microseismic grid data storage, accommodating both global and instrument-specific needs.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5OTUxNzIxNiwtMjA3MzAwMDM1MSwtMj
-EwMDUzNjEwMSwtMTg1NDg4MDUyOSw3NzM1NDU1NDksLTIwMjY3
-MjAwMjcsMjA4NDE3Mzk4MywtMjUwOTQwMjY0LDE4MDEzNTQ0OD
-QsMTM2Njk5MDU4NCwyMDk1MDk5NDUwLC0xMTI2NzIxNDY1LDk1
-NjQwOTc0LDIxMjQyMjM1NjMsLTE0OTY4MzA5MDUsMzk5MjY3NT
-g1LC0yMTQ0NzA4OTU4XX0=
+eyJoaXN0b3J5IjpbLTEzMzY4OTkwNDEsLTIwNzMwMDAzNTEsLT
+IxMDA1MzYxMDEsLTE4NTQ4ODA1MjksNzczNTQ1NTQ5LC0yMDI2
+NzIwMDI3LDIwODQxNzM5ODMsLTI1MDk0MDI2NCwxODAxMzU0ND
+g0LDEzNjY5OTA1ODQsMjA5NTA5OTQ1MCwtMTEyNjcyMTQ2NSw5
+NTY0MDk3NCwyMTI0MjIzNTYzLC0xNDk2ODMwOTA1LDM5OTI2Nz
+U4NSwtMjE0NDcwODk1OF19
 -->
