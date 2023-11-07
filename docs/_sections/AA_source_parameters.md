@@ -9,8 +9,8 @@ In this appendix, we outline the equations that relate the core canonical source
 | Derived Parameter     | Equation                                                                                                  |
 |-----------------------|-----------------------------------------------------------------------------------------------------------|
 | Moment Magnitude      | $M_w = \frac{2}{3} \left( \log_{10} M_0 - 9.1 \right)$                                                   |
-| Radiated Energy (J      | $E = E_p + E_s$                                                                                          |
-| Source Radius         | $a = \left(\frac{3M_0}{4\pi\mu}\right)^{1/3}$                                                            |
+| Radiated Energy (J)      | $E = E_p + E_s$                                                                                          |
+| Source Radius  (m)       | $a = \left(\frac{3M_0}{4\pi\mu}\right)^{1/3}$                                                            |
 | Potency               | $P = \frac{M_0}{\mu}$                                                                                    |
 | Apparent Stress       | $\sigma_a = 2\frac{E}{P}$                                                                              |
 | Apparent Volume       | $V_a = \frac{E}{\rho V_p^2}$                                                                             |
@@ -19,7 +19,7 @@ In this appendix, we outline the equations that relate the core canonical source
 
 **Note**: Where $\rho$ is the density, $V_p$ and $V_s$ are the *P*- and *S*-wave velocities, $R$ is the radius of the source, and $\mu$ is the shear modulus.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjA3ODYzNTEsLTg3OTgyNDU0NCwxNT
+eyJoaXN0b3J5IjpbLTEyMjczNzUyOTgsLTg3OTgyNDU0NCwxNT
 UxNjI0MjAwLC00NTY2MDE5NjYsLTE5OTc4MTMwNzksMTc0NDY1
 Njc5XX0=
 -->
