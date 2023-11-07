@@ -8,7 +8,8 @@ In this appendix, we outline the equations that relate the core canonical source
 
 | Derived Parameter     | Equation                                                                                                  |
 |-----------------------|-----------------------------------------------------------------------------------------------------------|
-| Moment Magnitude     | $M_w = \frac{2}{3} \left( \log_{10} M_0 - 9.1 \right)$ |                                          | Radiated Energy (J)      | $E = E_p + E_s$                            |
+| Moment Magnitude     | $M_w = \frac{2}{3} \left( \log_{10} M_0 - 9.1 \right)$ | 
+| Radiated Energy (J)      | $E = E_p + E_s$                            |
 | Source Radius  (m)       | $a = \frac{c \cdot v}{f_c}$
 | Rupture Area   (m^2)     |   $\pi a^2$                                   |
 | Potency (m^3)              | $P = \frac{M_0}{\mu}$                |
@@ -23,9 +24,9 @@ In this appendix, we outline the equations that relate the core canonical source
 	- $c=0.32$ for the *P*-wave; and
     - $c=0.21$ for the *S*-wave.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjcwNjUyNjEsLTkyMzc2NTM0MiwtMT
-Y0OTcyNTMwMCwtNTM3Mzc3OTg5LC0xNDI1NTIzNjQxLC0xODk2
-OTA1NTMxLDE2MzYzMzAxMDUsLTg3OTgyNDU0NCwxNTUxNjI0Mj
-AwLC00NTY2MDE5NjYsLTE5OTc4MTMwNzksMTc0NDY1Njc5XX0=
-
+eyJoaXN0b3J5IjpbMTg3Nzg1NTc4NSwtMTUyNzA2NTI2MSwtOT
+IzNzY1MzQyLC0xNjQ5NzI1MzAwLC01MzczNzc5ODksLTE0MjU1
+MjM2NDEsLTE4OTY5MDU1MzEsMTYzNjMzMDEwNSwtODc5ODI0NT
+Q0LDE1NTE2MjQyMDAsLTQ1NjYwMTk2NiwtMTk5NzgxMzA3OSwx
+NzQ0NjU2NzldfQ==
 -->
