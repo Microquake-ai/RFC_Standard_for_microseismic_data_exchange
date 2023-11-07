@@ -9,16 +9,16 @@ In this appendix, we outline the equations that relate the core canonical source
 | Derived Parameter     | Equation                                                                                                  |
 |-----------------------|-----------------------------------------------------------------------------------------------------------|
 | Moment Magnitude      | $M_w = \frac{2}{3} \left( \log_{10} M_0 - 9.1 \right)$                                                   |
-| Energy                | $E = E_p + E_s$                                                                                          |
+| Radiated Energy       | $E = E_p + E_s$                                                                                          |
 | Source Radius         | $R = \left(\frac{3M_0}{4\pi\mu}\right)^{1/3}$                                                            |
 | Potency               | $P = \frac{M_0}{\mu}$                                                                                    |
-| Apparent Stress       | $\sigma_a = \frac{E}{M_0}$                                                                              |
+| Apparent Stress       | $\sigma_a = 2\frac{E}{M_0}$                                                                              |
 | Apparent Volume       | $V_a = \frac{E}{\rho V_p^2}$                                                                             |
 | Static Stress Drop    | $\Delta\sigma_{\text{stat}} = \frac{7}{16} \left(\frac{M_0}{\pi R^3}\right)^{1/3}$                       |
 | Dynamic Stress Drop   | $\Delta\sigma_{\text{dyn}} = \frac{7}{16} \rho V_s^2 \left(\frac{M_0}{\pi R^3}\right)^{1/3}$  |            |
 
 **Note**: Where $\rho$ is the density, $V_p$ and $V_s$ are the *P*- and *S*-wave velocities, $R$ is the radius of the source, and $\mu$ is the shear modulus.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1MTYyNDIwMCwtNDU2NjAxOTY2LC0xOT
-k3ODEzMDc5LDE3NDQ2NTY3OV19
+eyJoaXN0b3J5IjpbMTc3MTIzOTk1MCwxNTUxNjI0MjAwLC00NT
+Y2MDE5NjYsLTE5OTc4MTMwNzksMTc0NDY1Njc5XX0=
 -->
