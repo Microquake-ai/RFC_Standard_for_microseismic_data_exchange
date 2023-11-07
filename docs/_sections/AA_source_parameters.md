@@ -10,11 +10,11 @@ In this appendix, we outline the equations that relate the core canonical source
 |-----------------------|-----------------------------------------------------------------------------------------------------------|
 | Moment Magnitude      | $M_w = \frac{2}{3} \left( \log_{10} M_0 - 9.1 \right)$                                                   |
 | Radiated Energy (J)      | $E = E_p + E_s$                                                                                          |
-| Source Radius  (m)       | $a = \frac{c \cdot v}{f_c}$                                                            |
+| Source Radius  (cm)       | $a = 100 \ cdot \frac{c \cdot v}{f_c}$                                                            |
 | Potency               | $P = \frac{M_0}{\mu}$                                                                                    |
 | Apparent Stress       | $\sigma_a = 2\frac{E}{P}$                                                                              |
 | Apparent Volume       | $V_a = \frac{E}{\rho V_p^2}$                                                                             
-| Static Stress Drop (MPa)    | $\Delta\sigma = \frac{7}{16} \cdot \frac{10^{\left(\frac{3}{2} M_w + 9.1\right)} \cdot 10^7}{\left(\frac{c \cdot v \cdot 10^5}{f_c}\right)^3} \cdot \frac{1}{10^6}$
+| Static Stress Drop (MPa)    | $\Delta\sigma = \frac{7}{16} \cdot \frac{10^{\left(\frac{3}{2} M_w + 9.1\right)} \cdot 10^7}{\left(a) \right)^3} \cdot \frac{1}{10^6}$
 | Dynamic Stress Drop   | $\Delta\sigma_{\text{dyn}} = \frac{7}{16} \rho V_s^2 \left(\frac{M_0}{\pi R^3}\right)^{1/3}$  |            |
 
 **Note**: Where $\rho$ is the density, $V_p$ and $V_s$ are the *P*- and *S*-wave velocities expressed in m/s, and $\mu$ is the shear modulus. $c$ is a scaling constant that depends on the source model:
@@ -24,7 +24,7 @@ In this appendix, we outline the equations that relate the core canonical source
 	- $c=0.32$ for the *P*-wave; and
     - $c=0.21$ for the *S*-wave.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTY5MDU1MzEsMTYzNjMzMDEwNSwtOD
-c5ODI0NTQ0LDE1NTE2MjQyMDAsLTQ1NjYwMTk2NiwtMTk5Nzgx
-MzA3OSwxNzQ0NjU2NzldfQ==
+eyJoaXN0b3J5IjpbMTgzMDMyNTQzNiwtMTg5NjkwNTUzMSwxNj
+M2MzMwMTA1LC04Nzk4MjQ1NDQsMTU1MTYyNDIwMCwtNDU2NjAx
+OTY2LC0xOTk3ODEzMDc5LDE3NDQ2NTY3OV19
 -->
