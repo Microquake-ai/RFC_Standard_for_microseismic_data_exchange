@@ -13,7 +13,7 @@ In this appendix, we outline the equations that relate the core canonical source
 | Source Radius  (cm)       | $$a = 100 \cdot \frac{c \cdot v}{f_c}$$                                                            |
 | Potency               | $$P = \frac{M_0}{\mu}$$                                                                                    |
 | Apparent Stress       | $$\sigma_a = 2 \cdot \frac{E}{P}$$                                                                              |
-| Apparent Volume       | $$V_a = \frac{E}{\rho V_p^2}$$                                                                             
+| Apparent Volume       | $$V_a = \frac{Y}{\rho V_p^2}$$                                                                             
 | Static Stress Drop (MPa)    | $$\Delta\sigma = \frac{7}{16} \cdot \frac{10^{\left(\frac{3}{2} M_w + 9.1\right)} \cdot 10^7}{\left(a \right)^3} \cdot \frac{1}{10^6}$$
 | Dynamic Stress Drop   | $$\Delta\sigma_{\text{dyn}} = \frac{7}{16} \rho V_s^2 \left(\frac{M_0}{\pi R^3}\right)^{1/3}$$  |            |
 
@@ -24,7 +24,8 @@ In this appendix, we outline the equations that relate the core canonical source
 	- $c=0.32$ for the *P*-wave; and
     - $c=0.21$ for the *S*-wave.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MjU1MjM2NDEsLTE4OTY5MDU1MzEsMT
-YzNjMzMDEwNSwtODc5ODI0NTQ0LDE1NTE2MjQyMDAsLTQ1NjYw
-MTk2NiwtMTk5NzgxMzA3OSwxNzQ0NjU2NzldfQ==
+eyJoaXN0b3J5IjpbNDY3NDcyODE5LC0xNDI1NTIzNjQxLC0xOD
+k2OTA1NTMxLDE2MzYzMzAxMDUsLTg3OTgyNDU0NCwxNTUxNjI0
+MjAwLC00NTY2MDE5NjYsLTE5OTc4MTMwNzksMTc0NDY1Njc5XX
+0=
 -->
