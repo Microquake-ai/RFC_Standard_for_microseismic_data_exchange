@@ -17,9 +17,13 @@ In this appendix, we outline the equations that relate the core canonical source
 | Static Stress Drop    | $\Delta\sigma_{\text{stat}} = \frac{7}{16} \left(\frac{M_0}{\pi R^3}\right)^{1/3}$                       |
 | Dynamic Stress Drop   | $\Delta\sigma_{\text{dyn}} = \frac{7}{16} \rho V_s^2 \left(\frac{M_0}{\pi R^3}\right)^{1/3}$  |            |
 
-**Note**: Where $\rho$ is the density, $V_p$ and $V_s$ are the *P*- and *S*-wave velocities expressed in m/s, $R$ is the radius of the source, and $\mu$ is the shear modulus.
+**Note**: Where $\rho$ is the density, $V_p$ and $V_s$ are the *P*- and *S*-wave velocities expressed in m/s, and $\mu$ is the shear modulus. $c$ is a scaling constant that depends on the source model:
+
+-   For Brune's model, $c=0.375
+-   For Madariaga's model and S phase, �=0.21c=0.21
+-   For Madariaga's model and P phase, �=0.32c=0.32
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxNjY1MDI5MSwtODc5ODI0NTQ0LDE1NT
+eyJoaXN0b3J5IjpbMTI4NzU3NzY2OSwtODc5ODI0NTQ0LDE1NT
 E2MjQyMDAsLTQ1NjYwMTk2NiwtMTk5NzgxMzA3OSwxNzQ0NjU2
 NzldfQ==
 -->
