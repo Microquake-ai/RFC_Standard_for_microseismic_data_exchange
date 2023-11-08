@@ -1,7 +1,10 @@
+___
 
+___
 
+## Waveform Compression
 
-> Written with [StackEdit](https://stackedit.io/).
+To maximize portability and minimize bandwidth and storage requirment we 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbMTY1Mjc3OTY2N119
 -->
