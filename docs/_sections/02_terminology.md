@@ -134,11 +134,11 @@ Inventory
 
 ```
 
-**Stream**: A stream uniquely identifies the data provenance. A stream identifier is composed by combining the nte
+**Stream (Stream identifier)**: A stream uniquely relates to a source of data. The stream ideidentifier uniquely identifies the data provenance. A stream identifier is composed by combining the network, station, location and channel. An example of a stream 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzE5MTk0NDYzLDY5OTIzNjcwMywtMTkzMj
+eyJoaXN0b3J5IjpbMjQyNjgyMzE4LDY5OTIzNjcwMywtMTkzMj
 U0ODE1LDE4MjA4MjAzMzIsMjEzNjUyNzQxNCwtMzYyODg5MzQs
 LTIwMzA5NDExNzksMzY5NDM5NjkyLDE2Njk2ODk5MDAsLTEwNz
 gzNjgwNTZdfQ==
