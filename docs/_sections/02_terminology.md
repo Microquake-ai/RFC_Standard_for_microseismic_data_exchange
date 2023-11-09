@@ -134,9 +134,12 @@ Inventory
 
 ```
 
+**Stream**: A stream uniquely identifies the data provenance. A stream identifier is composed by combining the nte
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjk5MjM2NzAzLC0xOTMyNTQ4MTUsMTgyMD
-gyMDMzMiwyMTM2NTI3NDE0LC0zNjI4ODkzNCwtMjAzMDk0MTE3
-OSwzNjk0Mzk2OTIsMTY2OTY4OTkwMCwtMTA3ODM2ODA1Nl19
+eyJoaXN0b3J5IjpbMzE5MTk0NDYzLDY5OTIzNjcwMywtMTkzMj
+U0ODE1LDE4MjA4MjAzMzIsMjEzNjUyNzQxNCwtMzYyODg5MzQs
+LTIwMzA5NDExNzksMzY5NDM5NjkyLDE2Njk2ODk5MDAsLTEwNz
+gzNjgwNTZdfQ==
 -->
