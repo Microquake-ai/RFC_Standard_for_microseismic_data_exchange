@@ -44,7 +44,6 @@ For instrument-specific grids, the structure is proposed to be:
 		    @Seed Coordinates (Attribute type: float[3])
 		    @Schema Version (Attribute, type: string
 		    @Velocity Model ID (Attribute, type: string)
-		    @Schema Version (Attribute, type: string)
 		    @Modification Timestamp (Attribute, type: string - ISO 8601 format)
 		    @Type (Attribute, type: string - value from the set {'TIME', 'ANGLE'})
 		    @Units (Attribute, type: string - value from the set {'SECOND', 'DEGREES'})
